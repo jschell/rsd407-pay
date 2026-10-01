@@ -45,10 +45,17 @@ def fetch(url,retries=3):
     raise RuntimeError(f"failed to fetch {url}: {last}")
 
 def s275_section(html):
-    low=html.lower(); start=low.find("personnel reporting data (s-275)")
+    # Drupal may wrap heading text in markup, so compare a text-only rendering.
+    class Text(HTMLParser):
+        def __init__(self): super().__init__(); self.parts=[]
+        def handle_data(self,data): self.parts.append(data)
+    t=Text(); t.feed(html)
+    plain=" ".join(t.parts)
+    low=plain.lower(); start=low.find("personnel reporting data (s-275)")
     if start<0: raise RuntimeError("S-275 section not found on OSPI SAFS page")
-    end=low.find("apportionment data files",start)
-    return html[start:end if end>=0 else None]
+    # Return the full page; discover() additionally requires personnel semantics
+    # on each candidate link. The heading check establishes dataset presence.
+    return html
 
 def discover(config):
     body,meta=fetch(config["landing_page"])
