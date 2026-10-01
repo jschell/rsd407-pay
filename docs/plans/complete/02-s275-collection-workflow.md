@@ -29,3 +29,7 @@ Create workflows for:
 ## Acceptance
 
 A clean workflow runner can collect an annual source, verify its hash/type, produce a manifest, and expose the raw file as an artifact without manual browser intervention.
+
+## Implementation status
+
+Implemented Python collection, per-year/all-final manual workflow dispatch, SHA-256 manifests, immutable raw-file behavior, artifact retention, and CI tests. Plan 01's scheduled source discovery remains responsible for detecting newly published/finalized source changes.

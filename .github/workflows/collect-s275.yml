@@ -1,0 +1,54 @@
+name: Collect S-275
+on:
+  workflow_dispatch:
+    inputs:
+      school_year:
+        description: "Final school year (for example 2024-25); leave blank when all_final is true"
+        required: false
+        type: string
+      all_final:
+        description: "Collect every final year in the registry"
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+      - name: Validate dispatch inputs
+        env:
+          YEAR: ${{ inputs.school_year }}
+          ALL_FINAL: ${{ inputs.all_final }}
+        run: |
+          if [ "$ALL_FINAL" != "true" ] && [ -z "$YEAR" ]; then
+            echo "school_year is required unless all_final=true" >&2
+            exit 2
+          fi
+      - name: Collect all final years
+        if: ${{ inputs.all_final }}
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.collect --all-final
+      - name: Collect one final year
+        if: ${{ !inputs.all_final }}
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.collect --year "${{ inputs.school_year }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s275-raw-${{ inputs.all_final && 'all-final' || inputs.school_year }}
+          path: |
+            artifacts/raw/
+            artifacts/manifests/
+          if-no-files-found: error
+          retention-days: 30
