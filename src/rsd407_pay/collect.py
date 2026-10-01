@@ -4,7 +4,7 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-from .sources import discover, fetch, validate_download
+from .sources import discover, fetch, validate_download\nfrom .workbook import validate_workbook_bytes
 
 def load_config(path): return json.loads(Path(path).read_text())
 
@@ -22,7 +22,7 @@ def collect_one(source, raw_dir:Path):
         existing=hashlib.sha256(target.read_bytes()).hexdigest()
         if existing != digest: raise RuntimeError(f"{target} already exists with different content; raw inputs are immutable")
     else: target.write_bytes(body)
-    row=asdict(source); row["local_path"]=str(target); row["final_url"]=meta["final_url"]
+    row=asdict(source); row["local_path"]=str(target); row["final_url"]=meta["final_url"]; row["workbook_identity"]=workbook_identity
     return row
 
 def main(argv=None):
