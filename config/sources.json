@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "landing_page": "https://ospi.k12.wa.us/safs-data-files",
+  "publisher": "Washington Office of Superintendent of Public Instruction",
+  "dataset": "S-275 School Personnel",
+  "expected_final_years": [
+    "2013-14",
+    "2014-15",
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "preferred_formats": [
+    "xlsx",
+    "xls",
+    "accdb",
+    "mdb",
+    "pdf"
+  ],
+  "allowed_hosts": [
+    "ospi.k12.wa.us"
+  ]
+}
