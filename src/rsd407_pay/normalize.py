@@ -76,5 +76,10 @@ def canonicalize_row(*, school_year, source_sha256, source_sheet, source_row, he
 
 
 def is_riverview(row: dict) -> bool:
+    """Match the exact district label used by S-275 personnel workbooks.
+
+    OSPI's School District column uses the short district name (for example,
+    "Riverview"), not the display name "Riverview School District".
+    """
     name = " ".join(str(row.get("district_name") or "").lower().split())
-    return name == "riverview school district"
+    return name == "riverview"

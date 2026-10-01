@@ -36,9 +36,9 @@ class NormalizeTests(unittest.TestCase):
         self.assertEqual(row["classified_fte"], 0.75)
 
     def test_riverview_filter_is_exact_normalized_district_name(self):
-        self.assertTrue(is_riverview({"district_name": " Riverview   School District "}))
-        self.assertFalse(is_riverview({"district_name": "Riverview"}))
-        self.assertFalse(is_riverview({"district_name": "Other School District"}))
+        self.assertTrue(is_riverview({"district_name": " Riverview "}))
+        self.assertFalse(is_riverview({"district_name": "Riverview School District"}))
+        self.assertFalse(is_riverview({"district_name": "Other"}))
 
 
 if __name__ == "__main__":
