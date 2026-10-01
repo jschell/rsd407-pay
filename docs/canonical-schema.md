@@ -27,6 +27,6 @@ Initial canonical personnel fields are:
 
 Source headers are indexed by position. Duplicate source labels therefore remain addressable rather than being silently overwritten. Known aliases such as `Clas FTE` / `Class FTE` are explicit.
 
-RSD407 selection currently requires the normalized source district name to equal `Riverview School District`. It does not use employee names, duty titles, or fuzzy matching. A documented district code can be added when confirmed consistently in the source schema.
+RSD407 selection currently requires the normalized S-275 `School District` value to equal `Riverview`. It does not use employee names, duty titles, or fuzzy matching. A documented district code can be added when confirmed consistently in the source schema.
 
 This adapter layer intentionally does not yet allocate employee-level compensation across assignments. That belongs with the aggregation rules after source row grain is characterized.
