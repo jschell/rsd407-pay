@@ -45,16 +45,23 @@ def fetch(url,retries=3):
     raise RuntimeError(f"failed to fetch {url}: {last}")
 
 def s275_section(html):
-    # Drupal may wrap heading text in markup, so compare a text-only rendering.
+    """Fail closed unless the OSPI page identifies the S-275 personnel dataset.
+
+    Drupal may split visible heading text across nested markup, so identity is
+    checked against normalized rendered text rather than raw HTML adjacency.
+    """
     class Text(HTMLParser):
-        def __init__(self): super().__init__(); self.parts=[]
-        def handle_data(self,data): self.parts.append(data)
-    t=Text(); t.feed(html)
-    plain=" ".join(t.parts)
-    low=plain.lower(); start=low.find("personnel reporting data (s-275)")
-    if start<0: raise RuntimeError("S-275 section not found on OSPI SAFS page")
-    # Return the full page; discover() additionally requires personnel semantics
-    # on each candidate link. The heading check establishes dataset presence.
+        def __init__(self):
+            super().__init__()
+            self.parts=[]
+        def handle_data(self,data):
+            self.parts.append(data)
+
+    parser=Text()
+    parser.feed(html)
+    rendered=" ".join(" ".join(parser.parts).lower().split())
+    if "personnel reporting data" not in rendered or "s-275" not in rendered:
+        raise RuntimeError("S-275 section not found on OSPI SAFS page")
     return html
 
 def discover(config):
