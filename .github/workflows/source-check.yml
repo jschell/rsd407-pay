@@ -1,0 +1,35 @@
+name: S-275 source check
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 14 * * 1"
+  pull_request:
+    paths:
+      - "config/sources.json"
+      - "src/rsd407_pay/sources.py"
+      - "tests/test_sources.py"
+      - ".github/workflows/source-check.yml"
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+      - name: Discover expected OSPI S-275 sources
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.sources
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: s275-source-status
+          path: artifacts/source-status.json
+          if-no-files-found: warn
