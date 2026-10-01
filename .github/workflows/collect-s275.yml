@@ -46,11 +46,16 @@ jobs:
         env:
           PYTHONPATH: src
         run: python -m rsd407_pay.collect --year "${{ inputs.school_year }}"
+      - name: Normalize RSD407 rows
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.pipeline
       - uses: actions/upload-artifact@v4
         with:
           name: s275-raw-${{ inputs.all_final && 'all-final' || inputs.school_year }}
           path: |
             artifacts/raw/
             artifacts/manifests/
+            artifacts/normalized/
           if-no-files-found: error
           retention-days: 30
