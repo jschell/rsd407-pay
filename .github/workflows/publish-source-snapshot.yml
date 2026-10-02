@@ -1,0 +1,38 @@
+name: Publish S-275 source snapshot
+on:
+  workflow_dispatch:
+    inputs:
+      snapshot_tag:
+        description: "Immutable release tag, e.g. s275-source-2026-10-02"
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Test
+        env: {PYTHONPATH: src}
+        run: python -m unittest discover -s tests -v
+      - name: Collect all final sources once
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.collect --all-final
+      - name: Build immutable snapshot
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.snapshot build --tag "${{ inputs.snapshot_tag }}" --output s275-source-snapshot.tar.gz
+      - name: Refuse replacement
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          if gh release view "${{ inputs.snapshot_tag }}" >/dev/null 2>&1; then
+            echo "Release tag already exists; snapshots are immutable" >&2
+            exit 1
+          fi
+      - name: Publish release
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: gh release create "${{ inputs.snapshot_tag }}" s275-source-snapshot.tar.gz artifacts/manifests/source-snapshot.json artifacts/manifests/collection.json --title "${{ inputs.snapshot_tag }}" --notes "Immutable validated OSPI S-275 source snapshot. Do not replace; publish a new tag when upstream hashes change."
