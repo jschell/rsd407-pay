@@ -32,7 +32,7 @@ jobs:
         run: python -m rsd407_pay.duty_inventory
       - name: Duty-title coverage
         env: {PYTHONPATH: src}
-        run: python -m rsd407_pay.duty_coverage
+        run: python -m rsd407_pay.duty_coverage --vocabulary-output artifacts/normalized/duty-title-vocabulary.json
       - name: Map job families\n        env: {PYTHONPATH: src}\n        run: python -m rsd407_pay.job_family\n      - uses: actions/upload-artifact@v4
         with:
           name: s275-analysis-${{ inputs.snapshot_tag }}
