@@ -41,6 +41,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Report exact RSD407 S-275 duty-title vocabulary and FTE coverage")
     ap.add_argument("--input", default="artifacts/normalized/rsd407.csv")
     ap.add_argument("--output", default="artifacts/normalized/duty-title-coverage.json")
+    ap.add_argument("--vocabulary-output", default=None)
     args = ap.parse_args(argv)
     with Path(args.input).open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
@@ -51,6 +52,16 @@ def main(argv=None):
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    if args.vocabulary_output:
+        vocabulary = {
+            "schema_version": 1,
+            "source_snapshot": "s275-source-2026-10-02",
+            "distinct_titles": report["distinct_titles"],
+            "titles": list(report["titles"]),
+        }
+        vocab_path = Path(args.vocabulary_output)
+        vocab_path.parent.mkdir(parents=True, exist_ok=True)
+        vocab_path.write_text(json.dumps(vocabulary, indent=2) + "\n")
 
 
     print(f"wrote {report['distinct_titles']} exact duty title(s): {output}")
