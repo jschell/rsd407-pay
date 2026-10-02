@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source_key": "duty_title",
+  "families": [
+    "teachers",
+    "other certificated instructional",
+    "principals/APs",
+    "district/central administration",
+    "paraeducators/instructional aides",
+    "clerical/office",
+    "transportation",
+    "custodial/maintenance/facilities",
+    "food service",
+    "technical/professional support",
+    "other classified",
+    "unmapped/review"
+  ],
+  "mappings": {
+    "Aide": "paraeducators/instructional aides",
+    "Counselor": "other certificated instructional",
+    "Crafts/Trades": "custodial/maintenance/facilities",
+    "Director/Supervisor": "other classified",
+    "Elem. Homeroom Teacher": "teachers",
+    "Elem. Specialist Teacher": "teachers",
+    "Elementary Principal": "principals/APs",
+    "Elementary Teacher": "teachers",
+    "Library Media Specialist": "other certificated instructional",
+    "Nurse": "other certificated instructional",
+    "Occupational Therapist": "other certificated instructional",
+    "Office/Clerical": "clerical/office",
+    "Operator": "other classified",
+    "Other District Admin.": "district/central administration",
+    "Other School Admin.": "principals/APs",
+    "Other Support Personnel": "other certificated instructional",
+    "Other Teacher": "teachers",
+    "Physical Therapist": "other certificated instructional",
+    "Professional": "technical/professional support",
+    "Psychologist": "other certificated instructional",
+    "Secondary Principal": "principals/APs",
+    "Secondary Teacher": "teachers",
+    "Secondary Vice Principal": "principals/APs",
+    "Service Worker": "other classified",
+    "Spch.-Lang. Path./Audio.": "other certificated instructional",
+    "Superintendent": "district/central administration",
+    "Technical": "technical/professional support"
+  },
+  "notes": {
+    "Director/Supervisor": "OSPI definition spans multiple support functions; Duty Title alone cannot allocate to transportation, food service, facilities, or technical subfamilies.",
+    "Operator": "Duty Title alone does not establish bus-operator assignment; OSPI summary reporting identifies bus operators with assignment combinations not present in this source.",
+    "Service Worker": "OSPI definition spans custodial, food service, security, warehouse, delivery, and other nonsupervisory service work; retained in other classified.",
+    "Other School Admin.": "Mapped to principals/APs as school-level administration; category label should be interpreted as school administration, not literally only principal titles."
+  }
+}
