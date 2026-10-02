@@ -36,6 +36,9 @@ jobs:
       - name: Map job families
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.job_family
+      - name: Annual staffing and compensation metrics
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.metrics
       - uses: actions/upload-artifact@v4
         with:
           name: s275-analysis-${{ inputs.snapshot_tag }}
