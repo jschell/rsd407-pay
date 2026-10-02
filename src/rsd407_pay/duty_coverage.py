@@ -40,7 +40,7 @@ def build_coverage(rows):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Report exact RSD407 S-275 duty-title vocabulary and FTE coverage")
     ap.add_argument("--input", default="artifacts/normalized/rsd407.csv")
-    ap.add_argument("--output", default="artifacts/normalized/duty-title-coverage.json")
+    ap.add_argument("--output", default="artifacts/normalized/duty-title-coverage.json")\n    ap.add_argument("--vocabulary-output", default=None)
     args = ap.parse_args(argv)
     with Path(args.input).open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
