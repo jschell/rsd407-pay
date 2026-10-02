@@ -17,3 +17,11 @@ Consequently, category results describe the employee-year's OSPI-published duty-
 ## Coverage
 
 The validated 2013-14 through 2024-25 series contains 5,019 employee-year rows and 27 distinct published duty titles. The snapshot analysis workflow emits exact title, employee-row count, certificated FTE, classified FTE, and total FTE so mapping coverage can be independently checked.
+
+## Mapping policy
+
+The versioned mapping is `config/job-family-mapping.json`. Matching is exact. Any newly observed title fails snapshot analysis and requires an explicit mapping decision.
+
+Broad categories are intentionally limited by the information in the public employee-row workbook. In particular, `Service Worker`, `Operator`, and `Director/Supervisor` are retained as `other classified` because OSPI's definitions and summary reports require assignment/activity context to distinguish food service, bus operation, maintenance, transportation, data processing, and related functions. That assignment context is not present in this source. The analysis must not manufacture those subcategories from employee names or assumptions.
+
+The mapping therefore favors reproducible coarser categories over falsely precise ones. Original `duty_title` remains in every enriched row.
