@@ -54,6 +54,10 @@ jobs:
         env:
           PYTHONPATH: src
         run: python -m rsd407_pay.duty_inventory
+      - name: Report duty-title coverage
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.duty_coverage
       - uses: actions/upload-artifact@v4
         with:
           name: s275-raw-${{ inputs.all_final && 'all-final' || inputs.school_year }}
