@@ -51,7 +51,17 @@ def main(argv=None):
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
-    print(f"wrote {report['distinct_titles']} exact duty title(s): {output}")\n    print("Exact OSPI Duty Title coverage:")\n    for title, item in report["titles"].items():\n        total_fte = item["certificated_fte"] + item["classified_fte"]\n        print(\n            f"- {title}: rows={item['rows']}, " \\n            f"certificated_fte={item['certificated_fte']:.4f}, " \\n            f"classified_fte={item['classified_fte']:.4f}, total_fte={total_fte:.4f}"\n        )
+
+
+    print(f"wrote {report['distinct_titles']} exact duty title(s): {output}")
+    print("Exact OSPI Duty Title coverage:")
+    for title, item in report["titles"].items():
+        total_fte = item["certificated_fte"] + item["classified_fte"]
+        print(
+            f"- {title}: rows={item['rows']}, "
+            f"certificated_fte={item['certificated_fte']:.4f}, "
+            f"classified_fte={item['classified_fte']:.4f}, total_fte={total_fte:.4f}"
+        )
 
 
 if __name__ == "__main__":
