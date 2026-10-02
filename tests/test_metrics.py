@@ -18,5 +18,6 @@ class MetricsTests(unittest.TestCase):
         self.assertAlmostEqual(sum(x["total_salary"] for x in r["categories"]),d["total_salary"])
         self.assertAlmostEqual(sum(x["insurance_benefits"] for x in r["categories"]),d["insurance_benefits"])
         self.assertAlmostEqual(sum(x["mandatory_benefits"] for x in r["categories"]),d["mandatory_benefits"])
-        self.assertAlmostEqual(d["reported_employer_compensation"],178)
+        self.assertAlmostEqual(d["reported_employer_compensation"],198)
+        self.assertAlmostEqual(d["reported_employer_compensation"], d["total_salary"] + d["insurance_benefits"] + d["mandatory_benefits"])
 if __name__=="__main__": unittest.main()
