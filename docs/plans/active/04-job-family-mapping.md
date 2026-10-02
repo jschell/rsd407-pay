@@ -2,11 +2,11 @@
 
 ## Goal
 
-Create a transparent, version-controlled mapping from OSPI duty/assignment codes to broad analytical job families.
+Create a transparent, version-controlled mapping from the OSPI-published S-275 duty vocabulary to broad analytical job families.
 
 ## Requirements
 
-- Base mappings on OSPI documentation and observed duty codes.
+- Base mappings on OSPI documentation and the exact observed `Duty Title` vocabulary.
 - Preserve original code/title alongside mapped category.
 - Support one employee having multiple assignments/categories.
 - Define rules for:
@@ -38,3 +38,10 @@ Create a transparent, version-controlled mapping from OSPI duty/assignment codes
 5. Fail or explicitly flag new/unrecognized material codes; never infer categories from employee names or free-text titles.
 
 The mapping itself must not be implemented until steps 1-3 establish the code field and its longitudinal coverage.
+
+
+## Source-field discovery result
+
+The reproducible all-final run 36958066362 inspected every personnel sheet from 2013-14 through 2024-25. No public workbook exposes a duty/assignment code column. The relevant longitudinal source field is `Duty Title`; `Location Code` appears from 2022-23 onward but identifies location, not job assignment.
+
+Accordingly, Plan 04 will map the exact OSPI-published `Duty Title` vocabulary rather than fabricate or infer an unavailable code. The 12-year RSD407 normalized dataset contains 27 distinct duty titles across 5,019 employee-year rows. Mapping must be exhaustive over those exact source values and retain the original title.
