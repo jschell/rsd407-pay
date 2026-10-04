@@ -13,9 +13,10 @@ CONTROL_FIELDS={
 def build_control_inventory(personnel_inventory):
     resources=[]
     for r in personnel_inventory.get("resources",[]):
-        label=r.get("label","").lower()
-        if "table 47" in label:
-            resources.append({"school_year":r["school_year"],"label":r["label"],"url":r["url"],"extension":r.get("extension")})
+        # personnel_summary.inventory() already vetted these as annual Personnel Summary resources.
+        # Table 47 is embedded in each PDF; link labels are not stable enough to re-filter.
+        if r.get("extension")==".pdf":
+            resources.append({"school_year":r["school_year"],"label":r["label"],"url":r["url"],"extension":r.get("extension"),"table":"47","source_mode":"embedded"})
     return {"schema_version":1,"district_code":DISTRICT_CODE,"control_table":"OSPI Personnel Summary Table 47 — Selected Personnel Data by School District",
             "fields":CONTROL_FIELDS,"resources":resources,"covered_years":sorted({r["school_year"] for r in resources})}
 
