@@ -103,6 +103,9 @@ jobs:
       - name: Extract all-program compensation controls
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_compensation
+      - name: Compare all-program compensation controls
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.personnel_compensation_compare
       - name: Validation gate
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json
