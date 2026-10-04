@@ -61,3 +61,7 @@ Preserve the CPI observation, series identity, calendar-year mapping, source URL
 - Per-1,000-student and per-student measures state whether the denominator is headcount or FTE.
 - Constant-dollar outputs reproduce the documented BLS ratio method.
 - A retained-snapshot analysis can regenerate normalized outputs without manual analytical edits.
+
+## Completion evidence
+
+Completed 2026-10-04. Retained analysis run 37226782112 successfully regenerated all 12 years from immutable S-275 and normalization snapshots without live-source analytical edits. It resolved `s275-source-2026-10-02` and `normalization-source-2026-10-04`, verified both snapshots and the retained normalization derivation, and produced enrollment-, CPI-, staffing-, compensation-, and administrative-overhead-normalized outputs. PR #46 added durable longitudinal findings generation and documentation from those accepted outputs.
