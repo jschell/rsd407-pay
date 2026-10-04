@@ -43,3 +43,16 @@ Reconciliation therefore uses two explicit tiers:
 - **Longitudinal controls:** historical series embedded in a later official OSPI final report, used only for measures whose table definitions match the project output.
 
 The source type must be recorded with every comparison. A later longitudinal table must never be represented as though it were the original annual report for that year.
+
+## Primary district control: Table 47
+
+The primary district-grain reconciliation target is OSPI Personnel Summary **Table 47 — Selected Personnel Data by School District**. It exposes district-level student enrollment/FTE and personnel FTE/salary measures.
+
+Comparison status is field-specific:
+
+- student FTE: comparable when the report confirms the same annual-average enrollment basis;
+- certificated FTE: candidate pending scope confirmation;
+- classified FTE: candidate pending scope confirmation;
+- average salary: candidate only; do not equate it with this project's aggregate salary/FTE without confirming OSPI's numerator and personnel scope.
+
+The implementation records these semantics in the machine-readable Table 47 control inventory before extracting numeric controls.
