@@ -1,0 +1,19 @@
+{
+  "enrollment": {
+    "provider": "Washington Office of Superintendent of Public Instruction",
+    "dataset_family": "P-223 fiscal enrollment",
+    "preferred_measure": "annual_average_fte",
+    "reporting_frequency": "monthly September-June",
+    "coverage_requirement": "2013-14 through 2024-25",
+    "policy": "Do not substitute another enrollment measure if historical AAFTE coverage is unavailable; document and fail."
+  },
+  "inflation": {
+    "provider": "U.S. Bureau of Labor Statistics",
+    "series": "CPI-U U.S. city average All items",
+    "measure": "annual_average",
+    "base_index": "1982-84=100",
+    "constant_dollar_year": 2025,
+    "school_year_alignment": "ending_calendar_year",
+    "formula": "nominal * CPI_2025 / CPI_year"
+  }
+}
