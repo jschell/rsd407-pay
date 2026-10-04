@@ -60,7 +60,7 @@ def parse(payload):
             annual[str(year)] = sum(obs) / len(obs)
         out[name] = {"series_id": meta["series_id"], "geography": meta["geography"],
                      "measure": "arithmetic_mean_of_published_periodic_cpi_observations",
-                     "expected_periods_per_year": meta["expected_periods"], "values": annual}
+                     "expected_periods_per_year": meta["expected_periods"], "values": annual, "known_source_exceptions": {"2025": {"missing_period": "M10", "reason": "BLS did not collect October 2025 CPI survey data during the federal appropriations lapse; no retroactive collection"}}}
     if errors:
         raise RuntimeError("BLS CPI coverage errors:\n" + "\n".join(errors))
     return out
