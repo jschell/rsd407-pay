@@ -44,7 +44,7 @@ Reconciliation therefore uses two explicit tiers:
 
 The source type must be recorded with every comparison. A later longitudinal table must never be represented as though it were the original annual report for that year.
 
-## Primary district control: Table 47
+## Enrollment control: Table 47
 
 The primary district-grain reconciliation target is OSPI Personnel Summary **Table 47 — Selected Personnel Data by School District**. It exposes district-level student enrollment/FTE and personnel FTE/salary measures.
 
@@ -71,6 +71,10 @@ The retained 2019–20 through 2024–25 final reports have a stable personnel-t
 
 - **Table 45B — Comparison of Certificated and Classified FTE Staff in All Programs with FTE Students.** This is the primary independent FTE candidate because it reports district-level certificated instructional, certificated administrative, and classified FTE across all programs. For 2024–25, Riverview reports 196.19 + 15.26 + 125.91 = 337.36 FTE, compared with 337.367 from the normalized public S-275 extract. This near-exact agreement supports population equivalence, subject to validation across every retained year.
 - **Table 14 — Unduplicated Individual and FTE Counts.** This is a candidate control for employee counts and certificated/classified composition, but its mixed-personnel columns must be interpreted before comparison with the simplified one-major-assignment public extract.
-- **Table 37C — Certificated Staff in All Programs.** This is a candidate certificated compensation control. It must not be combined with classified compensation until the corresponding all-program classified table and salary definitions are confirmed.
+- **Tables 34B and 36B — Certificated Instructional/Administrative Staff in All Programs.** These provide the certificated compensation components in 2019–20 through 2022–23.
+- **Table 37C — Certificated Staff in All Programs.** This consolidated certificated control is available in 2023–24 onward.
+- **Table 38B — Classified Staff in All Programs.** This is the classified compensation control across all six retained reports.
+
+Compensation reconciliation combines the certificated and classified all-program controls without allocating employee-level public-extract salary to certificated/classified FTE. The comparison derives a display-rounding bound from published FTE precision (hundredths) and published average-per-FTE precision (whole dollars). It remains evidence rather than a hard validation gate until the retained six-year comparison is reviewed.
 
 Table 45 (without B) is basic-education-only and is not equivalent to the project's all-program S-275 population. Table 47 remains an enrollment-only P-223 control.
