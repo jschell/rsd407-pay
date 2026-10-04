@@ -45,7 +45,8 @@ def main(argv=None):
     html=Path(a.html).read_text() if a.html else fetch()
     report=inventory(html)
     missing=sorted(set(YEARS)-set(report["covered_years"]))
-    if missing: raise RuntimeError(f"personnel-summary discovery missing years: {missing}")
+    report["missing_years"]=missing
     out=Path(a.output); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,indent=2)+"\n")
-    print(f"discovered {len(report['resources'])} personnel-summary resources across {len(report['covered_years'])} years")
+    print(f"discovered {len(report['resources'])} personnel-summary resources across {len(report['covered_years'])} years; missing={missing}")
+    if missing: raise RuntimeError(f"personnel-summary discovery missing years: {missing}")
 if __name__=="__main__": main()
