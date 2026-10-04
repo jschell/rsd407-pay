@@ -100,6 +100,9 @@ jobs:
       - name: Reconcile staff FTE against Table 45B
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.table45b_reconcile
+      - name: Extract all-program compensation controls
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.personnel_compensation
       - name: Validation gate
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json
