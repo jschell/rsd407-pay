@@ -17,25 +17,28 @@ def parse_table45b_text(text: str) -> dict:
     nums=re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",lines[0])
     vals=[Decimal(x.replace(",","")) for x in nums]
     if not vals or vals[0] != Decimal(DISTRICT_CODE): raise RuntimeError("district code not first numeric field")
-    # Table 45B row ends with instructional certificated, administrative certificated, classified FTE, student FTE, ratios.
-    # Select FTE fields structurally from the first three decimal-valued staff measures after the district code.
-    staff=[v for v in vals[1:] if v.as_tuple().exponent < 0][:3]
-    if len(staff)!=3: raise RuntimeError("could not identify three Table 45B staff FTE fields")
+    # After district code the stable Table 45B layout is:
+    # students; instructional staff, students/staff, staff/1000;
+    # administrative staff, students/staff, staff/1000;
+    # classified staff, students/staff, staff/1000.
+    fields=vals[1:]
+    if len(fields) < 10: raise RuntimeError(f"unexpected Table 45B row layout: {len(fields)} numeric fields after district code")
+    staff=[fields[1],fields[4],fields[7]]
     return {"certificated_instructional_fte":float(staff[0]),"certificated_administrative_fte":float(staff[1]),"classified_fte":float(staff[2]),"total_fte":float(sum(staff))}
 
 def extract(pdf: Path) -> dict:
     text=subprocess.run(["pdftotext","-layout",str(pdf),"-"],check=True,capture_output=True,text=True).stdout
     return parse_table45b_text(text)
 
-def q2(v) -> Decimal: return Decimal(str(v)).quantize(Decimal("0.01"),rounding=ROUND_HALF_UP)
+COMPONENT_ROUNDING_TOLERANCE=Decimal("0.015")
 
 def reconcile(manifest: dict, metrics: dict) -> dict:
     by_year={r["school_year"]:r for r in metrics["district"]}
     rows=[]
     for src in manifest["resources"]:
         year=src["school_year"]; control=extract(Path(src["local_file"])); project=Decimal(str(by_year[year]["total_fte"])); published=Decimal(str(control["total_fte"]))
-        difference=published-project; status="pass" if q2(project)==q2(published) else "fail"
-        rows.append({"school_year":year,"source_sha256":src["sha256"],"ospi_table45b":control,"project_total_fte":float(project),"difference_fte":float(difference),"comparison":"rounded_to_published_hundredth","status":status})
+        difference=published-project; status="pass" if abs(difference) <= COMPONENT_ROUNDING_TOLERANCE else "fail"
+        rows.append({"school_year":year,"source_sha256":src["sha256"],"ospi_table45b":control,"project_total_fte":float(project),"difference_fte":float(difference),"comparison":"within_sum_of_three_hundredth-rounded_components","tolerance_fte":float(COMPONENT_ROUNDING_TOLERANCE),"status":status})
     return {"schema_version":1,"control":"OSPI Personnel Summary Table 45B","district_code":DISTRICT_CODE,"status":"pass" if all(r["status"]=="pass" for r in rows) else "fail","years":rows}
 
 def main(argv=None):
