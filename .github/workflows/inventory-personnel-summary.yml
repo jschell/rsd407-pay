@@ -14,9 +14,16 @@ jobs:
       - name: Discover OSPI personnel summary resources
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_summary
+      - name: Inventory Table 47 controls
+        if: always()
+        env: {PYTHONPATH: src}
+        run: |
+          if [ -f artifacts/reconciliation/personnel-summary-inventory.json ]; then
+            python -m rsd407_pay.table47
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: personnel-summary-inventory
-          path: artifacts/reconciliation/personnel-summary-inventory.json
+          path: artifacts/reconciliation/
           if-no-files-found: error
