@@ -21,9 +21,16 @@ jobs:
           if [ -f artifacts/reconciliation/personnel-summary-inventory.json ]; then
             python -m rsd407_pay.table47
           fi
+      - name: Retain Table 47 source PDFs
+        if: always()
+        env: {PYTHONPATH: src}
+        run: |
+          if [ -f artifacts/reconciliation/table47-control-inventory.json ]; then
+            python -m rsd407_pay.table47_sources
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: personnel-summary-inventory
+          name: personnel-summary-reconciliation-sources
           path: artifacts/reconciliation/
           if-no-files-found: error
