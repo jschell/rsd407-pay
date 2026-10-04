@@ -101,17 +101,14 @@ jobs:
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.table45b_reconcile
       - name: Extract all-program compensation controls
-        id: compensation_controls
-        continue-on-error: true
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_compensation
       - name: Compare all-program compensation controls
-        if: steps.compensation_controls.outcome == 'success'
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_compensation_compare
       - name: Validation gate
         env: {PYTHONPATH: src}
-        run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json
+        run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json --external-compensation artifacts/reconciliation/personnel-compensation-comparison.json
       - name: Enrollment and dual-CPI normalized metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.normalize_metrics
