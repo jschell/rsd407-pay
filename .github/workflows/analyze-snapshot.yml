@@ -102,7 +102,7 @@ jobs:
         run: python -m rsd407_pay.table45b_reconcile
       - name: Validation gate
         env: {PYTHONPATH: src}
-        run: python -m rsd407_pay.validation
+        run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json
       - name: Enrollment and dual-CPI normalized metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.normalize_metrics

@@ -26,3 +26,18 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(validate(r,metrics())["status"],"fail")
 
 if __name__=="__main__": unittest.main()
+
+
+def test_external_reconciliation_is_reported_and_gated():
+    from rsd407_pay.validation import validate
+    rows=[]
+    for year in YEARS:
+        rows.append({"school_year":year,"source_sha256":year,"source_sheet":"Sheet1","source_row":"1","certificated_fte":"1","classified_fte":"0","base_salary":"1","total_salary":"1","insurance_benefits":"0","mandatory_benefits":"0"})
+    metrics={"district":[{"school_year":y,"employee_rows":1,"total_fte":1,"base_salary":1,"total_salary":1,"reported_employer_compensation":1} for y in YEARS]}
+    ext={"status":"pass","control":"OSPI Personnel Summary Table 45B","years":[{"school_year":y,"status":"pass"} for y in YEARS[-6:]]}
+    report=validate(rows,metrics,ext)
+    assert report["status"]=="pass"
+    assert report["external_reconciliation"]["checked_years"]==YEARS[-6:]
+    assert report["external_reconciliation"]["unavailable_annual_report_years"]==YEARS[:6]
+    ext["status"]="fail"
+    assert validate(rows,metrics,ext)["status"]=="fail"
