@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source_family": "OSPI Personnel Summary Reports",
+  "official_page": "https://ospi.k12.wa.us/policy-funding/school-apportionment/school-publications/personnel-summary-reports",
+  "historical_years": [
+    {
+      "school_year": "2013-14",
+      "status": "unresolved"
+    },
+    {
+      "school_year": "2014-15",
+      "status": "unresolved"
+    },
+    {
+      "school_year": "2015-16",
+      "status": "unresolved"
+    },
+    {
+      "school_year": "2016-17",
+      "status": "unresolved"
+    },
+    {
+      "school_year": "2017-18",
+      "status": "unresolved"
+    },
+    {
+      "school_year": "2018-19",
+      "status": "unresolved"
+    }
+  ],
+  "policy": "Do not infer historical report URLs. Each unresolved year must be backed by an official OSPI resource or a documented archival source before it can be used for reconciliation."
+}
