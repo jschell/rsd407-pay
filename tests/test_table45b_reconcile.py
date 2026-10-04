@@ -19,3 +19,9 @@ def test_reconcile_uses_district_metrics_schema(monkeypatch, tmp_path):
     report=m.reconcile(manifest,metrics)
     assert report["status"]=="pass"
     assert report["years"][0]["project_total_fte"]==337.367
+
+
+def test_parser_stops_before_later_tables():
+    text="""Table 45B: Comparison of Certificated and Classified FTE Staff in All Programs with FTE Students\n  90  17407 Riverview  196.19  15.26  125.91  2,819  14.37  22.39\nTable 46: Another District Table\n  88  17407 Riverview  999.99  888.88  777.77\nTable 47: School Districts Ranked by FTE Enrollment (Report P-223)\n  90  17407 Riverview  2,819\n"""
+    row=parse_table45b_text(text)
+    assert row["total_fte"] == 337.36
