@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install -r requirements.txt
+      - name: Install PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
       - name: Resolve immutable snapshot tags
         id: snapshots
         env:
@@ -83,6 +87,19 @@ jobs:
       - name: Source-quality evidence
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.quality
+      - name: Discover Personnel Summary reports
+        continue-on-error: true
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.personnel_summary
+      - name: Inventory embedded Table 47 resources
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.table47
+      - name: Retain official Personnel Summary PDFs
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.table47_sources
+      - name: Reconcile staff FTE against Table 45B
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.table45b_reconcile
       - name: Validation gate
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.validation
@@ -98,6 +115,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: retained-analysis-${{ steps.snapshots.outputs.s275 }}-${{ steps.snapshots.outputs.normalization }}
-          path: artifacts/normalized/
+          path: |
+            artifacts/normalized/
+            artifacts/reconciliation/
           if-no-files-found: error
           retention-days: 30
