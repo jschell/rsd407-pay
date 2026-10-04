@@ -13,13 +13,13 @@ def compare(controls,metrics):
         year=item["school_year"]; project=by_year[year]; combined={}
         for field in FIELDS:
             key=CONTROL_KEYS[field]
-            published=sum(float(c["total_fte"])*float(c[key]) for c in item["controls"].values())
+            published=sum(float(item["controls"][kind]["total_fte"])*float(item["controls"][kind][key]) for kind in ("certificated","classified"))
             actual=float(project[field]); diff=actual-published
             combined[field]={"project_total":actual,"ospi_implied_total":published,"difference":diff,
                              "percent_difference":diff/published if published else None}
         years.append({"school_year":year,"source_sha256":item["source_sha256"],"combined_all_programs":combined})
     return {"schema_version":1,"district_code":controls["district_code"],
-            "method":"sum(Table 37C FTE × published average/FTE, Table 38B FTE × published average/FTE)",
+            "method":"sum(explicit certificated all-program control × published average/FTE, Table 38B classified control × published average/FTE)",
             "status":"evidence_only_pending_tolerance_and_rounding_assessment","years":years}
 
 def main(argv=None):
