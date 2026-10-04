@@ -108,7 +108,7 @@ jobs:
         run: python -m rsd407_pay.personnel_compensation_compare
       - name: Validation gate
         env: {PYTHONPATH: src}
-        run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json
+        run: python -m rsd407_pay.validation --external-reconciliation artifacts/reconciliation/table45b-reconciliation.json --external-compensation artifacts/reconciliation/personnel-compensation-comparison.json
       - name: Enrollment and dual-CPI normalized metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.normalize_metrics
@@ -119,6 +119,7 @@ jobs:
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.findings --s275-tag "${{ steps.snapshots.outputs.s275 }}" --normalization-tag "${{ steps.snapshots.outputs.normalization }}"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: retained-analysis-${{ steps.snapshots.outputs.s275 }}-${{ steps.snapshots.outputs.normalization }}
           path: |
