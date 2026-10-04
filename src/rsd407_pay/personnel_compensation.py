@@ -11,7 +11,7 @@ NORMAL_FIELDS=("individuals","average_additional_salary_per_individual","total_f
 
 def parse_control(text: str, marker: str) -> dict:
     row=table_district_rows(text,marker)[0]
-    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\\d+(?:,\\d{3})*(?:\\.\\d+)?",row)]
+    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",row)]
     if not vals or vals[0]!=Decimal(DISTRICT_CODE):
         raise RuntimeError(f"unexpected {marker} district row")
     payload=vals[1:]
@@ -39,7 +39,7 @@ def combine_certificated(parts: list[dict]) -> dict:
 def extract(pdf: Path) -> dict:
     text=pdf_text(pdf)
     classified=parse_control(text,CLASSIFIED)
-    if re.search(r"(?m)^\\s*"+re.escape(CERTIFICATED_COMBINED)+r":",text):
+    if re.search(r"(?m)^\s*"+re.escape(CERTIFICATED_COMBINED)+r":",text):
         certificated=parse_control(text,CERTIFICATED_COMBINED); structure=[CERTIFICATED_COMBINED]
     else:
         parts=[parse_control(text,m) for m in CERTIFICATED_LEGACY]
