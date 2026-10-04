@@ -47,7 +47,11 @@ def parse(payload):
             raise RuntimeError(f"missing BLS series {meta['series_id']}")
         annual = {}
         for year in YEARS:
-            obs = [float(x["value"]) for x in series["data"] if int(x["year"]) == year and x["period"].startswith("M") and x["period"] != "M13"]
+            period_rows = [x for x in series["data"] if int(x["year"]) == year and x["period"].startswith("M") and x["period"] != "M13"]
+            invalid = [x for x in period_rows if x.get("value") in (None, "", "-")]
+            if invalid:
+                print(f"{name} {year} nonnumeric observations: " + ", ".join(f"{x['period']}={x.get('value')!r}" for x in invalid))
+            obs = [float(x["value"]) for x in period_rows if x.get("value") not in (None, "", "-")]
             if len(obs) != meta["expected_periods"]:
                 raise RuntimeError(f"{name} {year} expected {meta['expected_periods']} periodic observations, found {len(obs)}")
             annual[str(year)] = sum(obs) / len(obs)
