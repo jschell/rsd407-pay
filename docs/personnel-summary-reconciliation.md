@@ -56,3 +56,7 @@ Comparison status is field-specific:
 - average salary: candidate only; do not equate it with this project's aggregate salary/FTE without confirming OSPI's numerator and personnel scope.
 
 The implementation records these semantics in the machine-readable Table 47 control inventory before extracting numeric controls.
+
+## Table 47 confirmed scope
+
+Retained final reports confirm Table 47 is **School Districts Ranked by FTE Enrollment (Report P-223)**. It is therefore an independent rounded enrollment control, not a personnel FTE or salary control. For Riverview (district 17407), the retained reports publish 3,224 (2019-20), 2,928 (2020-21), 2,942 (2021-22), 2,985 (2022-23), 2,949 (2023-24), and 2,819 (2024-25). Reconciliation compares these values with the project's P-223 annual-average student FTE after whole-student rounding. Personnel FTE and compensation require separate Personnel Summary tables with matching definitions.
