@@ -32,3 +32,14 @@ Build a reproducible collector/inventory for the historical final Personnel Summ
 ## Historical-source status
 
 Current-page discovery covers 2019-20 onward. The six earlier required years (2013-14 through 2018-19) are tracked explicitly in `config/personnel-summary-history.json` and remain unresolved until an official OSPI resource or documented archival source is verified. URL patterns must not be inferred from newer filenames.
+
+## Control tiers
+
+OSPI's current final Personnel Summary Reports include longitudinal tables that reach back across the project's historical period. These are valid independent controls for historical trend measures when definitions match, but they are not substitutes for unavailable year-specific district reports.
+
+Reconciliation therefore uses two explicit tiers:
+
+- **District annual controls:** year-specific final Personnel Summary Reports, where an official annual resource is available.
+- **Longitudinal controls:** historical series embedded in a later official OSPI final report, used only for measures whose table definitions match the project output.
+
+The source type must be recorded with every comparison. A later longitudinal table must never be represented as though it were the original annual report for that year.
