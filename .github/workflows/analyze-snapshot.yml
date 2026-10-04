@@ -39,7 +39,7 @@ jobs:
       - name: Annual staffing and compensation metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.metrics
-      - uses: actions/upload-artifact@v4
+      - name: Source-quality evidence\n        env: {PYTHONPATH: src}\n        run: python -m rsd407_pay.quality\n      - uses: actions/upload-artifact@v4
         with:
           name: s275-analysis-${{ inputs.snapshot_tag }}
           path: artifacts/normalized/
