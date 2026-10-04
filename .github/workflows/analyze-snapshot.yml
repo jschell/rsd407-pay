@@ -83,6 +83,9 @@ jobs:
       - name: Source-quality evidence
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.quality
+      - name: Validation gate
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.validation
       - name: Enrollment and dual-CPI normalized metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.normalize_metrics
