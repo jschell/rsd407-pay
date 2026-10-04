@@ -45,3 +45,11 @@ District annual totals must also be emitted for reconciliation.
 - Annual category row counts, FTE, payroll, and benefits reconcile to annual district totals.
 - Zero-FTE and total-salary-below-base conditions are explicitly counted.
 - No assignment-level claims are emitted.
+
+## Real-data acceptance evidence
+
+Retained snapshot analysis run 37175051934 on commit 7602509 successfully processed 5,019 employee-year rows across all 12 school years, mapped zero unknown duty titles, emitted 108 year/family groups, and passed runtime category reconciliation.
+
+Observed source-quality conditions are preserved rather than corrected. Zero-FTE row counts range from 11–36 in 2013–14 through 2023–24 and fall to 2 in 2024–25. Rows where reported total salary is below reported base salary range from 12–54 annually and peak at 54 in 2023–24. These counts alone do not establish payroll errors; they identify source rows requiring caution in interpretation.
+
+The snapshot workflow emits `data-quality.json` with annual and job-family breakdowns so these conditions remain independently reviewable.
