@@ -28,7 +28,7 @@ def extract(pdf: Path) -> dict:
 def q2(v) -> Decimal: return Decimal(str(v)).quantize(Decimal("0.01"),rounding=ROUND_HALF_UP)
 
 def reconcile(manifest: dict, metrics: dict) -> dict:
-    by_year={r["school_year"]:r for r in metrics["years"]}
+    by_year={r["school_year"]:r for r in metrics["district"]}
     rows=[]
     for src in manifest["resources"]:
         year=src["school_year"]; control=extract(Path(src["local_file"])); project=Decimal(str(by_year[year]["total_fte"])); published=Decimal(str(control["total_fte"]))
@@ -37,6 +37,6 @@ def reconcile(manifest: dict, metrics: dict) -> dict:
     return {"schema_version":1,"control":"OSPI Personnel Summary Table 45B","district_code":DISTRICT_CODE,"status":"pass" if all(r["status"]=="pass" for r in rows) else "fail","years":rows}
 
 def main(argv=None):
-    p=argparse.ArgumentParser(); p.add_argument("--manifest",default="artifacts/reconciliation/table47-source-manifest.json"); p.add_argument("--metrics",default="artifacts/analysis/annual-metrics.json"); p.add_argument("--output",default="artifacts/reconciliation/table45b-reconciliation.json"); a=p.parse_args(argv)
+    p=argparse.ArgumentParser(); p.add_argument("--manifest",default="artifacts/reconciliation/table47-source-manifest.json"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/reconciliation/table45b-reconciliation.json"); a=p.parse_args(argv)
     report=reconcile(json.loads(Path(a.manifest).read_text()),json.loads(Path(a.metrics).read_text())); Path(a.output).write_text(json.dumps(report,indent=2)+"\n"); print(json.dumps(report,indent=2)); raise SystemExit(0 if report["status"]=="pass" else 1)
 if __name__=="__main__": main()
