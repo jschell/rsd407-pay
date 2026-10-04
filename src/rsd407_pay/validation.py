@@ -11,7 +11,7 @@ def number(row,key):
     try: return float(row.get(key) or 0)
     except (TypeError,ValueError): return None
 
-def validate(rows,metrics):
+def validate(rows,metrics,external=None):
     critical=[]; warnings=[]
     years=sorted({r["school_year"] for r in rows})
     if years != YEARS:
@@ -41,13 +41,20 @@ def validate(rows,metrics):
                 discontinuities.append({"from":previous["school_year"],"to":current["school_year"],"field":field,"percent_change":pct})
     if discontinuities:
         warnings.append({"check":"large_year_over_year_changes","threshold":0.15,"items":discontinuities})
-    return {"schema_version":1,"status":"fail" if critical else "pass","critical":critical,"warnings":warnings,
-            "external_reconciliation":{"status":"pending","note":"Independent OSPI personnel-summary reconciliation is required before Plan 07 completion."}}
+    ext={"status":"pending","note":"Independent OSPI personnel-summary reconciliation is required before Plan 07 completion."}
+    if external is not None:
+        checked=[r["school_year"] for r in external.get("years",[]) if r.get("status")=="pass"]
+        ext={"status":external.get("status","fail"),"control":external.get("control"),"checked_years":checked,
+             "unavailable_annual_report_years":[y for y in YEARS if y not in checked],
+             "note":"Annual Personnel Summary reports are currently available from OSPI for 2019-20 through 2024-25; earlier years remain a documented external-control coverage limitation."}
+        if ext["status"]!="pass": critical.append({"check":"external_reconciliation","detail":"OSPI Table 45B reconciliation failed"})
+    return {"schema_version":1,"status":"fail" if critical else "pass","critical":critical,"warnings":warnings,"external_reconciliation":ext}
 
 def main(argv=None):
-    p=argparse.ArgumentParser(); p.add_argument("--input",default="artifacts/normalized/rsd407-job-family.csv"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/normalized/validation-report.json"); a=p.parse_args(argv)
+    p=argparse.ArgumentParser(); p.add_argument("--input",default="artifacts/normalized/rsd407-job-family.csv"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/normalized/validation-report.json"); p.add_argument("--external-reconciliation",default=None); a=p.parse_args(argv)
     with Path(a.input).open(newline="",encoding="utf-8") as h: rows=list(csv.DictReader(h))
-    report=validate(rows,json.loads(Path(a.metrics).read_text()))
+    external=json.loads(Path(a.external_reconciliation).read_text()) if a.external_reconciliation else None
+    report=validate(rows,json.loads(Path(a.metrics).read_text()),external)
     Path(a.output).write_text(json.dumps(report,indent=2)+"\n")
     print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("critical validation checks failed")
