@@ -9,7 +9,7 @@ COMPONENT_ROUNDING_TOLERANCE=Decimal("0.015")
 
 def parse_table45b_text(text: str) -> dict:
     row=table_district_rows(text,TABLE_MARKER)[0]
-    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\\d+(?:,\\d{3})*(?:\\.\\d+)?",row)]
+    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",row)]
     if not vals or vals[0]!=Decimal(DISTRICT_CODE): raise RuntimeError("district code not first numeric field")
     fields=vals[1:]
     if len(fields)!=10: raise RuntimeError(f"unexpected Table 45B row layout: {len(fields)} numeric fields after district code")
