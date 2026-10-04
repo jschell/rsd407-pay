@@ -26,8 +26,18 @@ class CpiTests(unittest.TestCase):
 
     def test_missing_period_fails(self):
         n=rows("CUUR0000SA0",12); s=rows("CUURS49DSA0",6); s["data"]=s["data"][1:]
-        with self.assertRaisesRegex(RuntimeError,"expected 6 periodic observations"):
+        with self.assertRaisesRegex(RuntimeError,"expected 6 numeric periodic observations"):
             parse({"status":"REQUEST_SUCCEEDED","Results":{"series":[n,s]}})
+
+    def test_reports_multiple_coverage_errors_together(self):
+        n=rows("CUUR0000SA0",12); s=rows("CUURS49DSA0",6)
+        n["data"][0]["value"]="-"
+        s["data"][0]["value"]="-"
+        with self.assertRaises(RuntimeError) as ctx:
+            parse({"status":"REQUEST_SUCCEEDED","Results":{"series":[n,s]}})
+        message=str(ctx.exception)
+        self.assertIn("national_cpi_u 2014 nonnumeric",message)
+        self.assertIn("seattle_cpi_u 2014 nonnumeric",message)
 
 if __name__=="__main__":
     unittest.main()
