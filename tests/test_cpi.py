@@ -29,6 +29,17 @@ class CpiTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError,"expected 6 numeric periodic observations"):
             parse({"status":"REQUEST_SUCCEEDED","Results":{"series":[n,s]}})
 
+    def test_allows_only_documented_2025_october_gap(self):
+        n=rows("CUUR0000SA0",12); s=rows("CUURS49DSA0",6)
+        for series in (n,s):
+            for row in series["data"]:
+                if row["year"]=="2025" and row["period"]=="M10":
+                    row["value"]="-"
+        result=parse({"status":"REQUEST_SUCCEEDED","Results":{"series":[n,s]}})
+        self.assertEqual(len(result["national_cpi_u"]["values"]),12)
+        self.assertEqual(len(result["seattle_cpi_u"]["values"]),12)
+        self.assertEqual(result["national_cpi_u"]["known_source_exceptions"]["2025"]["missing_period"],"M10")
+
     def test_reports_multiple_coverage_errors_together(self):
         n=rows("CUUR0000SA0",12); s=rows("CUURS49DSA0",6)
         n["data"][0]["value"]="-"
