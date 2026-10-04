@@ -64,3 +64,13 @@ Retained final reports confirm Table 47 is **School Districts Ranked by FTE Enro
 ## Personnel-control discovery
 
 Table 47 is reserved for P-223 enrollment reconciliation. Personnel FTE and compensation controls must be selected from the retained report's personnel-specific district tables only after their published definitions are matched to the simplified public S-275 extract. The repository inventories table titles from every retained annual report before selecting a control; it does not infer equivalence from similar field names.
+
+## Confirmed personnel control candidates
+
+The retained 2019–20 through 2024–25 final reports have a stable personnel-table structure. Direct inspection identifies these controls for definition testing:
+
+- **Table 45B — Comparison of Certificated and Classified FTE Staff in All Programs with FTE Students.** This is the primary independent FTE candidate because it reports district-level certificated instructional, certificated administrative, and classified FTE across all programs. For 2024–25, Riverview reports 196.19 + 15.26 + 125.91 = 337.36 FTE, compared with 337.367 from the normalized public S-275 extract. This near-exact agreement supports population equivalence, subject to validation across every retained year.
+- **Table 14 — Unduplicated Individual and FTE Counts.** This is a candidate control for employee counts and certificated/classified composition, but its mixed-personnel columns must be interpreted before comparison with the simplified one-major-assignment public extract.
+- **Table 37C — Certificated Staff in All Programs.** This is a candidate certificated compensation control. It must not be combined with classified compensation until the corresponding all-program classified table and salary definitions are confirmed.
+
+Table 45 (without B) is basic-education-only and is not equivalent to the project's all-program S-275 population. Table 47 remains an enrollment-only P-223 control.
