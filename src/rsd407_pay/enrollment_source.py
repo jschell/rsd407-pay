@@ -1,7 +1,10 @@
 from __future__ import annotations
-import hashlib,re
+import hashlib
+import html as html_module
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass
+from html.parser import HTMLParser
 
 LANDING_PAGE="https://ospi.k12.wa.us/safs-data-files"
 LINK_TEXT="Final Enrollment Summary - For the School Years 2001-02 through 2024-2025"
@@ -11,14 +14,36 @@ class Source:
     landing_page:str
     workbook_url:str
 
+class _LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.href=None
+        self.parts=[]
+        self.links=[]
+    def handle_starttag(self,tag,attrs):
+        if tag.lower()=="a":
+            self.href=dict(attrs).get("href")
+            self.parts=[]
+    def handle_data(self,data):
+        if self.href is not None:
+            self.parts.append(data)
+    def handle_endtag(self,tag):
+        if tag.lower()=="a" and self.href is not None:
+            text=" ".join("".join(self.parts).split())
+            self.links.append((text,self.href))
+            self.href=None
+            self.parts=[]
+
 def discover(html:str)->Source:
-    # Match the authoritative link by its published title, not by guessing a file path.
-    pat=re.compile(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>\s*'+re.escape(LINK_TEXT)+r'\s*</a>',re.I)
-    m=pat.search(html)
-    if not m: raise RuntimeError("OSPI final enrollment summary link not found or title changed")
-    href=m.group(1)
-    if href.startswith("/"): href="https://ospi.k12.wa.us"+href
-    if not href.startswith("https://ospi.k12.wa.us/"): raise RuntimeError(f"unexpected enrollment workbook host: {href}")
+    parser=_LinkParser()
+    parser.feed(html_module.unescape(html))
+    matches=[href for text,href in parser.links if text==LINK_TEXT]
+    if len(matches)!=1:
+        raise RuntimeError(f"OSPI final enrollment summary link expected once, found {len(matches)}; title may have changed")
+    href=urllib.parse.urljoin(LANDING_PAGE,matches[0])
+    parsed=urllib.parse.urlparse(href)
+    if parsed.scheme!="https" or parsed.hostname!="ospi.k12.wa.us":
+        raise RuntimeError(f"unexpected enrollment workbook host: {href}")
     return Source(LANDING_PAGE,href)
 
 def sha256(data:bytes)->str: return hashlib.sha256(data).hexdigest()
