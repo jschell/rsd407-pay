@@ -15,3 +15,12 @@ Table 39: Other
     row=parse_control(text,"Table 38B")
     assert row["individuals"]==250 and row["total_fte"]==125.91
     assert row["average_insurance_benefits_per_fte"]==29402.0
+
+
+def test_combine_legacy_certificated_tables():
+    from rsd407_pay.personnel_compensation import combine_certificated
+    parts=[{"total_fte":2.0,"average_base_salary_per_fte":100.0,"average_total_salary_per_fte":120.0,"average_insurance_benefits_per_fte":10.0,"average_mandatory_benefits_per_fte":20.0},
+           {"total_fte":1.0,"average_base_salary_per_fte":200.0,"average_total_salary_per_fte":240.0,"average_insurance_benefits_per_fte":20.0,"average_mandatory_benefits_per_fte":40.0}]
+    row=combine_certificated(parts)
+    assert row["total_fte"]==3.0
+    assert abs(row["average_base_salary_per_fte"]-(400/3))<1e-9
