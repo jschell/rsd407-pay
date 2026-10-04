@@ -60,3 +60,7 @@ The implementation records these semantics in the machine-readable Table 47 cont
 ## Table 47 confirmed scope
 
 Retained final reports confirm Table 47 is **School Districts Ranked by FTE Enrollment (Report P-223)**. It is therefore an independent rounded enrollment control, not a personnel FTE or salary control. For Riverview (district 17407), the retained reports publish 3,224 (2019-20), 2,928 (2020-21), 2,942 (2021-22), 2,985 (2022-23), 2,949 (2023-24), and 2,819 (2024-25). Reconciliation compares these values with the project's P-223 annual-average student FTE after whole-student rounding. Personnel FTE and compensation require separate Personnel Summary tables with matching definitions.
+
+## Personnel-control discovery
+
+Table 47 is reserved for P-223 enrollment reconciliation. Personnel FTE and compensation controls must be selected from the retained report's personnel-specific district tables only after their published definitions are matched to the simplified public S-275 extract. The repository inventories table titles from every retained annual report before selecting a control; it does not infer equivalence from similar field names.
