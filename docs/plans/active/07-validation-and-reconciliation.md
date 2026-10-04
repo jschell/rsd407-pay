@@ -32,3 +32,7 @@ Every annual dataset either passes validation or is visibly excluded with a docu
 ## Status
 
 Active. First implementation establishes the machine-readable internal validation gate. Independent OSPI aggregate reconciliation remains required before completion.
+
+## Independent control source
+
+Use OSPI final Personnel Summary Reports as the independent published control family. See `docs/personnel-summary-reconciliation.md`. Reconciliation must account for the documented semantic difference between OSPI's full reporting database and the simplified public S-275 extract rather than requiring blind equality.
