@@ -3,12 +3,14 @@ on:
   workflow_dispatch:
     inputs:
       snapshot_tag:
-        description: "Existing immutable S-275 source release tag"
-        required: true
+        description: "S-275 snapshot tag; leave blank for latest s275-source-* release"
+        required: false
+        default: ""
         type: string
       normalization_tag:
-        description: "Existing immutable normalization source release tag"
-        required: true
+        description: "Normalization snapshot tag; leave blank for latest normalization-source-* release"
+        required: false
+        default: ""
         type: string
 permissions:
   contents: read
@@ -21,16 +23,44 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install -r requirements.txt
+      - name: Resolve immutable snapshot tags
+        id: snapshots
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          REQUESTED_S275: "${{ inputs.snapshot_tag }}"
+          REQUESTED_NORMALIZATION: "${{ inputs.normalization_tag }}"
+        run: |
+          resolve_tag() {
+            requested="$1"
+            prefix="$2"
+            if [ -n "$requested" ]; then
+              gh release view "$requested" >/dev/null
+              printf "%s\n" "$requested"
+            else
+              tag="$(gh release list --limit 100 --json tagName,publishedAt --jq "[.[] | select(.tagName | startswith(\"$prefix\"))] | sort_by(.publishedAt) | reverse | .[0].tagName")"
+              if [ -z "$tag" ] || [ "$tag" = "null" ]; then
+                echo "No release found matching $prefix*" >&2
+                exit 1
+              fi
+              printf "%s\n" "$tag"
+            fi
+          }
+          s275="$(resolve_tag "$REQUESTED_S275" "s275-source-")"
+          normalization="$(resolve_tag "$REQUESTED_NORMALIZATION" "normalization-source-")"
+          echo "s275=$s275" >> "$GITHUB_OUTPUT"
+          echo "normalization=$normalization" >> "$GITHUB_OUTPUT"
+          echo "Resolved S-275 snapshot: $s275"
+          echo "Resolved normalization snapshot: $normalization"
       - name: Download S-275 snapshot
         env: {GH_TOKEN: "${{ github.token }}"}
-        run: gh release download "${{ inputs.snapshot_tag }}" --pattern s275-source-snapshot.tar.gz
+        run: gh release download "${{ steps.snapshots.outputs.s275 }}" --pattern s275-source-snapshot.tar.gz
       - run: tar -xzf s275-source-snapshot.tar.gz
       - name: Verify S-275 snapshot hashes
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.snapshot verify
       - name: Download normalization snapshot
         env: {GH_TOKEN: "${{ github.token }}"}
-        run: gh release download "${{ inputs.normalization_tag }}" --pattern normalization-source-snapshot.tar.gz
+        run: gh release download "${{ steps.snapshots.outputs.normalization }}" --pattern normalization-source-snapshot.tar.gz
       - run: tar -xzf normalization-source-snapshot.tar.gz
       - name: Verify normalization snapshot and derivation
         env: {PYTHONPATH: src}
@@ -61,7 +91,7 @@ jobs:
         run: python -m rsd407_pay.admin_overhead
       - uses: actions/upload-artifact@v4
         with:
-          name: retained-analysis-${{ inputs.snapshot_tag }}-${{ inputs.normalization_tag }}
+          name: retained-analysis-${{ steps.snapshots.outputs.s275 }}-${{ steps.snapshots.outputs.normalization }}
           path: artifacts/normalized/
           if-no-files-found: error
           retention-days: 30
