@@ -15,6 +15,9 @@ jobs:
       - name: Collect BLS CPI series
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.cpi
+      - name: Inventory OSPI P-223 final enrollment workbook
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.enrollment_inventory
       - uses: actions/upload-artifact@v4
         with:
           name: normalization-sources
