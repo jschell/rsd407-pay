@@ -53,3 +53,11 @@ Retained snapshot analysis run 37175051934 on commit 7602509 successfully proces
 Observed source-quality conditions are preserved rather than corrected. Zero-FTE row counts range from 11–36 in 2013–14 through 2023–24 and fall to 2 in 2024–25. Rows where reported total salary is below reported base salary range from 12–54 annually and peak at 54 in 2023–24. These counts alone do not establish payroll errors; they identify source rows requiring caution in interpretation.
 
 The snapshot workflow emits `data-quality.json` with annual and job-family breakdowns so these conditions remain independently reviewable.
+
+## Final acceptance
+
+Plan 05 acceptance was confirmed by retained-snapshot run 37175619772 on commit d2345a8. The run processed all 12 school years and 5,019 employee-year rows, mapped zero unknown duty titles, emitted 108 year/family groups, passed runtime category reconciliation, generated the source-quality artifact, and uploaded the normalized analysis artifact.
+
+The quality breakdown shows historical zero-FTE rows are overwhelmingly concentrated in technical/professional support (for example, 30 of 37 rows in that family in 2023–24) and that this pattern disappears in 2024–25. This is retained as a source/reporting-semantic discontinuity and is not repaired or interpreted as a staffing change. Total-salary-below-base conditions occur across multiple families, particularly classified and paraeducator/aide rows, and remain explicit source-quality flags.
+
+Plan 05 is complete. Enrollment denominators, CPI adjustment, constant-dollar measures, and per-pupil metrics proceed separately under Plan 06.
