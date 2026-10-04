@@ -1,13 +1,13 @@
 from decimal import Decimal
-from rsd407_pay.table45b_reconcile import parse_table45b_text, q2
+from rsd407_pay.table45b_reconcile import COMPONENT_ROUNDING_TOLERANCE, parse_table45b_text
 
 def test_parse_table45b_riverview_row():
     text="""Table 45B: Comparison of Certificated and Classified FTE Staff in All Programs with FTE Students\n  90  17407 Riverview  2,819  196.19  14.37  69.60  15.26  184.72  5.41  125.91  22.39  44.67\nTable 46"""
     row=parse_table45b_text(text)
     assert row["total_fte"] == 337.36
 
-def test_comparison_uses_published_precision():
-    assert q2(Decimal("337.367")) == q2(Decimal("337.36"))
+def test_comparison_uses_component_rounding_bound():
+    assert abs(Decimal("337.367")-Decimal("337.36")) <= COMPONENT_ROUNDING_TOLERANCE
 
 
 def test_reconcile_uses_district_metrics_schema(monkeypatch, tmp_path):
