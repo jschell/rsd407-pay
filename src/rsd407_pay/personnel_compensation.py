@@ -8,8 +8,8 @@ TABLES=("Table 34B","Table 36B","Table 37C","Table 38B")
 CERTIFICATED_COMPONENTS=("Table 34B","Table 36B")
 CERTIFICATED_COMBINED="Table 37C"
 CLASSIFIED="Table 38B"
-ROW_RE=re.compile(r"^17407\\s+Riverview\\b")
-NUM_RE=re.compile(r"\\d+(?:,\\d{3})*(?:\\.\\d+)?")
+ROW_RE=re.compile(r"^17407\s+Riverview\b")
+NUM_RE=re.compile(r"\d+(?:,\d{3})*(?:\.\d+)?")
 
 def _numbers(row: str) -> list[Decimal]:
     return [Decimal(x.replace(",","")) for x in NUM_RE.findall(row)]
@@ -25,7 +25,7 @@ def parse_row(row: str, marker: str) -> dict:
 
 def extract_table(text: str, marker: str) -> dict | None:
     candidates=[]
-    for page_number,page in enumerate(text.split("\\f"),1):
+    for page_number,page in enumerate(text.split("\f"),1):
         if marker not in page: continue
         candidates.extend((page_number,line.strip()) for line in page.splitlines() if ROW_RE.match(line.strip()))
     unique=list(dict.fromkeys(candidates))
