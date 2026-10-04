@@ -43,7 +43,11 @@ def extract(data:bytes):
 
 def main(argv=None):
     p=argparse.ArgumentParser(); p.add_argument("--output",default="artifacts/normalization/enrollment.json"); p.add_argument("--raw-output",default="artifacts/normalization/raw/p223-final-enrollment.xlsx"); args=p.parse_args(argv)
-    source,data=fetch_source(); rows=extract(data)\n    raw=Path(args.raw_output); raw.parent.mkdir(parents=True,exist_ok=True); raw.write_bytes(data)
+    source,data=fetch_source()
+    rows=extract(data)
+    raw=Path(args.raw_output)
+    raw.parent.mkdir(parents=True,exist_ok=True)
+    raw.write_bytes(data)
     payload={"schema_version":1,"source":{"provider":"Washington OSPI","dataset":"P-223 Final Enrollment Summary",
              "landing_page":source.landing_page,"workbook_url":source.workbook_url,
              "retrieved_at":datetime.now(timezone.utc).isoformat(),"sha256":sha256(data),"size_bytes":len(data),"raw_source_file":str(raw)},
