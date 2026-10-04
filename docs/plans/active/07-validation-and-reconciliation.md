@@ -28,3 +28,7 @@ Ensure the longitudinal dataset is trustworthy before interpretation.
 ## Acceptance
 
 Every annual dataset either passes validation or is visibly excluded with a documented reason.
+
+## Status
+
+Active. First implementation establishes the machine-readable internal validation gate. Independent OSPI aggregate reconciliation remains required before completion.
