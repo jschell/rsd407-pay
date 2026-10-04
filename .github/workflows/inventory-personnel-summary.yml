@@ -15,6 +15,7 @@ jobs:
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_summary
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: personnel-summary-inventory
           path: artifacts/reconciliation/personnel-summary-inventory.json
