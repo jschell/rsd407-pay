@@ -16,7 +16,12 @@ RSD407 must be selected by an authoritative district identifier/name rule, not f
 
 ### Inflation
 
-Use two U.S. Bureau of Labor Statistics CPI-U, All items series as parallel inflation lenses:\n\n1. U.S. city average CPI-U — the standard national purchasing-power comparison.\n2. Seattle-Tacoma-Bellevue CPI-U — the locally relevant metropolitan price-change comparison.\n\nNeither series replaces the other. Normalized outputs must preserve both. Local CPI is more volatile and based on a smaller sample than the national series, so differences between the two are analytical context rather than evidence that one series is intrinsically more accurate.
+Use two U.S. Bureau of Labor Statistics CPI-U, All items series as parallel inflation lenses:
+
+1. U.S. city average CPI-U — the standard national purchasing-power comparison.
+2. Seattle-Tacoma-Bellevue CPI-U — the locally relevant metropolitan price-change comparison.
+
+Neither series replaces the other. Normalized outputs must preserve both. Local CPI is more volatile and based on a smaller sample than the national series, so differences between the two are analytical context rather than evidence that one series is intrinsically more accurate.
 
 Map each school year to its ending calendar year: 2013-14 -> 2014, ..., 2024-25 -> 2025. Express constant-dollar outputs in 2025 dollars, matching the ending calendar year of the latest completed S-275 school year.
 
@@ -30,7 +35,8 @@ Preserve the CPI observation, series identity, calendar-year mapping, source URL
 
 - Add reproducible OSPI enrollment-source discovery/collection and provenance.
 - Establish annual RSD407 enrollment denominator coverage for all 12 S-275 years.
-- Add both national and Seattle-Tacoma-Bellevue BLS CPI-U series and provenance.\n- Establish a reproducible annual-average value for each series for every ending calendar year 2014-2025; do not assume identical publication frequency.
+- Add both national and Seattle-Tacoma-Bellevue BLS CPI-U series and provenance.
+- Establish a reproducible annual-average value for each series for every ending calendar year 2014-2025; do not assume identical publication frequency.
 - Validate school-year -> calendar-year alignment and 2025-dollar conversion.
 - Join enrollment/CPI only after both source series pass coverage checks.
 - Compute employee rows per 1,000 students and staff FTE per 1,000 students.
@@ -43,7 +49,8 @@ Preserve the CPI observation, series identity, calendar-year mapping, source URL
 - Never label student headcount as FTE or vice versa.
 - Never silently substitute October enrollment, Report Card enrollment, or another series for P-223 AAFTE.
 - Do not interpolate missing enrollment or CPI years.
-- Do not use either CPI series to fill gaps in the other.\n- Report national-CPI-adjusted and Seattle-CPI-adjusted values as separate named measures.
+- Do not use either CPI series to fill gaps in the other.
+- Report national-CPI-adjusted and Seattle-CPI-adjusted values as separate named measures.
 - Every normalized output states denominator, CPI series, base year, and school-year/calendar-year mapping.
 - Preserve nominal values alongside real values.
 
