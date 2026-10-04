@@ -9,7 +9,9 @@ TABLE_MARKER="Table 45B"
 def parse_table45b_text(text: str) -> dict:
     pos=text.find(TABLE_MARKER)
     if pos < 0: raise RuntimeError("Table 45B not found")
-    section=text[pos:]
+    tail=text[pos:]
+    next_table=re.search(r"(?m)^\s*Table\s+(?!45B\b)\d+[A-Z]?\b",tail[len(TABLE_MARKER):])
+    section=tail if next_table is None else tail[:len(TABLE_MARKER)+next_table.start()]
     lines=[x for x in section.splitlines() if DISTRICT_CODE in x and "Riverview" in x]
     if len(lines)!=1: raise RuntimeError(f"expected one Riverview row in Table 45B, found {len(lines)}")
     nums=re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",lines[0])
