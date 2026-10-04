@@ -21,6 +21,9 @@ jobs:
       - name: Extract Riverview P-223 enrollment
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.enrollment
+      - name: Manifest retained normalization sources
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.normalization_snapshot
       - uses: actions/upload-artifact@v4
         with:
           name: normalization-sources
