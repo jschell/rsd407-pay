@@ -1,28 +1,40 @@
 from __future__ import annotations
 import argparse,json
+from decimal import Decimal
 from pathlib import Path
 
 FIELDS=("base_salary","total_salary","insurance_benefits","mandatory_benefits")
-CONTROL_KEYS={
- "base_salary":"average_base_salary_per_fte","total_salary":"average_total_salary_per_fte",
- "insurance_benefits":"average_insurance_benefits_per_fte","mandatory_benefits":"average_mandatory_benefits_per_fte"}
+CONTROL_KEYS={"base_salary":"average_base_salary_per_fte","total_salary":"average_total_salary_per_fte","insurance_benefits":"average_insurance_benefits_per_fte","mandatory_benefits":"average_mandatory_benefits_per_fte"}
+
+def product_rounding_bound(fte,average):
+    f=Decimal(str(fte)); a=Decimal(str(average)); published=f*a
+    lo=max(Decimal("0"),f-Decimal("0.005"))*max(Decimal("0"),a-Decimal("0.5"))
+    hi=(f+Decimal("0.005"))*(a+Decimal("0.5"))
+    return max(abs(published-lo),abs(hi-published))
 
 def compare(controls,metrics):
     by_year={x["school_year"]:x for x in metrics["district"]}; years=[]
     for item in controls["years"]:
         year=item["school_year"]; project=by_year[year]; combined={}
+        components=[item["controls"]["certificated"],item["controls"]["classified"]]
         for field in FIELDS:
             key=CONTROL_KEYS[field]
-            published=sum(float(c["total_fte"])*float(c[key]) for c in item["controls"].values())
-            actual=float(project[field]); diff=actual-published
-            combined[field]={"project_total":actual,"ospi_implied_total":published,"difference":diff,
-                             "percent_difference":diff/published if published else None}
-        years.append({"school_year":year,"source_sha256":item["source_sha256"],"combined_all_programs":combined})
-    return {"schema_version":1,"district_code":controls["district_code"],
-            "method":"sum(Table 37C FTE × published average/FTE, Table 38B FTE × published average/FTE)",
-            "status":"evidence_only_pending_tolerance_and_rounding_assessment","years":years}
+            published=sum(Decimal(str(c["total_fte"]))*Decimal(str(c[key])) for c in components)
+            bound=sum(product_rounding_bound(c["total_fte"],c[key]) for c in components)
+            actual=Decimal(str(project[field])); diff=actual-published
+            combined[field]={"project_total":float(actual),"ospi_implied_total":float(published),"difference":float(diff),
+                             "percent_difference":float(diff/published) if published else None,"display_rounding_bound":float(bound),
+                             "within_display_rounding_bound":abs(diff)<=bound}
+        years.append({"school_year":year,"source_sha256":item["source_sha256"],
+                      "certificated_control_tables":item["controls"]["certificated_control_tables"],
+                      "classified_control_table":item["controls"]["classified"]["source_table"],
+                      "combined_all_programs":combined})
+    all_inside=all(v["within_display_rounding_bound"] for y in years for v in y["combined_all_programs"].values())
+    return {"schema_version":2,"district_code":controls["district_code"],
+            "method":"combine OSPI all-program certificated and classified FTE × published average/FTE; certificated source is Table 37C when available, otherwise Table 34B + Table 36B",
+            "status":"pass_display_rounding_only" if all_inside else "evidence_requires_semantic_review","years":years}
 
 def main(argv=None):
     p=argparse.ArgumentParser(); p.add_argument("--controls",default="artifacts/reconciliation/personnel-compensation-controls.json"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/reconciliation/personnel-compensation-comparison.json"); a=p.parse_args(argv)
-    report=compare(json.loads(Path(a.controls).read_text()),json.loads(Path(a.metrics).read_text())); Path(a.output).write_text(json.dumps(report,indent=2)+"\n"); print(json.dumps(report,indent=2))
+    report=compare(json.loads(Path(a.controls).read_text()),json.loads(Path(a.metrics).read_text())); out=Path(a.output); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,indent=2)+"\n"); print(json.dumps(report,indent=2))
 if __name__=="__main__": main()
