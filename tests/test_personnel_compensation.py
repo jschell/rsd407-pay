@@ -52,3 +52,10 @@ def test_consolidated_crosscheck():
     check=consolidated_crosscheck(c,[a,b])
     assert abs(check["fte_difference"])<1e-9
     assert abs(check["implied_total_differences"]["average_base_salary_per_fte"])<100
+
+
+def test_extract_table_uses_real_form_feed_pages():
+    text="Table 38B: Classified Staff in All Programs\nheader only\fTable 38B: Classified Staff in All Programs\n17407 Riverview 250 246 125.91 75,138 100,708 29,402 16,651 260.0\n"
+    row=extract_table(text,"Table 38B")
+    assert row["pdf_page"]==2
+    assert row["total_fte"]==125.91
