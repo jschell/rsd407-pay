@@ -1,43 +1,72 @@
 from __future__ import annotations
-import argparse,json,urllib.request
+import argparse
+import json
+import urllib.request
 from pathlib import Path
-from datetime import datetime,timezone
+from datetime import datetime, timezone
 
-SERIES={
- "national_cpi_u":{"series_id":"CUUR0000SA0","geography":"U.S. city average","expected_periods":12},
- "seattle_cpi_u":{"series_id":"CUURS49DSA0","geography":"Seattle-Tacoma-Bellevue, WA","expected_periods":6},
+SERIES = {
+    "national_cpi_u": {"series_id": "CUUR0000SA0", "geography": "U.S. city average", "expected_periods": 12},
+    "seattle_cpi_u": {"series_id": "CUURS49DSA0", "geography": "Seattle-Tacoma-Bellevue, WA", "expected_periods": 6},
 }
-YEARS=list(range(2014,2026))
-API="https://api.bls.gov/publicAPI/v2/timeseries/data/"
+YEARS = list(range(2014, 2026))
+API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+
+def _fetch_window(start: int, end: int):
+    payload = json.dumps({"seriesid": [x["series_id"] for x in SERIES.values()], "startyear": str(start), "endyear": str(end)}).encode()
+    req = urllib.request.Request(API, data=payload, headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req) as response:
+        return json.load(response)
 
 def fetch():
-    payload=json.dumps({"seriesid":[x["series_id"] for x in SERIES.values()],"startyear":"2014","endyear":"2025"}).encode()
-    req=urllib.request.Request(API,data=payload,headers={"Content-Type":"application/json"})
-    with urllib.request.urlopen(req) as r: return json.load(r)
+    payloads = [_fetch_window(2014, 2023), _fetch_window(2024, 2025)]
+    merged = {"status": "REQUEST_SUCCEEDED", "Results": {"series": []}}
+    for series_id in [x["series_id"] for x in SERIES.values()]:
+        rows = []
+        for payload in payloads:
+            if payload.get("status") != "REQUEST_SUCCEEDED":
+                raise RuntimeError(f"BLS request failed: {payload.get('message')}")
+            matches = [x for x in payload["Results"]["series"] if x["seriesID"] == series_id]
+            if len(matches) != 1:
+                raise RuntimeError(f"BLS window missing series {series_id}")
+            rows.extend(matches[0]["data"])
+        keys = [(x["year"], x["period"]) for x in rows]
+        if len(keys) != len(set(keys)):
+            raise RuntimeError(f"duplicate BLS observations after window merge: {series_id}")
+        merged["Results"]["series"].append({"seriesID": series_id, "data": rows})
+    return merged
 
 def parse(payload):
-    if payload.get("status")!="REQUEST_SUCCEEDED": raise RuntimeError(f"BLS request failed: {payload.get('message')}")
-    by_id={s["seriesID"]:s for s in payload["Results"]["series"]}
-    out={}
-    for name,meta in SERIES.items():
-        s=by_id.get(meta["series_id"])
-        if not s: raise RuntimeError(f"missing BLS series {meta['series_id']}")
-        annual={}
+    if payload.get("status") != "REQUEST_SUCCEEDED":
+        raise RuntimeError(f"BLS request failed: {payload.get('message')}")
+    by_id = {s["seriesID"]: s for s in payload["Results"]["series"]}
+    out = {}
+    for name, meta in SERIES.items():
+        series = by_id.get(meta["series_id"])
+        if not series:
+            raise RuntimeError(f"missing BLS series {meta['series_id']}")
+        annual = {}
         for year in YEARS:
-            obs=[float(x["value"]) for x in s["data"] if int(x["year"])==year and x["period"].startswith("M") and x["period"]!="M13"]
-            if len(obs)!=meta["expected_periods"]:
+            obs = [float(x["value"]) for x in series["data"] if int(x["year"]) == year and x["period"].startswith("M") and x["period"] != "M13"]
+            if len(obs) != meta["expected_periods"]:
                 raise RuntimeError(f"{name} {year} expected {meta['expected_periods']} periodic observations, found {len(obs)}")
-            annual[str(year)]=sum(obs)/len(obs)
-        out[name]={"series_id":meta["series_id"],"geography":meta["geography"],
-          "measure":"arithmetic_mean_of_published_periodic_cpi_observations",
-          "expected_periods_per_year":meta["expected_periods"],"values":annual}
+            annual[str(year)] = sum(obs) / len(obs)
+        out[name] = {"series_id": meta["series_id"], "geography": meta["geography"],
+                     "measure": "arithmetic_mean_of_published_periodic_cpi_observations",
+                     "expected_periods_per_year": meta["expected_periods"], "values": annual}
     return out
 
 def main(argv=None):
-    ap=argparse.ArgumentParser(); ap.add_argument("--output",default="artifacts/normalization/cpi.json"); a=ap.parse_args()
-    report={"source":"U.S. Bureau of Labor Statistics Public Data API","source_url":API,
-      "retrieved_at":datetime.now(timezone.utc).isoformat(),"series":parse(fetch())}
-    out=Path(a.output); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,indent=2)+"\n")
-    for name,s in report["series"].items():
-        print(f"{name}: {len(s['values'])} annual means, 2014-2025; series={s['series_id']} periods/year={s['expected_periods_per_year']}")
-if __name__=="__main__": main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--output", default="artifacts/normalization/cpi.json")
+    args = ap.parse_args(argv)
+    report = {"source": "U.S. Bureau of Labor Statistics Public Data API", "source_url": API,
+              "retrieved_at": datetime.now(timezone.utc).isoformat(), "series": parse(fetch())}
+    out = Path(args.output)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, indent=2) + "\n")
+    for name, series in report["series"].items():
+        print(f"{name}: {len(series['values'])} annual means, 2014-2025; series={series['series_id']} periods/year={series['expected_periods_per_year']}")
+
+if __name__ == "__main__":
+    main()
