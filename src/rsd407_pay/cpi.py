@@ -41,25 +41,29 @@ def parse(payload):
         raise RuntimeError(f"BLS request failed: {payload.get('message')}")
     by_id = {s["seriesID"]: s for s in payload["Results"]["series"]}
     out = {}
+    errors = []
     for name, meta in SERIES.items():
         series = by_id.get(meta["series_id"])
         if not series:
-            raise RuntimeError(f"missing BLS series {meta['series_id']}")
+            errors.append(f"missing BLS series {meta['series_id']}")
+            continue
         annual = {}
         for year in YEARS:
             period_rows = [x for x in series["data"] if int(x["year"]) == year and x["period"].startswith("M") and x["period"] != "M13"]
             invalid = [x for x in period_rows if x.get("value") in (None, "", "-")]
-            if invalid:
-                print(f"{name} {year} nonnumeric observations: " + ", ".join(f"{x['period']}={x.get('value')!r}" for x in invalid))
             obs = [float(x["value"]) for x in period_rows if x.get("value") not in (None, "", "-")]
+            if invalid:
+                errors.append(f"{name} {year} nonnumeric: " + ", ".join(f"{x['period']}={x.get('value')!r}" for x in invalid))
             if len(obs) != meta["expected_periods"]:
-                raise RuntimeError(f"{name} {year} expected {meta['expected_periods']} periodic observations, found {len(obs)}")
+                errors.append(f"{name} {year} expected {meta['expected_periods']} numeric periodic observations, found {len(obs)}")
+                continue
             annual[str(year)] = sum(obs) / len(obs)
         out[name] = {"series_id": meta["series_id"], "geography": meta["geography"],
                      "measure": "arithmetic_mean_of_published_periodic_cpi_observations",
                      "expected_periods_per_year": meta["expected_periods"], "values": annual}
+    if errors:
+        raise RuntimeError("BLS CPI coverage errors:\n" + "\n".join(errors))
     return out
-
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--output", default="artifacts/normalization/cpi.json")
