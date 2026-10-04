@@ -8,12 +8,28 @@
     "policy": "Do not substitute another enrollment measure if historical AAFTE coverage is unavailable; document and fail."
   },
   "inflation": {
-    "provider": "U.S. Bureau of Labor Statistics",
-    "series": "CPI-U U.S. city average All items",
-    "measure": "annual_average",
-    "base_index": "1982-84=100",
     "constant_dollar_year": 2025,
     "school_year_alignment": "ending_calendar_year",
-    "formula": "nominal * CPI_2025 / CPI_year"
+    "formula": "nominal * CPI_2025 / CPI_year",
+    "series": [
+      {
+        "id": "national_cpi_u",
+        "provider": "U.S. Bureau of Labor Statistics",
+        "geography": "U.S. city average",
+        "index": "CPI-U All items",
+        "measure": "annual_average",
+        "base_index": "1982-84=100"
+      },
+      {
+        "id": "seattle_cpi_u",
+        "provider": "U.S. Bureau of Labor Statistics",
+        "geography": "Seattle-Tacoma-Bellevue, WA",
+        "index": "CPI-U All items",
+        "measure": "annual_average",
+        "base_index": "1982-84=100",
+        "caution": "Local-area CPI has a smaller sample and is more volatile than the national index; retain as a parallel local inflation lens."
+      }
+    ],
+    "policy": "Both CPI series are required and produce separately named constant-dollar outputs; neither fills gaps in the other."
   }
 }
