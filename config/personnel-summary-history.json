@@ -28,5 +28,10 @@
       "status": "unresolved"
     }
   ],
-  "policy": "Do not infer historical report URLs. Each unresolved year must be backed by an official OSPI resource or a documented archival source before it can be used for reconciliation."
+  "policy": "Do not infer historical report URLs. Each unresolved year must be backed by an official OSPI resource or a documented archival source before it can be used for reconciliation.",
+  "control_strategy": {
+    "district_annual": "Use year-specific final Personnel Summary Reports when an official OSPI annual resource is available.",
+    "longitudinal_statewide": "Use longitudinal tables embedded in current/final OSPI Personnel Summary Reports for historical trend controls when the table definition matches the project measure.",
+    "rule": "A longitudinal table is a separate control source and does not resolve an unavailable historical annual district report."
+  }
 }
