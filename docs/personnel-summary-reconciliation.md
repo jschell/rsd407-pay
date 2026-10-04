@@ -78,3 +78,10 @@ The retained 2019–20 through 2024–25 final reports have a stable personnel-t
 Compensation reconciliation combines the certificated and classified all-program controls without allocating employee-level public-extract salary to certificated/classified FTE. The comparison derives a display-rounding bound from published FTE precision (hundredths) and published average-per-FTE precision (whole dollars). It remains evidence rather than a hard validation gate until the retained six-year comparison is reviewed.
 
 Table 45 (without B) is basic-education-only and is not equivalent to the project's all-program S-275 population. Table 47 remains an enrollment-only P-223 control.
+
+
+## Compensation preflight result
+
+A preflight using the retained six official reports and the previously accepted annual metrics establishes a field-specific result. District **base salary** reconstructs within the exact display-rounding bound in every available year (2019–20 through 2024–25), with absolute differences under $1,000 on district totals. Base salary is therefore eligible as an independent validation gate for those six years.
+
+The other published compensation fields are not treated as equivalent controls. Total salary, insurance benefits, and mandatory benefits show differences larger than display rounding in multiple years, including material 2024–25 differences. They remain explicit semantic-review evidence and must not be forced to pass with an arbitrary tolerance. This distinction also prevents those fields from obscuring the strong base-salary reconciliation.
