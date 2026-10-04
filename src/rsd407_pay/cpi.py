@@ -39,7 +39,7 @@ def fetch():
 def parse(payload):
     if payload.get("status") != "REQUEST_SUCCEEDED":
         raise RuntimeError(f"BLS request failed: {payload.get('message')}")
-    by_id = {s["seriesID"]: s for s in payload["Results"]["series"]}
+    by_id = {series["seriesID"]: series for series in payload["Results"]["series"]}
     out = {}
     errors = []
     for name, meta in SERIES.items():
@@ -52,15 +52,24 @@ def parse(payload):
             period_rows = [x for x in series["data"] if int(x["year"]) == year and x["period"].startswith("M") and x["period"] != "M13"]
             invalid = [x for x in period_rows if x.get("value") in (None, "", "-")]
             obs = [float(x["value"]) for x in period_rows if x.get("value") not in (None, "", "-")]
-            if invalid:
+            allowed_2025_october_gap = (
+                year == 2025
+                and len(invalid) == 1
+                and invalid[0].get("period") == "M10"
+                and invalid[0].get("value") == "-"
+                and len(obs) == meta["expected_periods"] - 1
+            )
+            if invalid and not allowed_2025_october_gap:
                 errors.append(f"{name} {year} nonnumeric: " + ", ".join(f"{x['period']}={x.get('value')!r}" for x in invalid))
-            if len(obs) != meta["expected_periods"]:
+            if len(obs) != meta["expected_periods"] and not allowed_2025_october_gap:
                 errors.append(f"{name} {year} expected {meta['expected_periods']} numeric periodic observations, found {len(obs)}")
                 continue
             annual[str(year)] = sum(obs) / len(obs)
         out[name] = {"series_id": meta["series_id"], "geography": meta["geography"],
                      "measure": "arithmetic_mean_of_published_periodic_cpi_observations",
-                     "expected_periods_per_year": meta["expected_periods"], "values": annual}
+                     "expected_periods_per_year": meta["expected_periods"], "values": annual,
+                     "known_source_exceptions": {"2025": {"missing_period": "M10",
+                         "reason": "BLS did not collect October 2025 CPI survey data during the federal appropriations lapse; no retroactive collection"}}}
     if errors:
         raise RuntimeError("BLS CPI coverage errors:\n" + "\n".join(errors))
     return out
