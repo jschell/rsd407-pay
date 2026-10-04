@@ -84,7 +84,7 @@ def main(argv=None):
     raw_files = []
     for (start, end), payload in zip(window_specs, windows):
         raw = raw_dir / f"bls-cpi-{start}-{end}.json"
-        raw.write_text(json.dumps(payload, indent=2) + "\\n")
+        raw.write_text(json.dumps(payload, indent=2) + "\n")
         raw_files.append(str(raw))
     report = {"source": "U.S. Bureau of Labor Statistics Public Data API", "source_url": API,
               "retrieved_at": datetime.now(timezone.utc).isoformat(), "raw_source_files": raw_files, "series": parse(merged)}
