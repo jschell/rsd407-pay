@@ -11,7 +11,7 @@ def number(row,key):
     try: return float(row.get(key) or 0)
     except (TypeError,ValueError): return None
 
-def validate(rows,metrics,external=None):
+def validate(rows,metrics,external=None,compensation=None):
     critical=[]; warnings=[]
     years=sorted({r["school_year"] for r in rows})
     if years != YEARS:
@@ -48,13 +48,22 @@ def validate(rows,metrics,external=None):
              "unavailable_annual_report_years":[y for y in YEARS if y not in checked],
              "note":"Annual Personnel Summary reports are currently available from OSPI for 2019-20 through 2024-25; earlier years remain a documented external-control coverage limitation."}
         if ext["status"]!="pass": critical.append({"check":"external_reconciliation","detail":"OSPI Table 45B reconciliation failed"})
-    return {"schema_version":1,"status":"fail" if critical else "pass","critical":critical,"warnings":warnings,"external_reconciliation":ext}
+    comp={"status":"pending","note":"OSPI all-program base-salary control not supplied."}
+    if compensation is not None:
+        checked=[y["school_year"] for y in compensation.get("years",[]) if y.get("combined_all_programs",{}).get("base_salary",{}).get("status")=="pass"]
+        comp={"status":compensation.get("base_salary_control_status","fail"),"control":"OSPI Personnel Summary all-program base salary (34B+36B or 37C, plus 38B)",
+              "checked_years":checked,"unavailable_annual_report_years":[y for y in YEARS if y not in checked],
+              "non_gate_fields":["total_salary","insurance_benefits","mandatory_benefits"],
+              "note":"Base salary is definitionally equivalent and bounded by published display precision; other compensation fields remain semantic-review evidence."}
+        if comp["status"]!="pass": critical.append({"check":"external_base_salary_reconciliation","detail":"OSPI all-program base salary reconciliation failed"})
+    return {"schema_version":2,"status":"fail" if critical else "pass","critical":critical,"warnings":warnings,"external_reconciliation":ext,"external_base_salary_reconciliation":comp}
 
 def main(argv=None):
-    p=argparse.ArgumentParser(); p.add_argument("--input",default="artifacts/normalized/rsd407-job-family.csv"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/normalized/validation-report.json"); p.add_argument("--external-reconciliation",default=None); a=p.parse_args(argv)
+    p=argparse.ArgumentParser(); p.add_argument("--input",default="artifacts/normalized/rsd407-job-family.csv"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/normalized/validation-report.json"); p.add_argument("--external-reconciliation",default=None); p.add_argument("--external-compensation",default=None); a=p.parse_args(argv)
     with Path(a.input).open(newline="",encoding="utf-8") as h: rows=list(csv.DictReader(h))
     external=json.loads(Path(a.external_reconciliation).read_text()) if a.external_reconciliation else None
-    report=validate(rows,json.loads(Path(a.metrics).read_text()),external)
+    compensation=json.loads(Path(a.external_compensation).read_text()) if a.external_compensation else None
+    report=validate(rows,json.loads(Path(a.metrics).read_text()),external,compensation)
     Path(a.output).write_text(json.dumps(report,indent=2)+"\n")
     print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("critical validation checks failed")
