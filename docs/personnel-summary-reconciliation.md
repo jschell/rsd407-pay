@@ -74,3 +74,10 @@ The retained 2019–20 through 2024–25 final reports have a stable personnel-t
 - **Table 37C — Certificated Staff in All Programs.** This is a candidate certificated compensation control. It must not be combined with classified compensation until the corresponding all-program classified table and salary definitions are confirmed.
 
 Table 45 (without B) is basic-education-only and is not equivalent to the project's all-program S-275 population. Table 47 remains an enrollment-only P-223 control.
+
+
+## Compensation validation decision
+
+The retained six annual reports establish a field-specific result. District base salary reconstructs within the exact bound implied by published FTE precision (hundredths) and published average-per-FTE precision (whole dollars) in every available year, 2019–20 through 2024–25. Base salary is therefore an independent validation gate for those years.
+
+Total salary, insurance benefits, and mandatory benefits exceed display-rounding differences in multiple years and are not treated as definitionally equivalent controls. They remain semantic-review evidence; no arbitrary percentage tolerance is used to force agreement. The unavailable 2013–14 through 2018–19 annual reports remain explicitly recorded as external-control coverage limitations.
