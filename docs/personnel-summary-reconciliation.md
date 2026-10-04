@@ -28,3 +28,7 @@ The 2024-25 final report independently shows Riverview (17407) at approximately 
 ## Next implementation
 
 Build a reproducible collector/inventory for the historical final Personnel Summary Reports. Do not hard-code control totals copied from PDFs. The collector should establish which district-level tables and measures are consistently available across all 12 years before the reconciliation gate is finalized.
+
+## Historical-source status
+
+Current-page discovery covers 2019-20 onward. The six earlier required years (2013-14 through 2018-19) are tracked explicitly in `config/personnel-summary-history.json` and remain unresolved until an official OSPI resource or documented archival source is verified. URL patterns must not be inferred from newer filenames.
