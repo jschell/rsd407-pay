@@ -28,6 +28,13 @@ jobs:
           if [ -f artifacts/reconciliation/table47-control-inventory.json ]; then
             python -m rsd407_pay.table47_sources
           fi
+      - name: Inventory personnel control tables
+        if: always()
+        env: {PYTHONPATH: src}
+        run: |
+          if [ -f artifacts/reconciliation/table47-source-manifest.json ]; then
+            python -m rsd407_pay.personnel_tables
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
