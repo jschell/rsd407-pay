@@ -89,6 +89,9 @@ jobs:
       - name: Administrative overhead metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.admin_overhead
+      - name: Durable longitudinal findings
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.findings --s275-tag "${{ steps.snapshots.outputs.s275 }}" --normalization-tag "${{ steps.snapshots.outputs.normalization }}"
       - uses: actions/upload-artifact@v4
         with:
           name: retained-analysis-${{ steps.snapshots.outputs.s275 }}-${{ steps.snapshots.outputs.normalization }}
