@@ -40,11 +40,11 @@ def extract(pdf: Path) -> dict:
     text=pdf_text(pdf)
     classified=parse_control(text,CLASSIFIED)
     if re.search(r"(?m)^\s*"+re.escape(CERTIFICATED_COMBINED)+r":",text):
-        certificated=parse_control(text,CERTIFICATED_COMBINED); structure=[CERTIFICATED_COMBINED]
+        parts=[parse_control(text,CERTIFICATED_COMBINED)]; certificated=parts[0]; structure=[CERTIFICATED_COMBINED]
     else:
         parts=[parse_control(text,m) for m in CERTIFICATED_LEGACY]
         certificated=combine_certificated(parts); structure=list(CERTIFICATED_LEGACY)
-    return {"certificated":certificated,"classified":classified,"certificated_control_tables":structure}
+    return {"certificated":certificated,"certificated_components":parts,"classified":classified,"certificated_control_tables":structure}
 
 def inventory(manifest: dict) -> dict:
     rows=[{"school_year":s["school_year"],"source_sha256":s["sha256"],"controls":extract(Path(s["local_file"]))} for s in manifest["resources"]]
