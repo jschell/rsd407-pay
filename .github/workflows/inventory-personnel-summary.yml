@@ -1,0 +1,21 @@
+name: Inventory personnel summary reports
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover OSPI personnel summary resources
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.personnel_summary
+      - uses: actions/upload-artifact@v4
+        with:
+          name: personnel-summary-inventory
+          path: artifacts/reconciliation/personnel-summary-inventory.json
+          if-no-files-found: error
