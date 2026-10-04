@@ -9,11 +9,14 @@ CERTIFICATED_LEGACY=("Table 34B","Table 36B")
 def parse_control(text: str, marker: str) -> dict:
     starts=[m.start() for m in re.finditer(r"(?m)^\s*"+re.escape(marker)+r":",text)]
     if not starts: raise RuntimeError(f"{marker} not found")
-    lo=min(starts)
-    next_table=re.search(r"(?m)^\s*Table\s+(?!"+re.escape(marker.replace("Table ",""))+r"\b)\d+[A-Z]?:",text[lo+1:])
-    hi=len(text) if next_table is None else lo+1+next_table.start()
-    lines=[x for x in text[lo:hi].splitlines() if x.lstrip().startswith(DISTRICT_CODE+" Riverview")]
-    if len(lines)!=1: raise RuntimeError(f"expected one Riverview row in {marker}, found {len(lines)}")
+    lines=[]
+    for lo in starts:
+        tail=text[lo+1:]
+        next_table=re.search(r"(?m)^\\s*Table\\s+\\d+[A-Z]?:",tail)
+        hi=len(text) if next_table is None else lo+1+next_table.start()
+        lines.extend(x for x in text[lo:hi].splitlines() if x.lstrip().startswith(DISTRICT_CODE+" Riverview"))
+    lines=list(dict.fromkeys(lines))
+    if len(lines)!=1: raise RuntimeError(f"expected one unique Riverview row in {marker}, found {len(lines)}")
     vals=[Decimal(x.replace(",","")) for x in re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",lines[0])]
     if len(vals)<9 or vals[0]!=Decimal(DISTRICT_CODE): raise RuntimeError(f"unexpected {marker} row layout")
     return {"individuals":int(vals[1]),"average_additional_salary_per_individual":float(vals[2]),"total_fte":float(vals[3]),

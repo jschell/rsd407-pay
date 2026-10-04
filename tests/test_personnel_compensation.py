@@ -24,3 +24,14 @@ def test_combine_legacy_certificated_tables():
     row=combine_certificated(parts)
     assert row["total_fte"]==3.0
     assert abs(row["average_base_salary_per_fte"]-(400/3))<1e-9
+
+
+def test_parse_repeated_table_heading_uses_continuation_page():
+    text="""Table 38B: Classified Staff in All Programs
+District header only
+Table 38B: Classified Staff in All Programs
+17407 Riverview                                   250          246         125.91      75,138 100,708         29,402      16,651      260.0
+Table 39: Other
+"""
+    row=parse_control(text,"Table 38B")
+    assert row["total_fte"]==125.91
