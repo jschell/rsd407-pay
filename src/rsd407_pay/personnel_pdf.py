@@ -19,7 +19,7 @@ def table_district_rows(text: str, marker: str, district_code: str=DISTRICT_CODE
         for candidate in lines[i+1:i+80]:
             if re.match(r"^\s*Table\s+\d+[A-Z]?:",candidate):
                 break
-            if re.search(r"(^|\s)"+re.escape(district_code)+r"\s+"+re.escape(district_name)+r"\\b",candidate):
+            if re.search(r"(^|\s)"+re.escape(district_code)+r"\s+"+re.escape(district_name)+r"\b",candidate):
                 rows.append(" ".join(candidate.split()))
     unique=list(dict.fromkeys(rows))
     if len(unique)!=1:
