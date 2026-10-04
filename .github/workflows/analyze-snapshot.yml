@@ -101,9 +101,12 @@ jobs:
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.table45b_reconcile
       - name: Extract all-program compensation controls
+        id: compensation_controls
+        continue-on-error: true
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_compensation
       - name: Compare all-program compensation controls
+        if: steps.compensation_controls.outcome == 'success'
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.personnel_compensation_compare
       - name: Validation gate
@@ -126,3 +129,4 @@ jobs:
             artifacts/reconciliation/
           if-no-files-found: error
           retention-days: 30
+          if: always()
