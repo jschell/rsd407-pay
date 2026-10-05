@@ -74,3 +74,12 @@ The retained 2019–20 through 2024–25 final reports have a stable personnel-t
 - **Table 37C — Certificated Staff in All Programs.** This is a candidate certificated compensation control. It must not be combined with classified compensation until the corresponding all-program classified table and salary definitions are confirmed.
 
 Table 45 (without B) is basic-education-only and is not equivalent to the project's all-program S-275 population. Table 47 remains an enrollment-only P-223 control.
+
+
+## Committed published controls
+
+Normal retained analysis consumes `controls/personnel-summary-published.json`; it does not download or parse Personnel Summary PDFs. The committed records retain the official URL, immutable SHA-256, published table/page, literal compensation row, and review status. PDF parsing remains regeneration/evidence tooling.
+
+For 2019–20 through 2024–25, Table 45B remains the independent all-program FTE gate. Published compensation provides a second independent gate: district base salary reconstructed from the definitionally equivalent all-program certificated/classified rows must fall within the exact display-rounding bound implied by hundredth-rounded FTE and whole-dollar average salary/FTE.
+
+Total salary, insurance benefits, and mandatory benefits are retained as semantic-review evidence because their published definitions do not reconcile within display rounding in every year. No arbitrary percentage tolerance is used to force agreement. Annual Personnel Summary coverage before 2019–20 remains explicitly unavailable.
