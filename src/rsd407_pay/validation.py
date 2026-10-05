@@ -59,8 +59,10 @@ def main(argv=None):
     p=argparse.ArgumentParser(); p.add_argument("--input",default="artifacts/normalized/rsd407-job-family.csv"); p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json"); p.add_argument("--output",default="artifacts/normalized/validation-report.json"); p.add_argument("--external-reconciliation",default=None); p.add_argument("--external-compensation",default=None); a=p.parse_args(argv)
     with Path(a.input).open(newline="",encoding="utf-8") as h: rows=list(csv.DictReader(h))
     external=json.loads(Path(a.external_reconciliation).read_text()) if a.external_reconciliation else None
-    compensation=json.loads(Path(a.external_compensation).read_text()) if a.external_compensation else None\n    report=validate(rows,json.loads(Path(a.metrics).read_text()),external,compensation)
-    Path(a.output).write_text(json.dumps(report,indent=2)+"\n")
+    compensation=json.loads(Path(a.external_compensation).read_text()) if a.external_compensation else None
+    report=validate(rows,json.loads(Path(a.metrics).read_text()),external,compensation)
+    Path(a.output).write_text(json.dumps(report,indent=2)+"
+")
     print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("critical validation checks failed")
 if __name__=="__main__": main()
