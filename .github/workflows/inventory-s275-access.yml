@@ -1,0 +1,29 @@
+name: Inventory S-275 Access schemas
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install Access tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mdbtools
+      - name: Discover final Access sources
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.s275_access_sources
+      - name: Download, hash, and inventory schemas
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.s275_access_inventory
+      - name: Upload schema inventory and sources
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: s275-access-schema-inventory
+          path: artifacts/reconciliation/
+          if-no-files-found: error
+          retention-days: 30
