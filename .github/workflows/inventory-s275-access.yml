@@ -19,6 +19,9 @@ jobs:
       - name: Download, hash, and inventory schemas
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.s275_access_inventory
+      - name: Inventory candidate control fields
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.s275_access_candidates
       - name: Upload schema inventory and sources
         if: always()
         uses: actions/upload-artifact@v4
