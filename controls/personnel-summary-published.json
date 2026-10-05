@@ -24,7 +24,8 @@
           "average_base_salary_per_fte": 76021,
           "average_total_salary_per_fte": 89961,
           "average_insurance_benefits_per_fte": 10765,
-          "average_mandatory_benefits_per_fte": 20250
+          "average_mandatory_benefits_per_fte": 20250,
+          "source_row": "17407   Riverview                              217        9,525         210.40       1.52165      76,021     89,961       10,765      20,250    181.0"
         },
         {
           "table": "Table 36B",
@@ -33,7 +34,8 @@
           "average_base_salary_per_fte": 150521,
           "average_total_salary_per_fte": 171014,
           "average_insurance_benefits_per_fte": 11667,
-          "average_mandatory_benefits_per_fte": 36124
+          "average_mandatory_benefits_per_fte": 36124,
+          "source_row": "17407   Riverview                              15         6,975          14.73       1.60342     150,521    171,014       11,667      36,124    259.9"
         },
         {
           "table": "Table 38B",
@@ -42,7 +44,8 @@
           "average_base_salary_per_fte": 51413,
           "average_total_salary_per_fte": 56180,
           "average_insurance_benefits_per_fte": 15072,
-          "average_mandatory_benefits_per_fte": 12255
+          "average_mandatory_benefits_per_fte": 12255,
+          "source_row": "17407   Riverview                             215           862         117.06                    51,413      56,180      15,072      12,255    260.0"
         }
       ]
     },
@@ -65,7 +68,8 @@
           "average_base_salary_per_fte": 79545,
           "average_total_salary_per_fte": 94131,
           "average_insurance_benefits_per_fte": 11941,
-          "average_mandatory_benefits_per_fte": 21352
+          "average_mandatory_benefits_per_fte": 21352,
+          "source_row": "17407 Riverview                                      213       9,512         205.02     79,545 94,131        11,941      21,352          183.0"
         },
         {
           "table": "Table 36B",
@@ -74,7 +78,8 @@
           "average_base_salary_per_fte": 157718,
           "average_total_salary_per_fte": 178737,
           "average_insurance_benefits_per_fte": 11802,
-          "average_mandatory_benefits_per_fte": 38078
+          "average_mandatory_benefits_per_fte": 38078,
+          "source_row": "17407 Riverview                                   15        6,882           14.62    157,718    178,737      11,802      38,078          259.9"
         },
         {
           "table": "Table 38B",
@@ -83,7 +88,8 @@
           "average_base_salary_per_fte": 54779,
           "average_total_salary_per_fte": 59163,
           "average_insurance_benefits_per_fte": 17806,
-          "average_mandatory_benefits_per_fte": 12996
+          "average_mandatory_benefits_per_fte": 12996,
+          "source_row": "17407 Riverview                                  206           716        111.35      54,779      59,163     17,806      12,996          260.0"
         }
       ]
     },
@@ -106,7 +112,8 @@
           "average_base_salary_per_fte": 82849,
           "average_total_salary_per_fte": 98819,
           "average_insurance_benefits_per_fte": 11580,
-          "average_mandatory_benefits_per_fte": 21122
+          "average_mandatory_benefits_per_fte": 21122,
+          "source_row": "17407 Riverview                                 216      10,569         211.31 82,849 98,819               11,580     21,122       183.0"
         },
         {
           "table": "Table 36B",
@@ -115,7 +122,8 @@
           "average_base_salary_per_fte": 160784,
           "average_total_salary_per_fte": 185049,
           "average_insurance_benefits_per_fte": 11616,
-          "average_mandatory_benefits_per_fte": 36083
+          "average_mandatory_benefits_per_fte": 36083,
+          "source_row": "17407 Riverview                                  16       6,552          15.71 160,784 185,049             11,616     36,083       255.0"
         },
         {
           "table": "Table 38B",
@@ -124,7 +132,8 @@
           "average_base_salary_per_fte": 56114,
           "average_total_salary_per_fte": 62562,
           "average_insurance_benefits_per_fte": 16477,
-          "average_mandatory_benefits_per_fte": 12524
+          "average_mandatory_benefits_per_fte": 12524,
+          "source_row": "17407 Riverview                                 209        1,076        113.60      56,114     62,562      16,477     12,524       260.0"
         }
       ]
     },
@@ -147,7 +156,8 @@
           "average_base_salary_per_fte": 92965,
           "average_total_salary_per_fte": 108587,
           "average_insurance_benefits_per_fte": 12300,
-          "average_mandatory_benefits_per_fte": 24014
+          "average_mandatory_benefits_per_fte": 24014,
+          "source_row": "17407 Riverview                                 205      11,650         199.17 92,965 108,587              12,300     24,014       183.0"
         },
         {
           "table": "Table 36B",
@@ -156,7 +166,8 @@
           "average_base_salary_per_fte": 176582,
           "average_total_salary_per_fte": 197348,
           "average_insurance_benefits_per_fte": 12312,
-          "average_mandatory_benefits_per_fte": 39425
+          "average_mandatory_benefits_per_fte": 39425,
+          "source_row": "17407 Riverview                                  14       6,068          13.63 176,582 197,348             12,312     39,425       259.9"
         },
         {
           "table": "Table 38B",
@@ -165,7 +176,8 @@
           "average_base_salary_per_fte": 62914,
           "average_total_salary_per_fte": 68080,
           "average_insurance_benefits_per_fte": 17871,
-          "average_mandatory_benefits_per_fte": 13968
+          "average_mandatory_benefits_per_fte": 13968,
+          "source_row": "17407 Riverview                                223         1,209        109.81      62,914     68,080      17,871     13,968       260.0"
         }
       ]
     },
@@ -188,7 +200,8 @@
           "average_base_salary_per_fte": 101877,
           "average_total_salary_per_fte": 117437,
           "average_insurance_benefits_per_fte": 13200,
-          "average_mandatory_benefits_per_fte": 19737
+          "average_mandatory_benefits_per_fte": 19737,
+          "source_row": "17407 Riverview                                 215      11,693         212.56 101,877 117,437             13,200     19,737       188.7"
         },
         {
           "table": "Table 38B",
@@ -197,7 +210,8 @@
           "average_base_salary_per_fte": 64499,
           "average_total_salary_per_fte": 66284,
           "average_insurance_benefits_per_fte": 18814,
-          "average_mandatory_benefits_per_fte": 11016
+          "average_mandatory_benefits_per_fte": 11016,
+          "source_row": "17407 Riverview                                 202        1,126        109.94      64,499     66,284      18,814     11,016       260.0"
         }
       ]
     },
@@ -220,7 +234,8 @@
           "average_base_salary_per_fte": 107865,
           "average_total_salary_per_fte": 124367,
           "average_insurance_benefits_per_fte": 16525,
-          "average_mandatory_benefits_per_fte": 20163
+          "average_mandatory_benefits_per_fte": 20163,
+          "source_row": "17407 Riverview                                   219       12,406         211.45    107,865     124,367      16,525      20,163      185.8"
         },
         {
           "table": "Table 38B",
@@ -229,7 +244,8 @@
           "average_base_salary_per_fte": 75138,
           "average_total_salary_per_fte": 100708,
           "average_insurance_benefits_per_fte": 29402,
-          "average_mandatory_benefits_per_fte": 16651
+          "average_mandatory_benefits_per_fte": 16651,
+          "source_row": "17407 Riverview                                   250          246         125.91      75,138 100,708         29,402      16,651      260.0"
         }
       ]
     }
