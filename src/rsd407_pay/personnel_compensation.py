@@ -50,7 +50,6 @@ def consolidated_crosscheck(combined: dict, parts: list[dict]) -> dict:
 
 def extract(pdf: Path) -> dict:
     text=subprocess.run(["pdftotext","-layout",str(pdf),"-"],check=True,capture_output=True,text=True).stdout
-    pdf.with_suffix(".pdftotext.txt").write_text(text)
     found={m:extract_table(text,m) for m in TABLES}
     if found[CLASSIFIED] is None: raise RuntimeError(f"{CLASSIFIED} Riverview row not found")
     parts=[found[m] for m in CERTIFICATED_COMPONENTS]
