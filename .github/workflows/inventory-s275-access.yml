@@ -25,6 +25,9 @@ jobs:
       - name: Inspect all years and candidate derivations
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.s275_access_discovery
+      - name: Derive structured personnel controls
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.s275_access_controls
       - name: Upload schema inventory and sources
         if: always()
         uses: actions/upload-artifact@v4
