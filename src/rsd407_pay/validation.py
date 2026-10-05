@@ -61,8 +61,7 @@ def main(argv=None):
     external=json.loads(Path(a.external_reconciliation).read_text()) if a.external_reconciliation else None
     compensation=json.loads(Path(a.external_compensation).read_text()) if a.external_compensation else None
     report=validate(rows,json.loads(Path(a.metrics).read_text()),external,compensation)
-    Path(a.output).write_text(json.dumps(report,indent=2)+"
-")
+    Path(a.output).write_text(json.dumps(report,indent=2)+"\\n")
     print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("critical validation checks failed")
 if __name__=="__main__": main()
