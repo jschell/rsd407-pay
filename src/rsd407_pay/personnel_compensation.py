@@ -25,7 +25,7 @@ def parse_row(row: str, marker: str) -> dict:
 
 def extract_table(text: str, marker: str) -> dict | None:
     candidates=[]
-    for page_number,page in enumerate(text.split("\\f"),1):
+    for page_number,page in enumerate(text.split("\f"),1):
         if marker not in page: continue
         candidates.extend((page_number,line.strip()) for line in page.splitlines() if ROW_RE.match(line.strip()))
     unique=list(dict.fromkeys(candidates))
