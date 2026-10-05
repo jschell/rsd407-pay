@@ -4,7 +4,7 @@ from pathlib import Path
 DISTRICT="17407"
 TERMS=("fte","salary","benefit","insurance","mandatory","district","cert","class","assignment","duty")
 def fields(db,table):
-    p=subprocess.run(["mdb-export","-H",str(db),table],check=True,capture_output=True,text=True)
+    p=subprocess.run(["mdb-export",str(db),table],check=True,capture_output=True,text=True)
     return next(csv.reader([p.stdout.splitlines()[0]]))
 def relevant(names):
     return [n for n in names if any(t in n.lower() for t in TERMS)]
@@ -19,6 +19,8 @@ def inspect(report):
             except (subprocess.CalledProcessError,StopIteration): continue
             rel=relevant(cols)
             if rel: rows.append({"table":table,"columns":cols,"relevant_columns":rel})
+        if not rows:
+            raise RuntimeError(f"{r['school_year']}: no candidate control fields found; header/schema inspection is invalid")
         out["years"].append({"school_year":r["school_year"],"source_sha256":r["source_sha256"],"database_sha256":r["database_sha256"],"candidate_tables":rows})
     return out
 def main(argv=None):
