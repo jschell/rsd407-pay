@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "district_code": "17407",
+  "source_class": "personnel_summary_published",
+  "evidence_run_id": 37241853122,
+  "note": "Reviewed published controls. 2019-20 through 2022-23 compensation uses Table 34B + 36B + 38B; 2023-24 onward uses consolidated Table 37C + 38B. PDFs are evidence/regeneration inputs, not production-analysis dependencies.",
+  "years": [
+    {
+      "school_year": "2019-20",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-10/allpersonnelsummaryreport2019-20_0_0.pdf",
+      "source_sha256": "75c4cfa8cfec45332065b36e640e6cbf1a9da2185e98c0f0c2c6b753ad65b558",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 210.4,
+        "certificated_administrative_fte": 14.73,
+        "classified_fte": 117.06,
+        "total_fte": 342.19
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 34B",
+          "pdf_page": 204,
+          "total_fte": 210.4,
+          "average_base_salary_per_fte": 76021,
+          "average_total_salary_per_fte": 89961,
+          "average_insurance_benefits_per_fte": 10765,
+          "average_mandatory_benefits_per_fte": 20250,
+          "source_row": "17407   Riverview                              217        9,525         210.40       1.52165      76,021     89,961       10,765      20,250    181.0"
+        },
+        {
+          "table": "Table 36B",
+          "pdf_page": 230,
+          "total_fte": 14.73,
+          "average_base_salary_per_fte": 150521,
+          "average_total_salary_per_fte": 171014,
+          "average_insurance_benefits_per_fte": 11667,
+          "average_mandatory_benefits_per_fte": 36124,
+          "source_row": "17407   Riverview                              15         6,975          14.73       1.60342     150,521    171,014       11,667      36,124    259.9"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 256,
+          "total_fte": 117.06,
+          "average_base_salary_per_fte": 51413,
+          "average_total_salary_per_fte": 56180,
+          "average_insurance_benefits_per_fte": 15072,
+          "average_mandatory_benefits_per_fte": 12255,
+          "source_row": "17407   Riverview                             215           862         117.06                    51,413      56,180      15,072      12,255    260.0"
+        }
+      ]
+    },
+    {
+      "school_year": "2020-21",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-10/allpersonnelsummaryreport2020-21.pdf",
+      "source_sha256": "e096354889da9c19da6a7d0ef0b1b396f3552d929b02729eec027e34605d1336",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 205.02,
+        "certificated_administrative_fte": 14.62,
+        "classified_fte": 111.35,
+        "total_fte": 330.99
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 34B",
+          "pdf_page": 269,
+          "total_fte": 205.02,
+          "average_base_salary_per_fte": 79545,
+          "average_total_salary_per_fte": 94131,
+          "average_insurance_benefits_per_fte": 11941,
+          "average_mandatory_benefits_per_fte": 21352,
+          "source_row": "17407 Riverview                                      213       9,512         205.02     79,545 94,131        11,941      21,352          183.0"
+        },
+        {
+          "table": "Table 36B",
+          "pdf_page": 305,
+          "total_fte": 14.62,
+          "average_base_salary_per_fte": 157718,
+          "average_total_salary_per_fte": 178737,
+          "average_insurance_benefits_per_fte": 11802,
+          "average_mandatory_benefits_per_fte": 38078,
+          "source_row": "17407 Riverview                                   15        6,882           14.62    157,718    178,737      11,802      38,078          259.9"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 341,
+          "total_fte": 111.35,
+          "average_base_salary_per_fte": 54779,
+          "average_total_salary_per_fte": 59163,
+          "average_insurance_benefits_per_fte": 17806,
+          "average_mandatory_benefits_per_fte": 12996,
+          "source_row": "17407 Riverview                                  206           716        111.35      54,779      59,163     17,806      12,996          260.0"
+        }
+      ]
+    },
+    {
+      "school_year": "2021-22",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2022-12/AllPersonnelSummaryReport2021-22.pdf",
+      "source_sha256": "7825e4c19108a7d1afab556214e963d9e379594b754006feade97254eebba50a",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 211.31,
+        "certificated_administrative_fte": 15.71,
+        "classified_fte": 113.6,
+        "total_fte": 340.62
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 34B",
+          "pdf_page": 279,
+          "total_fte": 211.31,
+          "average_base_salary_per_fte": 82849,
+          "average_total_salary_per_fte": 98819,
+          "average_insurance_benefits_per_fte": 11580,
+          "average_mandatory_benefits_per_fte": 21122,
+          "source_row": "17407 Riverview                                 216      10,569         211.31 82,849 98,819               11,580     21,122       183.0"
+        },
+        {
+          "table": "Table 36B",
+          "pdf_page": 318,
+          "total_fte": 15.71,
+          "average_base_salary_per_fte": 160784,
+          "average_total_salary_per_fte": 185049,
+          "average_insurance_benefits_per_fte": 11616,
+          "average_mandatory_benefits_per_fte": 36083,
+          "source_row": "17407 Riverview                                  16       6,552          15.71 160,784 185,049             11,616     36,083       255.0"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 354,
+          "total_fte": 113.6,
+          "average_base_salary_per_fte": 56114,
+          "average_total_salary_per_fte": 62562,
+          "average_insurance_benefits_per_fte": 16477,
+          "average_mandatory_benefits_per_fte": 12524,
+          "source_row": "17407 Riverview                                 209        1,076        113.60      56,114     62,562      16,477     12,524       260.0"
+        }
+      ]
+    },
+    {
+      "school_year": "2022-23",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-10/allpersonnelsummaryreport2022-23.pdf",
+      "source_sha256": "bb3c8276325e7bc22fdfdbeffa50acff80994d64e66e0877842f9f0d3efaf915",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 199.17,
+        "certificated_administrative_fte": 13.63,
+        "classified_fte": 109.81,
+        "total_fte": 322.61
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 34B",
+          "pdf_page": 283,
+          "total_fte": 199.17,
+          "average_base_salary_per_fte": 92965,
+          "average_total_salary_per_fte": 108587,
+          "average_insurance_benefits_per_fte": 12300,
+          "average_mandatory_benefits_per_fte": 24014,
+          "source_row": "17407 Riverview                                 205      11,650         199.17 92,965 108,587              12,300     24,014       183.0"
+        },
+        {
+          "table": "Table 36B",
+          "pdf_page": 322,
+          "total_fte": 13.63,
+          "average_base_salary_per_fte": 176582,
+          "average_total_salary_per_fte": 197348,
+          "average_insurance_benefits_per_fte": 12312,
+          "average_mandatory_benefits_per_fte": 39425,
+          "source_row": "17407 Riverview                                  14       6,068          13.63 176,582 197,348             12,312     39,425       259.9"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 359,
+          "total_fte": 109.81,
+          "average_base_salary_per_fte": 62914,
+          "average_total_salary_per_fte": 68080,
+          "average_insurance_benefits_per_fte": 17871,
+          "average_mandatory_benefits_per_fte": 13968,
+          "source_row": "17407 Riverview                                223         1,209        109.81      62,914     68,080      17,871     13,968       260.0"
+        }
+      ]
+    },
+    {
+      "school_year": "2023-24",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2024-02/allpersonnelsummaryreport2023-24.pdf",
+      "source_sha256": "84b027344018197c8c15664ee4c8fcd1f1fbeac0475a791b77a86af60073bf72",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 196.7,
+        "certificated_administrative_fte": 15.86,
+        "classified_fte": 109.94,
+        "total_fte": 322.5
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 37C",
+          "pdf_page": 347,
+          "total_fte": 212.56,
+          "average_base_salary_per_fte": 101877,
+          "average_total_salary_per_fte": 117437,
+          "average_insurance_benefits_per_fte": 13200,
+          "average_mandatory_benefits_per_fte": 19737,
+          "source_row": "17407 Riverview                                 215      11,693         212.56 101,877 117,437             13,200     19,737       188.7"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 367,
+          "total_fte": 109.94,
+          "average_base_salary_per_fte": 64499,
+          "average_total_salary_per_fte": 66284,
+          "average_insurance_benefits_per_fte": 18814,
+          "average_mandatory_benefits_per_fte": 11016,
+          "source_row": "17407 Riverview                                 202        1,126        109.94      64,499     66,284      18,814     11,016       260.0"
+        }
+      ]
+    },
+    {
+      "school_year": "2024-25",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2025-02/allpersonnelsummaryreport2024-25.pdf",
+      "source_sha256": "f6ef53e1ab52c6176c00aa21d96816f671308f234ca8e9ddd2ecd97c69d8c3d8",
+      "review_status": "accepted",
+      "table45b": {
+        "certificated_instructional_fte": 196.19,
+        "certificated_administrative_fte": 15.26,
+        "classified_fte": 125.91,
+        "total_fte": 337.36
+      },
+      "compensation_rows": [
+        {
+          "table": "Table 37C",
+          "pdf_page": 350,
+          "total_fte": 211.45,
+          "average_base_salary_per_fte": 107865,
+          "average_total_salary_per_fte": 124367,
+          "average_insurance_benefits_per_fte": 16525,
+          "average_mandatory_benefits_per_fte": 20163,
+          "source_row": "17407 Riverview                                   219       12,406         211.45    107,865     124,367      16,525      20,163      185.8"
+        },
+        {
+          "table": "Table 38B",
+          "pdf_page": 369,
+          "total_fte": 125.91,
+          "average_base_salary_per_fte": 75138,
+          "average_total_salary_per_fte": 100708,
+          "average_insurance_benefits_per_fte": 29402,
+          "average_mandatory_benefits_per_fte": 16651,
+          "source_row": "17407 Riverview                                   250          246         125.91      75,138 100,708         29,402      16,651      260.0"
+        }
+      ]
+    }
+  ]
+}
