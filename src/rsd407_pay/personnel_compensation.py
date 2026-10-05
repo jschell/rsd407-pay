@@ -25,7 +25,7 @@ def parse_row(row: str, marker: str) -> dict:
 
 def extract_table(text: str, marker: str) -> dict | None:
     candidates=[]
-    for page_number,page in enumerate(text.split("\\f"),1):
+    for page_number,page in enumerate(text.split("\f"),1):
         if marker not in page: continue
         candidates.extend((page_number,line.strip()) for line in page.splitlines() if ROW_RE.match(line.strip()))
     unique=list(dict.fromkeys(candidates))
@@ -50,6 +50,7 @@ def consolidated_crosscheck(combined: dict, parts: list[dict]) -> dict:
 
 def extract(pdf: Path) -> dict:
     text=subprocess.run(["pdftotext","-layout",str(pdf),"-"],check=True,capture_output=True,text=True).stdout
+    pdf.with_suffix(".pdftotext.txt").write_text(text)
     found={m:extract_table(text,m) for m in TABLES}
     if found[CLASSIFIED] is None: raise RuntimeError(f"{CLASSIFIED} Riverview row not found")
     parts=[found[m] for m in CERTIFICATED_COMPONENTS]

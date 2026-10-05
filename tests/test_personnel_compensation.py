@@ -41,7 +41,7 @@ def test_observed_row_7():
     assert x["average_base_salary_per_fte"]==75138
 
 def test_repeated_headings_are_page_scoped():
-    text="Table 38B: Classified Staff in All Programs\\fTable 38B: Classified Staff in All Programs\\n17407 Riverview 250 246 125.91 75,138 100,708 29,402 16,651 260.0\\fTable 38B: Classified Staff in All Programs"
+    text="Table 38B: Classified Staff in All Programs\fTable 38B: Classified Staff in All Programs\\n17407 Riverview 250 246 125.91 75,138 100,708 29,402 16,651 260.0\fTable 38B: Classified Staff in All Programs"
     x=extract_table(text,"Table 38B")
     assert x["pdf_page"]==2 and x["total_fte"]==125.91
 
@@ -52,3 +52,9 @@ def test_consolidated_crosscheck():
     check=consolidated_crosscheck(c,[a,b])
     assert abs(check["fte_difference"])<1e-9
     assert abs(check["implied_total_differences"]["average_base_salary_per_fte"])<100
+
+
+def test_real_form_feed_is_required_for_pdf_pages():
+    text="Table 38B: Classified Staff in All Programs\f17407 Riverview 250 246 125.91 75,138 100,708 29,402 16,651 260.0"
+    assert len(text.split("\f")) == 2
+    assert len(text.split("\\\\f")) == 1
