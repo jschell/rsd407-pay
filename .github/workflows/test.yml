@@ -23,3 +23,37 @@ jobs:
   retained-analysis:
     if: github.event_name == 'pull_request'
     uses: ./.github/workflows/analyze-snapshot.yml
+
+  source-warning-review:
+    needs: retained-analysis
+    if: github.event_name == 'pull_request'
+    permissions:
+      contents: read
+      actions: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y mdbtools
+      - name: Download normalized results from this PR run
+        uses: actions/download-artifact@v4
+        with:
+          pattern: retained-analysis-*
+          merge-multiple: true
+          path: artifacts
+      - name: Download immutable accepted Access evidence
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh run download 37259308473 --name s275-access-schema-inventory --dir access-evidence
+      - name: Corroborate source warning counts and amounts
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.source_warning_review
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-warning-review
+          path: artifacts/reconciliation/source-warning-review.json

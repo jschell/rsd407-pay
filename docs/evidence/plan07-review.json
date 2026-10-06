@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "analysis_run_id": 37406368550,
+  "source_snapshots": {
+    "s275": "s275-source-2026-10-02",
+    "normalization": "normalization-source-2026-10-04"
+  },
+  "input_sha256": {
+    "normalized/rsd407-job-family.csv": "288739138d2b68e0e3ab086bf827a50a1409c42dcc3027fb0a87c9fda5b504d5",
+    "normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+    "normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+    "reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46",
+    "reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+    "reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8"
+  },
+  "validation_status": "pass",
+  "access_status": "pass",
+  "annual_warnings": [
+    {
+      "school_year": "2013-14",
+      "zero_fte_rows": 11,
+      "zero_fte_total_salary": 61262.0,
+      "salary_below_base_rows": 12,
+      "salary_below_base_gap": 99459.0,
+      "zero_fte_salary_share": 0.0033222130140381965,
+      "extract_source_hashes": [
+        "556b891d1e5c08c085bfcd52f56ff2a8e435ec0fc13ce19c06f2c00624d86ebf"
+      ]
+    },
+    {
+      "school_year": "2014-15",
+      "zero_fte_rows": 17,
+      "zero_fte_total_salary": 148854.0,
+      "salary_below_base_rows": 15,
+      "salary_below_base_gap": 116665.0,
+      "zero_fte_salary_share": 0.007802031534665274,
+      "extract_source_hashes": [
+        "bbf8b2e186424ecae8b0e9e8b517c5d78a9cdf4ff7cf01b5200cabbafd0f506f"
+      ]
+    },
+    {
+      "school_year": "2015-16",
+      "zero_fte_rows": 29,
+      "zero_fte_total_salary": 202382.0,
+      "salary_below_base_rows": 22,
+      "salary_below_base_gap": 171516.0,
+      "zero_fte_salary_share": 0.009727574840254593,
+      "extract_source_hashes": [
+        "a1eeb2a2b372d410a628ed80ef25b6a422374f090bfa20808f773906bebd7f58"
+      ]
+    },
+    {
+      "school_year": "2016-17",
+      "zero_fte_rows": 25,
+      "zero_fte_total_salary": 272229.0,
+      "salary_below_base_rows": 19,
+      "salary_below_base_gap": 128353.0,
+      "zero_fte_salary_share": 0.012203133907910313,
+      "extract_source_hashes": [
+        "2424d7dffa4e1d566e75aebdff2335a7fa89f7a8c1b4457e3ca92c59e43883a6"
+      ]
+    },
+    {
+      "school_year": "2017-18",
+      "zero_fte_rows": 27,
+      "zero_fte_total_salary": 216351.0,
+      "salary_below_base_rows": 19,
+      "salary_below_base_gap": 118962.0,
+      "zero_fte_salary_share": 0.00907011026578717,
+      "extract_source_hashes": [
+        "cd18654ae892fe049c693e06e927deb47f1cc8e6126e595f7be23bb61c26037a"
+      ]
+    },
+    {
+      "school_year": "2018-19",
+      "zero_fte_rows": 27,
+      "zero_fte_total_salary": 221104.0,
+      "salary_below_base_rows": 19,
+      "salary_below_base_gap": 143051.0,
+      "zero_fte_salary_share": 0.008352856980519872,
+      "extract_source_hashes": [
+        "772b7bb3a0a4f660cb7aa89a5aa15978fffbbf71207df2f1fe6f11ec61565731"
+      ]
+    },
+    {
+      "school_year": "2019-20",
+      "zero_fte_rows": 29,
+      "zero_fte_total_salary": 215208.0,
+      "salary_below_base_rows": 28,
+      "salary_below_base_gap": 163154.0,
+      "zero_fte_salary_share": 0.007690970289549621,
+      "extract_source_hashes": [
+        "4c13394af2916ac9ba9b7cd04395acfa843a6a7d7fe8b93e1ff00d967d7b0eb1"
+      ]
+    },
+    {
+      "school_year": "2020-21",
+      "zero_fte_rows": 29,
+      "zero_fte_total_salary": 103432.0,
+      "salary_below_base_rows": 29,
+      "salary_below_base_gap": 271724.0,
+      "zero_fte_salary_share": 0.0036502650017149877,
+      "extract_source_hashes": [
+        "73914cdc0b4e06a52a57ac06eea9c0ed4b53b4e7d4f9f8f44ac40ca4ddc2714f"
+      ]
+    },
+    {
+      "school_year": "2021-22",
+      "zero_fte_rows": 31,
+      "zero_fte_total_salary": 234211.0,
+      "salary_below_base_rows": 24,
+      "salary_below_base_gap": 230308.0,
+      "zero_fte_salary_share": 0.007597246267054928,
+      "extract_source_hashes": [
+        "f0a81df22df1e013e2a040e5453dc84716b6c9cc9a8c38748e3dcaadb3b56a03"
+      ]
+    },
+    {
+      "school_year": "2022-23",
+      "zero_fte_rows": 36,
+      "zero_fte_total_salary": 252532.0,
+      "salary_below_base_rows": 35,
+      "salary_below_base_gap": 407634.0,
+      "zero_fte_salary_share": 0.007950197834099042,
+      "extract_source_hashes": [
+        "a61ce506972b68add59e092798ea43f1d3ea01f39b4aa8a6850e2748aa8e01c7"
+      ]
+    },
+    {
+      "school_year": "2023-24",
+      "zero_fte_rows": 30,
+      "zero_fte_total_salary": 288130.0,
+      "salary_below_base_rows": 54,
+      "salary_below_base_gap": 961739.0,
+      "zero_fte_salary_share": 0.008934120619961553,
+      "extract_source_hashes": [
+        "cdfd9ed9cb8ce938e52ff8a8d3ab5b89ddca411da32c9994af9fd6e4cf6b1063"
+      ]
+    },
+    {
+      "school_year": "2024-25",
+      "zero_fte_rows": 2,
+      "zero_fte_total_salary": 4586.0,
+      "salary_below_base_rows": 27,
+      "salary_below_base_gap": 207580.0,
+      "zero_fte_salary_share": 0.0001268625923764932,
+      "extract_source_hashes": [
+        "9f70d61b1bcb4d300386068f554182c3c8c21f82faae1a77f1b618341ea66c53"
+      ]
+    }
+  ],
+  "large_changes": [
+    {
+      "from": "2017-18",
+      "to": "2018-19",
+      "field": "base_salary",
+      "percent_change": 0.226294552027567,
+      "absolute_change": 4186919.0,
+      "components": {
+        "base_salary": 4186919.0
+      },
+      "category_contributions": {
+        "clerical/office": 85850.0,
+        "custodial/maintenance/facilities": -45865.0,
+        "district/central administration": 26138.0,
+        "other certificated instructional": 395644.0,
+        "other classified": 104560.0,
+        "paraeducators/instructional aides": -17293.0,
+        "principals/APs": 117749.0,
+        "teachers": 3482520.0,
+        "technical/professional support": 37616.0
+      },
+      "fte_growth": 0.014541921848209682,
+      "compensation_per_fte_growth": 0.20871747694132115,
+      "interpretation": "Exact accounting decomposition; not causal attribution."
+    },
+    {
+      "from": "2017-18",
+      "to": "2018-19",
+      "field": "reported_employer_compensation",
+      "percent_change": 0.17755557706724479,
+      "absolute_change": 5352203.0,
+      "components": {
+        "total_salary": 2617281.0,
+        "insurance_benefits": 2125446.0,
+        "mandatory_benefits": 609476.0
+      },
+      "category_contributions": {
+        "clerical/office": 348580.0,
+        "custodial/maintenance/facilities": -47996.0,
+        "district/central administration": 75037.0,
+        "other certificated instructional": 411996.0,
+        "other classified": 390937.0,
+        "paraeducators/instructional aides": 120345.0,
+        "principals/APs": 216291.0,
+        "teachers": 3773713.0,
+        "technical/professional support": 63300.0
+      },
+      "fte_growth": 0.014541921848209682,
+      "compensation_per_fte_growth": 0.16067710136814295,
+      "interpretation": "Exact accounting decomposition; not causal attribution."
+    },
+    {
+      "from": "2023-24",
+      "to": "2024-25",
+      "field": "reported_employer_compensation",
+      "percent_change": 0.15265533846489054,
+      "absolute_change": 6487916.0,
+      "components": {
+        "total_salary": 3898832.0,
+        "insurance_benefits": 2082768.0,
+        "mandatory_benefits": 506316.0
+      },
+      "category_contributions": {
+        "clerical/office": 1195329.0,
+        "custodial/maintenance/facilities": -51047.0,
+        "district/central administration": 281990.0,
+        "other certificated instructional": -123997.0,
+        "other classified": 1078433.0,
+        "paraeducators/instructional aides": 1535007.0,
+        "principals/APs": -317544.0,
+        "teachers": 2329406.0,
+        "technical/professional support": 560339.0
+      },
+      "fte_growth": 0.046102468534785945,
+      "compensation_per_fte_growth": 0.1018570103169214,
+      "interpretation": "Exact accounting decomposition; not causal attribution."
+    }
+  ],
+  "published_fte": [
+    {
+      "school_year": "2019-20",
+      "source_sha256": "75c4cfa8cfec45332065b36e640e6cbf1a9da2185e98c0f0c2c6b753ad65b558",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 210.4,
+        "certificated_administrative_fte": 14.73,
+        "classified_fte": 117.06,
+        "total_fte": 342.19
+      },
+      "project_total_fte": 342.18399999999997,
+      "difference_fte": 0.00600000000003,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    },
+    {
+      "school_year": "2020-21",
+      "source_sha256": "e096354889da9c19da6a7d0ef0b1b396f3552d929b02729eec027e34605d1336",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 205.02,
+        "certificated_administrative_fte": 14.62,
+        "classified_fte": 111.35,
+        "total_fte": 330.99
+      },
+      "project_total_fte": 330.98199999999997,
+      "difference_fte": 0.00800000000003,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    },
+    {
+      "school_year": "2021-22",
+      "source_sha256": "7825e4c19108a7d1afab556214e963d9e379594b754006feade97254eebba50a",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 211.31,
+        "certificated_administrative_fte": 15.71,
+        "classified_fte": 113.6,
+        "total_fte": 340.62
+      },
+      "project_total_fte": 340.61199999999997,
+      "difference_fte": 0.00800000000003,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    },
+    {
+      "school_year": "2022-23",
+      "source_sha256": "bb3c8276325e7bc22fdfdbeffa50acff80994d64e66e0877842f9f0d3efaf915",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 199.17,
+        "certificated_administrative_fte": 13.63,
+        "classified_fte": 109.81,
+        "total_fte": 322.61
+      },
+      "project_total_fte": 322.603,
+      "difference_fte": 0.007,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    },
+    {
+      "school_year": "2023-24",
+      "source_sha256": "84b027344018197c8c15664ee4c8fcd1f1fbeac0475a791b77a86af60073bf72",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 196.7,
+        "certificated_administrative_fte": 15.86,
+        "classified_fte": 109.94,
+        "total_fte": 322.5
+      },
+      "project_total_fte": 322.499,
+      "difference_fte": 0.001,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    },
+    {
+      "school_year": "2024-25",
+      "source_sha256": "f6ef53e1ab52c6176c00aa21d96816f671308f234ca8e9ddd2ecd97c69d8c3d8",
+      "ospi_table45b": {
+        "certificated_instructional_fte": 196.19,
+        "certificated_administrative_fte": 15.26,
+        "classified_fte": 125.91,
+        "total_fte": 337.36
+      },
+      "project_total_fte": 337.36699999999996,
+      "difference_fte": -0.00699999999996,
+      "comparison": "within_sum_of_three_hundredth-rounded_components",
+      "tolerance_fte": 0.015,
+      "status": "pass"
+    }
+  ],
+  "published_compensation": [
+    {
+      "school_year": "2019-20",
+      "source_sha256": "75c4cfa8cfec45332065b36e640e6cbf1a9da2185e98c0f0c2c6b753ad65b558",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 24229789.0,
+          "ospi_implied_total": 24230398.51,
+          "difference": -609.51,
+          "display_rounding_bound": 1560.8775,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 27981905.0,
+          "ospi_implied_total": 28023261.42,
+          "difference": -41356.42,
+          "display_rounding_bound": 1756.8775,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 4224916.0,
+          "ospi_implied_total": 4201139.23,
+          "difference": 23776.77,
+          "display_rounding_bound": 358.6225,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 6177557.0,
+          "ospi_implied_total": 6227276.82,
+          "difference": -49719.82,
+          "display_rounding_bound": 514.2475,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    },
+    {
+      "school_year": "2020-21",
+      "source_sha256": "e096354889da9c19da6a7d0ef0b1b396f3552d929b02729eec027e34605d1336",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 24713586.0,
+          "ospi_implied_total": 24713794.71,
+          "difference": -208.71,
+          "display_rounding_bound": 1625.7125,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 28335477.0,
+          "ospi_implied_total": 28499672.61,
+          "difference": -164195.61,
+          "display_rounding_bound": 1825.6575,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 4648574.0,
+          "ospi_implied_total": 4603387.16,
+          "difference": 45186.84,
+          "display_rounding_bound": 373.2475,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 6328434.0,
+          "ospi_implied_total": 6381392.0,
+          "difference": -52958.0,
+          "display_rounding_bound": 527.6325,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    },
+    {
+      "school_year": "2021-22",
+      "source_sha256": "7825e4c19108a7d1afab556214e963d9e379594b754006feade97254eebba50a",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 26406904.0,
+          "ospi_implied_total": 26407289.23,
+          "difference": -385.23,
+          "display_rounding_bound": 1669.0525,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 30828407.0,
+          "ospi_implied_total": 30895605.88,
+          "difference": -67198.88,
+          "display_rounding_bound": 1902.4675,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 4508568.0,
+          "ospi_implied_total": 4501244.36,
+          "difference": 7323.64,
+          "display_rounding_bound": 368.6825,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 6401792.0,
+          "ospi_implied_total": 6452880.15,
+          "difference": -51088.15,
+          "display_rounding_bound": 518.9625,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    },
+    {
+      "school_year": "2022-23",
+      "source_sha256": "bb3c8276325e7bc22fdfdbeffa50acff80994d64e66e0877842f9f0d3efaf915",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 27830412.0,
+          "ospi_implied_total": 27831238.05,
+          "difference": -826.05,
+          "display_rounding_bound": 1823.6175,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 31764241.0,
+          "ospi_implied_total": 31792990.83,
+          "difference": -28749.83,
+          "display_rounding_bound": 2031.3875,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 4621746.0,
+          "ospi_implied_total": 4580018.07,
+          "difference": 41727.93,
+          "display_rounding_bound": 373.7275,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 6806228.0,
+          "ospi_implied_total": 6854057.21,
+          "difference": -47829.21,
+          "display_rounding_bound": 548.3475,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    },
+    {
+      "school_year": "2023-24",
+      "source_sha256": "84b027344018197c8c15664ee4c8fcd1f1fbeac0475a791b77a86af60073bf72",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 28746393.0,
+          "ospi_implied_total": 28745995.18,
+          "difference": 397.82,
+          "display_rounding_bound": 993.135,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 32250516.0,
+          "ospi_implied_total": 32249671.68,
+          "difference": 844.32,
+          "display_rounding_bound": 1079.86,
+          "within_display_rounding_bound": true,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 4880040.0,
+          "ospi_implied_total": 4874203.16,
+          "difference": 5836.84,
+          "display_rounding_bound": 321.325,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 5369864.0,
+          "ospi_implied_total": 5406395.76,
+          "difference": -36531.76,
+          "display_rounding_bound": 315.02,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    },
+    {
+      "school_year": "2024-25",
+      "source_sha256": "f6ef53e1ab52c6176c00aa21d96816f671308f234ca8e9ddd2ecd97c69d8c3d8",
+      "combined_all_programs": {
+        "base_salary": {
+          "project_total": 32268498.0,
+          "ospi_implied_total": 32268679.83,
+          "difference": -181.83,
+          "display_rounding_bound": 1083.7,
+          "within_display_rounding_bound": true,
+          "status": "pass"
+        },
+        "total_salary": {
+          "project_total": 36149348.0,
+          "ospi_implied_total": 38977546.43,
+          "difference": -2828198.43,
+          "display_rounding_bound": 1294.06,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "insurance_benefits": {
+          "project_total": 6962808.0,
+          "ospi_implied_total": 7196217.07,
+          "difference": -233409.07,
+          "display_rounding_bound": 398.32,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        },
+        "mandatory_benefits": {
+          "project_total": 5876180.0,
+          "ospi_implied_total": 6359993.76,
+          "difference": -483813.76,
+          "display_rounding_bound": 352.755,
+          "within_display_rounding_bound": false,
+          "status": "semantic_review"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Source-warning corroboration passed for all twelve years in run 37408082579.",
+    "Individual payroll causes are not established.",
+    "Published total salary and benefits remain semantic-review measures.",
+    "Independent annual published controls unavailable before 2019-20."
+  ]
+}

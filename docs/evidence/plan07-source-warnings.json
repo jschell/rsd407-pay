@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "errors": [],
+  "years": [
+    {
+      "school_year": "2013-14",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2013-2014_final_s-275_personnel_database.zip",
+      "database_sha256": "116f4f354d26069a2cdf63f46e8cb4bdf0d7248215cca9548f3255c330f5a4bc",
+      "source_sha256": "4ef23aed154a145746580d6b0095c95e3bb66adec517846c0e018701183055e9",
+      "extract": {
+        "zero_fte_rows": 11,
+        "zero_fte_total_salary": 61262.0,
+        "salary_below_base_rows": 12,
+        "salary_below_base_gap": 99459.0
+      },
+      "access": {
+        "zero_fte_rows": 11,
+        "zero_fte_total_salary": 61262.0,
+        "salary_below_base_rows": 12,
+        "salary_below_base_gap": 99459.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2014-15",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2014-2015_final_s-275_personnel_database.zip",
+      "database_sha256": "2706e1555860a16f4a685faed62cf92cd2ceb5d48e721c35604bcb710406f5ee",
+      "source_sha256": "3cdf7e225456828863e8bcb6931419acc9a8ee74b0f42adf77260bbc100fa049",
+      "extract": {
+        "zero_fte_rows": 17,
+        "zero_fte_total_salary": 148854.0,
+        "salary_below_base_rows": 15,
+        "salary_below_base_gap": 116665.0
+      },
+      "access": {
+        "zero_fte_rows": 17,
+        "zero_fte_total_salary": 148854.0,
+        "salary_below_base_rows": 15,
+        "salary_below_base_gap": 116665.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2015-16",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2015-2016_final_s-275_personnel_database.zip",
+      "database_sha256": "e66f806fdcf77230b0007ec3839b6f897919ef093cbbfccb0f89228034884ca1",
+      "source_sha256": "b1bc90d9f6c0f5850c9c8c3453539bc8af9ec2d47c11fb3efc03eca9c5583eb5",
+      "extract": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 202382.0,
+        "salary_below_base_rows": 22,
+        "salary_below_base_gap": 171516.0
+      },
+      "access": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 202382.0,
+        "salary_below_base_rows": 22,
+        "salary_below_base_gap": 171516.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2016-17",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2016-2017_final_s-275_personnel_database.zip",
+      "database_sha256": "3ab5a570ff9e68e67e7e567927969362ecb411bc70bf67bbc8a37fcb3c279806",
+      "source_sha256": "e2ee77ef20159ece5bc28f3f3d8ff3a93b2b2e08cc39b9c2a455bf20ed288656",
+      "extract": {
+        "zero_fte_rows": 25,
+        "zero_fte_total_salary": 272229.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 128353.0
+      },
+      "access": {
+        "zero_fte_rows": 25,
+        "zero_fte_total_salary": 272229.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 128353.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2017-18",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2017-2018finals-275personneldatabase.zip",
+      "database_sha256": "a26c1950f66039794c77759d0cb9081f499b687a088344fcdc61d730cc3a0d32",
+      "source_sha256": "78f88b61c87fd7459fc53684e7991f5b9306a206397a25ee36b9738c183255d2",
+      "extract": {
+        "zero_fte_rows": 27,
+        "zero_fte_total_salary": 216351.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 118962.0
+      },
+      "access": {
+        "zero_fte_rows": 27,
+        "zero_fte_total_salary": 216351.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 118962.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2018-19",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2018-2019_final_s-275_personnel_database.zip",
+      "database_sha256": "a21e317570cd117ac72fb5f9878235601b98c817082256192918225ae2753c3c",
+      "source_sha256": "652c1f993a55e98e4e3347a316e521a0eabd918bc20eea8695a2c1a029ea534c",
+      "extract": {
+        "zero_fte_rows": 27,
+        "zero_fte_total_salary": 221104.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 143051.0
+      },
+      "access": {
+        "zero_fte_rows": 27,
+        "zero_fte_total_salary": 221104.0,
+        "salary_below_base_rows": 19,
+        "salary_below_base_gap": 143051.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2019-20",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2019-2020_final_s-275_personnel_database.zip",
+      "database_sha256": "d3b72c3a66cc3013fcab77e32115e15819948c661ba55e718e4e2f8c6bc323fc",
+      "source_sha256": "205d7fabaf4f8667076aa33121a243a88c2cb12d40e4d7ccec8b612872b4a98b",
+      "extract": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 215208.0,
+        "salary_below_base_rows": 28,
+        "salary_below_base_gap": 163154.0
+      },
+      "access": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 215208.0,
+        "salary_below_base_rows": 28,
+        "salary_below_base_gap": 163154.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2020-21",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-08/2020-2021_final_s-275_personnel_database.zip",
+      "database_sha256": "d35a84048f83f68ba0afefd91e110316b4644926b1b6717d18845cad069d0f54",
+      "source_sha256": "04336ee40b313b9b70ddd7a0be8c110d957e874b0a2d496dc8cc58bb398d593d",
+      "extract": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 103432.0,
+        "salary_below_base_rows": 29,
+        "salary_below_base_gap": 271724.0
+      },
+      "access": {
+        "zero_fte_rows": 29,
+        "zero_fte_total_salary": 103432.0,
+        "salary_below_base_rows": 29,
+        "salary_below_base_gap": 271724.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2021-22",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-11/2021-2022_final_s-275_personnel_database.zip",
+      "database_sha256": "6e10469f947ce43c44e24c58cd132f1db234034e2de7aa084ea16906b638e8d6",
+      "source_sha256": "942f276a998f02842f7fa93c95c87ebd1b877bfce840ba2b2fe446cb760f1545",
+      "extract": {
+        "zero_fte_rows": 31,
+        "zero_fte_total_salary": 234211.0,
+        "salary_below_base_rows": 24,
+        "salary_below_base_gap": 230308.0
+      },
+      "access": {
+        "zero_fte_rows": 31,
+        "zero_fte_total_salary": 234211.0,
+        "salary_below_base_rows": 24,
+        "salary_below_base_gap": 230308.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2022-23",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2023-10/2022-2023_final_s-275_personnel_database_1.zip",
+      "database_sha256": "9699d4e6dd20acf413401fc0a0c8845a02cff2800c6063931ce0dff014ef285e",
+      "source_sha256": "1888d7cc2b74d97b610660b7e36caff2b108e5773fb022cf66817a3faddb64fa",
+      "extract": {
+        "zero_fte_rows": 36,
+        "zero_fte_total_salary": 252532.0,
+        "salary_below_base_rows": 35,
+        "salary_below_base_gap": 407634.0
+      },
+      "access": {
+        "zero_fte_rows": 36,
+        "zero_fte_total_salary": 252532.0,
+        "salary_below_base_rows": 35,
+        "salary_below_base_gap": 407634.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2023-24",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/2024-12/2023-2024_final_s-275_personnel_database.zip",
+      "database_sha256": "0841c0e5d805da263e217d0b0c890faf1e2732209ee50c30af5d3dcc3c02f9e6",
+      "source_sha256": "394292d4a18fba6b92d301134f6a61b87ceb55ea34e71cf05e0636b17eb3e8cb",
+      "extract": {
+        "zero_fte_rows": 30,
+        "zero_fte_total_salary": 288130.0,
+        "salary_below_base_rows": 54,
+        "salary_below_base_gap": 961739.0
+      },
+      "access": {
+        "zero_fte_rows": 30,
+        "zero_fte_total_salary": 288130.0,
+        "salary_below_base_rows": 54,
+        "salary_below_base_gap": 961739.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    },
+    {
+      "school_year": "2024-25",
+      "source_url": "https://ospi.k12.wa.us/sites/default/files/safs/2024-2025_Final_S-275_Personnel_Database.zip",
+      "database_sha256": "7fff6332d90ee643702c6696455f2032dade4c425a9ce8a12804ecd3db9a95d8",
+      "source_sha256": "4f2a08dc67766ae4424d1704da97cdbe29538141158930ef091d636d50e78ef3",
+      "extract": {
+        "zero_fte_rows": 2,
+        "zero_fte_total_salary": 4586.0,
+        "salary_below_base_rows": 27,
+        "salary_below_base_gap": 207580.0
+      },
+      "access": {
+        "zero_fte_rows": 2,
+        "zero_fte_total_salary": 4586.0,
+        "salary_below_base_rows": 27,
+        "salary_below_base_gap": 207580.0
+      },
+      "differences": {
+        "zero_fte_rows": 0,
+        "zero_fte_total_salary": 0.0,
+        "salary_below_base_rows": 0,
+        "salary_below_base_gap": 0.0
+      }
+    }
+  ],
+  "limitation": "Same-system aggregate corroboration establishes source conditions; it does not identify payroll causes or validate individual compensation.",
+  "verification_run_id": 37408082579,
+  "verification_commit": "7b9826b2e9347a481ad6ca19529530b4cf520456"
+}

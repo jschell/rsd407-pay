@@ -25,9 +25,9 @@ For every school year 2013-14 through 2024-25:
 
 The 2024-25 final report independently shows Riverview (17407) at approximately 2,819 annual-average FTE students, consistent with the project's P-223 extraction of 2,818.78. This is a useful cross-source denominator check but is not by itself sufficient personnel reconciliation.
 
-## Next implementation
+## Current implementation
 
-Build a reproducible collector/inventory for the historical final Personnel Summary Reports. Do not hard-code control totals copied from PDFs. The collector should establish which district-level tables and measures are consistently available across all 12 years before the reconciliation gate is finalized.
+Normal analysis uses committed reviewed controls; source collection and PDF parsing are separate regeneration tools. See [Plan 07 evidence review](plan07-evidence-review.md) for current comparisons and limitations.
 
 ## Historical-source status
 
@@ -43,19 +43,6 @@ Reconciliation therefore uses two explicit tiers:
 - **Longitudinal controls:** historical series embedded in a later official OSPI final report, used only for measures whose table definitions match the project output.
 
 The source type must be recorded with every comparison. A later longitudinal table must never be represented as though it were the original annual report for that year.
-
-## Primary district control: Table 47
-
-The primary district-grain reconciliation target is OSPI Personnel Summary **Table 47 — Selected Personnel Data by School District**. It exposes district-level student enrollment/FTE and personnel FTE/salary measures.
-
-Comparison status is field-specific:
-
-- student FTE: comparable when the report confirms the same annual-average enrollment basis;
-- certificated FTE: candidate pending scope confirmation;
-- classified FTE: candidate pending scope confirmation;
-- average salary: candidate only; do not equate it with this project's aggregate salary/FTE without confirming OSPI's numerator and personnel scope.
-
-The implementation records these semantics in the machine-readable Table 47 control inventory before extracting numeric controls.
 
 ## Table 47 confirmed scope
 
@@ -83,3 +70,4 @@ Normal retained analysis consumes `controls/personnel-summary-published.json`; i
 For 2019–20 through 2024–25, Table 45B remains the independent all-program FTE gate. Published compensation provides a second independent gate: district base salary reconstructed from the definitionally equivalent all-program certificated/classified rows must fall within the exact display-rounding bound implied by hundredth-rounded FTE and whole-dollar average salary/FTE.
 
 Total salary, insurance benefits, and mandatory benefits are retained as semantic-review evidence because their published definitions do not reconcile within display rounding in every year. No arbitrary percentage tolerance is used to force agreement. Annual Personnel Summary coverage before 2019–20 remains explicitly unavailable.
+

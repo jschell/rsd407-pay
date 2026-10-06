@@ -81,6 +81,9 @@ jobs:
       - name: Annual staffing and compensation metrics
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.metrics
+      - name: Reconcile twelve-year Access controls against normalized extract
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.access_extract_reconcile
       - name: Source-quality evidence
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.quality
@@ -112,3 +115,4 @@ jobs:
             artifacts/reconciliation/
           if-no-files-found: warn
           retention-days: 30
+
