@@ -2,6 +2,12 @@
 
 Reproducible analysis of Riverview School District 407 staffing and compensation using Washington OSPI S-275 personnel data and related public datasets.
 
+## Read the analysis
+
+Start with the [generated staffing and compensation report](docs/reporting/report.md). It includes annual totals, category changes, enrollment-adjusted staffing, both inflation series, and strict central-administration compensation per 1,000 students. [Downloadable tables and input provenance](docs/reporting/) accompany the report.
+
+The analysis distinguishes changes in staffing, enrollment, and compensation. It provides evidence for questions about district spending; it does not establish efficiency, individual payroll correctness, or total operating costs. [Plan 07's evidence review](docs/plan07-evidence-review.md) documents independent-control coverage and unresolved published salary/benefit comparisons.
+
 ## Primary questions
 
 - How has RSD407 staffing changed from 2013-14 forward?
