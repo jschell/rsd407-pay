@@ -8,8 +8,8 @@ TABLES=("Table 34B","Table 36B","Table 37C","Table 38B")
 CERTIFICATED_COMPONENTS=("Table 34B","Table 36B")
 CERTIFICATED_COMBINED="Table 37C"
 CLASSIFIED="Table 38B"
-ROW_RE=re.compile(r"^17407\\s+Riverview\\b")
-NUM_RE=re.compile(r"\\d+(?:,\\d{3})*(?:\\.\\d+)?")
+ROW_RE=re.compile(r"^17407\s+Riverview\b")
+NUM_RE=re.compile(r"\d+(?:,\d{3})*(?:\.\d+)?")
 
 def _numbers(row: str) -> list[Decimal]:
     return [Decimal(x.replace(",","")) for x in NUM_RE.findall(row)]

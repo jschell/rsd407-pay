@@ -1,5 +1,6 @@
 name: Analyze retained sources
 on:
+  workflow_call:
   workflow_dispatch:
     inputs:
       snapshot_tag:
