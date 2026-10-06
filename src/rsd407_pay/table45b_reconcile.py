@@ -7,10 +7,10 @@ TABLE_MARKER="Table 45B"
 def parse_table45b_text(text: str) -> dict:
     pos=text.find(TABLE_MARKER)
     if pos<0: raise RuntimeError("Table 45B not found")
-    tail=text[pos:];next_table=re.search(r"(?m)^\\s*Table\\s+(?!45B\\b)\\d+[A-Z]?\\b",tail[len(TABLE_MARKER):]);section=tail if next_table is None else tail[:len(TABLE_MARKER)+next_table.start()]
+    tail=text[pos:];next_table=re.search(r"(?m)^\s*Table\s+(?!45B\b)\d+[A-Z]?\b",tail[len(TABLE_MARKER):]);section=tail if next_table is None else tail[:len(TABLE_MARKER)+next_table.start()]
     lines=[x for x in section.splitlines() if DISTRICT_CODE in x and "Riverview" in x]
     if len(lines)!=1: raise RuntimeError(f"expected one Riverview row in Table 45B, found {len(lines)}")
-    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\\d+(?:,\\d{3})*(?:\\.\\d+)?",lines[0])]
+    vals=[Decimal(x.replace(",","")) for x in re.findall(r"\d+(?:,\d{3})*(?:\.\d+)?",lines[0][lines[0].index(DISTRICT_CODE):])]
     if not vals or vals[0]!=Decimal(DISTRICT_CODE): raise RuntimeError("district code not first numeric field")
     fields=vals[1:]
     if len(fields)<10: raise RuntimeError(f"unexpected Table 45B row layout: {len(fields)} numeric fields after district code")
@@ -29,5 +29,5 @@ def reconcile(controls,metrics):
     return {"schema_version":2,"control":"OSPI Personnel Summary Table 45B","district_code":DISTRICT_CODE,"source_mode":"committed_reviewed_control","status":"pass" if all(r["status"]=="pass" for r in rows) else "fail","years":rows}
 def main(argv=None):
     p=argparse.ArgumentParser();p.add_argument("--controls",default="controls/personnel-summary-published.json");p.add_argument("--metrics",default="artifacts/normalized/annual-metrics.json");p.add_argument("--output",default="artifacts/reconciliation/table45b-reconciliation.json");a=p.parse_args(argv)
-    report=reconcile(json.loads(Path(a.controls).read_text()),json.loads(Path(a.metrics).read_text()));Path(a.output).parent.mkdir(parents=True,exist_ok=True);Path(a.output).write_text(json.dumps(report,indent=2)+"\\n");print(json.dumps(report,indent=2));raise SystemExit(0 if report["status"]=="pass" else 1)
+    report=reconcile(json.loads(Path(a.controls).read_text()),json.loads(Path(a.metrics).read_text()));Path(a.output).parent.mkdir(parents=True,exist_ok=True);Path(a.output).write_text(json.dumps(report,indent=2)+"\n");print(json.dumps(report,indent=2));raise SystemExit(0 if report["status"]=="pass" else 1)
 if __name__=="__main__":main()
