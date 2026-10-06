@@ -46,9 +46,14 @@ def main(argv=None):
     p.add_argument('--output', default='artifacts/reconciliation/source-warning-review.json')
     a = p.parse_args(argv)
     evidence = Path(a.evidence)
-    schema = json.loads((evidence/'s275-access-schema-inventory.json').read_text())
     controls = json.loads(Path(a.controls).read_text())
     accepted = {r['school_year']: r for r in controls['years']}
+    schema_path = evidence/'s275-access-schema-inventory.json'
+    if not schema_path.exists():
+        from .s275_access_inventory import build
+        schema = build({'resources': [dict(school_year=r['school_year'], url=r['source_url']) for r in controls['years']]}, evidence/'raw/s275-access')
+        schema_path.write_text(json.dumps(schema, indent=2)+'\n')
+    schema = json.loads(schema_path.read_text())
     with Path(a.rows).open(newline='') as h:
         extract = list(csv.DictReader(h))
     results, errors = [], []
@@ -57,7 +62,11 @@ def main(argv=None):
     for source in schema['resources']:
         year = source['school_year']
         db = evidence/'raw/s275-access'/year/source['database_file']
-        digest = hashlib.file_digest(db.open('rb'), 'sha256').hexdigest()
+        with db.open('rb') as handle:
+            digest = hashlib.file_digest(handle, 'sha256').hexdigest()
+        if source['source_sha256'] != accepted[year]['source_sha256']:
+            errors.append(f'{year}: source container hash differs from accepted source')
+            continue
         if digest != accepted[year]['database_sha256']:
             errors.append(f'{year}: database hash differs from accepted source')
             continue
