@@ -44,6 +44,7 @@ jobs:
           merge-multiple: true
           path: artifacts
       - name: Download immutable accepted Access evidence
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh run download 37259308473 --name s275-access-schema-inventory --dir access-evidence
