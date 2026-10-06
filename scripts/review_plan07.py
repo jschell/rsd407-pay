@@ -50,7 +50,7 @@ report = {'schema_version':1, 'analysis_run_id':37406368550,
     'validation_status':validation['status'], 'access_status':access['status'],
     'annual_warnings':annual, 'large_changes':changes,
     'published_fte':fte['years'], 'published_compensation':comp['years'],
-    'limitations':['Source-warning corroboration CI must pass before closeout.',
+    'limitations':['Source-warning corroboration passed for all twelve years in run 37408082579.',
         'Individual payroll causes are not established.',
         'Published total salary and benefits remain semantic-review measures.',
         'Independent annual published controls unavailable before 2019-20.']}
@@ -66,7 +66,7 @@ lines=['# Plan 07 evidence review', '',
     '|---|---:|---:|---:|---:|---:|']
 for r in annual:
     lines.append(f"| {r['school_year']} | {r['zero_fte_rows']} | ${r['zero_fte_total_salary']:,.0f} | {r['zero_fte_salary_share']:.2%} | {r['salary_below_base_rows']} | ${r['salary_below_base_gap']:,.0f} |")
-lines += ['', 'The PR source-warning job replays the retained SHA-identified Access databases and checks these four diagnostics against normalized results in every year. Its output establishes whether the conditions originate in the reporting source; it does not establish individual payroll explanations. No compensation is imputed or silently removed.', '', '## Annual changes', '',
+lines += ['', 'Source-warning corroboration passed in [run 37408082579](https://github.com/jschell/rsd407-pay/actions/runs/37408082579): all four warning diagnostics match the SHA-identified Access databases in every year. [The retained verification evidence](evidence/plan07-source-warnings.json) records both sides and source hashes. The conditions originate in the reporting source; individual payroll explanations remain unknown. No compensation is imputed or silently removed.', '', '## Annual changes', '',
     'The following decomposes flagged nominal increases into recorded components. Neither this accounting decomposition nor passing reconciliation establishes a cause such as a contract change.', '',
     '| Period | Measure | Increase | Percent | Components |', '|---|---|---:|---:|---|']
 for r in changes:
@@ -74,8 +74,8 @@ for r in changes:
     lines.append(f"| {r['from']} to {r['to']} | {r['field']} | ${r['absolute_change']:,.0f} | {r['percent_change']:.2%} | {parts} |")
 lines += ['', 'The JSON also includes exact job-family contributions and FTE-versus-compensation-per-FTE growth for each change.', '', '## Independent published controls', '',
     'Personnel Summary Table 45B FTE and base salary pass for all six available years, 2019-20 through 2024-25. Exact published comparisons, source hashes, and display-rounding bounds are preserved in the JSON; reviewed pages and literal compensation rows are in `controls/personnel-summary-published.json`.', '',
-    'Total salary, insurance, and mandatory benefits remain unresolved semantic comparisons. In 2024-25, the extract is $2,828,198.43 below implied published total salary, $233,409.07 below insurance, and $483,813.76 below mandatory benefits. These are material limitations. They are not given arbitrary tolerances or represented as independently validated. The exact match with Access supports faithful simplified-extract aggregation, not equivalence with every published measure.', '',
+    'Total salary, insurance, and mandatory benefits remain unresolved semantic comparisons. In 2024-25, extract-minus-published differences are '+ '; '.join(f'{k}: ${v["difference"]:,.2f}' for k,v in comp['years'][-1]['combined_all_programs'].items() if k != 'base_salary') + '. These are material limitations. They are not given arbitrary tolerances or represented as independently validated. The exact match with Access supports faithful simplified-extract aggregation, not equivalence with every published measure.', '',
     'Annual independent published control coverage for 2013-14 through 2018-19 remains unavailable. Those years pass internal and same-system checks only.', '',
     '## Closeout boundary', '',
-    'Plan 07 remains active until the new source-warning corroboration and complete PR analysis pass and the source-condition limitations are accepted in the completion record. No claim of payroll correctness, independent twelve-year compensation validation, or explanation of individual compensation is made.']
+    'Plan 07 completion accepts the reproduced source conditions without imputing or removing pay. Complete analysis, twelve-year Access reconciliation, and source-warning corroboration all passed in run 37408082579. Independent validation is limited to six-year FTE and base-salary coverage. Total salary and benefits remain explicitly qualified; no claim of payroll correctness, independent twelve-year compensation validation, or explanation of individual compensation is made.']
 Path('docs/plan07-evidence-review.md').write_text('\n'.join(lines)+'\n')

@@ -550,7 +550,7 @@
     }
   ],
   "limitations": [
-    "Source-warning corroboration CI must pass before closeout.",
+    "Source-warning corroboration passed for all twelve years in run 37408082579.",
     "Individual payroll causes are not established.",
     "Published total salary and benefits remain semantic-review measures.",
     "Independent annual published controls unavailable before 2019-20."

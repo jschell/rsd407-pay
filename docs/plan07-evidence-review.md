@@ -27,7 +27,7 @@ These employee-year rows remain in the source totals. The table quantifies the e
 | 2023-24 | 30 | $288,130 | 0.89% | 54 | $961,739 |
 | 2024-25 | 2 | $4,586 | 0.01% | 27 | $207,580 |
 
-The PR source-warning job replays the retained SHA-identified Access databases and checks these four diagnostics against normalized results in every year. Its output establishes whether the conditions originate in the reporting source; it does not establish individual payroll explanations. No compensation is imputed or silently removed.
+Source-warning corroboration passed in [run 37408082579](https://github.com/jschell/rsd407-pay/actions/runs/37408082579): all four warning diagnostics match the SHA-identified Access databases in every year. [The retained verification evidence](evidence/plan07-source-warnings.json) records both sides and source hashes. The conditions originate in the reporting source; individual payroll explanations remain unknown. No compensation is imputed or silently removed.
 
 ## Annual changes
 
@@ -45,10 +45,10 @@ The JSON also includes exact job-family contributions and FTE-versus-compensatio
 
 Personnel Summary Table 45B FTE and base salary pass for all six available years, 2019-20 through 2024-25. Exact published comparisons, source hashes, and display-rounding bounds are preserved in the JSON; reviewed pages and literal compensation rows are in `controls/personnel-summary-published.json`.
 
-Total salary, insurance, and mandatory benefits remain unresolved semantic comparisons. In 2024-25, the extract is $2,828,198.43 below implied published total salary, $233,409.07 below insurance, and $483,813.76 below mandatory benefits. These are material limitations. They are not given arbitrary tolerances or represented as independently validated. The exact match with Access supports faithful simplified-extract aggregation, not equivalence with every published measure.
+Total salary, insurance, and mandatory benefits remain unresolved semantic comparisons. In 2024-25, extract-minus-published differences are total_salary: $-2,828,198.43; insurance_benefits: $-233,409.07; mandatory_benefits: $-483,813.76. These are material limitations. They are not given arbitrary tolerances or represented as independently validated. The exact match with Access supports faithful simplified-extract aggregation, not equivalence with every published measure.
 
 Annual independent published control coverage for 2013-14 through 2018-19 remains unavailable. Those years pass internal and same-system checks only.
 
 ## Closeout boundary
 
-Plan 07 remains active until the new source-warning corroboration and complete PR analysis pass and the source-condition limitations are accepted in the completion record. No claim of payroll correctness, independent twelve-year compensation validation, or explanation of individual compensation is made.
+Plan 07 completion accepts the reproduced source conditions without imputing or removing pay. Complete analysis, twelve-year Access reconciliation, and source-warning corroboration all passed in run 37408082579. Independent validation is limited to six-year FTE and base-salary coverage. Total salary and benefits remain explicitly qualified; no claim of payroll correctness, independent twelve-year compensation validation, or explanation of individual compensation is made.
