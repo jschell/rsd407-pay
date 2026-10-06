@@ -83,3 +83,10 @@ Personnel Summary reports remain the independent published control family where 
 - All twelve project years have an official structured S-275 source registered or are visibly excluded with a documented reason.
 - Regeneration of committed controls is deterministic and separately testable.
 - Personnel Summary controls retain their independent-source identity and are never conflated with Access-derived S-275 controls.
+
+
+## Evidence review after PR 89
+
+The complete retained-source analysis passed in run 37406368550, and merged-main unit CI passed in run 37406671860. See [the aggregate evidence review](../../plan07-evidence-review.md) for twelve-year Access-to-extract comparisons, annual warning counts/amounts, exact annual-change decompositions, and independent-control limitations.
+
+The next PR adds a permanent twelve-year Access-to-extract gate and separately corroborates warning diagnostics directly from SHA-verified retained Access databases in PR CI. Plan 07 remains active pending that source-warning job and complete integration run. Total salary/benefit presentation differences and individual payroll causes remain explicitly unresolved; do not describe them as independently validated.
