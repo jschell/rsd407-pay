@@ -6,7 +6,7 @@ from urllib.parse import urljoin
 from urllib.request import Request,urlopen
 
 PAGE="https://ospi.k12.wa.us/policy-funding/school-apportionment/school-publications/personnel-summary-reports"
-YEARS=[f"{y}-{str(y+1)[-2:]}" for y in range(2013,2025)]
+from .period import YEARS, require_coverage
 
 class Links(HTMLParser):
     def __init__(self):
@@ -50,3 +50,4 @@ def main(argv=None):
     print(f"discovered {len(report['resources'])} personnel-summary resources across {len(report['covered_years'])} years; missing={missing}")
     if missing: raise RuntimeError(f"personnel-summary discovery missing years: {missing}")
 if __name__=="__main__": main()
+

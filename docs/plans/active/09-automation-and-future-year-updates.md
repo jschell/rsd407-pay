@@ -39,3 +39,9 @@ Run **Analyze retained sources** (`analyze-snapshot.yml`) with explicit immutabl
 Adding a newly finalized year is an auditable data update. Existing historical captures remain intact; new sources cannot bypass validation or quietly change report coverage.
 
 The initial final-link monitor is an informational discovery step. It does not complete historical revision detection or future-year ingestion.
+
+## Accepted-period coverage gate
+
+The accepted period is now read from `config/sources.json` by enrollment extraction, Access and personnel-summary discovery, validation, normalization, and longitudinal findings. The retained-analysis workflow checks exact snapshot/enrollment/Access coverage, both CPI series, final scope, and accepted published controls for every year from 2019-20 onward before normalizing S-275. Duplicate years fail. Missing published controls for older years remain the documented limitation.
+
+Remaining: retained CPI raw-file windows, enrollment source selection, and fixed 2025-dollar output schema still require deliberate synchronized update work; the gate does not implement automatic future-year promotion. Durable revision publication and analytical impact comparisons also remain outstanding.

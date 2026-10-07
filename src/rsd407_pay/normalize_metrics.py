@@ -2,19 +2,21 @@ from __future__ import annotations
 import argparse,json
 from pathlib import Path
 
-YEARS=[f"{y}-{str(y+1)[-2:]}" for y in range(2013,2025)]
+from .period import YEARS, require_coverage
 MONEY=("base_salary","total_salary","reported_employer_compensation")
 CPI=("national_cpi_u","seattle_cpi_u")
 
 def build(metrics,enrollment,cpi):
+    require_coverage(metrics["district"], YEARS, "district")
+    require_coverage(enrollment["years"], YEARS, "enrollment")
     district={x["school_year"]:x for x in metrics["district"]}
     enroll={x["school_year"]:x for x in enrollment["years"]}
     if set(district)!=set(YEARS) or set(enroll)!=set(YEARS):
-        raise RuntimeError("normalization requires exact 2013-14 through 2024-25 district and enrollment coverage")
+        raise RuntimeError("normalization requires exact accepted district and enrollment coverage")
     series=cpi.get("series",{})
     for name in CPI:
         if name not in series: raise RuntimeError(f"missing CPI series {name}")
-        missing=[str(y) for y in range(2014,2026) if str(y) not in series[name]["values"]]
+        missing=[str(y) for y in [int(y[:4])+1 for y in YEARS] + [2025] if str(y) not in series[name]["values"]]
         if missing: raise RuntimeError(f"{name} missing years: {missing}")
     out=[]
     for sy in YEARS:
@@ -58,3 +60,4 @@ def main(argv=None):
     for r in report["years"]:
         print(f"{r['school_year']}: students={r['student_fte']:.2f} staff_fte_per_1000={r['staff_fte_per_1000_student_fte']:.2f} total_salary_per_student=${r['total_salary_per_student_fte']:.2f}")
 if __name__=="__main__": main()
+

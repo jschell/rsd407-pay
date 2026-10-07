@@ -3,7 +3,7 @@ import argparse,json,re,urllib.parse,urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 PAGE="https://ospi.k12.wa.us/safs-data-files"
-YEARS=[f"{y}-{str(y+1)[-2:]}" for y in range(2013,2025)]
+from .period import YEARS, require_coverage
 UA="rsd407-pay/1.0"
 class Links(HTMLParser):
     def __init__(self): super().__init__(); self.links=[]; self.href=None; self.text=[]
@@ -35,3 +35,4 @@ def main(argv=None):
     report=inventory(Path(a.html).read_text() if a.html else fetch()); out=Path(a.output); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,indent=2)+"\n"); print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("missing required final S-275 Access source years")
 if __name__=="__main__": main()
+
