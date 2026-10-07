@@ -1,0 +1,91 @@
+name: Review analysis revision
+on:
+  workflow_dispatch:
+    inputs:
+      before_run:
+        description: Successful retained-analysis workflow run before revision
+        required: true
+        type: string
+      after_run:
+        description: Successful retained-analysis workflow run after revision
+        required: true
+        type: string
+      publish:
+        description: Publish previously reviewed evidence under a new release tag
+        type: boolean
+        default: false
+      reviewed_sha256:
+        description: SHA-256 of the reviewed revision-record.json (required to publish)
+        type: string
+        default: ''
+      revision_tag:
+        description: New revision-review-* tag (required to publish)
+        type: string
+        default: ''
+permissions:
+  contents: write
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download successful retained analyses
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ inputs.before_run }}
+          AFTER: ${{ inputs.after_run }}
+        run: |
+          set -euo pipefail
+          [[ "$BEFORE" =~ ^[0-9]+$ && "$AFTER" =~ ^[0-9]+$ ]]
+          for side in before after; do
+            run="$BEFORE"
+            if [ "$side" = after ]; then run="$AFTER"; fi
+            gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run" > "$side-run.json"
+            python -c 'import json,sys; r=json.load(open(sys.argv[1])); assert r["status"]=="completed" and r["conclusion"]=="success", "comparison requires a completed successful workflow"' "$side-run.json"
+            gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run/artifacts?per_page=100" > "$side-artifacts.json"
+            name="$(python -c 'import json,sys; a=[x for x in json.load(open(sys.argv[1]))["artifacts"] if x["name"].startswith("retained-analysis-") and not x["expired"]]; assert len(a)==1, "exactly one unexpired retained analysis required"; print(a[0]["name"])' "$side-artifacts.json")"
+            gh run download "$run" --name "$name" --dir "inputs/$side"
+          done
+      - name: Compare and bundle evidence
+        env:
+          PYTHONPATH: src
+          BEFORE: ${{ inputs.before_run }}
+          AFTER: ${{ inputs.after_run }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          for side, run in [('before',os.environ['BEFORE']),('after',os.environ['AFTER'])]:
+              manifest=json.loads(Path('inputs',side,'reporting/report-provenance.json').read_text())
+              assert str(manifest['analysis_run'])==run, 'downloaded report run does not match requested workflow'
+              for tag in manifest['source_snapshots'].values():
+                  assert tag.startswith(('s275-source-', 'normalization-source-')), 'unexpected source snapshot tag'
+                  subprocess.run(['gh','release','view',tag],check=True,stdout=subprocess.DEVNULL)
+          PY
+          python -m rsd407_pay.revision_impact --before inputs/before --after inputs/after
+      - uses: actions/upload-artifact@v4
+        with:
+          name: revision-review-${{ inputs.before_run }}-${{ inputs.after_run }}
+          path: artifacts/revision-review/
+          if-no-files-found: error
+      - name: Publish explicitly reviewed revision evidence
+        if: inputs.publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEWED: ${{ inputs.reviewed_sha256 }}
+          TAG: ${{ inputs.revision_tag }}
+        run: |
+          set -euo pipefail
+          [[ "$REVIEWED" =~ ^[0-9a-f]{64}$ ]]
+          [[ "$TAG" =~ ^revision-review-[A-Za-z0-9][A-Za-z0-9._-]*$ ]]
+          actual="$(sha256sum artifacts/revision-review/revision-record.json | cut -d ' ' -f 1)"
+          [ "$actual" = "$REVIEWED" ]
+          gh api "repos/$GITHUB_REPOSITORY/git/matching-refs/tags/$TAG" > existing-tags.json
+          python -c 'import json,os; assert not any(x["ref"]=="refs/tags/"+os.environ["TAG"] for x in json.load(open("existing-tags.json"))), "revision tag already exists; overwriting is prohibited"'
+          gh release create "$TAG" artifacts/revision-review/revision-record.json artifacts/revision-review/revision-evidence.zip artifacts/revision-review/review-summary.json --target "$GITHUB_SHA" --title "Reviewed analysis revision $TAG" --notes "Validated before/after comparison. Reviewed record SHA-256: $REVIEWED. Source acceptance and published report promotion remain separate reviewed updates."

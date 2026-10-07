@@ -48,7 +48,7 @@ PYTHONPATH=src python -m rsd407_pay.source_revisions \
   --baseline artifacts/manifests/accepted-collection.json
 ```
 
-The monitor verifies workbook identity and byte hashes; it does not establish the effect of a revision on Riverview results. Changed-source artifacts are temporary evidence. Plan 09 still needs durable reviewed revision publication and before/after analytical comparisons.
+The monitor verifies workbook identity and byte hashes; it does not establish the effect of a revision on Riverview results. Changed-source artifacts are temporary evidence. Use the reviewed revision comparison and publication procedure below to preserve and assess a deliberate update.
 
 ## Accepted-period contract and coverage gate
 
@@ -62,4 +62,35 @@ CPI requests derive ending calendar years from the shared accepted period plus t
 
 Enrollment discovery accepts exactly one official HTTPS final `.xlsx` summary whose stated year range covers the entire accepted period. Changed endpoints are supported; preliminary labels, insufficient ranges, invalid ranges, foreign hosts, and ambiguous matches fail. Extraction still checks required sheets and Riverview identity.
 
-The dollar base stays at 2025 deliberately: adding a school year does not silently rebase historical results or change output field names. Accepted inputs and published results are unchanged. Future-year tests are synthetic dependency/coverage checks; full retained-source CI validates the actual accepted historical capture. Durable revision publication and analytical before/after comparison remain outstanding under Plan 09.
+The dollar base stays at 2025 deliberately: adding a school year does not silently rebase historical results or change output field names. Accepted inputs and published results are unchanged. Future-year tests are synthetic dependency/coverage checks; full retained-source CI validates the actual accepted historical capture. The comparison tooling below records before/after impacts; end-to-end publication must be verified before Plan 09 closes.
+
+## Compare and publish a reviewed revision
+
+1. Preserve the old accepted snapshot tags. Capture changed raw sources under new source/normalization release tags using the existing snapshot workflows; do not replace the old assets. Keep the monitor's old/new URL/hash evidence with the reviewed source update.
+2. Update the accepted-period registry and reviewed controls together on the candidate branch. Run the full retained analysis against both old and candidate snapshot tags. Both workflow runs must finish successfully, including source-warning verification. Failed candidates remain diagnostic evidence and cannot be published through this comparison workflow.
+3. Run **Review analysis revision** with the two successful run IDs. Initially leave `publish=false`:
+
+```sh
+gh workflow run review-revision.yml --repo jschell/rsd407-pay --ref main \
+  -f before_run=37567682169 -f after_run=37569049798 -f publish=false
+```
+
+The workflow requires exactly one unexpired retained-analysis artifact from each successful run, verifies report/input hashes and gate results, checks the recorded run IDs and availability of both immutable source releases, then writes `revision-record.json`, `revision-evidence.zip`, and `review-summary.json`.
+
+Review the JSON changes by year, category, and measure. Common measures have before/after values, absolute differences, and percentage differences where the baseline is nonzero. Added/removed observations are explicit. District totals, category totals, normalization measures, and nested administrative overhead measures are compared. Differences can reflect code, classification, normalization, or source changes; the record does not attribute causes. Longitudinal findings and all report gate inputs are retained as hashed evidence.
+
+4. Record the SHA-256 from `review-summary.json`. Rerun with the same run IDs and comparison code, `publish=true`, that exact `reviewed_sha256`, and a new `revision-review-*` tag. Publication fails if the record differs or the tag already exists. A release retains the record and complete comparison-input bundle beyond Actions artifact expiration. Its before/after snapshot tags point to the durable raw source captures.
+5. Separately review promotion of the accepted snapshot pointer and committed generated report. Publishing revision evidence does not accept a source or change the report.
+
+Local reproduction after downloading the two retained-analysis artifacts:
+
+```sh
+PYTHONPATH=src python -m rsd407_pay.revision_impact \
+  --before inputs/before --after inputs/after --output-dir artifacts/revision-review
+```
+
+Output files are created exclusively; use a fresh directory for each comparison. The record includes the comparison code hash, analysis commit/run references, snapshot tags, limitations, and every retained input hash.
+
+### Verified historical comparison
+
+[The generated normalization-refactor record](revisions/2026-10-07-normalization-refactor.json) compares actual successful runs 37567682169 and 37569049798 (PRs #94 and #95). All input hashes and validation gates passed. No compared analytical measure changed. This is a real historical compatibility check, not evidence that an actual upstream data revision has occurred. The new manual publication workflow still needs an end-to-end run after merge.
