@@ -7,6 +7,8 @@ on:
     paths:
       - "config/sources.json"
       - "src/rsd407_pay/sources.py"
+      - "src/rsd407_pay/final_source_watch.py"
+      - "tests/test_final_source_watch.py"
       - "src/rsd407_pay/workbook.py"
       - "requirements.txt"
       - "tests/test_sources.py"
@@ -32,9 +34,17 @@ jobs:
         env:
           PYTHONPATH: src
         run: python -m rsd407_pay.sources
+      - name: Watch for newly final personnel workbook candidates
+        if: always()
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.final_source_watch
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: s275-source-status
-          path: artifacts/source-status.json
+          path: |
+            artifacts/source-status.json
+            artifacts/final-source-watch.json
+            artifacts/s275-source-page.html
           if-no-files-found: warn
