@@ -9,7 +9,12 @@ SERIES = {
     "national_cpi_u": {"series_id": "CUUR0000SA0", "geography": "U.S. city average", "expected_periods": 12},
     "seattle_cpi_u": {"series_id": "CUURS49DSA0", "geography": "Seattle-Tacoma-Bellevue, WA", "expected_periods": 6},
 }
-YEARS = list(range(2014, 2026))
+from .period import YEARS as SCHOOL_YEARS
+YEARS = sorted({int(y[:4]) + 1 for y in SCHOOL_YEARS} | {2025})
+
+def window_specs(years=None):
+    years = YEARS if years is None else years
+    return [(start, min(start + 9, max(years))) for start in range(min(years), max(years) + 1, 10)]
 API = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 
 def _fetch_window(start: int, end: int):
@@ -19,7 +24,13 @@ def _fetch_window(start: int, end: int):
         return json.load(response)
 
 def fetch(return_windows=False):
-    payloads = [_fetch_window(2014, 2023), _fetch_window(2024, 2025)]
+    payloads = [_fetch_window(start, end) for start, end in window_specs()]
+    merged = merge_windows(payloads)
+    return (merged, payloads) if return_windows else merged
+
+def merge_windows(payloads):
+    if not payloads:
+        raise RuntimeError("no retained BLS windows")
     merged = {"status": "REQUEST_SUCCEEDED", "Results": {"series": []}}
     for series_id in [x["series_id"] for x in SERIES.values()]:
         rows = []
@@ -34,7 +45,7 @@ def fetch(return_windows=False):
         if len(keys) != len(set(keys)):
             raise RuntimeError(f"duplicate BLS observations after window merge: {series_id}")
         merged["Results"]["series"].append({"seriesID": series_id, "data": rows})
-    return (merged, payloads) if return_windows else merged
+    return merged
 
 def parse(payload):
     if payload.get("status") != "REQUEST_SUCCEEDED":
@@ -80,9 +91,9 @@ def main(argv=None):
     args = ap.parse_args(argv)
     merged, windows = fetch(return_windows=True)
     raw_dir = Path(args.raw_dir); raw_dir.mkdir(parents=True, exist_ok=True)
-    window_specs = [(2014, 2023), (2024, 2025)]
+    specs = window_specs()
     raw_files = []
-    for (start, end), payload in zip(window_specs, windows):
+    for (start, end), payload in zip(specs, windows):
         raw = raw_dir / f"bls-cpi-{start}-{end}.json"
         raw.write_text(json.dumps(payload, indent=2) + "\n")
         raw_files.append(str(raw))
@@ -92,7 +103,8 @@ def main(argv=None):
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2) + "\n")
     for name, series in report["series"].items():
-        print(f"{name}: {len(series['values'])} annual means, 2014-2025; series={series['series_id']} periods/year={series['expected_periods_per_year']}")
+        print(f"{name}: {len(series['values'])} annual means, {min(YEARS)}-{max(YEARS)}; series={series['series_id']} periods/year={series['expected_periods_per_year']}")
 
 if __name__ == "__main__":
     main()
+

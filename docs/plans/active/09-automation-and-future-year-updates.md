@@ -44,4 +44,12 @@ The initial final-link monitor is an informational discovery step. It does not c
 
 The accepted period is now read from `config/sources.json` by enrollment extraction, Access and personnel-summary discovery, validation, normalization, and longitudinal findings. The retained-analysis workflow checks exact snapshot/enrollment/Access coverage, both CPI series, final scope, and accepted published controls for every year from 2019-20 onward before normalizing S-275. Duplicate years fail. Missing published controls for older years remain the documented limitation.
 
-Remaining: retained CPI raw-file windows, enrollment source selection, and fixed 2025-dollar output schema still require deliberate synchronized update work; the gate does not implement automatic future-year promotion. Durable revision publication and analytical impact comparisons also remain outstanding.
+CPI windows and enrollment source selection now follow accepted coverage. The 2025-dollar base remains explicit for comparability; the gate does not implement automatic future-year promotion. Durable revision publication and analytical impact comparisons also remain outstanding.
+
+## Period-aware normalization capture and replay
+
+CPI requests derive ending calendar years from the shared accepted period plus the explicit 2025 dollar base. Requests are split into nonoverlapping windows of at most ten years; filenames follow those windows. Normalization manifests include the raw paths declared by the derived CPI capture, and replay reads only those hash-verified inputs. Duplicate BLS observations or missing periodic observations fail; the documented October 2025 exception remains limited to that year.
+
+Enrollment discovery accepts exactly one official HTTPS final `.xlsx` summary whose stated year range covers the entire accepted period. Changed endpoints are supported; preliminary labels, insufficient ranges, invalid ranges, foreign hosts, and ambiguous matches fail. Extraction still checks required sheets and Riverview identity.
+
+The dollar base stays at 2025 deliberately: adding a school year does not silently rebase historical results or change output field names. Accepted inputs and published results are unchanged. Future-year tests are synthetic dependency/coverage checks; full retained-source CI validates the actual accepted historical capture. Durable revision publication and analytical before/after comparison remain outstanding under Plan 09.

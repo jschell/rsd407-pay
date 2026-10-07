@@ -17,6 +17,24 @@ class CpiTests(unittest.TestCase):
         self.assertEqual([x.args for x in m.call_args_list],[(2014,2023),(2024,2025)])
         self.assertEqual(len(out["Results"]["series"][0]["data"]),12)
 
+    def test_future_year_windows_and_duplicate_replay(self):
+        self.assertEqual(cpi.window_specs(list(range(2014, 2027))), [(2014, 2023), (2024, 2026)])
+        payload={"status":"REQUEST_SUCCEEDED","Results":{"series":[rows("CUUR0000SA0",12),rows("CUURS49DSA0",6)]}}
+        with self.assertRaisesRegex(RuntimeError,"duplicate BLS observations"):
+            cpi.merge_windows([payload, payload])
+        with self.assertRaisesRegex(RuntimeError,"no retained BLS"):
+            cpi.merge_windows([])
+
+    def test_parse_future_year_requires_complete_observations(self):
+        payload={"status":"REQUEST_SUCCEEDED","Results":{"series":[
+            {"seriesID":sid,"data":[{"year":"2026","period":f"M{m:02d}","value":"100"} for m in range(1,count+1)]}
+            for sid,count in (("CUUR0000SA0",12),("CUURS49DSA0",6))]}}
+        with patch.object(cpi,"YEARS",[2026]):
+            self.assertEqual(parse(payload)["national_cpi_u"]["values"], {"2026":100})
+            payload["Results"]["series"][0]["data"].pop()
+            with self.assertRaisesRegex(RuntimeError,"2026 expected 12"):
+                parse(payload)
+
     def test_periodic_coverage_for_both_series(self):
         r=parse({"status":"REQUEST_SUCCEEDED","Results":{"series":[rows("CUUR0000SA0",12),rows("CUURS49DSA0",6)]}})
         self.assertEqual(len(r["national_cpi_u"]["values"]),12)
@@ -52,3 +70,4 @@ class CpiTests(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
