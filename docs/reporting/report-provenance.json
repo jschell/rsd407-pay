@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2013-14",
+    "end": "2024-25"
+  },
+  "analysis_ref": "136cff9a71f5777e487daf838263322d61237beb",
+  "analysis_run": "37406368550",
+  "source_snapshots": {
+    "s275": "s275-source-2026-10-02",
+    "normalization": "normalization-source-2026-10-04"
+  },
+  "input_sha256": {
+    "normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+    "normalized/normalized-metrics.json": "f859b864c8c8e498d4f612183250481d2589c92a1479847bb6e94a5e6b7c520d",
+    "normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+    "reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8",
+    "reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46",
+    "reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+    "normalized/admin-overhead.json": "359431c0eb69362d86dbbee1cfcd75ae4ea135f521f2ef66b59a5b24cfe3d33c",
+    "normalized/longitudinal-findings.json": "909c8055476b16b64809a4c56c42fd4fb6bf1115cb73cb4c890e4664e41cef11"
+  },
+  "generator_sha256": "023d1771f178e8584486d82a4bacc929c1932074973a7d5a394743989ab336a6",
+  "gate_status": "pass",
+  "limitations": "See report.md; employer compensation is not operating expenditure."
+}
