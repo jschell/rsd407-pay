@@ -1,5 +1,7 @@
 from __future__ import annotations
 import hashlib
+import re
+from .period import YEARS
 import html as html_module
 import urllib.parse
 import urllib.request
@@ -37,13 +39,24 @@ class _LinkParser(HTMLParser):
 def discover(html:str)->Source:
     parser=_LinkParser()
     parser.feed(html_module.unescape(html))
-    matches=[href for text,href in parser.links if text==LINK_TEXT]
+    matches=[]
+    for text, href in parser.links:
+        label=re.fullmatch(r"Final Enrollment Summary - For the School Years (20\d{2})-(\d{2}) through (20\d{2})-(\d{4})", text)
+        if not label:
+            continue
+        first, suffix, last, end = map(int, label.groups())
+        if suffix != (first+1)%100 or end != last+1:
+            continue
+        if first <= int(YEARS[0][:4]) and last >= int(YEARS[-1][:4]):
+            matches.append(href)
     if len(matches)!=1:
-        raise RuntimeError(f"OSPI final enrollment summary link expected once, found {len(matches)}; title may have changed")
+        raise RuntimeError(f"OSPI final enrollment summary link expected once, found {len(matches)}; title or required coverage may have changed")
     href=urllib.parse.urljoin(LANDING_PAGE,matches[0])
     parsed=urllib.parse.urlparse(href)
     if parsed.scheme!="https" or parsed.hostname!="ospi.k12.wa.us":
         raise RuntimeError(f"unexpected enrollment workbook host: {href}")
+    if not parsed.path.lower().endswith(".xlsx"):
+        raise RuntimeError(f"unexpected enrollment workbook format: {href}")
     return Source(LANDING_PAGE,href)
 
 def sha256(data:bytes)->str: return hashlib.sha256(data).hexdigest()
@@ -58,3 +71,4 @@ def fetch_source():
     data=fetch_url(source.workbook_url)
     if len(data)<1000: raise RuntimeError("OSPI enrollment workbook download unexpectedly small")
     return source,data
+
