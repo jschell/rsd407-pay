@@ -8,7 +8,7 @@ Run **Publish S-275 source snapshot** with a new tag such as `s275-source-2026-1
 
 ## Reuse
 
-Run **Analyze S-275 snapshot** with that tag. It downloads the retained archive, verifies every raw file against the snapshot metadata, and performs normalization and derived reporting without contacting OSPI.
+Run **Analyze retained sources** with explicit S-275 and normalization snapshot tags; see [the rebuild/update guide](future-year-updates.md). It downloads the retained archive, verifies every raw file against the snapshot metadata, and performs normalization and derived reporting without contacting OSPI.
 
 ## Refresh
 
