@@ -66,6 +66,9 @@ jobs:
       - name: Verify normalization snapshot and derivation
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.rebuild_normalization
+      - name: Gate synchronized accepted-period inputs
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.coverage_gate
       - name: Normalize S-275
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.pipeline

@@ -6,7 +6,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 from .enrollment_source import fetch_source,sha256
 
-YEARS=[f"{y}-{str(y+1)[-2:]}" for y in range(2013,2025)]
+from .period import YEARS, require_coverage
 DISTRICT_CODE="17407"
 DISTRICT_NAME="Riverview"
 SECTION="K-12 FTE - Includes ALE"
@@ -55,3 +55,4 @@ def main(argv=None):
     path=Path(args.output); path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(payload,indent=2)+"\n")
     for r in rows: print(f"{r['school_year']}: {r['student_fte']:.2f} student FTE ({len(r['component_headers'])} K-12 components)")
 if __name__=="__main__": main()
+

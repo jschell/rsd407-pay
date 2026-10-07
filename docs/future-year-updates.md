@@ -29,7 +29,7 @@ The captured page hash, link labels, URLs, and capture time are retained with th
 
 Candidate discovery does not change the accepted dataset. Before a year can enter the report, validate source identity/finality and schema, capture it under a new immutable tag, obtain matching enrollment/CPI data and personnel controls, update the shared accepted period, and pass the entire analysis and report-generation workflow.
 
-The current code still contains fixed 2013-14 through 2024-25 assumptions. Merely adding a year to `config/sources.json` is insufficient. Plan 09 will replace those assumptions and add historical source-hash/revision comparisons before future-year promotion is supported.
+The shared registry and coverage gate synchronize accepted years across analysis inputs. Merely adding a year to `config/sources.json` is insufficient: retained normalization capture windows and output dollar-year handling still require reviewed updates before future-year promotion is supported.
 
 Never overwrite historical release captures. An upstream revision requires a new capture, a comparison with the accepted source, and a recorded effect on the report.
 
@@ -49,3 +49,9 @@ PYTHONPATH=src python -m rsd407_pay.source_revisions \
 ```
 
 The monitor verifies workbook identity and byte hashes; it does not establish the effect of a revision on Riverview results. Changed-source artifacts are temporary evidence. Plan 09 still needs durable reviewed revision publication and before/after analytical comparisons.
+
+## Accepted-period contract and coverage gate
+
+`config/sources.json` defines the ordered, contiguous accepted school years. Analysis modules share that registry; findings use its first and last years. `rsd407_pay.coverage_gate` runs before S-275 normalization and rejects mismatched or duplicate snapshot/enrollment/Access years, preliminary scope, missing CPI ending years (including the 2025 dollar base), and missing or unaccepted published controls for accepted years from 2019-20 onward. Earlier independent controls remain unavailable.
+
+The registry alone still cannot promote a new year: retained CPI raw capture windows, enrollment source selection, and the fixed 2025-dollar output schema require reviewed updates. Historical evidence and existing results remain tied to their immutable snapshot tags.

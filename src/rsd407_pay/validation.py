@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 from .metrics import NUMERIC
 
-YEARS=[f"{y}-{str(y+1)[-2:]}" for y in range(2013,2025)]
+from .period import YEARS, require_coverage
 CRITICAL_NUMERIC=("certificated_fte","classified_fte","base_salary","total_salary","insurance_benefits","mandatory_benefits")
 
 def number(row,key):
@@ -65,3 +65,4 @@ def main(argv=None):
     print(json.dumps(report,indent=2))
     if report["status"]!="pass": raise SystemExit("critical validation checks failed")
 if __name__=="__main__": main()
+

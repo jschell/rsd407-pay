@@ -25,5 +25,5 @@ class NormalizeMetricsTests(unittest.TestCase):
         self.assertAlmostEqual(r["constant_2025_dollars"]["national_cpi_u"]["total_salary"],1200*factor)
     def test_missing_enrollment_fails(self):
         m,e,c=self.fixtures(); e["years"].pop()
-        with self.assertRaisesRegex(RuntimeError,"exact 2013-14"): build(m,e,c)
+        with self.assertRaisesRegex(RuntimeError,"enrollment: expected exact coverage"): build(m,e,c)
 if __name__=="__main__": unittest.main()

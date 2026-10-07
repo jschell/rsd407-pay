@@ -2,12 +2,15 @@ from __future__ import annotations
 import argparse, json
 from pathlib import Path
 
-START, END = "2013-14", "2024-25"
+from .period import YEARS, require_coverage
+START, END = YEARS[0], YEARS[-1]
 
 def change(a, b):
     return (b / a - 1) * 100
 
 def build(metrics, normalized, admin, s275_tag, normalization_tag):
+    for label, rows in (("metrics", metrics["district"]), ("normalized", normalized["years"]), ("admin", admin["years"])):
+        require_coverage(rows, YEARS, label)
     district = {x["school_year"]: x for x in metrics["district"]}
     categories = {(x["school_year"], x["job_family"]): x for x in metrics["categories"]}
     norm = {x["school_year"]: x for x in normalized["years"]}
@@ -57,3 +60,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+
