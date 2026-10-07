@@ -26,5 +26,6 @@
   ],
   "allowed_hosts": [
     "ospi.k12.wa.us"
-  ]
+  ],
+  "accepted_snapshot_tag": "s275-source-2026-10-02"
 }

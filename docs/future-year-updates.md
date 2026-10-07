@@ -32,3 +32,20 @@ Candidate discovery does not change the accepted dataset. Before a year can ente
 The current code still contains fixed 2013-14 through 2024-25 assumptions. Merely adding a year to `config/sources.json` is insufficient. Plan 09 will replace those assumptions and add historical source-hash/revision comparisons before future-year promotion is supported.
 
 Never overwrite historical release captures. An upstream revision requires a new capture, a comparison with the accepted source, and a recorded effect on the report.
+
+## Historical workbook revisions
+
+The weekly/manual source check downloads `collection.json` from the explicit `accepted_snapshot_tag` in `config/sources.json`, then checks current workbook bytes for every accepted year. The baseline is not automatically selected from the latest release.
+
+`source-revisions.json` distinguishes content revisions, URL relocations, unchanged bytes, and failed observations. Each failure is retained while later years are still attempted. Revised workbook bytes are captured under `artifacts/source-revisions/YEAR/SHA256.xlsx` (or `.xls`); existing accepted workbooks are untouched.
+
+A revision or failed observation makes this monitoring check fail so that review is visible. The retained-source analysis remains reproducible from its original immutable release. Review the artifact before deciding whether to create a new accepted capture.
+
+Reproduce with the retained accepted manifest:
+
+```sh
+PYTHONPATH=src python -m rsd407_pay.source_revisions \
+  --baseline artifacts/manifests/accepted-collection.json
+```
+
+The monitor verifies workbook identity and byte hashes; it does not establish the effect of a revision on Riverview results. Changed-source artifacts are temporary evidence. Plan 09 still needs durable reviewed revision publication and before/after analytical comparisons.

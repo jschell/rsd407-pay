@@ -7,6 +7,8 @@ on:
     paths:
       - "config/sources.json"
       - "src/rsd407_pay/sources.py"
+      - "src/rsd407_pay/source_revisions.py"
+      - "tests/test_source_revisions.py"
       - "src/rsd407_pay/final_source_watch.py"
       - "tests/test_final_source_watch.py"
       - "src/rsd407_pay/workbook.py"
@@ -39,6 +41,20 @@ jobs:
         env:
           PYTHONPATH: src
         run: python -m rsd407_pay.final_source_watch
+      - name: Retrieve explicitly accepted source manifest
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p artifacts/manifests
+          tag="$(python -c 'import json; print(json.load(open("config/sources.json"))["accepted_snapshot_tag"])')"
+          gh release download "$tag" --pattern collection.json --dir artifacts/manifests
+          mv artifacts/manifests/collection.json artifacts/manifests/accepted-collection.json
+      - name: Compare every accepted source against current workbook bytes
+        if: always()
+        env:
+          PYTHONPATH: src
+        run: python -m rsd407_pay.source_revisions
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -47,4 +63,7 @@ jobs:
             artifacts/source-status.json
             artifacts/final-source-watch.json
             artifacts/s275-source-page.html
+            artifacts/manifests/accepted-collection.json
+            artifacts/source-revisions.json
+            artifacts/source-revisions/
           if-no-files-found: warn
