@@ -1,0 +1,6434 @@
+{
+  "schema_version": 1,
+  "financial_rows": [
+    {
+      "district": "Riverview",
+      "district_code": "17407",
+      "school_year": "2024-25",
+      "student_fte": 2818.78,
+      "f196_full_enrollment": 2987.65,
+      "general_fund_expenditure": 59197178.87000003,
+      "administration_activities_11_15": 3026800.69,
+      "admin_per_1000_student_fte": 1073798.1289777847,
+      "admin_share_general_fund": 0.05113082663359695,
+      "purchased_services_districtwide": 6690371.069999999,
+      "activity_amounts": {
+        "11": 340092.85,
+        "12": 577132.4199999999,
+        "13": 1052227.58,
+        "14": 663588.96,
+        "15": 393758.88,
+        "21": 1874977.2300000002,
+        "23": 3313739.78,
+        "32": 0.0,
+        "65": 1479002.4,
+        "72": 1381530.94,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 108,
+        "Object": 108,
+        "Program": 108
+      }
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "district_code": "17410",
+      "school_year": "2024-25",
+      "student_fte": 6801.25,
+      "f196_full_enrollment": 7129.529999999999,
+      "general_fund_expenditure": 132859774.68999995,
+      "administration_activities_11_15": 4212442.06,
+      "admin_per_1000_student_fte": 619362.9200514611,
+      "admin_share_general_fund": 0.03170592506143291,
+      "purchased_services_districtwide": 20396709.839999996,
+      "activity_amounts": {
+        "11": 353056.37,
+        "12": 667756.87,
+        "13": 1558023.38,
+        "14": 1024349.0,
+        "15": 609256.44,
+        "21": 2307796.38,
+        "23": 7443149.890000001,
+        "32": 809769.17,
+        "65": 2740413.14,
+        "72": 2706421.0300000003,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 111,
+        "Object": 111,
+        "Program": 111
+      }
+    },
+    {
+      "district": "Northshore",
+      "district_code": "17417",
+      "school_year": "2024-25",
+      "student_fte": 21571.74,
+      "f196_full_enrollment": 22391.21,
+      "general_fund_expenditure": 431535452.4,
+      "administration_activities_11_15": 9685620.739999998,
+      "admin_per_1000_student_fte": 448995.8037691905,
+      "admin_share_general_fund": 0.02244455394367501,
+      "purchased_services_districtwide": 40744429.309999995,
+      "activity_amounts": {
+        "11": 138994.75999999998,
+        "12": 1473601.6800000002,
+        "13": 3387160.36,
+        "14": 3628489.1699999995,
+        "15": 1057374.7699999998,
+        "21": 10027858.35,
+        "23": 24423345.3,
+        "32": 588541.18,
+        "65": 6976077.11,
+        "72": 7649155.49,
+        "73": 144215.74
+      },
+      "source_rows": {
+        "Activity": 116,
+        "Object": 116,
+        "Program": 116
+      }
+    },
+    {
+      "district": "Monroe",
+      "district_code": "31103",
+      "school_year": "2024-25",
+      "student_fte": 5437.42,
+      "f196_full_enrollment": 5710.070000000001,
+      "general_fund_expenditure": 111787106.56999993,
+      "administration_activities_11_15": 4170852.68,
+      "admin_per_1000_student_fte": 767064.6519856844,
+      "admin_share_general_fund": 0.037310677483080354,
+      "purchased_services_districtwide": 16890860.68,
+      "activity_amounts": {
+        "11": 221358.94999999998,
+        "12": 658017.6699999999,
+        "13": 1449146.05,
+        "14": 1096523.05,
+        "15": 745806.9600000001,
+        "21": 1896736.2899999998,
+        "23": 6731579.379999999,
+        "32": 210396.73,
+        "65": 1883242.48,
+        "72": 1268302.95,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 235,
+        "Object": 235,
+        "Program": 235
+      }
+    },
+    {
+      "district": "Sultan",
+      "district_code": "31311",
+      "school_year": "2024-25",
+      "student_fte": 2038.6,
+      "f196_full_enrollment": 2195.6099999999997,
+      "general_fund_expenditure": 42686201.46000001,
+      "administration_activities_11_15": 1783554.8699999999,
+      "admin_per_1000_student_fte": 874892.0190326695,
+      "admin_share_general_fund": 0.04178293708498089,
+      "purchased_services_districtwide": 7156849.520000001,
+      "activity_amounts": {
+        "11": 220998.73,
+        "12": 444668.37,
+        "13": 690968.6399999999,
+        "14": 407747.79,
+        "15": 19171.34,
+        "21": 869361.2799999999,
+        "23": 2314351.7,
+        "32": 0.0,
+        "65": 740724.28,
+        "72": 1088233.75,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 238,
+        "Object": 238,
+        "Program": 238
+      }
+    },
+    {
+      "district": "Lakewood",
+      "district_code": "31306",
+      "school_year": "2024-25",
+      "student_fte": 2564.66,
+      "f196_full_enrollment": 2644.6899999999996,
+      "general_fund_expenditure": 50910838.34999999,
+      "administration_activities_11_15": 2255497.6599999997,
+      "admin_per_1000_student_fte": 879452.8943407703,
+      "admin_share_general_fund": 0.044302897636334056,
+      "purchased_services_districtwide": 5327531.03,
+      "activity_amounts": {
+        "11": 134405.03,
+        "12": 623724.7,
+        "13": 768621.0399999999,
+        "14": 424853.67000000004,
+        "15": 303893.22,
+        "21": 2048335.0000000002,
+        "23": 2442103.95,
+        "32": 38388.3,
+        "65": 702519.65,
+        "72": 626337.44,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 237,
+        "Object": 237,
+        "Program": 237
+      }
+    },
+    {
+      "district": "Granite Falls",
+      "district_code": "31332",
+      "school_year": "2024-25",
+      "student_fte": 2163.95,
+      "f196_full_enrollment": 2295.59,
+      "general_fund_expenditure": 43808603.39,
+      "administration_activities_11_15": 1391624.27,
+      "admin_per_1000_student_fte": 643094.466138312,
+      "admin_share_general_fund": 0.03176600398810386,
+      "purchased_services_districtwide": 7895110.3900000015,
+      "activity_amounts": {
+        "11": 58087.5,
+        "12": 453277.94999999995,
+        "13": 464029.41000000003,
+        "14": 415219.51,
+        "15": 1009.9,
+        "21": 860718.4299999999,
+        "23": 2341017.96,
+        "32": 12748.23,
+        "65": 770102.4500000001,
+        "72": 515864.25,
+        "73": 88068.37999999999
+      },
+      "source_rows": {
+        "Activity": 240,
+        "Object": 240,
+        "Program": 240
+      }
+    },
+    {
+      "district": "Tukwila",
+      "district_code": "17406",
+      "school_year": "2024-25",
+      "student_fte": 2643.09,
+      "f196_full_enrollment": 2819.31,
+      "general_fund_expenditure": 56424146.12000006,
+      "administration_activities_11_15": 2014120.15,
+      "admin_per_1000_student_fte": 762032.374985339,
+      "admin_share_general_fund": 0.03569606788052175,
+      "purchased_services_districtwide": 9830902.379999999,
+      "activity_amounts": {
+        "11": 113728.34,
+        "12": 525097.8400000001,
+        "13": 699889.7,
+        "14": 533058.49,
+        "15": 142345.78,
+        "21": 1149857.5899999999,
+        "23": 2755537.1300000004,
+        "32": 43639.2,
+        "65": 975311.95,
+        "72": 417601.58999999997,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 107,
+        "Object": 107,
+        "Program": 107
+      }
+    },
+    {
+      "district": "Orting",
+      "district_code": "27344",
+      "school_year": "2024-25",
+      "student_fte": 2741.87,
+      "f196_full_enrollment": 2845.8100000000004,
+      "general_fund_expenditure": 49602218.550000004,
+      "administration_activities_11_15": 2216746.2399999998,
+      "admin_per_1000_student_fte": 808479.7018093491,
+      "admin_share_general_fund": 0.044690465563863364,
+      "purchased_services_districtwide": 7509604.15,
+      "activity_amounts": {
+        "11": 212238.48,
+        "12": 570211.52,
+        "13": 642350.84,
+        "14": 586900.4999999999,
+        "15": 205044.9,
+        "21": 1383803.83,
+        "23": 2745495.56,
+        "32": 304680.14999999997,
+        "65": 1011095.12,
+        "72": 1019623.18,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 202,
+        "Object": 202,
+        "Program": 202
+      }
+    },
+    {
+      "district": "Steilacoom Historical",
+      "district_code": "27001",
+      "school_year": "2024-25",
+      "student_fte": 2775.08,
+      "f196_full_enrollment": 3042.0700000000006,
+      "general_fund_expenditure": 52276318.859999985,
+      "administration_activities_11_15": 1859830.0,
+      "admin_per_1000_student_fte": 670189.6882252044,
+      "admin_share_general_fund": 0.03557691208098964,
+      "purchased_services_districtwide": 9549619.05,
+      "activity_amounts": {
+        "11": 98915.45,
+        "12": 430196.70999999996,
+        "13": 819468.0399999999,
+        "14": 410866.64,
+        "15": 100383.16,
+        "21": 1040770.24,
+        "23": 3123369.15,
+        "32": 74100.98999999999,
+        "65": 830834.73,
+        "72": 663222.78,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 195,
+        "Object": 195,
+        "Program": 195
+      }
+    },
+    {
+      "district": "Riverview",
+      "district_code": "17407",
+      "school_year": "2023-24",
+      "student_fte": 2948.65,
+      "f196_full_enrollment": 3066.5199999999995,
+      "general_fund_expenditure": 55851151.36000002,
+      "administration_activities_11_15": 2680726.2,
+      "admin_per_1000_student_fte": 909136.7914130195,
+      "admin_share_general_fund": 0.04799768912051304,
+      "purchased_services_districtwide": 5916832.370000002,
+      "activity_amounts": {
+        "11": 258605.61000000002,
+        "12": 532243.29,
+        "13": 941481.18,
+        "14": 647539.0700000001,
+        "15": 300857.05,
+        "21": 1897792.87,
+        "23": 3483541.08,
+        "32": 230.59,
+        "65": 1167113.27,
+        "72": 1528443.4900000002,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 108,
+        "Object": 108,
+        "Program": 108
+      }
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "district_code": "17410",
+      "school_year": "2023-24",
+      "student_fte": 6837.47,
+      "f196_full_enrollment": 7142.45,
+      "general_fund_expenditure": 126800200.47000007,
+      "administration_activities_11_15": 4086587.68,
+      "admin_per_1000_student_fte": 597675.4091791261,
+      "admin_share_general_fund": 0.03222855851057471,
+      "purchased_services_districtwide": 19462588.75,
+      "activity_amounts": {
+        "11": 380939.04999999993,
+        "12": 907152.65,
+        "13": 1347077.58,
+        "14": 919291.91,
+        "15": 532126.49,
+        "21": 2551619.7199999997,
+        "23": 6936231.21,
+        "32": 1034504.82,
+        "65": 2491804.25,
+        "72": 2004359.33,
+        "73": 1607.78
+      },
+      "source_rows": {
+        "Activity": 111,
+        "Object": 111,
+        "Program": 111
+      }
+    },
+    {
+      "district": "Northshore",
+      "district_code": "17417",
+      "school_year": "2023-24",
+      "student_fte": 21944.74,
+      "f196_full_enrollment": 22710.36,
+      "general_fund_expenditure": 425765155.6599998,
+      "administration_activities_11_15": 8807564.43,
+      "admin_per_1000_student_fte": 401351.96087991924,
+      "admin_share_general_fund": 0.020686437847049637,
+      "purchased_services_districtwide": 38051603.460000016,
+      "activity_amounts": {
+        "11": 337727.25,
+        "12": 1449727.87,
+        "13": 3183849.81,
+        "14": 3054120.71,
+        "15": 782138.79,
+        "21": 11617427.33,
+        "23": 24506544.709999997,
+        "32": 560154.08,
+        "65": 7017587.26,
+        "72": 7129008.83,
+        "73": 1159.319999999996
+      },
+      "source_rows": {
+        "Activity": 116,
+        "Object": 116,
+        "Program": 116
+      }
+    },
+    {
+      "district": "Monroe",
+      "district_code": "31103",
+      "school_year": "2023-24",
+      "student_fte": 5312.39,
+      "f196_full_enrollment": 5554.29,
+      "general_fund_expenditure": 105388038.41,
+      "administration_activities_11_15": 4083644.38,
+      "admin_per_1000_student_fte": 768701.9175926466,
+      "admin_share_general_fund": 0.038748651570048705,
+      "purchased_services_districtwide": 16057561.830000004,
+      "activity_amounts": {
+        "11": 464117.13,
+        "12": 602546.97,
+        "13": 1266188.55,
+        "14": 1021670.78,
+        "15": 729120.95,
+        "21": 2134177.090000001,
+        "23": 6521796.39,
+        "32": 199759.87,
+        "65": 1919996.3800000001,
+        "72": 1694320.46,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 235,
+        "Object": 235,
+        "Program": 235
+      }
+    },
+    {
+      "district": "Sultan",
+      "district_code": "31311",
+      "school_year": "2023-24",
+      "student_fte": 1985.79,
+      "f196_full_enrollment": 2079.5,
+      "general_fund_expenditure": 39006793.54999999,
+      "administration_activities_11_15": 1841239.3200000003,
+      "admin_per_1000_student_fte": 927207.4690677264,
+      "admin_share_general_fund": 0.04720304214802605,
+      "purchased_services_districtwide": 5870200.84,
+      "activity_amounts": {
+        "11": 173563.46,
+        "12": 447902.01000000007,
+        "13": 951633.1400000001,
+        "14": 244038.43,
+        "15": 24102.28,
+        "21": 754710.39,
+        "23": 2300149.9499999997,
+        "32": 0.0,
+        "65": 749244.7,
+        "72": 312310.75,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 238,
+        "Object": 238,
+        "Program": 238
+      }
+    },
+    {
+      "district": "Lakewood",
+      "district_code": "31306",
+      "school_year": "2023-24",
+      "student_fte": 2531.58,
+      "f196_full_enrollment": 2616.95,
+      "general_fund_expenditure": 48439196.80999998,
+      "administration_activities_11_15": 2223853.0,
+      "admin_per_1000_student_fte": 878444.686717386,
+      "admin_share_general_fund": 0.04591019559475641,
+      "purchased_services_districtwide": 4905293.080000001,
+      "activity_amounts": {
+        "11": 227675.85,
+        "12": 605544.3599999999,
+        "13": 658676.28,
+        "14": 416201.53,
+        "15": 315754.98,
+        "21": 1862776.85,
+        "23": 2509200.0300000003,
+        "32": 24993.71,
+        "65": 654793.08,
+        "72": 515783.06,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 237,
+        "Object": 237,
+        "Program": 237
+      }
+    },
+    {
+      "district": "Granite Falls",
+      "district_code": "31332",
+      "school_year": "2023-24",
+      "student_fte": 2183.51,
+      "f196_full_enrollment": 2304.53,
+      "general_fund_expenditure": 41305626.11999999,
+      "administration_activities_11_15": 1619653.26,
+      "admin_per_1000_student_fte": 741765.8998584846,
+      "admin_share_general_fund": 0.039211444351300404,
+      "purchased_services_districtwide": 7061847.479999998,
+      "activity_amounts": {
+        "11": 107872.39000000001,
+        "12": 522828.83,
+        "13": 508477.01,
+        "14": 390343.28,
+        "15": 90131.75,
+        "21": 990120.8,
+        "23": 2799157.55,
+        "32": 41934.31,
+        "65": 803275.6,
+        "72": 520143.45,
+        "73": 83108.07
+      },
+      "source_rows": {
+        "Activity": 240,
+        "Object": 240,
+        "Program": 240
+      }
+    },
+    {
+      "district": "Tukwila",
+      "district_code": "17406",
+      "school_year": "2023-24",
+      "student_fte": 2657.4900000000002,
+      "f196_full_enrollment": 2778.5899999999997,
+      "general_fund_expenditure": 64380931.49000003,
+      "administration_activities_11_15": 2709650.01,
+      "admin_per_1000_student_fte": 1019627.5470462729,
+      "admin_share_general_fund": 0.04208777268811148,
+      "purchased_services_districtwide": 13762796.640000002,
+      "activity_amounts": {
+        "11": 206498.66999999998,
+        "12": 751198.6999999998,
+        "13": 915451.6199999999,
+        "14": 649452.5099999999,
+        "15": 187048.51,
+        "21": 1326092.95,
+        "23": 2841256.58,
+        "32": 48028.909999999996,
+        "65": 958971.03,
+        "72": 411833.54000000004,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 107,
+        "Object": 107,
+        "Program": 107
+      }
+    },
+    {
+      "district": "Orting",
+      "district_code": "27344",
+      "school_year": "2023-24",
+      "student_fte": 2717.21,
+      "f196_full_enrollment": 2833.04,
+      "general_fund_expenditure": 45944382.68000004,
+      "administration_activities_11_15": 2158947.69,
+      "admin_per_1000_student_fte": 794545.7620132415,
+      "admin_share_general_fund": 0.04699046029276192,
+      "purchased_services_districtwide": 6038878.89,
+      "activity_amounts": {
+        "11": 267770.34,
+        "12": 520637.86,
+        "13": 602910.3099999999,
+        "14": 561635.38,
+        "15": 205993.80000000002,
+        "21": 1301876.89,
+        "23": 2609823.1499999994,
+        "32": 373883.71,
+        "65": 945086.16,
+        "72": 918502.2199999999,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 202,
+        "Object": 202,
+        "Program": 202
+      }
+    },
+    {
+      "district": "Steilacoom Historical",
+      "district_code": "27001",
+      "school_year": "2023-24",
+      "student_fte": 2797.61,
+      "f196_full_enrollment": 3048.98,
+      "general_fund_expenditure": 50392336.20999999,
+      "administration_activities_11_15": 1654176.27,
+      "admin_per_1000_student_fte": 591281.9406564889,
+      "admin_share_general_fund": 0.03282594922979064,
+      "purchased_services_districtwide": 9117800.18,
+      "activity_amounts": {
+        "11": 56732.310000000005,
+        "12": 434609.38,
+        "13": 710932.21,
+        "14": 358260.18000000005,
+        "15": 93642.19,
+        "21": 1253916.0199999996,
+        "23": 3297723.86,
+        "32": 47854.39,
+        "65": 936584.67,
+        "72": 633721.0599999999,
+        "73": 0.0
+      },
+      "source_rows": {
+        "Activity": 195,
+        "Object": 195,
+        "Program": 195
+      }
+    }
+  ],
+  "findings": {
+    "size_peer_districts": [
+      "Sultan",
+      "Lakewood",
+      "Granite Falls",
+      "Tukwila",
+      "Orting",
+      "Steilacoom Historical"
+    ],
+    "size_peer_median_per_1000": 785256.0383973441,
+    "riverview_difference_from_size_median": 0.36744969343927103,
+    "riverview_nominal_admin_increase": 346074.48999999976,
+    "riverview_admin_change": 0.12909729087588273,
+    "nearby_differences": {
+      "Snoqualmie Valley": 0.733713940912972,
+      "Northshore": 1.391554932058515,
+      "Monroe": 0.39987956190924145
+    }
+  },
+  "riverview_annual_history": [
+    {
+      "school_year": "2013-14",
+      "job_family": "clerical/office",
+      "employee_rows": "35",
+      "total_fte": 27.134,
+      "fte_per_1000_student_fte": 8.800825138171723,
+      "base_salary": "1154309.0",
+      "total_salary": "1233089.0",
+      "reported_employer_compensation": 1755404.0
+    },
+    {
+      "school_year": "2014-15",
+      "job_family": "clerical/office",
+      "employee_rows": "37",
+      "total_fte": 26.78,
+      "fte_per_1000_student_fte": 8.832716010699528,
+      "base_salary": "1168104.0",
+      "total_salary": "1260928.0",
+      "reported_employer_compensation": 1741334.0
+    },
+    {
+      "school_year": "2015-16",
+      "job_family": "clerical/office",
+      "employee_rows": "38",
+      "total_fte": 28.701999999999998,
+      "fte_per_1000_student_fte": 9.467451717711477,
+      "base_salary": "1326922.0",
+      "total_salary": "1405655.0",
+      "reported_employer_compensation": 1940652.0
+    },
+    {
+      "school_year": "2016-17",
+      "job_family": "clerical/office",
+      "employee_rows": "38",
+      "total_fte": 28.644,
+      "fte_per_1000_student_fte": 8.864708285364133,
+      "base_salary": "1406989.0",
+      "total_salary": "1487001.0",
+      "reported_employer_compensation": 2066486.0
+    },
+    {
+      "school_year": "2017-18",
+      "job_family": "clerical/office",
+      "employee_rows": "36",
+      "total_fte": 28.808,
+      "fte_per_1000_student_fte": 8.861600551235357,
+      "base_salary": "1492955.0",
+      "total_salary": "1604920.0",
+      "reported_employer_compensation": 2027422.0
+    },
+    {
+      "school_year": "2018-19",
+      "job_family": "clerical/office",
+      "employee_rows": "37",
+      "total_fte": 29.373,
+      "fte_per_1000_student_fte": 8.957859360418663,
+      "base_salary": "1578805.0",
+      "total_salary": "1718219.0",
+      "reported_employer_compensation": 2376002.0
+    },
+    {
+      "school_year": "2019-20",
+      "job_family": "clerical/office",
+      "employee_rows": "38",
+      "total_fte": 29.949,
+      "fte_per_1000_student_fte": 9.290227718994576,
+      "base_salary": "1678520.0",
+      "total_salary": "1770560.0",
+      "reported_employer_compensation": 2551001.0
+    },
+    {
+      "school_year": "2020-21",
+      "job_family": "clerical/office",
+      "employee_rows": "36",
+      "total_fte": 28.542,
+      "fte_per_1000_student_fte": 9.749116185336362,
+      "base_salary": "1659997.0",
+      "total_salary": "1693647.0",
+      "reported_employer_compensation": 2477794.0
+    },
+    {
+      "school_year": "2021-22",
+      "job_family": "clerical/office",
+      "employee_rows": "37",
+      "total_fte": 29.434,
+      "fte_per_1000_student_fte": 10.002276797395616,
+      "base_salary": "1734173.0",
+      "total_salary": "1866829.0",
+      "reported_employer_compensation": 2637165.0
+    },
+    {
+      "school_year": "2022-23",
+      "job_family": "clerical/office",
+      "employee_rows": "36",
+      "total_fte": 29.302,
+      "fte_per_1000_student_fte": 9.816250984070619,
+      "base_salary": "1899611.0",
+      "total_salary": "1954918.0",
+      "reported_employer_compensation": 2773165.0
+    },
+    {
+      "school_year": "2023-24",
+      "job_family": "clerical/office",
+      "employee_rows": "29",
+      "total_fte": 23.646,
+      "fte_per_1000_student_fte": 8.019263052583385,
+      "base_salary": "1466993.0",
+      "total_salary": "1503483.0",
+      "reported_employer_compensation": 2088198.0
+    },
+    {
+      "school_year": "2024-25",
+      "job_family": "clerical/office",
+      "employee_rows": "35",
+      "total_fte": 26.679,
+      "fte_per_1000_student_fte": 9.464732969582585,
+      "base_salary": "2213852.0",
+      "total_salary": "2302940.0",
+      "reported_employer_compensation": 3283527.0
+    },
+    {
+      "school_year": "2013-14",
+      "job_family": "district/central administration",
+      "employee_rows": "4",
+      "total_fte": 4.0,
+      "fte_per_1000_student_fte": 1.2973870624562132,
+      "base_salary": "494685.0",
+      "total_salary": "577081.0",
+      "reported_employer_compensation": 706563.0
+    },
+    {
+      "school_year": "2014-15",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.6491254687639145,
+      "base_salary": "647097.0",
+      "total_salary": "735916.0",
+      "reported_employer_compensation": 899139.0
+    },
+    {
+      "school_year": "2015-16",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.6492669008625664,
+      "base_salary": "695611.0",
+      "total_salary": "794465.0",
+      "reported_employer_compensation": 985822.0
+    },
+    {
+      "school_year": "2016-17",
+      "job_family": "district/central administration",
+      "employee_rows": "6",
+      "total_fte": 6.0,
+      "fte_per_1000_student_fte": 1.8568722843242842,
+      "base_salary": "839519.0",
+      "total_salary": "958251.0",
+      "reported_employer_compensation": 1168482.0
+    },
+    {
+      "school_year": "2017-18",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.538045083177478,
+      "base_salary": "772976.0",
+      "total_salary": "948306.0",
+      "reported_employer_compensation": 1136545.0
+    },
+    {
+      "school_year": "2018-19",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.5248458380857695,
+      "base_salary": "799114.0",
+      "total_salary": "983624.0",
+      "reported_employer_compensation": 1211582.0
+    },
+    {
+      "school_year": "2019-20",
+      "job_family": "district/central administration",
+      "employee_rows": "4",
+      "total_fte": 4.0,
+      "fte_per_1000_student_fte": 1.2408064000794115,
+      "base_salary": "686162.0",
+      "total_salary": "803098.0",
+      "reported_employer_compensation": 1006939.0
+    },
+    {
+      "school_year": "2020-21",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.707854422489027,
+      "base_salary": "877889.0",
+      "total_salary": "1003335.0",
+      "reported_employer_compensation": 1264623.0
+    },
+    {
+      "school_year": "2021-22",
+      "job_family": "district/central administration",
+      "employee_rows": "5",
+      "total_fte": 5.0,
+      "fte_per_1000_student_fte": 1.6991025340415191,
+      "base_salary": "926309.0",
+      "total_salary": "1097235.0",
+      "reported_employer_compensation": 1354118.0
+    },
+    {
+      "school_year": "2022-23",
+      "job_family": "district/central administration",
+      "employee_rows": "3",
+      "total_fte": 3.0,
+      "fte_per_1000_student_fte": 1.0050082913184033,
+      "base_salary": "612971.0",
+      "total_salary": "656085.0",
+      "reported_employer_compensation": 821876.0
+    },
+    {
+      "school_year": "2023-24",
+      "job_family": "district/central administration",
+      "employee_rows": "3",
+      "total_fte": 2.919,
+      "fte_per_1000_student_fte": 0.9899445508961728,
+      "base_salary": "635209.0",
+      "total_salary": "712857.0",
+      "reported_employer_compensation": 858478.0
+    },
+    {
+      "school_year": "2024-25",
+      "job_family": "district/central administration",
+      "employee_rows": "4",
+      "total_fte": 4.0,
+      "fte_per_1000_student_fte": 1.419053633132064,
+      "base_salary": "880885.0",
+      "total_salary": "926533.0",
+      "reported_employer_compensation": 1140468.0
+    }
+  ],
+  "personnel_rows": [
+    {
+      "district": "Riverview",
+      "school_year": "2013-14",
+      "student_fte": 3083.12,
+      "district_code": "17407",
+      "source_label": "Riverview",
+      "district_fte": 294.47099999999995,
+      "district_compensation": 24667562.0,
+      "central_fte": 4.0,
+      "central_salary": 577081.0,
+      "central_compensation": 706563.0,
+      "school_admin_fte": 9.725,
+      "school_admin_compensation": 1518852.0,
+      "director_supervisor_fte_excluded": 3.931,
+      "director_supervisor_compensation_excluded": 472619.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 373,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 11,
+      "salary_below_base_rows": 12,
+      "central_fte_per_1000_students": 1.2973870624562132,
+      "central_compensation_per_1000_students": 229171.42375256238,
+      "central_compensation_per_staff_fte": 176640.75,
+      "central_share_district_compensation": 0.02864340626771304
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "school_year": "2013-14",
+      "student_fte": 5971.3,
+      "district_code": "17410",
+      "source_label": "Snoqualmie Valley",
+      "district_fte": 531.6219999999997,
+      "district_compensation": 43545641.0,
+      "central_fte": 5.0,
+      "central_salary": 690194.0,
+      "central_compensation": 852027.0,
+      "school_admin_fte": 14.0,
+      "school_admin_compensation": 2007131.0,
+      "director_supervisor_fte_excluded": 5.95,
+      "director_supervisor_compensation_excluded": 600694.0,
+      "unmapped_title_fte": 3.0,
+      "unmapped_title_compensation": 267734.0,
+      "employee_rows": 664,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 16,
+      "salary_below_base_rows": 63,
+      "central_fte_per_1000_students": 0.8373386029842748,
+      "central_compensation_per_1000_students": 142687.0195769765,
+      "central_compensation_per_staff_fte": 170405.4,
+      "central_share_district_compensation": 0.019566298266226006
+    },
+    {
+      "district": "Northshore",
+      "school_year": "2013-14",
+      "student_fte": 19218.45,
+      "district_code": "17417",
+      "source_label": "Northshore",
+      "district_fte": 1853.3059999999925,
+      "district_compensation": 169291791.0,
+      "central_fte": 15.5,
+      "central_salary": 2150955.0,
+      "central_compensation": 2656128.0,
+      "school_admin_fte": 48.375,
+      "school_admin_compensation": 7249813.0,
+      "director_supervisor_fte_excluded": 19.0,
+      "director_supervisor_compensation_excluded": 2715794.0,
+      "unmapped_title_fte": 3.8,
+      "unmapped_title_compensation": 437709.0,
+      "employee_rows": 2257,
+      "central_employee_rows": 16,
+      "zero_fte_rows": 0,
+      "salary_below_base_rows": 113,
+      "central_fte_per_1000_students": 0.8065166545689169,
+      "central_compensation_per_1000_students": 138207.19152689213,
+      "central_compensation_per_staff_fte": 171363.09677419355,
+      "central_share_district_compensation": 0.01568964439628381
+    },
+    {
+      "district": "Monroe",
+      "school_year": "2013-14",
+      "student_fte": 6633.37,
+      "district_code": "31103",
+      "source_label": "Monroe",
+      "district_fte": 559.5500000000001,
+      "district_compensation": 50466947.0,
+      "central_fte": 7.0,
+      "central_salary": 973006.0,
+      "central_compensation": 1217266.0,
+      "school_admin_fte": 16.0,
+      "school_admin_compensation": 2428766.0,
+      "director_supervisor_fte_excluded": 5.0,
+      "director_supervisor_compensation_excluded": 714000.0,
+      "unmapped_title_fte": 3.174,
+      "unmapped_title_compensation": 277778.0,
+      "employee_rows": 694,
+      "central_employee_rows": 7,
+      "zero_fte_rows": 17,
+      "salary_below_base_rows": 37,
+      "central_fte_per_1000_students": 1.0552705487557608,
+      "central_compensation_per_1000_students": 183506.42282881853,
+      "central_compensation_per_staff_fte": 173895.14285714287,
+      "central_share_district_compensation": 0.024120064167939465
+    },
+    {
+      "district": "Sultan",
+      "school_year": "2013-14",
+      "student_fte": 1859.69,
+      "district_code": "31311",
+      "source_label": "Sultan",
+      "district_fte": 193.54999999999984,
+      "district_compensation": 16317467.0,
+      "central_fte": 2.0,
+      "central_salary": 277059.0,
+      "central_compensation": 361623.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 906480.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 390081.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 243,
+      "central_employee_rows": 2,
+      "zero_fte_rows": 12,
+      "salary_below_base_rows": 4,
+      "central_fte_per_1000_students": 1.0754480585473922,
+      "central_compensation_per_1000_students": 194453.3766380418,
+      "central_compensation_per_staff_fte": 180811.5,
+      "central_share_district_compensation": 0.02216171174116669
+    },
+    {
+      "district": "Lakewood",
+      "school_year": "2013-14",
+      "student_fte": 2175.13,
+      "district_code": "31306",
+      "source_label": "Lakewood",
+      "district_fte": 217.92199999999997,
+      "district_compensation": 18512061.0,
+      "central_fte": 3.0,
+      "central_salary": 362324.0,
+      "central_compensation": 457485.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 931902.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 360650.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 277,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 0,
+      "salary_below_base_rows": 17,
+      "central_fte_per_1000_students": 1.37922790821698,
+      "central_compensation_per_1000_students": 210325.3598635484,
+      "central_compensation_per_staff_fte": 152495.0,
+      "central_share_district_compensation": 0.02471280750425358
+    },
+    {
+      "district": "Granite Falls",
+      "school_year": "2013-14",
+      "student_fte": 1944.02,
+      "district_code": "31332",
+      "source_label": "Granite Falls",
+      "district_fte": 177.7440000000001,
+      "district_compensation": 15557693.0,
+      "central_fte": 2.0,
+      "central_salary": 261850.0,
+      "central_compensation": 356018.0,
+      "school_admin_fte": 6.0,
+      "school_admin_compensation": 900418.0,
+      "director_supervisor_fte_excluded": 2.773,
+      "director_supervisor_compensation_excluded": 307191.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 239,
+      "central_employee_rows": 2,
+      "zero_fte_rows": 19,
+      "salary_below_base_rows": 10,
+      "central_fte_per_1000_students": 1.0287960000411518,
+      "central_compensation_per_1000_students": 183134.9471713254,
+      "central_compensation_per_staff_fte": 178009.0,
+      "central_share_district_compensation": 0.0228837270410208
+    },
+    {
+      "district": "Tukwila",
+      "school_year": "2013-14",
+      "student_fte": 2876.46,
+      "district_code": "17406",
+      "source_label": "Tukwila",
+      "district_fte": 292.0770000000002,
+      "district_compensation": 23786473.0,
+      "central_fte": 5.0,
+      "central_salary": 561033.0,
+      "central_compensation": 657745.0,
+      "school_admin_fte": 8.77,
+      "school_admin_compensation": 1190053.0,
+      "director_supervisor_fte_excluded": 7.885000000000001,
+      "director_supervisor_compensation_excluded": 1004562.0,
+      "unmapped_title_fte": 3.0,
+      "unmapped_title_compensation": 240639.0,
+      "employee_rows": 348,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 1,
+      "salary_below_base_rows": 17,
+      "central_fte_per_1000_students": 1.738247707251274,
+      "central_compensation_per_1000_students": 228664.74764119787,
+      "central_compensation_per_staff_fte": 131549.0,
+      "central_share_district_compensation": 0.027652060900327676
+    },
+    {
+      "district": "Orting",
+      "school_year": "2013-14",
+      "student_fte": 2196.41,
+      "district_code": "27344",
+      "source_label": "Orting",
+      "district_fte": 215.578,
+      "district_compensation": 16533582.0,
+      "central_fte": 2.885,
+      "central_salary": 327083.0,
+      "central_compensation": 399301.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 917097.0,
+      "director_supervisor_fte_excluded": 3.7110000000000003,
+      "director_supervisor_compensation_excluded": 310687.0,
+      "unmapped_title_fte": 2.989,
+      "unmapped_title_compensation": 235519.0,
+      "employee_rows": 272,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 12,
+      "salary_below_base_rows": 0,
+      "central_fte_per_1000_students": 1.3135070410351437,
+      "central_compensation_per_1000_students": 181797.11438210536,
+      "central_compensation_per_staff_fte": 138405.89254766033,
+      "central_share_district_compensation": 0.024150906923859572
+    },
+    {
+      "district": "Steilacoom Historical",
+      "school_year": "2013-14",
+      "student_fte": 2850.27,
+      "district_code": "27001",
+      "source_label": "Steilacoom Hist.",
+      "district_fte": 277.35600000000005,
+      "district_compensation": 21802401.0,
+      "central_fte": 3.0,
+      "central_salary": 328640.0,
+      "central_compensation": 413053.0,
+      "school_admin_fte": 9.968,
+      "school_admin_compensation": 1304942.0,
+      "director_supervisor_fte_excluded": 2.0,
+      "director_supervisor_compensation_excluded": 196579.0,
+      "unmapped_title_fte": 6.08,
+      "unmapped_title_compensation": 266704.0,
+      "employee_rows": 345,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 29,
+      "salary_below_base_rows": 25,
+      "central_fte_per_1000_students": 1.052531865402225,
+      "central_compensation_per_1000_students": 144917.1481999951,
+      "central_compensation_per_staff_fte": 137684.33333333334,
+      "central_share_district_compensation": 0.018945298731089296
+    },
+    {
+      "district": "Riverview",
+      "school_year": "2023-24",
+      "student_fte": 2948.65,
+      "district_code": "17407",
+      "source_label": "Riverview",
+      "district_fte": 322.4989999999999,
+      "district_compensation": 42500420.0,
+      "central_fte": 2.919,
+      "central_salary": 712857.0,
+      "central_compensation": 858478.0,
+      "school_admin_fte": 13.215,
+      "school_admin_compensation": 3030458.0,
+      "director_supervisor_fte_excluded": 6.931,
+      "director_supervisor_compensation_excluded": 1482140.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 404,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 30,
+      "salary_below_base_rows": 54,
+      "central_fte_per_1000_students": 0.9899445508961728,
+      "central_compensation_per_1000_students": 291142.7263323894,
+      "central_compensation_per_staff_fte": 294100.03425830766,
+      "central_share_district_compensation": 0.020199282736500016
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "school_year": "2023-24",
+      "student_fte": 6837.47,
+      "district_code": "17410",
+      "source_label": "Snoqualmie Valley",
+      "district_fte": 746.4360000000006,
+      "district_compensation": 97944556.0,
+      "central_fte": 7.0,
+      "central_salary": 1582887.0,
+      "central_compensation": 1916617.0,
+      "school_admin_fte": 26.0,
+      "school_admin_compensation": 5616239.0,
+      "director_supervisor_fte_excluded": 5.0,
+      "director_supervisor_compensation_excluded": 694532.0,
+      "unmapped_title_fte": 8.0,
+      "unmapped_title_compensation": 919883.0,
+      "employee_rows": 920,
+      "central_employee_rows": 7,
+      "zero_fte_rows": 26,
+      "salary_below_base_rows": 91,
+      "central_fte_per_1000_students": 1.0237704882068952,
+      "central_compensation_per_1000_students": 280310.845970805,
+      "central_compensation_per_staff_fte": 273802.4285714286,
+      "central_share_district_compensation": 0.019568387241451175
+    },
+    {
+      "district": "Northshore",
+      "school_year": "2023-24",
+      "student_fte": 21944.74,
+      "district_code": "17417",
+      "source_label": "Northshore",
+      "district_fte": 2448.681999999988,
+      "district_compensation": 360583723.0,
+      "central_fte": 24.408,
+      "central_salary": 6091267.0,
+      "central_compensation": 7205586.0,
+      "school_admin_fte": 66.953,
+      "school_admin_compensation": 16509504.0,
+      "director_supervisor_fte_excluded": 22.814999999999998,
+      "director_supervisor_compensation_excluded": 5274471.0,
+      "unmapped_title_fte": 5.63,
+      "unmapped_title_compensation": 900222.0,
+      "employee_rows": 2983,
+      "central_employee_rows": 26,
+      "zero_fte_rows": 2,
+      "salary_below_base_rows": 222,
+      "central_fte_per_1000_students": 1.1122483109847734,
+      "central_compensation_per_1000_students": 328351.3953685484,
+      "central_compensation_per_staff_fte": 295214.1101278269,
+      "central_share_district_compensation": 0.01998311498935852
+    },
+    {
+      "district": "Monroe",
+      "school_year": "2023-24",
+      "student_fte": 5312.39,
+      "district_code": "31103",
+      "source_label": "Monroe",
+      "district_fte": 606.8349999999999,
+      "district_compensation": 83406563.0,
+      "central_fte": 8.0,
+      "central_salary": 1740297.0,
+      "central_compensation": 2111936.0,
+      "school_admin_fte": 20.769,
+      "school_admin_compensation": 4881414.0,
+      "director_supervisor_fte_excluded": 9.919,
+      "director_supervisor_compensation_excluded": 1907227.0,
+      "unmapped_title_fte": 16.799999999999997,
+      "unmapped_title_compensation": 996103.0,
+      "employee_rows": 760,
+      "central_employee_rows": 8,
+      "zero_fte_rows": 28,
+      "salary_below_base_rows": 83,
+      "central_fte_per_1000_students": 1.5059135342096495,
+      "central_compensation_per_1000_students": 397549.1257230738,
+      "central_compensation_per_staff_fte": 263992.0,
+      "central_share_district_compensation": 0.02532098103598874
+    },
+    {
+      "district": "Sultan",
+      "school_year": "2023-24",
+      "student_fte": 1985.79,
+      "district_code": "31311",
+      "source_label": "Sultan",
+      "district_fte": 237.59499999999986,
+      "district_compensation": 29685185.0,
+      "central_fte": 4.0,
+      "central_salary": 730986.0,
+      "central_compensation": 905742.0,
+      "school_admin_fte": 8.0,
+      "school_admin_compensation": 1623200.0,
+      "director_supervisor_fte_excluded": 5.904,
+      "director_supervisor_compensation_excluded": 895157.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 300,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 14,
+      "salary_below_base_rows": 19,
+      "central_fte_per_1000_students": 2.014311684518504,
+      "central_compensation_per_1000_students": 456111.67343978974,
+      "central_compensation_per_staff_fte": 226435.5,
+      "central_share_district_compensation": 0.030511583471687982
+    },
+    {
+      "district": "Lakewood",
+      "school_year": "2023-24",
+      "student_fte": 2531.58,
+      "district_code": "31306",
+      "source_label": "Lakewood",
+      "district_fte": 313.3640000000002,
+      "district_compensation": 39644286.0,
+      "central_fte": 9.85,
+      "central_salary": 1741074.0,
+      "central_compensation": 2151898.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 1623864.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 774591.0,
+      "unmapped_title_fte": 3.0,
+      "unmapped_title_compensation": 438985.0,
+      "employee_rows": 396,
+      "central_employee_rows": 10,
+      "zero_fte_rows": 12,
+      "salary_below_base_rows": 48,
+      "central_fte_per_1000_students": 3.8908507730350212,
+      "central_compensation_per_1000_students": 850021.7255626922,
+      "central_compensation_per_staff_fte": 218466.80203045686,
+      "central_share_district_compensation": 0.054280155278871714
+    },
+    {
+      "district": "Granite Falls",
+      "school_year": "2023-24",
+      "student_fte": 2183.51,
+      "district_code": "31332",
+      "source_label": "Granite Falls",
+      "district_fte": 250.8379999999998,
+      "district_compensation": 31172028.0,
+      "central_fte": 3.0,
+      "central_salary": 622763.0,
+      "central_compensation": 761148.0,
+      "school_admin_fte": 9.865,
+      "school_admin_compensation": 2166735.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 733525.0,
+      "unmapped_title_fte": 3.376,
+      "unmapped_title_compensation": 382239.0,
+      "employee_rows": 332,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 21,
+      "salary_below_base_rows": 27,
+      "central_fte_per_1000_students": 1.3739346281903906,
+      "central_compensation_per_1000_students": 348589.19812595315,
+      "central_compensation_per_staff_fte": 253716.0,
+      "central_share_district_compensation": 0.02441766060264029
+    },
+    {
+      "district": "Tukwila",
+      "school_year": "2023-24",
+      "student_fte": 2657.4900000000002,
+      "district_code": "17406",
+      "source_label": "Tukwila",
+      "district_fte": 343.47100000000006,
+      "district_compensation": 47712741.0,
+      "central_fte": 5.704000000000001,
+      "central_salary": 1139708.0,
+      "central_compensation": 1403552.0,
+      "school_admin_fte": 8.854,
+      "school_admin_compensation": 1917849.0,
+      "director_supervisor_fte_excluded": 7.2,
+      "director_supervisor_compensation_excluded": 1336575.0,
+      "unmapped_title_fte": 7.0,
+      "unmapped_title_compensation": 1021026.0,
+      "employee_rows": 408,
+      "central_employee_rows": 6,
+      "zero_fte_rows": 0,
+      "salary_below_base_rows": 42,
+      "central_fte_per_1000_students": 2.146386251688624,
+      "central_compensation_per_1000_students": 528149.4944477683,
+      "central_compensation_per_staff_fte": 246064.51612903224,
+      "central_share_district_compensation": 0.029416712823101068
+    },
+    {
+      "district": "Orting",
+      "school_year": "2023-24",
+      "student_fte": 2717.21,
+      "district_code": "27344",
+      "source_label": "Orting",
+      "district_fte": 288.32000000000016,
+      "district_compensation": 35508922.0,
+      "central_fte": 4.0,
+      "central_salary": 824456.0,
+      "central_compensation": 1011842.0,
+      "school_admin_fte": 9.0,
+      "school_admin_compensation": 1826145.0,
+      "director_supervisor_fte_excluded": 7.0,
+      "director_supervisor_compensation_excluded": 1140430.0,
+      "unmapped_title_fte": 1.0,
+      "unmapped_title_compensation": 152120.0,
+      "employee_rows": 365,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 14,
+      "salary_below_base_rows": 30,
+      "central_fte_per_1000_students": 1.472098218393131,
+      "central_compensation_per_1000_students": 372382.7013738356,
+      "central_compensation_per_staff_fte": 252960.5,
+      "central_share_district_compensation": 0.028495429965460513
+    },
+    {
+      "district": "Steilacoom Historical",
+      "school_year": "2023-24",
+      "student_fte": 2797.61,
+      "district_code": "27001",
+      "source_label": "Steilacoom Hist.",
+      "district_fte": 297.37599999999986,
+      "district_compensation": 39036709.0,
+      "central_fte": 3.77,
+      "central_salary": 725124.0,
+      "central_compensation": 927403.0,
+      "school_admin_fte": 12.140000000000004,
+      "school_admin_compensation": 2541504.0,
+      "director_supervisor_fte_excluded": 2.6759999999999997,
+      "director_supervisor_compensation_excluded": 464098.0,
+      "unmapped_title_fte": 5.0,
+      "unmapped_title_compensation": 418292.0,
+      "employee_rows": 364,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 27,
+      "salary_below_base_rows": 39,
+      "central_fte_per_1000_students": 1.347578826212374,
+      "central_compensation_per_1000_students": 331498.3146328473,
+      "central_compensation_per_staff_fte": 245995.49071618036,
+      "central_share_district_compensation": 0.02375720248343681
+    },
+    {
+      "district": "Riverview",
+      "school_year": "2024-25",
+      "student_fte": 2818.78,
+      "district_code": "17407",
+      "source_label": "Riverview",
+      "district_fte": 337.36700000000013,
+      "district_compensation": 48988336.0,
+      "central_fte": 4.0,
+      "central_salary": 926533.0,
+      "central_compensation": 1140468.0,
+      "school_admin_fte": 11.533,
+      "school_admin_compensation": 2712914.0,
+      "director_supervisor_fte_excluded": 7.739,
+      "director_supervisor_compensation_excluded": 1753096.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 442,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 2,
+      "salary_below_base_rows": 27,
+      "central_fte_per_1000_students": 1.419053633132064,
+      "central_compensation_per_1000_students": 404596.31471771473,
+      "central_compensation_per_staff_fte": 285117.0,
+      "central_share_district_compensation": 0.023280398827998566
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "school_year": "2024-25",
+      "student_fte": 6801.25,
+      "district_code": "17410",
+      "source_label": "Snoqualmie Valley",
+      "district_fte": 750.3480000000014,
+      "district_compensation": 104304345.0,
+      "central_fte": 8.0,
+      "central_salary": 1839153.0,
+      "central_compensation": 2236824.0,
+      "school_admin_fte": 25.601,
+      "school_admin_compensation": 5783574.0,
+      "director_supervisor_fte_excluded": 4.827,
+      "director_supervisor_compensation_excluded": 745722.0,
+      "unmapped_title_fte": 15.707,
+      "unmapped_title_compensation": 2004925.0,
+      "employee_rows": 923,
+      "central_employee_rows": 8,
+      "zero_fte_rows": 23,
+      "salary_below_base_rows": 60,
+      "central_fte_per_1000_students": 1.1762543650064328,
+      "central_compensation_per_1000_students": 328884.2492188936,
+      "central_compensation_per_staff_fte": 279603.0,
+      "central_share_district_compensation": 0.021445166066667694
+    },
+    {
+      "district": "Northshore",
+      "school_year": "2024-25",
+      "student_fte": 21571.74,
+      "district_code": "17417",
+      "source_label": "Northshore",
+      "district_fte": 2415.1609999999846,
+      "district_compensation": 367080778.0,
+      "central_fte": 21.316,
+      "central_salary": 5339376.0,
+      "central_compensation": 6360893.0,
+      "school_admin_fte": 61.98599999999999,
+      "school_admin_compensation": 15787164.0,
+      "director_supervisor_fte_excluded": 25.0,
+      "director_supervisor_compensation_excluded": 5899209.0,
+      "unmapped_title_fte": 8.43,
+      "unmapped_title_compensation": 1307235.0,
+      "employee_rows": 2945,
+      "central_employee_rows": 22,
+      "zero_fte_rows": 0,
+      "salary_below_base_rows": 211,
+      "central_fte_per_1000_students": 0.9881446744676136,
+      "central_compensation_per_1000_students": 294871.5773507375,
+      "central_compensation_per_staff_fte": 298409.31694501784,
+      "central_share_district_compensation": 0.017328319490485553
+    },
+    {
+      "district": "Monroe",
+      "school_year": "2024-25",
+      "student_fte": 5437.42,
+      "district_code": "31103",
+      "source_label": "Monroe",
+      "district_fte": 616.8119999999999,
+      "district_compensation": 88241359.0,
+      "central_fte": 5.0,
+      "central_salary": 1145857.0,
+      "central_compensation": 1392088.0,
+      "school_admin_fte": 18.45,
+      "school_admin_compensation": 4537328.0,
+      "director_supervisor_fte_excluded": 11.0,
+      "director_supervisor_compensation_excluded": 2205599.0,
+      "unmapped_title_fte": 14.287999999999998,
+      "unmapped_title_compensation": 666389.0,
+      "employee_rows": 801,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 47,
+      "salary_below_base_rows": 80,
+      "central_fte_per_1000_students": 0.9195537589518559,
+      "central_compensation_per_1000_students": 256019.9506383542,
+      "central_compensation_per_staff_fte": 278417.6,
+      "central_share_district_compensation": 0.015775912970696655
+    },
+    {
+      "district": "Sultan",
+      "school_year": "2024-25",
+      "student_fte": 2038.6,
+      "district_code": "31311",
+      "source_label": "Sultan",
+      "district_fte": 227.6519999999999,
+      "district_compensation": 31003669.0,
+      "central_fte": 3.926,
+      "central_salary": 875718.0,
+      "central_compensation": 1064231.0,
+      "school_admin_fte": 8.0,
+      "school_admin_compensation": 1787777.0,
+      "director_supervisor_fte_excluded": 5.0,
+      "director_supervisor_compensation_excluded": 837365.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 282,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 3,
+      "salary_below_base_rows": 20,
+      "central_fte_per_1000_students": 1.9258314529579126,
+      "central_compensation_per_1000_students": 522040.125576376,
+      "central_compensation_per_staff_fte": 271072.59296994394,
+      "central_share_district_compensation": 0.03432596961346736
+    },
+    {
+      "district": "Lakewood",
+      "school_year": "2024-25",
+      "student_fte": 2564.66,
+      "district_code": "31306",
+      "source_label": "Lakewood",
+      "district_fte": 309.82500000000005,
+      "district_compensation": 41681604.0,
+      "central_fte": 8.834,
+      "central_salary": 1844828.0,
+      "central_compensation": 2283805.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 1683841.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 789153.0,
+      "unmapped_title_fte": 1.233,
+      "unmapped_title_compensation": 184821.0,
+      "employee_rows": 408,
+      "central_employee_rows": 10,
+      "zero_fte_rows": 22,
+      "salary_below_base_rows": 44,
+      "central_fte_per_1000_students": 3.4445111632731047,
+      "central_compensation_per_1000_students": 890490.357396302,
+      "central_compensation_per_staff_fte": 258524.45098483135,
+      "central_share_district_compensation": 0.0547916774028178
+    },
+    {
+      "district": "Granite Falls",
+      "school_year": "2024-25",
+      "student_fte": 2163.95,
+      "district_code": "31332",
+      "source_label": "Granite Falls",
+      "district_fte": 252.78799999999984,
+      "district_compensation": 32568654.0,
+      "central_fte": 3.0,
+      "central_salary": 668223.0,
+      "central_compensation": 818732.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 1460333.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 744126.0,
+      "unmapped_title_fte": 3.0,
+      "unmapped_title_compensation": 291666.0,
+      "employee_rows": 335,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 22,
+      "salary_below_base_rows": 38,
+      "central_fte_per_1000_students": 1.3863536588183647,
+      "central_compensation_per_1000_students": 378350.70126389246,
+      "central_compensation_per_staff_fte": 272910.6666666667,
+      "central_share_district_compensation": 0.025138650187999788
+    },
+    {
+      "district": "Tukwila",
+      "school_year": "2024-25",
+      "student_fte": 2643.09,
+      "district_code": "17406",
+      "source_label": "Tukwila",
+      "district_fte": 297.95300000000015,
+      "district_compensation": 44182854.0,
+      "central_fte": 4.984999999999999,
+      "central_salary": 919410.0,
+      "central_compensation": 1157493.0,
+      "school_admin_fte": 8.0,
+      "school_admin_compensation": 1744767.0,
+      "director_supervisor_fte_excluded": 8.5,
+      "director_supervisor_compensation_excluded": 1562315.0,
+      "unmapped_title_fte": 2.7439999999999998,
+      "unmapped_title_compensation": 413285.0,
+      "employee_rows": 387,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 30,
+      "salary_below_base_rows": 42,
+      "central_fte_per_1000_students": 1.8860500399154017,
+      "central_compensation_per_1000_students": 437931.7389873216,
+      "central_compensation_per_staff_fte": 232195.18555667004,
+      "central_share_district_compensation": 0.026197787042005028
+    },
+    {
+      "district": "Orting",
+      "school_year": "2024-25",
+      "student_fte": 2741.87,
+      "district_code": "27344",
+      "source_label": "Orting",
+      "district_fte": 293.3390000000001,
+      "district_compensation": 37665590.0,
+      "central_fte": 4.0,
+      "central_salary": 900460.0,
+      "central_compensation": 1099402.0,
+      "school_admin_fte": 9.0,
+      "school_admin_compensation": 1988073.0,
+      "director_supervisor_fte_excluded": 7.0,
+      "director_supervisor_compensation_excluded": 1230580.0,
+      "unmapped_title_fte": 1.8,
+      "unmapped_title_compensation": 189955.0,
+      "employee_rows": 384,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 21,
+      "salary_below_base_rows": 28,
+      "central_fte_per_1000_students": 1.4588583703822573,
+      "central_compensation_per_1000_students": 400967.95252874866,
+      "central_compensation_per_staff_fte": 274850.5,
+      "central_share_district_compensation": 0.02918849804290866
+    },
+    {
+      "district": "Steilacoom Historical",
+      "school_year": "2024-25",
+      "student_fte": 2775.08,
+      "district_code": "27001",
+      "source_label": "Steilacoom Hist.",
+      "district_fte": 291.44599999999986,
+      "district_compensation": 39894413.0,
+      "central_fte": 3.0,
+      "central_salary": 647023.0,
+      "central_compensation": 798641.0,
+      "school_admin_fte": 11.0,
+      "school_admin_compensation": 2366215.0,
+      "director_supervisor_fte_excluded": 2.0,
+      "director_supervisor_compensation_excluded": 335787.0,
+      "unmapped_title_fte": 4.0,
+      "unmapped_title_compensation": 357679.0,
+      "employee_rows": 355,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 27,
+      "salary_below_base_rows": 30,
+      "central_fte_per_1000_students": 1.0810499156781066,
+      "central_compensation_per_1000_students": 287790.2619023596,
+      "central_compensation_per_staff_fte": 266213.6666666667,
+      "central_share_district_compensation": 0.020018868306196157
+    }
+  ],
+  "duty_title_evidence": {
+    "2013-14": {
+      "Riverview": {
+        "Operator": {
+          "rows": 24,
+          "fte": 14.291,
+          "salary": 696537.0,
+          "compensation": 990913.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 3.931,
+          "salary": 368134.0,
+          "compensation": 472619.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 257841.0,
+          "compensation": 353717.0
+        },
+        "Secondary Teacher": {
+          "rows": 78,
+          "fte": 75.753,
+          "salary": 5221958.0,
+          "compensation": 6909620.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 197005.0,
+          "compensation": 263033.0
+        },
+        "Professional": {
+          "rows": 14,
+          "fte": 0.722,
+          "salary": 113293.0,
+          "compensation": 124421.0
+        },
+        "Elementary Teacher": {
+          "rows": 86,
+          "fte": 81.388,
+          "salary": 5358511.0,
+          "compensation": 7071205.0
+        },
+        "Service Worker": {
+          "rows": 32,
+          "fte": 20.946000000000005,
+          "salary": 808002.0,
+          "compensation": 1157570.0
+        },
+        "Aide": {
+          "rows": 59,
+          "fte": 30.91400000000002,
+          "salary": 1096581.0,
+          "compensation": 1646008.0
+        },
+        "Office/Clerical": {
+          "rows": 35,
+          "fte": 27.134000000000007,
+          "salary": 1233089.0,
+          "compensation": 1755404.0
+        },
+        "Elementary Principal": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 509566.0,
+          "compensation": 637951.0
+        },
+        "Other School Admin.": {
+          "rows": 2,
+          "fte": 1.725,
+          "salary": 201250.0,
+          "compensation": 254543.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 186521.0,
+          "compensation": 259637.0
+        },
+        "Library Media Specialist": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 431518.0,
+          "compensation": 558920.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 382992.0,
+          "compensation": 475415.0
+        },
+        "Counselor": {
+          "rows": 6,
+          "fte": 5.567,
+          "salary": 381212.0,
+          "compensation": 500618.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 1.1,
+          "salary": 60759.0,
+          "compensation": 75429.0
+        },
+        "Other Teacher": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 237338.0,
+          "compensation": 303033.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 243306.0,
+          "compensation": 302970.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 260616.0,
+          "compensation": 323388.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 194089.0,
+          "compensation": 231148.0
+        }
+      },
+      "Snoqualmie Valley": {
+        "Elementary Teacher": {
+          "rows": 153,
+          "fte": 148.5,
+          "salary": 9488889.0,
+          "compensation": 12710229.0
+        },
+        "Secondary Teacher": {
+          "rows": 122,
+          "fte": 118.35099999999998,
+          "salary": 8110433.0,
+          "compensation": 10716266.0
+        },
+        "Service Worker": {
+          "rows": 56,
+          "fte": 32.961000000000006,
+          "salary": 1217443.0,
+          "compensation": 1911851.0
+        },
+        "Aide": {
+          "rows": 97,
+          "fte": 50.848999999999954,
+          "salary": 1715417.0,
+          "compensation": 2601038.0
+        },
+        "Other Teacher": {
+          "rows": 37,
+          "fte": 34.989,
+          "salary": 2366428.0,
+          "compensation": 3134273.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 192301.0,
+          "compensation": 229904.0
+        },
+        "Office/Clerical": {
+          "rows": 43,
+          "fte": 33.72100000000001,
+          "salary": 1343628.0,
+          "compensation": 1972867.0
+        },
+        "Professional": {
+          "rows": 21,
+          "fte": 4.165,
+          "salary": 349058.0,
+          "compensation": 446133.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 554394.0,
+          "compensation": 701806.0
+        },
+        "Counselor": {
+          "rows": 12,
+          "fte": 12.0,
+          "salary": 858970.0,
+          "compensation": 1141895.0
+        },
+        "Technical": {
+          "rows": 11,
+          "fte": 9.813,
+          "salary": 482902.0,
+          "compensation": 690347.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 356003.0,
+          "compensation": 445827.0
+        },
+        "Crafts/Trades": {
+          "rows": 6,
+          "fte": 5.5,
+          "salary": 287700.0,
+          "compensation": 418605.0
+        },
+        "Nurse": {
+          "rows": 4,
+          "fte": 3.5,
+          "salary": 181783.0,
+          "compensation": 245912.0
+        },
+        "Library Media Specialist": {
+          "rows": 7,
+          "fte": 5.0,
+          "salary": 368035.0,
+          "compensation": 476132.0
+        },
+        "Operator": {
+          "rows": 44,
+          "fte": 24.801,
+          "salary": 1024418.0,
+          "compensation": 1563939.0
+        },
+        "Other Support Personnel": {
+          "rows": 6,
+          "fte": 5.5,
+          "salary": 407840.0,
+          "compensation": 542633.0
+        },
+        "Psychologist": {
+          "rows": 8,
+          "fte": 6.7219999999999995,
+          "salary": 459724.0,
+          "compensation": 604174.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 7,
+          "fte": 5.699999999999999,
+          "salary": 356953.0,
+          "compensation": 482955.0
+        },
+        "Elementary Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 568605.0,
+          "compensation": 715829.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 1.6,
+          "salary": 123092.0,
+          "compensation": 158806.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 118459.0,
+          "compensation": 137554.0
+        },
+        "Director/Supervisor": {
+          "rows": 6,
+          "fte": 5.95,
+          "salary": 458939.0,
+          "compensation": 600694.0
+        },
+        "Other District Admin.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 497893.0,
+          "compensation": 622123.0
+        },
+        "Laborer": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 85332.0,
+          "compensation": 130180.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 114224.0,
+          "compensation": 143669.0
+        }
+      },
+      "Northshore": {
+        "Secondary Teacher": {
+          "rows": 379,
+          "fte": 357.1310000000003,
+          "salary": 28341528.0,
+          "compensation": 36978089.0
+        },
+        "Elementary Teacher": {
+          "rows": 551,
+          "fte": 522.6569999999999,
+          "salary": 37550495.0,
+          "compensation": 49381927.0
+        },
+        "Crafts/Trades": {
+          "rows": 24,
+          "fte": 24.0,
+          "salary": 1340647.0,
+          "compensation": 1881624.0
+        },
+        "Service Worker": {
+          "rows": 202,
+          "fte": 142.23900000000006,
+          "salary": 5666505.0,
+          "compensation": 8357181.0
+        },
+        "Extracurricular": {
+          "rows": 3,
+          "fte": 2.8,
+          "salary": 250905.0,
+          "compensation": 328650.0
+        },
+        "Office/Clerical": {
+          "rows": 147,
+          "fte": 127.35999999999987,
+          "salary": 6419234.0,
+          "compensation": 8873796.0
+        },
+        "Aide": {
+          "rows": 401,
+          "fte": 195.32999999999996,
+          "salary": 8232477.0,
+          "compensation": 11892435.0
+        },
+        "Professional": {
+          "rows": 42,
+          "fte": 33.46500000000001,
+          "salary": 2451051.0,
+          "compensation": 3273064.0
+        },
+        "Director/Supervisor": {
+          "rows": 19,
+          "fte": 19.0,
+          "salary": 2168620.0,
+          "compensation": 2715794.0
+        },
+        "Counselor": {
+          "rows": 32,
+          "fte": 30.8,
+          "salary": 2483068.0,
+          "compensation": 3253598.0
+        },
+        "Other Teacher": {
+          "rows": 141,
+          "fte": 136.47599999999997,
+          "salary": 9904994.0,
+          "compensation": 13113673.0
+        },
+        "Other District Admin.": {
+          "rows": 14,
+          "fte": 13.5,
+          "salary": 1732287.0,
+          "compensation": 2169839.0
+        },
+        "Physical Therapist": {
+          "rows": 12,
+          "fte": 10.2,
+          "salary": 703973.0,
+          "compensation": 948752.0
+        },
+        "Operator": {
+          "rows": 102,
+          "fte": 60.51399999999999,
+          "salary": 3050146.0,
+          "compensation": 5006802.0
+        },
+        "Library Media Specialist": {
+          "rows": 33,
+          "fte": 31.300000000000004,
+          "salary": 2637445.0,
+          "compensation": 3422824.0
+        },
+        "Elementary Principal": {
+          "rows": 20,
+          "fte": 20.0,
+          "salary": 2408791.0,
+          "compensation": 3035927.0
+        },
+        "Secondary Principal": {
+          "rows": 11,
+          "fte": 11.0,
+          "salary": 1370835.0,
+          "compensation": 1714346.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 6,
+          "fte": 5.375,
+          "salary": 577884.0,
+          "compensation": 740557.0
+        },
+        "Technical": {
+          "rows": 24,
+          "fte": 23.923000000000002,
+          "salary": 1871026.0,
+          "compensation": 2432974.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 35,
+          "fte": 30.900000000000006,
+          "salary": 2536324.0,
+          "compensation": 3346717.0
+        },
+        "Psychologist": {
+          "rows": 20,
+          "fte": 17.869,
+          "salary": 1324065.0,
+          "compensation": 1743165.0
+        },
+        "Other Support Personnel": {
+          "rows": 14,
+          "fte": 13.467,
+          "salary": 1128683.0,
+          "compensation": 1459655.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 83412.0,
+          "compensation": 109059.0
+        },
+        "Occupational Therapist": {
+          "rows": 9,
+          "fte": 8.0,
+          "salary": 605771.0,
+          "compensation": 791941.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 12,
+          "fte": 12.0,
+          "salary": 1403175.0,
+          "compensation": 1758983.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 241637.0,
+          "compensation": 278957.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 54223.0,
+          "compensation": 74130.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 177031.0,
+          "compensation": 207332.0
+        }
+      },
+      "Monroe": {
+        "Elementary Teacher": {
+          "rows": 129,
+          "fte": 126.32199999999997,
+          "salary": 9150704.0,
+          "compensation": 12005502.0
+        },
+        "Office/Clerical": {
+          "rows": 47,
+          "fte": 36.89499999999999,
+          "salary": 1764724.0,
+          "compensation": 2508471.0
+        },
+        "Secondary Teacher": {
+          "rows": 131,
+          "fte": 125.57199999999999,
+          "salary": 9579627.0,
+          "compensation": 12517150.0
+        },
+        "Psychologist": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 443446.0,
+          "compensation": 582521.0
+        },
+        "Aide": {
+          "rows": 111,
+          "fte": 59.23400000000006,
+          "salary": 2384430.0,
+          "compensation": 3569599.0
+        },
+        "Operator": {
+          "rows": 59,
+          "fte": 30.768999999999995,
+          "salary": 1590308.0,
+          "compensation": 2320016.0
+        },
+        "Other Teacher": {
+          "rows": 62,
+          "fte": 53.386,
+          "salary": 3766862.0,
+          "compensation": 4915756.0
+        },
+        "Service Worker": {
+          "rows": 31,
+          "fte": 28.499,
+          "salary": 1160562.0,
+          "compensation": 1790309.0
+        },
+        "Nurse": {
+          "rows": 4,
+          "fte": 2.775,
+          "salary": 187812.0,
+          "compensation": 252064.0
+        },
+        "Counselor": {
+          "rows": 16,
+          "fte": 15.3,
+          "salary": 1187553.0,
+          "compensation": 1553773.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 587240.0,
+          "compensation": 743504.0
+        },
+        "Other District Admin.": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 609197.0,
+          "compensation": 774450.0
+        },
+        "Director/Supervisor": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 559909.0,
+          "compensation": 714000.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 2.169,
+          "salary": 125683.0,
+          "compensation": 176372.0
+        },
+        "Professional": {
+          "rows": 25,
+          "fte": 4.683,
+          "salary": 345768.0,
+          "compensation": 447558.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 6,
+          "fte": 5.7,
+          "salary": 398114.0,
+          "compensation": 517617.0
+        },
+        "Secondary Principal": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 503501.0,
+          "compensation": 629826.0
+        },
+        "Library Media Specialist": {
+          "rows": 8,
+          "fte": 8.0,
+          "salary": 649298.0,
+          "compensation": 856815.0
+        },
+        "Crafts/Trades": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 127325.0,
+          "compensation": 195168.0
+        },
+        "Technical": {
+          "rows": 17,
+          "fte": 16.241,
+          "salary": 786934.0,
+          "compensation": 1129090.0
+        },
+        "Elementary Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 589284.0,
+          "compensation": 744422.0
+        },
+        "Other Support Personnel": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 355687.0,
+          "compensation": 460230.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 217196.0,
+          "compensation": 260297.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 146613.0,
+          "compensation": 182519.0
+        },
+        "Other School Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 245972.0,
+          "compensation": 311014.0
+        },
+        "Substitute Teacher": {
+          "rows": 2,
+          "fte": 1.005,
+          "salary": 83867.0,
+          "compensation": 101406.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 68672.0,
+          "compensation": 90843.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 90302.0,
+          "compensation": 116655.0
+        }
+      },
+      "Sultan": {
+        "Aide": {
+          "rows": 38,
+          "fte": 20.431999999999995,
+          "salary": 761229.0,
+          "compensation": 1162768.0
+        },
+        "Service Worker": {
+          "rows": 19,
+          "fte": 13.721,
+          "salary": 520288.0,
+          "compensation": 799389.0
+        },
+        "Elementary Teacher": {
+          "rows": 54,
+          "fte": 53.917,
+          "salary": 3584297.0,
+          "compensation": 4749904.0
+        },
+        "Technical": {
+          "rows": 6,
+          "fte": 5.0,
+          "salary": 243175.0,
+          "compensation": 350271.0
+        },
+        "Elementary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 201503.0,
+          "compensation": 258591.0
+        },
+        "Secondary Teacher": {
+          "rows": 45,
+          "fte": 44.6,
+          "salary": 3155935.0,
+          "compensation": 4161818.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 296361.0,
+          "compensation": 390081.0
+        },
+        "Operator": {
+          "rows": 19,
+          "fte": 9.868,
+          "salary": 483989.0,
+          "compensation": 720228.0
+        },
+        "Professional": {
+          "rows": 12,
+          "fte": 1.115,
+          "salary": 124363.0,
+          "compensation": 151986.0
+        },
+        "Other Teacher": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 389565.0,
+          "compensation": 510526.0
+        },
+        "Library Media Specialist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 259984.0,
+          "compensation": 338249.0
+        },
+        "Office/Clerical": {
+          "rows": 16,
+          "fte": 12.579999999999998,
+          "salary": 518989.0,
+          "compensation": 774726.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 163086.0,
+          "compensation": 216650.0
+        },
+        "Counselor": {
+          "rows": 6,
+          "fte": 5.0,
+          "salary": 324753.0,
+          "compensation": 411549.0
+        },
+        "Psychologist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 149041.0,
+          "compensation": 197273.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 2.317,
+          "salary": 166674.0,
+          "compensation": 217715.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 182535.0,
+          "compensation": 238319.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 113973.0,
+          "compensation": 144973.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 213619.0,
+          "compensation": 273234.0
+        },
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 76997.0,
+          "compensation": 112881.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 106307.0,
+          "compensation": 136336.0
+        }
+      },
+      "Lakewood": {
+        "Operator": {
+          "rows": 24,
+          "fte": 11.443,
+          "salary": 607282.0,
+          "compensation": 855639.0
+        },
+        "Professional": {
+          "rows": 6,
+          "fte": 5.394,
+          "salary": 334040.0,
+          "compensation": 436394.0
+        },
+        "Service Worker": {
+          "rows": 28,
+          "fte": 19.662999999999997,
+          "salary": 793829.0,
+          "compensation": 1199893.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 2.4,
+          "salary": 190946.0,
+          "compensation": 248019.0
+        },
+        "Aide": {
+          "rows": 49,
+          "fte": 24.895999999999987,
+          "salary": 997421.0,
+          "compensation": 1448951.0
+        },
+        "Office/Clerical": {
+          "rows": 18,
+          "fte": 13.908999999999999,
+          "salary": 649147.0,
+          "compensation": 930686.0
+        },
+        "Elementary Teacher": {
+          "rows": 59,
+          "fte": 54.972,
+          "salary": 3719639.0,
+          "compensation": 4906122.0
+        },
+        "Counselor": {
+          "rows": 5,
+          "fte": 4.5,
+          "salary": 351392.0,
+          "compensation": 461244.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 213673.0,
+          "compensation": 271240.0
+        },
+        "Secondary Teacher": {
+          "rows": 53,
+          "fte": 50.434999999999995,
+          "salary": 3783727.0,
+          "compensation": 4935996.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 202712.0,
+          "compensation": 262408.0
+        },
+        "Technical": {
+          "rows": 3,
+          "fte": 1.717,
+          "salary": 59197.0,
+          "compensation": 90107.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 266441.0,
+          "compensation": 360650.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 44803.0,
+          "compensation": 63205.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 4.793,
+          "salary": 181874.0,
+          "compensation": 297548.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 159612.0,
+          "compensation": 195077.0
+        },
+        "Other Teacher": {
+          "rows": 3,
+          "fte": 2.8,
+          "salary": 217465.0,
+          "compensation": 284886.0
+        },
+        "Library Media Specialist": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 316748.0,
+          "compensation": 414091.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 215442.0,
+          "compensation": 275460.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 84892.0,
+          "compensation": 110551.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 300715.0,
+          "compensation": 385202.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 57947.0,
+          "compensation": 78692.0
+        }
+      },
+      "Granite Falls": {
+        "Service Worker": {
+          "rows": 27,
+          "fte": 16.476,
+          "salary": 668129.0,
+          "compensation": 1008649.0
+        },
+        "Aide": {
+          "rows": 45,
+          "fte": 23.325,
+          "salary": 909351.0,
+          "compensation": 1419021.0
+        },
+        "Elementary Teacher": {
+          "rows": 48,
+          "fte": 44.21099999999999,
+          "salary": 2970718.0,
+          "compensation": 3931340.0
+        },
+        "Office/Clerical": {
+          "rows": 19,
+          "fte": 14.868999999999998,
+          "salary": 698919.0,
+          "compensation": 1007026.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 136096.0,
+          "compensation": 182854.0
+        },
+        "Secondary Teacher": {
+          "rows": 54,
+          "fte": 53.024,
+          "salary": 3907617.0,
+          "compensation": 5158824.0
+        },
+        "Professional": {
+          "rows": 20,
+          "fte": 0.769,
+          "salary": 101575.0,
+          "compensation": 120271.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 325320.0,
+          "compensation": 461640.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 170957.0,
+          "compensation": 234119.0
+        },
+        "Other Teacher": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 222142.0,
+          "compensation": 293998.0
+        },
+        "Counselor": {
+          "rows": 3,
+          "fte": 2.922,
+          "salary": 244239.0,
+          "compensation": 319573.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 147981.0,
+          "compensation": 198679.0
+        },
+        "Library Media Specialist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 89659.0,
+          "compensation": 117638.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 80538.0,
+          "compensation": 106120.0
+        },
+        "Other District Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 113869.0,
+          "compensation": 157339.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 218544.0,
+          "compensation": 298253.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 95826.0,
+          "compensation": 140525.0
+        },
+        "Director/Supervisor": {
+          "rows": 3,
+          "fte": 2.773,
+          "salary": 214400.0,
+          "compensation": 307191.0
+        },
+        "Technical": {
+          "rows": 2,
+          "fte": 1.375,
+          "salary": 68692.0,
+          "compensation": 94633.0
+        }
+      },
+      "Tukwila": {
+        "Secondary Teacher": {
+          "rows": 69,
+          "fte": 68.634,
+          "salary": 4692011.0,
+          "compensation": 5749846.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 16.384,
+          "salary": 757819.0,
+          "compensation": 1109602.0
+        },
+        "Service Worker": {
+          "rows": 37,
+          "fte": 25.211000000000002,
+          "salary": 1032996.0,
+          "compensation": 1540013.0
+        },
+        "Aide": {
+          "rows": 54,
+          "fte": 29.56200000000002,
+          "salary": 1289921.0,
+          "compensation": 1846745.0
+        },
+        "Professional": {
+          "rows": 8,
+          "fte": 5.893000000000001,
+          "salary": 306863.0,
+          "compensation": 439869.0
+        },
+        "Elementary Teacher": {
+          "rows": 87,
+          "fte": 84.783,
+          "salary": 5692937.0,
+          "compensation": 6974765.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 358376.0,
+          "compensation": 415430.0
+        },
+        "Operator": {
+          "rows": 12,
+          "fte": 5.824,
+          "salary": 310686.0,
+          "compensation": 420517.0
+        },
+        "Director/Supervisor": {
+          "rows": 9,
+          "fte": 7.885000000000001,
+          "salary": 783406.0,
+          "compensation": 1004562.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 257435.0,
+          "compensation": 295795.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 4,
+          "fte": 3.77,
+          "salary": 406817.0,
+          "compensation": 478828.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 2.8,
+          "salary": 192927.0,
+          "compensation": 235198.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 182600.0,
+          "compensation": 202687.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 2.4,
+          "salary": 190656.0,
+          "compensation": 231545.0
+        },
+        "Technical": {
+          "rows": 8,
+          "fte": 7.931,
+          "salary": 405302.0,
+          "compensation": 554526.0
+        },
+        "Library Media Specialist": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 412015.0,
+          "compensation": 489198.0
+        },
+        "Other Support Personnel": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 257404.0,
+          "compensation": 308063.0
+        },
+        "Other Teacher": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 53548.0,
+          "compensation": 65829.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 325156.0,
+          "compensation": 382158.0
+        },
+        "Social Worker": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 201040.0,
+          "compensation": 240639.0
+        },
+        "Counselor": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 431414.0,
+          "compensation": 528786.0
+        },
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 88529.0,
+          "compensation": 137265.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 53277.0,
+          "compensation": 72900.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 47179.0,
+          "compensation": 61707.0
+        }
+      },
+      "Orting": {
+        "Aide": {
+          "rows": 36,
+          "fte": 17.988,
+          "salary": 627612.0,
+          "compensation": 970268.0
+        },
+        "Service Worker": {
+          "rows": 23,
+          "fte": 15.285,
+          "salary": 522890.0,
+          "compensation": 803683.0
+        },
+        "Secondary Teacher": {
+          "rows": 49,
+          "fte": 48.077,
+          "salary": 2894587.0,
+          "compensation": 3920161.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 3.7110000000000003,
+          "salary": 227646.0,
+          "compensation": 310687.0
+        },
+        "Elementary Teacher": {
+          "rows": 58,
+          "fte": 56.043,
+          "salary": 3397117.0,
+          "compensation": 4609335.0
+        },
+        "Psychologist": {
+          "rows": 2,
+          "fte": 1.817,
+          "salary": 101122.0,
+          "compensation": 139951.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 211409.0,
+          "compensation": 320248.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 20.214,
+          "salary": 940805.0,
+          "compensation": 1305370.0
+        },
+        "Counselor": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 356946.0,
+          "compensation": 472969.0
+        },
+        "Professional": {
+          "rows": 14,
+          "fte": 0.08099999999999999,
+          "salary": 55446.0,
+          "compensation": 62575.0
+        },
+        "Operator": {
+          "rows": 17,
+          "fte": 8.91,
+          "salary": 351936.0,
+          "compensation": 537891.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 1.885,
+          "salary": 193981.0,
+          "compensation": 241088.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 189903.0,
+          "compensation": 245160.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 133102.0,
+          "compensation": 158213.0
+        },
+        "Social Worker": {
+          "rows": 2,
+          "fte": 1.9889999999999999,
+          "salary": 89603.0,
+          "compensation": 125474.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 298662.0,
+          "compensation": 383848.0
+        },
+        "Other Teacher": {
+          "rows": 11,
+          "fte": 10.1,
+          "salary": 545406.0,
+          "compensation": 746807.0
+        },
+        "Library Media Specialist": {
+          "rows": 4,
+          "fte": 3.5,
+          "salary": 242327.0,
+          "compensation": 327178.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 226662.0,
+          "compensation": 288089.0
+        },
+        "Other Support Personnel": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 39357.0,
+          "compensation": 56783.0
+        },
+        "Technical": {
+          "rows": 5,
+          "fte": 4.545,
+          "salary": 227744.0,
+          "compensation": 307923.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 1.4329999999999998,
+          "salary": 59801.0,
+          "compensation": 89836.0
+        },
+        "Extracurricular": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 84347.0,
+          "compensation": 110045.0
+        }
+      },
+      "Steilacoom Historical": {
+        "Service Worker": {
+          "rows": 22,
+          "fte": 19.568,
+          "salary": 677081.0,
+          "compensation": 1088986.0
+        },
+        "Aide": {
+          "rows": 56,
+          "fte": 32.14200000000001,
+          "salary": 1105098.0,
+          "compensation": 1669432.0
+        },
+        "Secondary Teacher": {
+          "rows": 61,
+          "fte": 60.0,
+          "salary": 3889689.0,
+          "compensation": 5163184.0
+        },
+        "Elementary Teacher": {
+          "rows": 76,
+          "fte": 72.539,
+          "salary": 4568861.0,
+          "compensation": 6074484.0
+        },
+        "Office/Clerical": {
+          "rows": 22,
+          "fte": 17.660999999999998,
+          "salary": 677594.0,
+          "compensation": 1012908.0
+        },
+        "Contractor ESA": {
+          "rows": 3,
+          "fte": 2.08,
+          "salary": 0.0,
+          "compensation": 0.0
+        },
+        "Other Teacher": {
+          "rows": 22,
+          "fte": 21.0,
+          "salary": 1249993.0,
+          "compensation": 1665683.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 189301.0,
+          "compensation": 240351.0
+        },
+        "Nurse": {
+          "rows": 3,
+          "fte": 2.1,
+          "salary": 154159.0,
+          "compensation": 199964.0
+        },
+        "Professional": {
+          "rows": 31,
+          "fte": 3.398,
+          "salary": 327788.0,
+          "compensation": 429507.0
+        },
+        "Director/Supervisor": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 146228.0,
+          "compensation": 196579.0
+        },
+        "Social Worker": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 61778.0,
+          "compensation": 82167.0
+        },
+        "Counselor": {
+          "rows": 8,
+          "fte": 7.6,
+          "salary": 526039.0,
+          "compensation": 703871.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 330805.0,
+          "compensation": 421522.0
+        },
+        "Technical": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 191604.0,
+          "compensation": 265969.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 115508.0,
+          "compensation": 179395.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 281958.0,
+          "compensation": 371038.0
+        },
+        "Crafts/Trades": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 158357.0,
+          "compensation": 229381.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 202048.0,
+          "compensation": 259075.0
+        },
+        "Other Support Personnel": {
+          "rows": 3,
+          "fte": 2.8,
+          "salary": 175224.0,
+          "compensation": 226094.0
+        },
+        "Psychologist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 141193.0,
+          "compensation": 187440.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 2.968,
+          "salary": 332724.0,
+          "compensation": 422075.0
+        },
+        "Classified on Leave": {
+          "rows": 1,
+          "fte": 0.0,
+          "salary": 4765.0,
+          "compensation": 5142.0
+        },
+        "Library Media Specialist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 157091.0,
+          "compensation": 206959.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.5,
+          "salary": 28068.0,
+          "compensation": 35158.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 68559.0,
+          "compensation": 91065.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 158195.0,
+          "compensation": 202270.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 139339.0,
+          "compensation": 172702.0
+        }
+      }
+    },
+    "2023-24": {
+      "Riverview": {
+        "Crafts/Trades": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 203502.0,
+          "compensation": 283988.0
+        },
+        "Secondary Teacher": {
+          "rows": 75,
+          "fte": 75.0,
+          "salary": 8834537.0,
+          "compensation": 11304889.0
+        },
+        "Aide": {
+          "rows": 53,
+          "fte": 29.442,
+          "salary": 1262286.0,
+          "compensation": 2134135.0
+        },
+        "Service Worker": {
+          "rows": 34,
+          "fte": 26.435,
+          "salary": 1270967.0,
+          "compensation": 1961142.0
+        },
+        "Operator": {
+          "rows": 26,
+          "fte": 15.382,
+          "salary": 1155367.0,
+          "compensation": 1695382.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 86,
+          "fte": 85.00999999999999,
+          "salary": 8988884.0,
+          "compensation": 11641977.0
+        },
+        "Office/Clerical": {
+          "rows": 29,
+          "fte": 23.646000000000004,
+          "salary": 1503483.0,
+          "compensation": 2088198.0
+        },
+        "Professional": {
+          "rows": 35,
+          "fte": 2.8,
+          "salary": 516452.0,
+          "compensation": 636183.0
+        },
+        "Psychologist": {
+          "rows": 6,
+          "fte": 5.537,
+          "salary": 536132.0,
+          "compensation": 715019.0
+        },
+        "Library Media Specialist": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 615794.0,
+          "compensation": 785907.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 2.94,
+          "salary": 546540.0,
+          "compensation": 676768.0
+        },
+        "Counselor": {
+          "rows": 10,
+          "fte": 9.443000000000001,
+          "salary": 1102407.0,
+          "compensation": 1420296.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 595593.0,
+          "compensation": 731346.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 315017.0,
+          "compensation": 415353.0
+        },
+        "Director/Supervisor": {
+          "rows": 7,
+          "fte": 6.931,
+          "salary": 1209374.0,
+          "compensation": 1482140.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 465085.0,
+          "compensation": 625787.0
+        },
+        "Other School Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 563938.0,
+          "compensation": 696511.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 4,
+          "fte": 4.275,
+          "salary": 749697.0,
+          "compensation": 925833.0
+        },
+        "Technical": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 166590.0,
+          "compensation": 223499.0
+        },
+        "Other Teacher": {
+          "rows": 2,
+          "fte": 1.7389999999999999,
+          "salary": 212080.0,
+          "compensation": 273731.0
+        },
+        "Other Support Personnel": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 404727.0,
+          "compensation": 507083.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 309374.0,
+          "compensation": 363810.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 1.919,
+          "salary": 403483.0,
+          "compensation": 494668.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 244871.0,
+          "compensation": 313746.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 74336.0,
+          "compensation": 103029.0
+        }
+      },
+      "Snoqualmie Valley": {
+        "Other Support Personnel": {
+          "rows": 23,
+          "fte": 20.8,
+          "salary": 2568931.0,
+          "compensation": 3298674.0
+        },
+        "Secondary Teacher": {
+          "rows": 152,
+          "fte": 147.632,
+          "salary": 16292328.0,
+          "compensation": 21071411.0
+        },
+        "Operator": {
+          "rows": 45,
+          "fte": 23.46,
+          "salary": 2000051.0,
+          "compensation": 2939551.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 167,
+          "fte": 165.728,
+          "salary": 17518988.0,
+          "compensation": 22803492.0
+        },
+        "Office/Clerical": {
+          "rows": 53,
+          "fte": 41.68699999999998,
+          "salary": 2712403.0,
+          "compensation": 3838123.0
+        },
+        "Service Worker": {
+          "rows": 72,
+          "fte": 47.78699999999999,
+          "salary": 2776308.0,
+          "compensation": 4210385.0
+        },
+        "Counselor": {
+          "rows": 21,
+          "fte": 20.3,
+          "salary": 2355490.0,
+          "compensation": 3035901.0
+        },
+        "Library Media Specialist": {
+          "rows": 8,
+          "fte": 7.0,
+          "salary": 745583.0,
+          "compensation": 981463.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 34,
+          "fte": 33.311,
+          "salary": 3779080.0,
+          "compensation": 4874659.0
+        },
+        "Other Teacher": {
+          "rows": 46,
+          "fte": 44.344,
+          "salary": 4597431.0,
+          "compensation": 5993386.0
+        },
+        "Aide": {
+          "rows": 148,
+          "fte": 77.91299999999991,
+          "salary": 4109078.0,
+          "compensation": 6805248.0
+        },
+        "Professional": {
+          "rows": 36,
+          "fte": 8.936,
+          "salary": 1031639.0,
+          "compensation": 1349179.0
+        },
+        "Technical": {
+          "rows": 22,
+          "fte": 18.906,
+          "salary": 1467334.0,
+          "compensation": 2015233.0
+        },
+        "Crafts/Trades": {
+          "rows": 12,
+          "fte": 11.546999999999999,
+          "salary": 843630.0,
+          "compensation": 1185124.0
+        },
+        "Psychologist": {
+          "rows": 9,
+          "fte": 8.6,
+          "salary": 1026596.0,
+          "compensation": 1319568.0
+        },
+        "Secondary Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1145681.0,
+          "compensation": 1405316.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 137020.0,
+          "compensation": 173964.0
+        },
+        "Nurse": {
+          "rows": 13,
+          "fte": 10.383,
+          "salary": 1008620.0,
+          "compensation": 1356136.0
+        },
+        "Elementary Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1105685.0,
+          "compensation": 1360824.0
+        },
+        "Occupational Therapist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 311053.0,
+          "compensation": 403442.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 470659.0,
+          "compensation": 571506.0
+        },
+        "Other School Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 477204.0,
+          "compensation": 596440.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1057736.0,
+          "compensation": 1307466.0
+        },
+        "Other District Admin.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 762314.0,
+          "compensation": 939036.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 752026.0,
+          "compensation": 946193.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 142400.0,
+          "compensation": 225885.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 9,
+          "fte": 8.102,
+          "salary": 901847.0,
+          "compensation": 1180608.0
+        },
+        "Social Worker": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 282770.0,
+          "compensation": 371923.0
+        },
+        "Extracurricular": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 111128.0,
+          "compensation": 148111.0
+        },
+        "Director/Supervisor": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 519600.0,
+          "compensation": 694532.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 104207.0,
+          "compensation": 135702.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 349914.0,
+          "compensation": 406075.0
+        }
+      },
+      "Northshore": {
+        "Elem. Homeroom Teacher": {
+          "rows": 516,
+          "fte": 501.75199999999995,
+          "salary": 57915878.0,
+          "compensation": 74817908.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 153,
+          "fte": 134.66700000000006,
+          "salary": 16321879.0,
+          "compensation": 21082374.0
+        },
+        "Secondary Teacher": {
+          "rows": 488,
+          "fte": 457.9910000000005,
+          "salary": 56350047.0,
+          "compensation": 72322838.0
+        },
+        "Aide": {
+          "rows": 658,
+          "fte": 368.67700000000195,
+          "salary": 28257993.0,
+          "compensation": 42261707.0
+        },
+        "Operator": {
+          "rows": 121,
+          "fte": 71.14300000000001,
+          "salary": 6411723.0,
+          "compensation": 9465324.0
+        },
+        "Counselor": {
+          "rows": 73,
+          "fte": 68.39999999999999,
+          "salary": 8314555.0,
+          "compensation": 10704124.0
+        },
+        "Service Worker": {
+          "rows": 228,
+          "fte": 165.59299999999988,
+          "salary": 11327370.0,
+          "compensation": 16625975.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 46,
+          "fte": 41.73800000000001,
+          "salary": 4932915.0,
+          "compensation": 6457558.0
+        },
+        "Technical": {
+          "rows": 28,
+          "fte": 27.25,
+          "salary": 4090731.0,
+          "compensation": 5197622.0
+        },
+        "Elementary Principal": {
+          "rows": 21,
+          "fte": 20.900000000000002,
+          "salary": 4186046.0,
+          "compensation": 5125697.0
+        },
+        "Office/Clerical": {
+          "rows": 174,
+          "fte": 151.442,
+          "salary": 14166626.0,
+          "compensation": 19232851.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 15,
+          "fte": 13.761000000000001,
+          "salary": 2515500.0,
+          "compensation": 3150667.0
+        },
+        "Other Teacher": {
+          "rows": 198,
+          "fte": 189.149,
+          "salary": 21347381.0,
+          "compensation": 27711090.0
+        },
+        "Professional": {
+          "rows": 69,
+          "fte": 50.72,
+          "salary": 6572536.0,
+          "compensation": 8812372.0
+        },
+        "Physical Therapist": {
+          "rows": 10,
+          "fte": 8.700000000000001,
+          "salary": 1089745.0,
+          "compensation": 1407380.0
+        },
+        "Director/Supervisor": {
+          "rows": 23,
+          "fte": 22.814999999999998,
+          "salary": 4269265.0,
+          "compensation": 5274471.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 18,
+          "fte": 17.765,
+          "salary": 3433780.0,
+          "compensation": 4267019.0
+        },
+        "Other Support Personnel": {
+          "rows": 14,
+          "fte": 13.6,
+          "salary": 1763873.0,
+          "compensation": 2259115.0
+        },
+        "Library Media Specialist": {
+          "rows": 14,
+          "fte": 13.0,
+          "salary": 1846344.0,
+          "compensation": 2348234.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 6,
+          "fte": 5.888,
+          "salary": 1615716.0,
+          "compensation": 1898753.0
+        },
+        "Other District Admin.": {
+          "rows": 19,
+          "fte": 17.52,
+          "salary": 4083819.0,
+          "compensation": 4858324.0
+        },
+        "Crafts/Trades": {
+          "rows": 22,
+          "fte": 21.754,
+          "salary": 2209000.0,
+          "compensation": 2957922.0
+        },
+        "Occupational Therapist": {
+          "rows": 18,
+          "fte": 16.0,
+          "salary": 2008226.0,
+          "compensation": 2628090.0
+        },
+        "Psychologist": {
+          "rows": 27,
+          "fte": 26.3,
+          "salary": 3298222.0,
+          "compensation": 4224722.0
+        },
+        "Secondary Principal": {
+          "rows": 16,
+          "fte": 14.527,
+          "salary": 3330910.0,
+          "compensation": 3966121.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 111829.0,
+          "compensation": 144696.0
+        },
+        "Extracurricular": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 537559.0,
+          "compensation": 686875.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 139550.0,
+          "compensation": 176734.0
+        },
+        "Classified on Leave": {
+          "rows": 1,
+          "fte": 0.63,
+          "salary": 46407.0,
+          "compensation": 68651.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 391732.0,
+          "compensation": 448509.0
+        }
+      },
+      "Monroe": {
+        "Secondary Teacher": {
+          "rows": 133,
+          "fte": 123.557,
+          "salary": 15359153.0,
+          "compensation": 19695216.0
+        },
+        "Technical": {
+          "rows": 25,
+          "fte": 23.539,
+          "salary": 2104505.0,
+          "compensation": 2876959.0
+        },
+        "Aide": {
+          "rows": 144,
+          "fte": 79.35899999999997,
+          "salary": 4883503.0,
+          "compensation": 7826249.0
+        },
+        "Service Worker": {
+          "rows": 36,
+          "fte": 34.129,
+          "salary": 2206189.0,
+          "compensation": 3262901.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 18,
+          "fte": 16.514,
+          "salary": 1735263.0,
+          "compensation": 2287075.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 128,
+          "fte": 122.28499999999997,
+          "salary": 13370574.0,
+          "compensation": 17464733.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 3,
+          "fte": 2.135,
+          "salary": 404790.0,
+          "compensation": 484876.0
+        },
+        "Operator": {
+          "rows": 45,
+          "fte": 24.895000000000003,
+          "salary": 2053105.0,
+          "compensation": 3109769.0
+        },
+        "Professional": {
+          "rows": 33,
+          "fte": 4.982,
+          "salary": 693491.0,
+          "compensation": 877944.0
+        },
+        "Counselor": {
+          "rows": 15,
+          "fte": 14.956000000000001,
+          "salary": 1632015.0,
+          "compensation": 2137617.0
+        },
+        "Elementary Principal": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 917724.0,
+          "compensation": 1130447.0
+        },
+        "Physical Therapist": {
+          "rows": 2,
+          "fte": 1.213,
+          "salary": 186241.0,
+          "compensation": 227799.0
+        },
+        "Office/Clerical": {
+          "rows": 49,
+          "fte": 36.605,
+          "salary": 2697206.0,
+          "compensation": 3896560.0
+        },
+        "Other Teacher": {
+          "rows": 45,
+          "fte": 44.176,
+          "salary": 4826910.0,
+          "compensation": 6296963.0
+        },
+        "Director/Supervisor": {
+          "rows": 10,
+          "fte": 9.919,
+          "salary": 1512419.0,
+          "compensation": 1907227.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 8,
+          "fte": 6.634,
+          "salary": 1345321.0,
+          "compensation": 1632669.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 4.516,
+          "salary": 410691.0,
+          "compensation": 572026.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 219852.0,
+          "compensation": 319502.0
+        },
+        "Nurse": {
+          "rows": 4,
+          "fte": 3.2119999999999997,
+          "salary": 271859.0,
+          "compensation": 377299.0
+        },
+        "Contractor ESA": {
+          "rows": 12,
+          "fte": 9.799999999999999,
+          "salary": 0.0,
+          "compensation": 170378.0
+        },
+        "Other District Admin.": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 1441083.0,
+          "compensation": 1758972.0
+        },
+        "Library Media Specialist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 218808.0,
+          "compensation": 285458.0
+        },
+        "Occupational Therapist": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 373080.0,
+          "compensation": 501080.0
+        },
+        "Other Support Personnel": {
+          "rows": 5,
+          "fte": 4.803,
+          "salary": 591016.0,
+          "compensation": 762660.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 6,
+          "fte": 5.606,
+          "salary": 670000.0,
+          "compensation": 869314.0
+        },
+        "Substitute Teacher": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 162122.0,
+          "compensation": 228067.0
+        },
+        "Other School Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 533523.0,
+          "compensation": 659709.0
+        },
+        "Secondary Principal": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 798817.0,
+          "compensation": 973713.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 78205.0,
+          "compensation": 106432.0
+        },
+        "Social Worker": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 133938.0,
+          "compensation": 171724.0
+        },
+        "Psychologist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 143921.0,
+          "compensation": 182261.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 299214.0,
+          "compensation": 352964.0
+        }
+      },
+      "Sultan": {
+        "Aide": {
+          "rows": 60,
+          "fte": 31.999000000000024,
+          "salary": 1622259.0,
+          "compensation": 2510331.0
+        },
+        "Office/Clerical": {
+          "rows": 18,
+          "fte": 14.122999999999998,
+          "salary": 822169.0,
+          "compensation": 1176978.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 66,
+          "fte": 66.0,
+          "salary": 7231269.0,
+          "compensation": 9105608.0
+        },
+        "Technical": {
+          "rows": 9,
+          "fte": 8.329,
+          "salary": 627047.0,
+          "compensation": 850125.0
+        },
+        "Elementary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 343139.0,
+          "compensation": 412746.0
+        },
+        "Secondary Teacher": {
+          "rows": 55,
+          "fte": 54.056,
+          "salary": 6211401.0,
+          "compensation": 7873665.0
+        },
+        "Professional": {
+          "rows": 19,
+          "fte": 4.6259999999999994,
+          "salary": 458999.0,
+          "compensation": 593867.0
+        },
+        "Director/Supervisor": {
+          "rows": 6,
+          "fte": 5.904,
+          "salary": 723230.0,
+          "compensation": 895157.0
+        },
+        "Service Worker": {
+          "rows": 20,
+          "fte": 13.602999999999996,
+          "salary": 732585.0,
+          "compensation": 1070927.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 275114.0,
+          "compensation": 376904.0
+        },
+        "Operator": {
+          "rows": 20,
+          "fte": 11.955000000000002,
+          "salary": 920669.0,
+          "compensation": 1309033.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 302186.0,
+          "compensation": 381831.0
+        },
+        "Psychologist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 99073.0,
+          "compensation": 119439.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 240701.0,
+          "compensation": 292121.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 369193.0,
+          "compensation": 458968.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 443685.0,
+          "compensation": 562131.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 490285.0,
+          "compensation": 613621.0
+        },
+        "Counselor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 474206.0,
+          "compensation": 587070.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 156341.0,
+          "compensation": 196800.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 103815.0,
+          "compensation": 125008.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 135216.0,
+          "compensation": 172855.0
+        }
+      },
+      "Lakewood": {
+        "Service Worker": {
+          "rows": 32,
+          "fte": 25.299999999999997,
+          "salary": 1564242.0,
+          "compensation": 2303707.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 88,
+          "fte": 84.8,
+          "salary": 8270433.0,
+          "compensation": 10862839.0
+        },
+        "Secondary Teacher": {
+          "rows": 60,
+          "fte": 59.528999999999996,
+          "salary": 6493490.0,
+          "compensation": 8423405.0
+        },
+        "Aide": {
+          "rows": 84,
+          "fte": 49.10199999999996,
+          "salary": 2744757.0,
+          "compensation": 4328380.0
+        },
+        "Other District Admin.": {
+          "rows": 9,
+          "fte": 8.85,
+          "salary": 1478241.0,
+          "compensation": 1840112.0
+        },
+        "Operator": {
+          "rows": 31,
+          "fte": 16.270000000000003,
+          "salary": 1188482.0,
+          "compensation": 1798133.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 343096.0,
+          "compensation": 425441.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 6.5,
+          "salary": 747651.0,
+          "compensation": 972681.0
+        },
+        "Professional": {
+          "rows": 19,
+          "fte": 6.2620000000000005,
+          "salary": 829720.0,
+          "compensation": 1054800.0
+        },
+        "Technical": {
+          "rows": 8,
+          "fte": 5.2,
+          "salary": 392441.0,
+          "compensation": 573427.0
+        },
+        "Office/Clerical": {
+          "rows": 20,
+          "fte": 16.360999999999997,
+          "salary": 1085330.0,
+          "compensation": 1563260.0
+        },
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 180119.0,
+          "compensation": 241366.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 574196.0,
+          "compensation": 701321.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 409373.0,
+          "compensation": 497102.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 9,
+          "fte": 7.5889999999999995,
+          "salary": 778700.0,
+          "compensation": 1048217.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 118829.0,
+          "compensation": 153238.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 0.9,
+          "salary": 81026.0,
+          "compensation": 108416.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 79245.0,
+          "compensation": 105987.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 2.5,
+          "salary": 276831.0,
+          "compensation": 355931.0
+        },
+        "Substitute Teacher": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 241158.0,
+          "compensation": 285747.0
+        },
+        "Psychologist": {
+          "rows": 5,
+          "fte": 4.8,
+          "salary": 563139.0,
+          "compensation": 725656.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.401,
+          "salary": 37037.0,
+          "compensation": 40085.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 262833.0,
+          "compensation": 311786.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 614631.0,
+          "compensation": 774591.0
+        },
+        "Library Media Specialist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 115020.0,
+          "compensation": 148658.0
+        },
+        "Contractor ESA": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 0.0,
+          "compensation": 0.0
+        }
+      },
+      "Granite Falls": {
+        "Other Teacher": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 193645.0,
+          "compensation": 254125.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 625570.0,
+          "compensation": 813723.0
+        },
+        "Aide": {
+          "rows": 97,
+          "fte": 55.95900000000004,
+          "salary": 3010880.0,
+          "compensation": 4861765.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 17.636999999999993,
+          "salary": 1278531.0,
+          "compensation": 1823946.0
+        },
+        "Professional": {
+          "rows": 21,
+          "fte": 0.043,
+          "salary": 147266.0,
+          "compensation": 159860.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 60,
+          "fte": 58.148,
+          "salary": 5809215.0,
+          "compensation": 7611527.0
+        },
+        "Service Worker": {
+          "rows": 28,
+          "fte": 19.766000000000002,
+          "salary": 1116587.0,
+          "compensation": 1699637.0
+        },
+        "Secondary Teacher": {
+          "rows": 59,
+          "fte": 56.275,
+          "salary": 6037268.0,
+          "compensation": 7909654.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 587410.0,
+          "compensation": 722183.0
+        },
+        "Counselor": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 615524.0,
+          "compensation": 822285.0
+        },
+        "Technical": {
+          "rows": 3,
+          "fte": 2.769,
+          "salary": 183474.0,
+          "compensation": 257847.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 172915.0,
+          "compensation": 212592.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 152919.0,
+          "compensation": 189201.0
+        },
+        "Other Support Personnel": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 85626.0,
+          "compensation": 124343.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 575768.0,
+          "compensation": 733525.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 383995.0,
+          "compensation": 490791.0
+        },
+        "Substitute Teacher": {
+          "rows": 3,
+          "fte": 2.376,
+          "salary": 135773.0,
+          "compensation": 191773.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 83130.0,
+          "compensation": 109677.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 560962.0,
+          "compensation": 692515.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 223141.0,
+          "compensation": 268327.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 154461.0,
+          "compensation": 190466.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 224153.0,
+          "compensation": 273115.0
+        },
+        "Other District Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 175469.0,
+          "compensation": 219706.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 3,
+          "fte": 2.865,
+          "salary": 423129.0,
+          "compensation": 539445.0
+        }
+      },
+      "Tukwila": {
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 5,
+          "fte": 4.8,
+          "salary": 554159.0,
+          "compensation": 717692.0
+        },
+        "Aide": {
+          "rows": 74,
+          "fte": 44.52400000000005,
+          "salary": 3165306.0,
+          "compensation": 4787760.0
+        },
+        "Service Worker": {
+          "rows": 47,
+          "fte": 33.089999999999996,
+          "salary": 2077174.0,
+          "compensation": 3152278.0
+        },
+        "Professional": {
+          "rows": 32,
+          "fte": 26.727999999999998,
+          "salary": 2330890.0,
+          "compensation": 3239223.0
+        },
+        "Office/Clerical": {
+          "rows": 22,
+          "fte": 16.126999999999995,
+          "salary": 1268056.0,
+          "compensation": 1807483.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 65,
+          "fte": 65.0,
+          "salary": 7430803.0,
+          "compensation": 9595684.0
+        },
+        "Secondary Teacher": {
+          "rows": 71,
+          "fte": 69.296,
+          "salary": 8000458.0,
+          "compensation": 10345451.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 11,
+          "fte": 10.956,
+          "salary": 1278055.0,
+          "compensation": 1643263.0
+        },
+        "Crafts/Trades": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 173801.0,
+          "compensation": 263416.0
+        },
+        "Other District Admin.": {
+          "rows": 5,
+          "fte": 4.723,
+          "salary": 883202.0,
+          "compensation": 1095691.0
+        },
+        "Director/Supervisor": {
+          "rows": 9,
+          "fte": 7.2,
+          "salary": 1041745.0,
+          "compensation": 1336575.0
+        },
+        "Other Teacher": {
+          "rows": 12,
+          "fte": 12.0,
+          "salary": 1535816.0,
+          "compensation": 1961936.0
+        },
+        "Social Worker": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 780322.0,
+          "compensation": 1021026.0
+        },
+        "Library Media Specialist": {
+          "rows": 5,
+          "fte": 4.6,
+          "salary": 438537.0,
+          "compensation": 603447.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 373056.0,
+          "compensation": 461118.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 534727.0,
+          "compensation": 663473.0
+        },
+        "Operator": {
+          "rows": 11,
+          "fte": 5.5920000000000005,
+          "salary": 532150.0,
+          "compensation": 766230.0
+        },
+        "Technical": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 180910.0,
+          "compensation": 244135.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 976260.0,
+          "compensation": 1238880.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 152436.0,
+          "compensation": 192941.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 451499.0,
+          "compensation": 569296.0
+        },
+        "Other Support Personnel": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 453651.0,
+          "compensation": 570817.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 221615.0,
+          "compensation": 285425.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 3,
+          "fte": 2.854,
+          "salary": 477517.0,
+          "compensation": 600317.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 101203.0,
+          "compensation": 132545.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 0.981,
+          "salary": 256506.0,
+          "compensation": 307861.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 81042.0,
+          "compensation": 108778.0
+        }
+      },
+      "Orting": {
+        "Aide": {
+          "rows": 76,
+          "fte": 38.751000000000026,
+          "salary": 2324720.0,
+          "compensation": 3659617.0
+        },
+        "Crafts/Trades": {
+          "rows": 7,
+          "fte": 6.625,
+          "salary": 429139.0,
+          "compensation": 636706.0
+        },
+        "Secondary Teacher": {
+          "rows": 58,
+          "fte": 57.555,
+          "salary": 5876297.0,
+          "compensation": 7667976.0
+        },
+        "Professional": {
+          "rows": 17,
+          "fte": 1.548,
+          "salary": 289086.0,
+          "compensation": 349912.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 19.27,
+          "salary": 1429159.0,
+          "compensation": 2012536.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 307727.0,
+          "compensation": 425058.0
+        },
+        "Other Support Personnel": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 126335.0,
+          "compensation": 161069.0
+        },
+        "Other Teacher": {
+          "rows": 21,
+          "fte": 19.2,
+          "salary": 1995784.0,
+          "compensation": 2597688.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 65,
+          "fte": 65.0,
+          "salary": 6119632.0,
+          "compensation": 8072455.0
+        },
+        "Director/Supervisor": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 881342.0,
+          "compensation": 1140430.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 716363.0,
+          "compensation": 929618.0
+        },
+        "Operator": {
+          "rows": 21,
+          "fte": 12.409999999999997,
+          "salary": 867175.0,
+          "compensation": 1348967.0
+        },
+        "Service Worker": {
+          "rows": 26,
+          "fte": 19.552999999999997,
+          "salary": 1091236.0,
+          "compensation": 1669806.0
+        },
+        "Technical": {
+          "rows": 9,
+          "fte": 7.408,
+          "salary": 549917.0,
+          "compensation": 777888.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 166206.0,
+          "compensation": 208657.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 1.0,
+          "salary": 80075.0,
+          "compensation": 119697.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 369341.0,
+          "compensation": 458086.0
+        },
+        "Psychologist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 212733.0,
+          "compensation": 276829.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 433097.0,
+          "compensation": 563708.0
+        },
+        "Elementary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 333740.0,
+          "compensation": 419552.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 239803.0,
+          "compensation": 289930.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 251807.0,
+          "compensation": 330676.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 584653.0,
+          "compensation": 721912.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 325648.0,
+          "compensation": 409174.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 80782.0,
+          "compensation": 108855.0
+        },
+        "Extracurricular": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 118216.0,
+          "compensation": 152120.0
+        }
+      },
+      "Steilacoom Historical": {
+        "Service Worker": {
+          "rows": 21,
+          "fte": 18.345999999999997,
+          "salary": 1088783.0,
+          "compensation": 1614019.0
+        },
+        "Office/Clerical": {
+          "rows": 27,
+          "fte": 23.813000000000002,
+          "salary": 1700047.0,
+          "compensation": 2398185.0
+        },
+        "Aide": {
+          "rows": 67,
+          "fte": 38.75200000000003,
+          "salary": 2052728.0,
+          "compensation": 3334861.0
+        },
+        "Professional": {
+          "rows": 27,
+          "fte": 0.0,
+          "salary": 234109.0,
+          "compensation": 262654.0
+        },
+        "Secondary Teacher": {
+          "rows": 60,
+          "fte": 59.6,
+          "salary": 6497822.0,
+          "compensation": 8459992.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 67,
+          "fte": 67.0,
+          "salary": 7317673.0,
+          "compensation": 9577407.0
+        },
+        "Technical": {
+          "rows": 9,
+          "fte": 6.565000000000001,
+          "salary": 450436.0,
+          "compensation": 657985.0
+        },
+        "Contractor ESA": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 0.0,
+          "compensation": 28216.0
+        },
+        "Other Teacher": {
+          "rows": 27,
+          "fte": 27.12,
+          "salary": 2803351.0,
+          "compensation": 3689870.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 3,
+          "fte": 2.7510000000000003,
+          "salary": 455544.0,
+          "compensation": 572320.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 9,
+          "fte": 9.0,
+          "salary": 1028397.0,
+          "compensation": 1340066.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 2.805,
+          "salary": 468883.0,
+          "compensation": 619633.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 5,
+          "fte": 4.6,
+          "salary": 510544.0,
+          "compensation": 667814.0
+        },
+        "Counselor": {
+          "rows": 8,
+          "fte": 8.0,
+          "salary": 919612.0,
+          "compensation": 1201611.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 223226.0,
+          "compensation": 300007.0
+        },
+        "Social Worker": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 83879.0,
+          "compensation": 112136.0
+        },
+        "Elementary Principal": {
+          "rows": 4,
+          "fte": 3.7790000000000004,
+          "salary": 645205.0,
+          "compensation": 814859.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 2.533,
+          "salary": 296603.0,
+          "compensation": 407412.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 193264.0,
+          "compensation": 277940.0
+        },
+        "Director/Supervisor": {
+          "rows": 3,
+          "fte": 2.6759999999999997,
+          "salary": 356082.0,
+          "compensation": 464098.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 1.87,
+          "salary": 341373.0,
+          "compensation": 426417.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 0.935,
+          "salary": 134588.0,
+          "compensation": 170803.0
+        },
+        "Crafts/Trades": {
+          "rows": 4,
+          "fte": 3.996,
+          "salary": 281319.0,
+          "compensation": 397770.0
+        },
+        "Other School Admin.": {
+          "rows": 3,
+          "fte": 2.805,
+          "salary": 437059.0,
+          "compensation": 557105.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 0.965,
+          "salary": 128204.0,
+          "compensation": 174665.0
+        },
+        "Other Support Personnel": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 85487.0,
+          "compensation": 115094.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.5,
+          "salary": 61915.0,
+          "compensation": 86000.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 0.965,
+          "salary": 256241.0,
+          "compensation": 307770.0
+        }
+      }
+    },
+    "2024-25": {
+      "Riverview": {
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 168385.0,
+          "compensation": 232941.0
+        },
+        "Secondary Teacher": {
+          "rows": 75,
+          "fte": 75.337,
+          "salary": 9381100.0,
+          "compensation": 12147743.0
+        },
+        "Aide": {
+          "rows": 76,
+          "fte": 35.78800000000001,
+          "salary": 1997293.0,
+          "compensation": 3669142.0
+        },
+        "Service Worker": {
+          "rows": 38,
+          "fte": 26.275999999999996,
+          "salary": 1679698.0,
+          "compensation": 2542057.0
+        },
+        "Office/Clerical": {
+          "rows": 35,
+          "fte": 26.678999999999995,
+          "salary": 2302940.0,
+          "compensation": 3283527.0
+        },
+        "Operator": {
+          "rows": 28,
+          "fte": 15.931000000000003,
+          "salary": 1246038.0,
+          "compensation": 1921944.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 89,
+          "fte": 86.82799999999999,
+          "salary": 9549490.0,
+          "compensation": 12690371.0
+        },
+        "Professional": {
+          "rows": 29,
+          "fte": 3.748000000000001,
+          "salary": 461575.0,
+          "compensation": 613232.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 600270.0,
+          "compensation": 749742.0
+        },
+        "Psychologist": {
+          "rows": 6,
+          "fte": 5.099,
+          "salary": 614660.0,
+          "compensation": 822265.0
+        },
+        "Library Media Specialist": {
+          "rows": 5,
+          "fte": 5.031,
+          "salary": 664378.0,
+          "compensation": 860855.0
+        },
+        "Elementary Principal": {
+          "rows": 4,
+          "fte": 3.258,
+          "salary": 679030.0,
+          "compensation": 808034.0
+        },
+        "Counselor": {
+          "rows": 9,
+          "fte": 8.594,
+          "salary": 1082716.0,
+          "compensation": 1393720.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 637666.0,
+          "compensation": 743339.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 4,
+          "fte": 3.572,
+          "salary": 387314.0,
+          "compensation": 538003.0
+        },
+        "Technical": {
+          "rows": 7,
+          "fte": 6.419,
+          "salary": 624489.0,
+          "compensation": 806789.0
+        },
+        "Director/Supervisor": {
+          "rows": 8,
+          "fte": 7.739,
+          "salary": 1371486.0,
+          "compensation": 1753096.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 8,
+          "fte": 6.834,
+          "salary": 695634.0,
+          "compensation": 934508.0
+        },
+        "Other Teacher": {
+          "rows": 3,
+          "fte": 2.548,
+          "salary": 307544.0,
+          "compensation": 403168.0
+        },
+        "Other School Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 387705.0,
+          "compensation": 464176.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 3,
+          "fte": 3.275,
+          "salary": 571426.0,
+          "compensation": 697365.0
+        },
+        "Other Support Personnel": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 119568.0,
+          "compensation": 156280.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 326263.0,
+          "compensation": 390726.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 1.8279999999999998,
+          "salary": 237869.0,
+          "compensation": 285307.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 0.583,
+          "salary": 54811.0,
+          "compensation": 80006.0
+        }
+      },
+      "Snoqualmie Valley": {
+        "Behavior Analyst": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 126877.0,
+          "compensation": 162829.0
+        },
+        "Technical": {
+          "rows": 24,
+          "fte": 20.454,
+          "salary": 1647744.0,
+          "compensation": 2297449.0
+        },
+        "Secondary Teacher": {
+          "rows": 146,
+          "fte": 144.763,
+          "salary": 16682211.0,
+          "compensation": 21675399.0
+        },
+        "Professional": {
+          "rows": 33,
+          "fte": 10.002,
+          "salary": 1199815.0,
+          "compensation": 1572759.0
+        },
+        "Operator": {
+          "rows": 47,
+          "fte": 24.945999999999998,
+          "salary": 2203266.0,
+          "compensation": 3245474.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 157,
+          "fte": 154.11,
+          "salary": 17446616.0,
+          "compensation": 22707782.0
+        },
+        "Other Teacher": {
+          "rows": 53,
+          "fte": 52.3,
+          "salary": 5742685.0,
+          "compensation": 7489802.0
+        },
+        "Office/Clerical": {
+          "rows": 52,
+          "fte": 39.623999999999995,
+          "salary": 2827593.0,
+          "compensation": 4047935.0
+        },
+        "Counselor": {
+          "rows": 22,
+          "fte": 20.616999999999997,
+          "salary": 2590640.0,
+          "compensation": 3342340.0
+        },
+        "Library Media Specialist": {
+          "rows": 7,
+          "fte": 5.997,
+          "salary": 704824.0,
+          "compensation": 924924.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 37,
+          "fte": 36.661,
+          "salary": 4103859.0,
+          "compensation": 5372873.0
+        },
+        "Aide": {
+          "rows": 148,
+          "fte": 78.3339999999999,
+          "salary": 4402913.0,
+          "compensation": 7262860.0
+        },
+        "Psychologist": {
+          "rows": 11,
+          "fte": 9.873,
+          "salary": 1245711.0,
+          "compensation": 1612625.0
+        },
+        "Crafts/Trades": {
+          "rows": 10,
+          "fte": 9.915,
+          "salary": 810757.0,
+          "compensation": 1119631.0
+        },
+        "Service Worker": {
+          "rows": 74,
+          "fte": 47.08300000000003,
+          "salary": 2987953.0,
+          "compensation": 4521984.0
+        },
+        "Other Support Personnel": {
+          "rows": 19,
+          "fte": 17.086,
+          "salary": 2135874.0,
+          "compensation": 2772571.0
+        },
+        "Secondary Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1154311.0,
+          "compensation": 1437658.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 142673.0,
+          "compensation": 181604.0
+        },
+        "Nurse": {
+          "rows": 13,
+          "fte": 10.606,
+          "salary": 1064688.0,
+          "compensation": 1419953.0
+        },
+        "Elementary Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1143638.0,
+          "compensation": 1422129.0
+        },
+        "Laborer": {
+          "rows": 6,
+          "fte": 5.996,
+          "salary": 403574.0,
+          "compensation": 579092.0
+        },
+        "Occupational Therapist": {
+          "rows": 4,
+          "fte": 3.739,
+          "salary": 430391.0,
+          "compensation": 558486.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 10,
+          "fte": 9.103,
+          "salary": 1108406.0,
+          "compensation": 1443683.0
+        },
+        "Other School Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 488962.0,
+          "compensation": 617203.0
+        },
+        "Director/Supervisor": {
+          "rows": 5,
+          "fte": 4.827,
+          "salary": 572693.0,
+          "compensation": 745722.0
+        },
+        "Substitute Teacher": {
+          "rows": 3,
+          "fte": 2.711,
+          "salary": 274300.0,
+          "compensation": 364559.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1103098.0,
+          "compensation": 1376210.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 5,
+          "fte": 4.601,
+          "salary": 727643.0,
+          "compensation": 930374.0
+        },
+        "Social Worker": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 418922.0,
+          "compensation": 548981.0
+        },
+        "Other District Admin.": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1227090.0,
+          "compensation": 1509655.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 110997.0,
+          "compensation": 144770.0
+        },
+        "Extracurricular": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 130152.0,
+          "compensation": 167860.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 358612.0,
+          "compensation": 419367.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 253451.0,
+          "compensation": 307802.0
+        }
+      },
+      "Northshore": {
+        "Elem. Homeroom Teacher": {
+          "rows": 467,
+          "fte": 457.50700000000006,
+          "salary": 55624258.0,
+          "compensation": 71900139.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 141,
+          "fte": 126.452,
+          "salary": 15935212.0,
+          "compensation": 20702705.0
+        },
+        "Aide": {
+          "rows": 650,
+          "fte": 369.5670000000018,
+          "salary": 28835017.0,
+          "compensation": 43296364.0
+        },
+        "Operator": {
+          "rows": 128,
+          "fte": 76.39200000000001,
+          "salary": 7005147.0,
+          "compensation": 10475229.0
+        },
+        "Counselor": {
+          "rows": 74,
+          "fte": 69.892,
+          "salary": 8646523.0,
+          "compensation": 11266334.0
+        },
+        "Technical": {
+          "rows": 60,
+          "fte": 46.55100000000002,
+          "salary": 5619859.0,
+          "compensation": 7493679.0
+        },
+        "Service Worker": {
+          "rows": 222,
+          "fte": 167.439,
+          "salary": 12045013.0,
+          "compensation": 17457727.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 48,
+          "fte": 42.699999999999996,
+          "salary": 5302948.0,
+          "compensation": 6920065.0
+        },
+        "Secondary Teacher": {
+          "rows": 482,
+          "fte": 444.14700000000056,
+          "salary": 57175552.0,
+          "compensation": 73564444.0
+        },
+        "Elementary Principal": {
+          "rows": 20,
+          "fte": 20.0,
+          "salary": 4161985.0,
+          "compensation": 5146664.0
+        },
+        "Office/Clerical": {
+          "rows": 178,
+          "fte": 153.17699999999988,
+          "salary": 14452580.0,
+          "compensation": 19638976.0
+        },
+        "Psychologist": {
+          "rows": 24,
+          "fte": 23.500000000000004,
+          "salary": 3033762.0,
+          "compensation": 3911386.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 13,
+          "fte": 11.332,
+          "salary": 2144947.0,
+          "compensation": 2683583.0
+        },
+        "Other Teacher": {
+          "rows": 197,
+          "fte": 188.53599999999997,
+          "salary": 21844957.0,
+          "compensation": 28501731.0
+        },
+        "Professional": {
+          "rows": 71,
+          "fte": 54.669000000000004,
+          "salary": 7305256.0,
+          "compensation": 9731601.0
+        },
+        "Physical Therapist": {
+          "rows": 11,
+          "fte": 9.9,
+          "salary": 1258605.0,
+          "compensation": 1638489.0
+        },
+        "Director/Supervisor": {
+          "rows": 25,
+          "fte": 25.0,
+          "salary": 4780695.0,
+          "compensation": 5899209.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 17,
+          "fte": 16.826999999999998,
+          "salary": 3358409.0,
+          "compensation": 4197875.0
+        },
+        "Other Support Personnel": {
+          "rows": 13,
+          "fte": 13.0,
+          "salary": 1760618.0,
+          "compensation": 2251311.0
+        },
+        "Crafts/Trades": {
+          "rows": 25,
+          "fte": 25.0,
+          "salary": 2663762.0,
+          "compensation": 3580751.0
+        },
+        "Library Media Specialist": {
+          "rows": 14,
+          "fte": 12.999999999999998,
+          "salary": 1876692.0,
+          "compensation": 2400241.0
+        },
+        "Deputy/Assist. Supt.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 323607.0,
+          "compensation": 376754.0
+        },
+        "Occupational Therapist": {
+          "rows": 19,
+          "fte": 16.0,
+          "salary": 2180170.0,
+          "compensation": 2813499.0
+        },
+        "Other District Admin.": {
+          "rows": 20,
+          "fte": 19.316,
+          "salary": 4555279.0,
+          "compensation": 5463983.0
+        },
+        "Secondary Principal": {
+          "rows": 14,
+          "fte": 13.827,
+          "salary": 3119100.0,
+          "compensation": 3759042.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 118526.0,
+          "compensation": 153694.0
+        },
+        "Extracurricular": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 488228.0,
+          "compensation": 632715.0
+        },
+        "Substitute Teacher": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 90297.0,
+          "compensation": 126758.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 141184.0,
+          "compensation": 181606.0
+        },
+        "Classified on Leave": {
+          "rows": 1,
+          "fte": 0.63,
+          "salary": 48127.0,
+          "compensation": 71437.0
+        },
+        "Orientation/Mobility Spc": {
+          "rows": 2,
+          "fte": 1.8,
+          "salary": 250108.0,
+          "compensation": 322631.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 460490.0,
+          "compensation": 520156.0
+        }
+      },
+      "Monroe": {
+        "Secondary Teacher": {
+          "rows": 139,
+          "fte": 130.733,
+          "salary": 16256221.0,
+          "compensation": 21018522.0
+        },
+        "Technical": {
+          "rows": 25,
+          "fte": 22.128,
+          "salary": 2185909.0,
+          "compensation": 2979318.0
+        },
+        "Aide": {
+          "rows": 160,
+          "fte": 89.31400000000001,
+          "salary": 5791514.0,
+          "compensation": 9244794.0
+        },
+        "Operator": {
+          "rows": 50,
+          "fte": 27.57099999999999,
+          "salary": 2297209.0,
+          "compensation": 3513870.0
+        },
+        "Service Worker": {
+          "rows": 36,
+          "fte": 34.899,
+          "salary": 2495326.0,
+          "compensation": 3604091.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 18,
+          "fte": 17.026,
+          "salary": 1893563.0,
+          "compensation": 2501501.0
+        },
+        "Professional": {
+          "rows": 56,
+          "fte": 8.319,
+          "salary": 1081327.0,
+          "compensation": 1412095.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 128,
+          "fte": 121.23000000000002,
+          "salary": 14057878.0,
+          "compensation": 18345663.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 2,
+          "fte": 1.75,
+          "salary": 331625.0,
+          "compensation": 414644.0
+        },
+        "Elementary Principal": {
+          "rows": 7,
+          "fte": 5.699999999999999,
+          "salary": 1226812.0,
+          "compensation": 1488196.0
+        },
+        "Counselor": {
+          "rows": 16,
+          "fte": 15.854000000000001,
+          "salary": 1826623.0,
+          "compensation": 2384057.0
+        },
+        "Physical Therapist": {
+          "rows": 2,
+          "fte": 1.213,
+          "salary": 201215.0,
+          "compensation": 244998.0
+        },
+        "Office/Clerical": {
+          "rows": 45,
+          "fte": 31.918999999999993,
+          "salary": 2494104.0,
+          "compensation": 3570954.0
+        },
+        "Other Teacher": {
+          "rows": 43,
+          "fte": 41.117,
+          "salary": 5024597.0,
+          "compensation": 6492250.0
+        },
+        "Director/Supervisor": {
+          "rows": 11,
+          "fte": 11.0,
+          "salary": 1753347.0,
+          "compensation": 2205599.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 1114266.0,
+          "compensation": 1379243.0
+        },
+        "Crafts/Trades": {
+          "rows": 6,
+          "fte": 4.078,
+          "salary": 473563.0,
+          "compensation": 629034.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 2.088,
+          "salary": 188640.0,
+          "compensation": 258340.0
+        },
+        "Nurse": {
+          "rows": 5,
+          "fte": 4.212,
+          "salary": 377894.0,
+          "compensation": 520271.0
+        },
+        "Contractor ESA": {
+          "rows": 10,
+          "fte": 9.2,
+          "salary": 0.0,
+          "compensation": 0.0
+        },
+        "Other District Admin.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 834531.0,
+          "compensation": 1024178.0
+        },
+        "Occupational Therapist": {
+          "rows": 4,
+          "fte": 3.3520000000000003,
+          "salary": 361325.0,
+          "compensation": 485799.0
+        },
+        "Other Support Personnel": {
+          "rows": 6,
+          "fte": 5.803,
+          "salary": 737961.0,
+          "compensation": 956285.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 6,
+          "fte": 5.306,
+          "salary": 677613.0,
+          "compensation": 884457.0
+        },
+        "Library Media Specialist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 170388.0,
+          "compensation": 213532.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 634209.0,
+          "compensation": 773579.0
+        },
+        "Psychologist": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 334522.0,
+          "compensation": 438464.0
+        },
+        "Certificated on Leave": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 157167.0,
+          "compensation": 230333.0
+        },
+        "Other School Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 391941.0,
+          "compensation": 481666.0
+        },
+        "Social Worker": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 138177.0,
+          "compensation": 177716.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 311326.0,
+          "compensation": 367910.0
+        }
+      },
+      "Sultan": {
+        "Office/Clerical": {
+          "rows": 19,
+          "fte": 13.061999999999996,
+          "salary": 855016.0,
+          "compensation": 1267869.0
+        },
+        "Aide": {
+          "rows": 51,
+          "fte": 27.51900000000001,
+          "salary": 1516152.0,
+          "compensation": 2438905.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 59,
+          "fte": 57.028000000000006,
+          "salary": 6407834.0,
+          "compensation": 8334058.0
+        },
+        "Technical": {
+          "rows": 8,
+          "fte": 7.457,
+          "salary": 604523.0,
+          "compensation": 833175.0
+        },
+        "Elementary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 374299.0,
+          "compensation": 465554.0
+        },
+        "Secondary Teacher": {
+          "rows": 50,
+          "fte": 49.943,
+          "salary": 5953870.0,
+          "compensation": 7671015.0
+        },
+        "Professional": {
+          "rows": 9,
+          "fte": 4.587,
+          "salary": 375347.0,
+          "compensation": 525945.0
+        },
+        "Director/Supervisor": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 652230.0,
+          "compensation": 837365.0
+        },
+        "Service Worker": {
+          "rows": 20,
+          "fte": 13.020999999999997,
+          "salary": 795804.0,
+          "compensation": 1147703.0
+        },
+        "Other Teacher": {
+          "rows": 1,
+          "fte": 0.6,
+          "salary": 77719.0,
+          "compensation": 105498.0
+        },
+        "Crafts/Trades": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 309520.0,
+          "compensation": 438699.0
+        },
+        "Operator": {
+          "rows": 20,
+          "fte": 11.490999999999996,
+          "salary": 1036874.0,
+          "compensation": 1481718.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 338348.0,
+          "compensation": 425344.0
+        },
+        "Psychologist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 100145.0,
+          "compensation": 131201.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 316058.0,
+          "compensation": 369034.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 394648.0,
+          "compensation": 488925.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 480202.0,
+          "compensation": 619015.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 2.926,
+          "salary": 559660.0,
+          "compensation": 695197.0
+        },
+        "Counselor": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 575350.0,
+          "compensation": 724200.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 11,
+          "fte": 9.518,
+          "salary": 1056173.0,
+          "compensation": 1375996.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 165030.0,
+          "compensation": 208377.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 156258.0,
+          "compensation": 199577.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.5,
+          "salary": 46989.0,
+          "compensation": 69585.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 116436.0,
+          "compensation": 149714.0
+        }
+      },
+      "Lakewood": {
+        "Service Worker": {
+          "rows": 32,
+          "fte": 23.926,
+          "salary": 1659075.0,
+          "compensation": 2378064.0
+        },
+        "Secondary Teacher": {
+          "rows": 61,
+          "fte": 60.033,
+          "salary": 6927470.0,
+          "compensation": 9004227.0
+        },
+        "Aide": {
+          "rows": 92,
+          "fte": 52.87899999999996,
+          "salary": 3263669.0,
+          "compensation": 5024433.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 84,
+          "fte": 81.134,
+          "salary": 8296758.0,
+          "compensation": 10954806.0
+        },
+        "Professional": {
+          "rows": 29,
+          "fte": 6.808,
+          "salary": 937684.0,
+          "compensation": 1180513.0
+        },
+        "Operator": {
+          "rows": 27,
+          "fte": 13.848000000000004,
+          "salary": 1139525.0,
+          "compensation": 1669649.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 6.542,
+          "salary": 775681.0,
+          "compensation": 1018413.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 360217.0,
+          "compensation": 452497.0
+        },
+        "Other District Admin.": {
+          "rows": 9,
+          "fte": 7.8340000000000005,
+          "salary": 1583214.0,
+          "compensation": 1968244.0
+        },
+        "Office/Clerical": {
+          "rows": 21,
+          "fte": 16.917999999999996,
+          "salary": 1215918.0,
+          "compensation": 1726684.0
+        },
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 192901.0,
+          "compensation": 257047.0
+        },
+        "Technical": {
+          "rows": 7,
+          "fte": 4.906,
+          "salary": 411933.0,
+          "compensation": 587653.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 582221.0,
+          "compensation": 723299.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 410801.0,
+          "compensation": 508045.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 11,
+          "fte": 9.015,
+          "salary": 1041165.0,
+          "compensation": 1368580.0
+        },
+        "Certificated on Leave": {
+          "rows": 2,
+          "fte": 1.233,
+          "salary": 144688.0,
+          "compensation": 184821.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 0.94,
+          "salary": 84578.0,
+          "compensation": 113652.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 83588.0,
+          "compensation": 112468.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 2.5220000000000002,
+          "salary": 283713.0,
+          "compensation": 367881.0
+        },
+        "Psychologist": {
+          "rows": 5,
+          "fte": 4.869,
+          "salary": 594133.0,
+          "compensation": 769763.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.418,
+          "salary": 41135.0,
+          "compensation": 44473.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 261614.0,
+          "compensation": 315561.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 618853.0,
+          "compensation": 789153.0
+        },
+        "Library Media Specialist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 125198.0,
+          "compensation": 161678.0
+        }
+      },
+      "Granite Falls": {
+        "Elem. Specialist Teacher": {
+          "rows": 7,
+          "fte": 6.9670000000000005,
+          "salary": 835096.0,
+          "compensation": 1072516.0
+        },
+        "Aide": {
+          "rows": 95,
+          "fte": 57.06500000000004,
+          "salary": 3186306.0,
+          "compensation": 5134442.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 16.752999999999993,
+          "salary": 1188795.0,
+          "compensation": 1731954.0
+        },
+        "Professional": {
+          "rows": 21,
+          "fte": 0.0,
+          "salary": 152465.0,
+          "compensation": 166286.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 65,
+          "fte": 61.760999999999996,
+          "salary": 6363764.0,
+          "compensation": 8358798.0
+        },
+        "Service Worker": {
+          "rows": 28,
+          "fte": 19.811999999999998,
+          "salary": 1144099.0,
+          "compensation": 1787800.0
+        },
+        "Secondary Teacher": {
+          "rows": 60,
+          "fte": 56.613,
+          "salary": 6731931.0,
+          "compensation": 8743772.0
+        },
+        "Counselor": {
+          "rows": 6,
+          "fte": 6.0,
+          "salary": 687592.0,
+          "compensation": 896191.0
+        },
+        "Nurse": {
+          "rows": 4,
+          "fte": 3.296,
+          "salary": 223136.0,
+          "compensation": 324115.0
+        },
+        "Secondary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 517942.0,
+          "compensation": 661047.0
+        },
+        "Technical": {
+          "rows": 3,
+          "fte": 2.769,
+          "salary": 190913.0,
+          "compensation": 269572.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 261777.0,
+          "compensation": 315496.0
+        },
+        "Psychologist": {
+          "rows": 4,
+          "fte": 3.0,
+          "salary": 428785.0,
+          "compensation": 546868.0
+        },
+        "Director/Supervisor": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 578314.0,
+          "compensation": 744126.0
+        },
+        "Substitute Teacher": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 73499.0,
+          "compensation": 115663.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.752,
+          "salary": 79893.0,
+          "compensation": 108262.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 457980.0,
+          "compensation": 600045.0
+        },
+        "Certificated on Leave": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 137263.0,
+          "compensation": 176003.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 406446.0,
+          "compensation": 503236.0
+        },
+        "Other Teacher": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 84135.0,
+          "compensation": 113221.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 156680.0,
+          "compensation": 199241.0
+        }
+      },
+      "Tukwila": {
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 612056.0,
+          "compensation": 787391.0
+        },
+        "Aide": {
+          "rows": 58,
+          "fte": 34.89600000000003,
+          "salary": 2665030.0,
+          "compensation": 4029111.0
+        },
+        "Service Worker": {
+          "rows": 41,
+          "fte": 28.722999999999995,
+          "salary": 1914744.0,
+          "compensation": 2917889.0
+        },
+        "Professional": {
+          "rows": 51,
+          "fte": 18.63,
+          "salary": 2070434.0,
+          "compensation": 2769820.0
+        },
+        "Office/Clerical": {
+          "rows": 23,
+          "fte": 15.187999999999997,
+          "salary": 1255641.0,
+          "compensation": 1822870.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 60,
+          "fte": 57.6,
+          "salary": 6687454.0,
+          "compensation": 8720198.0
+        },
+        "Other Teacher": {
+          "rows": 13,
+          "fte": 13.0,
+          "salary": 1691789.0,
+          "compensation": 2167448.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 10,
+          "fte": 10.0,
+          "salary": 1248752.0,
+          "compensation": 1609186.0
+        },
+        "Secondary Teacher": {
+          "rows": 65,
+          "fte": 63.667,
+          "salary": 7794073.0,
+          "compensation": 10030603.0
+        },
+        "Crafts/Trades": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 144127.0,
+          "compensation": 205588.0
+        },
+        "Director/Supervisor": {
+          "rows": 9,
+          "fte": 8.5,
+          "salary": 1202463.0,
+          "compensation": 1562315.0
+        },
+        "Social Worker": {
+          "rows": 3,
+          "fte": 2.7439999999999998,
+          "salary": 313693.0,
+          "compensation": 413285.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 343612.0,
+          "compensation": 437437.0
+        },
+        "Operator": {
+          "rows": 13,
+          "fte": 6.798000000000001,
+          "salary": 613128.0,
+          "compensation": 921111.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 533507.0,
+          "compensation": 671180.0
+        },
+        "Other District Admin.": {
+          "rows": 4,
+          "fte": 3.985,
+          "salary": 670337.0,
+          "compensation": 852849.0
+        },
+        "Library Media Specialist": {
+          "rows": 2,
+          "fte": 1.2,
+          "salary": 155292.0,
+          "compensation": 210226.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 6.022,
+          "salary": 917106.0,
+          "compensation": 1164183.0
+        },
+        "Psychologist": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 612290.0,
+          "compensation": 767712.0
+        },
+        "Other Support Personnel": {
+          "rows": 3,
+          "fte": 2.0,
+          "salary": 338656.0,
+          "compensation": 422652.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 290692.0,
+          "compensation": 359168.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 502022.0,
+          "compensation": 636150.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 107844.0,
+          "compensation": 141392.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 249073.0,
+          "compensation": 304644.0
+        },
+        "Technical": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 105394.0,
+          "compensation": 139952.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 88924.0,
+          "compensation": 118494.0
+        }
+      },
+      "Orting": {
+        "Professional": {
+          "rows": 24,
+          "fte": 1.681,
+          "salary": 308092.0,
+          "compensation": 376441.0
+        },
+        "Crafts/Trades": {
+          "rows": 6,
+          "fte": 5.846,
+          "salary": 413458.0,
+          "compensation": 599029.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 69,
+          "fte": 68.6,
+          "salary": 6536856.0,
+          "compensation": 8709572.0
+        },
+        "Aide": {
+          "rows": 82,
+          "fte": 39.45500000000002,
+          "salary": 2425764.0,
+          "compensation": 3943465.0
+        },
+        "Secondary Teacher": {
+          "rows": 58,
+          "fte": 57.300000000000004,
+          "salary": 6135529.0,
+          "compensation": 8045879.0
+        },
+        "Office/Clerical": {
+          "rows": 25,
+          "fte": 20.66,
+          "salary": 1584419.0,
+          "compensation": 2245384.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 288732.0,
+          "compensation": 384605.0
+        },
+        "Other Teacher": {
+          "rows": 22,
+          "fte": 21.922,
+          "salary": 2265908.0,
+          "compensation": 2984893.0
+        },
+        "Director/Supervisor": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 959654.0,
+          "compensation": 1230580.0
+        },
+        "Contractor ESA": {
+          "rows": 1,
+          "fte": 0.8,
+          "salary": 0.0,
+          "compensation": 29370.0
+        },
+        "Operator": {
+          "rows": 23,
+          "fte": 12.718000000000004,
+          "salary": 896587.0,
+          "compensation": 1426077.0
+        },
+        "Service Worker": {
+          "rows": 26,
+          "fte": 19.112000000000005,
+          "salary": 1168873.0,
+          "compensation": 1758102.0
+        },
+        "Psychologist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 219578.0,
+          "compensation": 287962.0
+        },
+        "Technical": {
+          "rows": 8,
+          "fte": 7.045,
+          "salary": 562466.0,
+          "compensation": 791377.0
+        },
+        "Other School Admin.": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 180981.0,
+          "compensation": 226122.0
+        },
+        "Nurse": {
+          "rows": 2,
+          "fte": 1.0,
+          "salary": 87588.0,
+          "compensation": 130459.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 391668.0,
+          "compensation": 486100.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 327557.0,
+          "compensation": 430157.0
+        },
+        "Counselor": {
+          "rows": 7,
+          "fte": 7.0,
+          "salary": 678397.0,
+          "compensation": 900685.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 312487.0,
+          "compensation": 395324.0
+        },
+        "Elementary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 359096.0,
+          "compensation": 450548.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 262136.0,
+          "compensation": 315401.0
+        },
+        "Other District Admin.": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 638324.0,
+          "compensation": 784001.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 341111.0,
+          "compensation": 429979.0
+        },
+        "Occupational Therapist": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 92425.0,
+          "compensation": 122942.0
+        },
+        "Extracurricular": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 124413.0,
+          "compensation": 160585.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.2,
+          "salary": 18914.0,
+          "compensation": 20551.0
+        }
+      },
+      "Steilacoom Historical": {
+        "Office/Clerical": {
+          "rows": 26,
+          "fte": 23.134,
+          "salary": 1761712.0,
+          "compensation": 2472377.0
+        },
+        "Aide": {
+          "rows": 65,
+          "fte": 37.773000000000025,
+          "salary": 2195234.0,
+          "compensation": 3503817.0
+        },
+        "Service Worker": {
+          "rows": 22,
+          "fte": 20.180999999999997,
+          "salary": 1245646.0,
+          "compensation": 1844069.0
+        },
+        "Secondary Teacher": {
+          "rows": 59,
+          "fte": 59.0,
+          "salary": 6705979.0,
+          "compensation": 8764331.0
+        },
+        "Elem. Homeroom Teacher": {
+          "rows": 64,
+          "fte": 63.82,
+          "salary": 7359246.0,
+          "compensation": 9583864.0
+        },
+        "Technical": {
+          "rows": 9,
+          "fte": 6.491000000000001,
+          "salary": 430965.0,
+          "compensation": 649149.0
+        },
+        "Professional": {
+          "rows": 28,
+          "fte": 0.7,
+          "salary": 272244.0,
+          "compensation": 342491.0
+        },
+        "Other Teacher": {
+          "rows": 29,
+          "fte": 28.147,
+          "salary": 3070885.0,
+          "compensation": 4061597.0
+        },
+        "Secondary Vice Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 479193.0,
+          "compensation": 613025.0
+        },
+        "Elem. Specialist Teacher": {
+          "rows": 8,
+          "fte": 8.0,
+          "salary": 932652.0,
+          "compensation": 1215976.0
+        },
+        "Other District Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 354153.0,
+          "compensation": 446682.0
+        },
+        "Spch.-Lang. Path./Audio.": {
+          "rows": 5,
+          "fte": 5.0,
+          "salary": 575586.0,
+          "compensation": 748912.0
+        },
+        "Counselor": {
+          "rows": 8,
+          "fte": 8.0,
+          "salary": 1024567.0,
+          "compensation": 1320387.0
+        },
+        "Occupational Therapist": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 243763.0,
+          "compensation": 316013.0
+        },
+        "Psychologist": {
+          "rows": 4,
+          "fte": 3.7,
+          "salary": 418860.0,
+          "compensation": 551080.0
+        },
+        "Social Worker": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 89616.0,
+          "compensation": 120081.0
+        },
+        "Elementary Principal": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 522455.0,
+          "compensation": 658462.0
+        },
+        "Laborer": {
+          "rows": 3,
+          "fte": 3.0,
+          "salary": 147978.0,
+          "compensation": 237598.0
+        },
+        "Director/Supervisor": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 260963.0,
+          "compensation": 335787.0
+        },
+        "Secondary Principal": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 370854.0,
+          "compensation": 464416.0
+        },
+        "Crafts/Trades": {
+          "rows": 4,
+          "fte": 4.0,
+          "salary": 298604.0,
+          "compensation": 419453.0
+        },
+        "Other School Admin.": {
+          "rows": 2,
+          "fte": 2.0,
+          "salary": 337478.0,
+          "compensation": 430793.0
+        },
+        "Nurse": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 124915.0,
+          "compensation": 161922.0
+        },
+        "Elem. Vice Principal": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 156794.0,
+          "compensation": 199519.0
+        },
+        "Physical Therapist": {
+          "rows": 1,
+          "fte": 0.5,
+          "salary": 54679.0,
+          "compensation": 80653.0
+        },
+        "Superintendent": {
+          "rows": 1,
+          "fte": 1.0,
+          "salary": 292870.0,
+          "compensation": 351959.0
+        }
+      }
+    }
+  },
+  "provenance": {
+    "peer_input_sha256": "849f2eb5bf1fac2e119d39990cd1e5a6b353538b6f4932b9335459f358cb6034",
+    "annual_category_sha256": "70dbfcc389ae27944b76b14affa35cda8bd940746c73e53b8c685fddd2af9e46",
+    "financial_sources": [
+      {
+        "filename": "table-2-expenditures-24-25.xlsx",
+        "school_year": "2024-25",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2025-12/table-2-expenditures-24-25.xlsx",
+        "sha256": "9259a6153e4b38678df49ff41f09db2bc1af88873e76fc723148a29dc6e456b1",
+        "retrieved_at": "2026-10-08T04:00:20.192398+00:00",
+        "source_kind": "OSPI F-196 Financial Reporting Summary Table 2; actual general fund expenditure"
+      },
+      {
+        "filename": "table2expenditures23-24.xlsx",
+        "school_year": "2023-24",
+        "url": "https://ospi.k12.wa.us/sites/default/files/2025-02/table2expenditures23-24.xlsx",
+        "sha256": "c56a8f3c59c2d5ef9aaf3c88721daf35bf054f754e4c6c7d2aa8e6844504463b",
+        "retrieved_at": "2026-10-08T04:00:20.192764+00:00",
+        "source_kind": "OSPI F-196 Financial Reporting Summary Table 2; actual general fund expenditure"
+      }
+    ],
+    "parser_sha256": "cdf6192247c49330b91ca3e8adfb03448abd0c2c22b9f558889c204d26857b21",
+    "parser_version": 1
+  },
+  "limitations": [
+    "Activity totals and object totals are separate marginal tables, not a district activity-by-object cross-tab.",
+    "Purchased services are districtwide and include student-facing services; they are not avoidable overhead.",
+    "F-196 actual general-fund expenditures and S-275 employer compensation have different coverage and accounting bases; do not add or reconcile them as identical measures.",
+    "Rates use the committed P-223 K-12 student FTE. F-196 Total Full Enrollment differs and is retained separately without inferring the reason.",
+    "Reported activities and duty titles do not establish necessary staffing, duplicated work, service quality, or attainable savings.",
+    "Nominal financial change covers only 2023-24 to 2024-25. Peer personnel observations cover only three selected years."
+  ]
+}
