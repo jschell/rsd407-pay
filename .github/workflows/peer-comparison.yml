@@ -1,0 +1,33 @@
+name: Central administration peer comparison
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['src/rsd407_pay/peer_comparison.py', '.github/workflows/peer-comparison.yml', 'tests/test_peer_comparison.py']
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Download explicit immutable statewide sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download s275-source-2026-10-02 --pattern s275-source-snapshot.tar.gz
+          gh release download normalization-source-2026-10-04 --pattern normalization-source-snapshot.tar.gz
+          tar -xzf s275-source-snapshot.tar.gz
+          tar -xzf normalization-source-snapshot.tar.gz
+      - name: Compare same definitions across selected districts
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.peer_comparison
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: central-administration-peer-comparison
+          path: artifacts/peer-comparison/
+          if-no-files-found: error
