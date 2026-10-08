@@ -12,18 +12,20 @@ The analysis distinguishes changes in staffing, enrollment, and compensation. It
 
 The 2024–25 comparison shows Riverview’s strict central-administration compensation per student FTE is **23% above Snoqualmie Valley and 37% above Northshore**. Its school-administrator FTE per reporting school is lower than both. These measures describe staffing and compensation; they do not establish efficiency or whether staffing is necessary.
 
-| District | Central compensation / 1,000 student FTE | Central FTE / 1,000 student FTE | School-admin FTE / reporting school |
-| --- | --- | --- | --- |
-| Riverview | $404,596 | 1.42 | 1.65 |
-| Snoqualmie Valley | $328,884 | 1.18 | 1.97 |
-| Northshore | $294,872 | 0.99 | 1.72 |
-| Monroe | $256,020 | 0.92 | 1.54 |
-| Lakewood | $890,490 | 3.44 | 1.40 |
-| Sultan | $522,040 | 1.93 | 1.00 |
-| Granite Falls | $378,351 | 1.39 | 1.17 |
-| Tukwila | $437,932 | 1.89 | 1.60 |
-| Orting | $400,968 | 1.46 | 2.25 |
-| Steilacoom Historical | $287,790 | 1.08 | 1.83 |
+| District | Student FTE | Reporting schools | Central compensation / 1,000 student FTE | Central FTE / 1,000 student FTE | School-admin FTE / reporting school |
+| --- | --- | --- | --- | --- | --- |
+| Riverview | 2,818.78 | 7 | $404,596 | 1.42 | 1.65 |
+| Snoqualmie Valley | 6,801.25 | 13 | $328,884 | 1.18 | 1.97 |
+| Northshore | 21,571.74 | 36 | $294,872 | 0.99 | 1.72 |
+| Monroe | 5,437.42 | 12 | $256,020 | 0.92 | 1.54 |
+| Lakewood | 2,564.66 | 5 | $890,490 | 3.44 | 1.40 |
+| Sultan | 2,038.60 | 8 | $522,040 | 1.93 | 1.00 |
+| Granite Falls | 2,163.95 | 6 | $378,351 | 1.39 | 1.17 |
+| Tukwila | 2,643.09 | 5 | $437,932 | 1.89 | 1.60 |
+| Orting | 2,741.87 | 4 | $400,968 | 1.46 | 2.25 |
+| Steilacoom Historical | 2,775.08 | 6 | $287,790 | 1.08 | 1.83 |
+
+Student FTE shows each district’s annual-average K–12 enrollment, including ALE, using the same 2024–25 OSPI P-223 measure as the per-student calculations. Reporting-school counts show the number of school codes with positive enrollment in that year.
 
 Compensation includes reported salary, employer insurance, and mandatory benefits. Strict central administration includes superintendents, deputy/assistant superintendents, and Other District Admin.; **Director/Supervisor roles are excluded** because the source titles span operational functions. School administration includes principals, vice principals, and Other School Admin. Reporting-school counts include alternative/online/program schools with positive enrollment; they are **not physical-campus counts**. Peer totals have not been independently reconciled against published Personnel Summary or Access controls.
 
