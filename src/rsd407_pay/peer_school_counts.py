@@ -55,14 +55,14 @@ def main(argv=None):
              'definition':'Distinct OSPI school codes with positive reported enrollment in 2024-25. Includes alternative/online/program schools; not a count of physical campuses.',
              'school_admin_definition':'School administrators in S-275: elementary/secondary principals, vice principals, and Other School Admin.; excludes central-office roles.'}
     (root/'school-administration.json').write_text(json.dumps(payload,indent=2)+'\n')
-    fields=['district','reporting_school_count','school_admin_fte','school_admin_fte_per_reporting_school','central_fte','central_admin_fte_per_reporting_school']
+    fields=['district','student_fte','reporting_school_count','school_admin_fte','school_admin_fte_per_reporting_school','central_fte','central_admin_fte_per_reporting_school']
     with (root/'school-administration.csv').open('w',newline='') as h:
         w=csv.DictWriter(h,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(result)
     lines=['# School-administration staffing, 2024-25','',payload['definition'],'',payload['school_admin_definition'],'',
-           '| District | Reporting schools | School-admin FTE | School-admin FTE / school | Central-admin FTE / school |',
-           '| --- | --- | --- | --- | --- |']
+           '| District | Student FTE | Reporting schools | School-admin FTE | School-admin FTE / school | Central-admin FTE / school |',
+           '| --- | --- | --- | --- | --- | --- |']
     for r in result:
-        lines.append(f"| {r['district']} | {r['reporting_school_count']} | {r['school_admin_fte']:.3f} | {r['school_admin_fte_per_reporting_school']:.2f} | {r['central_admin_fte_per_reporting_school']:.2f} |")
+        lines.append(f"| {r['district']} | {r['student_fte']:,.2f} | {r['reporting_school_count']} | {r['school_admin_fte']:.3f} | {r['school_admin_fte_per_reporting_school']:.2f} | {r['central_admin_fte_per_reporting_school']:.2f} |")
     lines+=['','Read alongside comparison.md: title categories do not establish full operating budgets or efficiency. School count includes programs that may share administration; physical-campus comparisons require a separate crosswalk.']
     (root/'school-administration.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps({'status':'pass','districts':len(result),'source_sha256':provenance['sha256']}))

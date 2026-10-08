@@ -2,7 +2,7 @@ name: Central administration peer comparison
 on:
   workflow_dispatch:
   pull_request:
-    paths: ['src/rsd407_pay/peer_comparison.py', '.github/workflows/peer-comparison.yml', 'tests/test_peer_comparison.py', 'src/rsd407_pay/peer_school_counts.py', 'tests/test_peer_school_counts.py']
+    paths: ['src/rsd407_pay/peer_comparison.py', '.github/workflows/peer-comparison.yml', 'tests/test_peer_comparison.py', 'src/rsd407_pay/peer_school_counts.py', 'tests/test_peer_school_counts.py', 'src/rsd407_pay/peer_evaluation.py', 'tests/test_peer_evaluation.py']
 permissions:
   contents: read
 jobs:
@@ -28,6 +28,9 @@ jobs:
       - name: Compare school administrator FTE per same-year reporting school
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.peer_school_counts
+      - name: Evaluate scale and classification sensitivity
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.peer_evaluation --root artifacts/peer-comparison
       - uses: actions/upload-artifact@v4
         if: always()
         with:
