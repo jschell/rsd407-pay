@@ -2,7 +2,7 @@ name: Central administration peer comparison
 on:
   workflow_dispatch:
   pull_request:
-    paths: ['src/rsd407_pay/peer_comparison.py', '.github/workflows/peer-comparison.yml', 'tests/test_peer_comparison.py']
+    paths: ['src/rsd407_pay/peer_comparison.py', '.github/workflows/peer-comparison.yml', 'tests/test_peer_comparison.py', 'src/rsd407_pay/peer_school_counts.py', 'tests/test_peer_school_counts.py']
 permissions:
   contents: read
 jobs:
@@ -25,6 +25,9 @@ jobs:
       - name: Compare same definitions across selected districts
         env: {PYTHONPATH: src}
         run: python -m rsd407_pay.peer_comparison
+      - name: Compare school administrator FTE per same-year reporting school
+        env: {PYTHONPATH: src}
+        run: python -m rsd407_pay.peer_school_counts
       - uses: actions/upload-artifact@v4
         if: always()
         with:

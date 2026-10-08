@@ -1,0 +1,1039 @@
+{
+  "schema_version": 1,
+  "source": {
+    "source_url": "https://data.wa.gov/resource/2rwv-gs2e.json?%24select=distinct+districtcode%2Cdistrictname%2Cschoolcode%2Cschoolname%2Ccurrentschooltype&%24where=organizationlevel%3D%27School%27+AND+schoolyear%3D%272024-25%27+AND+all_students%3E0+AND+districtcode+in+%28%2717406%27%2C%2717407%27%2C%2717410%27%2C%2717417%27%2C%2727001%27%2C%2727344%27%2C%2731103%27%2C%2731306%27%2C%2731311%27%2C%2731332%27%29&%24order=districtcode%2Cschoolcode&%24limit=1000",
+    "retrieved_at": "2026-10-08T02:49:49.192879+00:00",
+    "sha256": "2d425501c99b383d8f369cd4b7685f2c4d326489217f01f9b6bd3c52c9f473b9",
+    "dataset": "OSPI Report Card Enrollment 2024-25",
+    "school_year": "2024-25"
+  },
+  "rows": [
+    {
+      "district": "Riverview",
+      "school_year": "2024-25",
+      "student_fte": 2818.78,
+      "district_code": "17407",
+      "source_label": "Riverview",
+      "district_fte": 337.36700000000013,
+      "district_compensation": 48988336.0,
+      "central_fte": 4.0,
+      "central_salary": 926533.0,
+      "central_compensation": 1140468.0,
+      "school_admin_fte": 11.533,
+      "school_admin_compensation": 2712914.0,
+      "director_supervisor_fte_excluded": 7.739,
+      "director_supervisor_compensation_excluded": 1753096.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 442,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 2,
+      "salary_below_base_rows": 27,
+      "central_fte_per_1000_students": 1.419053633132064,
+      "central_compensation_per_1000_students": 404596.31471771473,
+      "central_compensation_per_staff_fte": 285117.0,
+      "central_share_district_compensation": 0.023280398827998566,
+      "reporting_school_count": 7,
+      "school_admin_fte_per_reporting_school": 1.6475714285714285,
+      "central_admin_fte_per_reporting_school": 0.5714285714285714,
+      "reporting_schools": [
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "1756",
+          "schoolname": "CLIP",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "1854",
+          "schoolname": "PARADE",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "2485",
+          "schoolname": "Carnation Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "3101",
+          "schoolname": "Cherry Valley Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "3524",
+          "schoolname": "Cedarcrest High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "4318",
+          "schoolname": "Tolt Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17407",
+          "districtname": "Riverview School District",
+          "schoolcode": "4332",
+          "schoolname": "Stillwater Elementary",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "school_year": "2024-25",
+      "student_fte": 6801.25,
+      "district_code": "17410",
+      "source_label": "Snoqualmie Valley",
+      "district_fte": 750.3480000000014,
+      "district_compensation": 104304345.0,
+      "central_fte": 8.0,
+      "central_salary": 1839153.0,
+      "central_compensation": 2236824.0,
+      "school_admin_fte": 25.601,
+      "school_admin_compensation": 5783574.0,
+      "director_supervisor_fte_excluded": 4.827,
+      "director_supervisor_compensation_excluded": 745722.0,
+      "unmapped_title_fte": 15.707,
+      "unmapped_title_compensation": 2004925.0,
+      "employee_rows": 923,
+      "central_employee_rows": 8,
+      "zero_fte_rows": 23,
+      "salary_below_base_rows": 60,
+      "central_fte_per_1000_students": 1.1762543650064328,
+      "central_compensation_per_1000_students": 328884.2492188936,
+      "central_compensation_per_staff_fte": 279603.0,
+      "central_share_district_compensation": 0.021445166066667694,
+      "reporting_school_count": 13,
+      "school_admin_fte_per_reporting_school": 1.9693076923076922,
+      "central_admin_fte_per_reporting_school": 0.6153846153846154,
+      "reporting_schools": [
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "1502",
+          "schoolname": "Two Rivers School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "2124",
+          "schoolname": "Snoqualmie Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "2222",
+          "schoolname": "Fall City Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "2287",
+          "schoolname": "North Bend Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "2288",
+          "schoolname": "Snoqualmie Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "2850",
+          "schoolname": "Mount Si High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "4308",
+          "schoolname": "Edwin R Opstad Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "4397",
+          "schoolname": "Chief Kanim Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "5015",
+          "schoolname": "Cascade View Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "5135",
+          "schoolname": "Twin Falls Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "5181",
+          "schoolname": "Snoqualmie Access",
+          "currentschooltype": "S"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "5296",
+          "schoolname": "Snoqualmie Parent Partnership Program",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "17410",
+          "districtname": "Snoqualmie Valley School District",
+          "schoolcode": "5457",
+          "schoolname": "Timber Ridge Elementary School",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Northshore",
+      "school_year": "2024-25",
+      "student_fte": 21571.74,
+      "district_code": "17417",
+      "source_label": "Northshore",
+      "district_fte": 2415.1609999999846,
+      "district_compensation": 367080778.0,
+      "central_fte": 21.316,
+      "central_salary": 5339376.0,
+      "central_compensation": 6360893.0,
+      "school_admin_fte": 61.98599999999999,
+      "school_admin_compensation": 15787164.0,
+      "director_supervisor_fte_excluded": 25.0,
+      "director_supervisor_compensation_excluded": 5899209.0,
+      "unmapped_title_fte": 8.43,
+      "unmapped_title_compensation": 1307235.0,
+      "employee_rows": 2945,
+      "central_employee_rows": 22,
+      "zero_fte_rows": 0,
+      "salary_below_base_rows": 211,
+      "central_fte_per_1000_students": 0.9881446744676136,
+      "central_compensation_per_1000_students": 294871.5773507375,
+      "central_compensation_per_staff_fte": 298409.31694501784,
+      "central_share_district_compensation": 0.017328319490485553,
+      "reporting_school_count": 36,
+      "school_admin_fte_per_reporting_school": 1.721833333333333,
+      "central_admin_fte_per_reporting_school": 0.592111111111111,
+      "reporting_schools": [
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "1815",
+          "schoolname": "Northshore Special Services",
+          "currentschooltype": "S"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "2493",
+          "schoolname": "C O Sorenson",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "2993",
+          "schoolname": "Kenmore Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3105",
+          "schoolname": "Crystal Springs Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3106",
+          "schoolname": "Bothell High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3107",
+          "schoolname": "Arrowhead Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3234",
+          "schoolname": "Cottage Lake Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3287",
+          "schoolname": "Westhill Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3344",
+          "schoolname": "Maywood Hills Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3345",
+          "schoolname": "Kenmore Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3390",
+          "schoolname": "Lockwood Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3442",
+          "schoolname": "Moorlands Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3492",
+          "schoolname": "Inglemoor HS",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3493",
+          "schoolname": "Canyon Park Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3679",
+          "schoolname": "Shelton View Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3749",
+          "schoolname": "Woodin Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3790",
+          "schoolname": "Leota Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "3811",
+          "schoolname": "Secondary Academy for Success",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4017",
+          "schoolname": "Canyon Creek Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4021",
+          "schoolname": "Northshore Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4069",
+          "schoolname": "Wellington Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4124",
+          "schoolname": "Hollywood Hill Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4187",
+          "schoolname": "Sunrise Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4208",
+          "schoolname": "Woodinville HS",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4306",
+          "schoolname": "Fernwood Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4355",
+          "schoolname": "Frank Love Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4371",
+          "schoolname": "Skyview Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4377",
+          "schoolname": "Woodmoor Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4379",
+          "schoolname": "East Ridge Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4455",
+          "schoolname": "Kokanee Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "4516",
+          "schoolname": "Timbercrest Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "5331",
+          "schoolname": "Northshore Online Reengagement Program",
+          "currentschooltype": "R"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "5481",
+          "schoolname": "North Creek High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "5605",
+          "schoolname": "Ruby Bridges Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "5606",
+          "schoolname": "Innovation Lab High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17417",
+          "districtname": "Northshore School District",
+          "schoolcode": "5753",
+          "schoolname": "Northshore Learning Options",
+          "currentschooltype": "A"
+        }
+      ]
+    },
+    {
+      "district": "Monroe",
+      "school_year": "2024-25",
+      "student_fte": 5437.42,
+      "district_code": "31103",
+      "source_label": "Monroe",
+      "district_fte": 616.8119999999999,
+      "district_compensation": 88241359.0,
+      "central_fte": 5.0,
+      "central_salary": 1145857.0,
+      "central_compensation": 1392088.0,
+      "school_admin_fte": 18.45,
+      "school_admin_compensation": 4537328.0,
+      "director_supervisor_fte_excluded": 11.0,
+      "director_supervisor_compensation_excluded": 2205599.0,
+      "unmapped_title_fte": 14.287999999999998,
+      "unmapped_title_compensation": 666389.0,
+      "employee_rows": 801,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 47,
+      "salary_below_base_rows": 80,
+      "central_fte_per_1000_students": 0.9195537589518559,
+      "central_compensation_per_1000_students": 256019.9506383542,
+      "central_compensation_per_staff_fte": 278417.6,
+      "central_share_district_compensation": 0.015775912970696655,
+      "reporting_school_count": 12,
+      "school_admin_fte_per_reporting_school": 1.5374999999999999,
+      "central_admin_fte_per_reporting_school": 0.4166666666666667,
+      "reporting_schools": [
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "1570",
+          "schoolname": "Monroe Special Ed Preschool",
+          "currentschooltype": "S"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "1643",
+          "schoolname": "Out Of District Special Ed",
+          "currentschooltype": "S"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "1777",
+          "schoolname": "Sky Valley Education Center",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "1806",
+          "schoolname": "Leaders In Learning",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "2546",
+          "schoolname": "Maltby Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "3060",
+          "schoolname": "Frank Wagner Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "4159",
+          "schoolname": "Salem Woods Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "4362",
+          "schoolname": "Chain Lake Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "4528",
+          "schoolname": "Monroe High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "4544",
+          "schoolname": "Hidden River Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "4594",
+          "schoolname": "Fryelands Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31103",
+          "districtname": "Monroe School District",
+          "schoolcode": "5040",
+          "schoolname": "Park Place Middle School",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Sultan",
+      "school_year": "2024-25",
+      "student_fte": 2038.6,
+      "district_code": "31311",
+      "source_label": "Sultan",
+      "district_fte": 227.6519999999999,
+      "district_compensation": 31003669.0,
+      "central_fte": 3.926,
+      "central_salary": 875718.0,
+      "central_compensation": 1064231.0,
+      "school_admin_fte": 8.0,
+      "school_admin_compensation": 1787777.0,
+      "director_supervisor_fte_excluded": 5.0,
+      "director_supervisor_compensation_excluded": 837365.0,
+      "unmapped_title_fte": 0.0,
+      "unmapped_title_compensation": 0.0,
+      "employee_rows": 282,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 3,
+      "salary_below_base_rows": 20,
+      "central_fte_per_1000_students": 1.9258314529579126,
+      "central_compensation_per_1000_students": 522040.125576376,
+      "central_compensation_per_staff_fte": 271072.59296994394,
+      "central_share_district_compensation": 0.03432596961346736,
+      "reporting_school_count": 8,
+      "school_admin_fte_per_reporting_school": 1.0,
+      "central_admin_fte_per_reporting_school": 0.49075,
+      "reporting_schools": [
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "1670",
+          "schoolname": "Student Services School",
+          "currentschooltype": "S"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "2105",
+          "schoolname": "Sultan Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "2229",
+          "schoolname": "Sultan Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "4274",
+          "schoolname": "Sultan Senior High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "4399",
+          "schoolname": "Gold Bar Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "5114",
+          "schoolname": "Sky Valley Options",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "5329",
+          "schoolname": "Open Doors Youth Reengagement",
+          "currentschooltype": "R"
+        },
+        {
+          "districtcode": "31311",
+          "districtname": "Sultan School District",
+          "schoolcode": "5642",
+          "schoolname": "Sultan Virtual Academy",
+          "currentschooltype": "A"
+        }
+      ]
+    },
+    {
+      "district": "Lakewood",
+      "school_year": "2024-25",
+      "student_fte": 2564.66,
+      "district_code": "31306",
+      "source_label": "Lakewood",
+      "district_fte": 309.82500000000005,
+      "district_compensation": 41681604.0,
+      "central_fte": 8.834,
+      "central_salary": 1844828.0,
+      "central_compensation": 2283805.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 1683841.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 789153.0,
+      "unmapped_title_fte": 1.233,
+      "unmapped_title_compensation": 184821.0,
+      "employee_rows": 408,
+      "central_employee_rows": 10,
+      "zero_fte_rows": 22,
+      "salary_below_base_rows": 44,
+      "central_fte_per_1000_students": 3.4445111632731047,
+      "central_compensation_per_1000_students": 890490.357396302,
+      "central_compensation_per_staff_fte": 258524.45098483135,
+      "central_share_district_compensation": 0.0547916774028178,
+      "reporting_school_count": 5,
+      "school_admin_fte_per_reporting_school": 1.4,
+      "central_admin_fte_per_reporting_school": 1.7668,
+      "reporting_schools": [
+        {
+          "districtcode": "31306",
+          "districtname": "Lakewood School District",
+          "schoolcode": "3255",
+          "schoolname": "Lakewood Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31306",
+          "districtname": "Lakewood School District",
+          "schoolcode": "3893",
+          "schoolname": "Lakewood Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31306",
+          "districtname": "Lakewood School District",
+          "schoolcode": "4204",
+          "schoolname": "Lakewood High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31306",
+          "districtname": "Lakewood School District",
+          "schoolcode": "4477",
+          "schoolname": "English Crossing Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31306",
+          "districtname": "Lakewood School District",
+          "schoolcode": "4576",
+          "schoolname": "Cougar Creek Elementary School",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Granite Falls",
+      "school_year": "2024-25",
+      "student_fte": 2163.95,
+      "district_code": "31332",
+      "source_label": "Granite Falls",
+      "district_fte": 252.78799999999984,
+      "district_compensation": 32568654.0,
+      "central_fte": 3.0,
+      "central_salary": 668223.0,
+      "central_compensation": 818732.0,
+      "school_admin_fte": 7.0,
+      "school_admin_compensation": 1460333.0,
+      "director_supervisor_fte_excluded": 4.0,
+      "director_supervisor_compensation_excluded": 744126.0,
+      "unmapped_title_fte": 3.0,
+      "unmapped_title_compensation": 291666.0,
+      "employee_rows": 335,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 22,
+      "salary_below_base_rows": 38,
+      "central_fte_per_1000_students": 1.3863536588183647,
+      "central_compensation_per_1000_students": 378350.70126389246,
+      "central_compensation_per_staff_fte": 272910.6666666667,
+      "central_share_district_compensation": 0.025138650187999788,
+      "reporting_school_count": 6,
+      "school_admin_fte_per_reporting_school": 1.1666666666666667,
+      "central_admin_fte_per_reporting_school": 0.5,
+      "reporting_schools": [
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "2580",
+          "schoolname": "Granite Falls High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "4113",
+          "schoolname": "Granite Falls Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "4330",
+          "schoolname": "Mountain Way Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "4479",
+          "schoolname": "Monte Cristo Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "5171",
+          "schoolname": "Crossroads High School",
+          "currentschooltype": "A"
+        },
+        {
+          "districtcode": "31332",
+          "districtname": "Granite Falls School District",
+          "schoolcode": "5349",
+          "schoolname": "Granite Falls Open Doors",
+          "currentschooltype": "R"
+        }
+      ]
+    },
+    {
+      "district": "Tukwila",
+      "school_year": "2024-25",
+      "student_fte": 2643.09,
+      "district_code": "17406",
+      "source_label": "Tukwila",
+      "district_fte": 297.95300000000015,
+      "district_compensation": 44182854.0,
+      "central_fte": 4.984999999999999,
+      "central_salary": 919410.0,
+      "central_compensation": 1157493.0,
+      "school_admin_fte": 8.0,
+      "school_admin_compensation": 1744767.0,
+      "director_supervisor_fte_excluded": 8.5,
+      "director_supervisor_compensation_excluded": 1562315.0,
+      "unmapped_title_fte": 2.7439999999999998,
+      "unmapped_title_compensation": 413285.0,
+      "employee_rows": 387,
+      "central_employee_rows": 5,
+      "zero_fte_rows": 30,
+      "salary_below_base_rows": 42,
+      "central_fte_per_1000_students": 1.8860500399154017,
+      "central_compensation_per_1000_students": 437931.7389873216,
+      "central_compensation_per_staff_fte": 232195.18555667004,
+      "central_share_district_compensation": 0.026197787042005028,
+      "reporting_school_count": 5,
+      "school_admin_fte_per_reporting_school": 1.6,
+      "central_admin_fte_per_reporting_school": 0.9969999999999999,
+      "reporting_schools": [
+        {
+          "districtcode": "17406",
+          "districtname": "Tukwila School District",
+          "schoolcode": "2564",
+          "schoolname": "Showalter Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17406",
+          "districtname": "Tukwila School District",
+          "schoolcode": "2848",
+          "schoolname": "Foster Senior High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17406",
+          "districtname": "Tukwila School District",
+          "schoolcode": "3226",
+          "schoolname": "Cascade View Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17406",
+          "districtname": "Tukwila School District",
+          "schoolcode": "3488",
+          "schoolname": "Tukwila Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "17406",
+          "districtname": "Tukwila School District",
+          "schoolcode": "3635",
+          "schoolname": "Thorndyke Elementary",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Orting",
+      "school_year": "2024-25",
+      "student_fte": 2741.87,
+      "district_code": "27344",
+      "source_label": "Orting",
+      "district_fte": 293.3390000000001,
+      "district_compensation": 37665590.0,
+      "central_fte": 4.0,
+      "central_salary": 900460.0,
+      "central_compensation": 1099402.0,
+      "school_admin_fte": 9.0,
+      "school_admin_compensation": 1988073.0,
+      "director_supervisor_fte_excluded": 7.0,
+      "director_supervisor_compensation_excluded": 1230580.0,
+      "unmapped_title_fte": 1.8,
+      "unmapped_title_compensation": 189955.0,
+      "employee_rows": 384,
+      "central_employee_rows": 4,
+      "zero_fte_rows": 21,
+      "salary_below_base_rows": 28,
+      "central_fte_per_1000_students": 1.4588583703822573,
+      "central_compensation_per_1000_students": 400967.95252874866,
+      "central_compensation_per_staff_fte": 274850.5,
+      "central_share_district_compensation": 0.02918849804290866,
+      "reporting_school_count": 4,
+      "school_admin_fte_per_reporting_school": 2.25,
+      "central_admin_fte_per_reporting_school": 1.0,
+      "reporting_schools": [
+        {
+          "districtcode": "27344",
+          "districtname": "Orting School District",
+          "schoolcode": "2360",
+          "schoolname": "Orting Elementary School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27344",
+          "districtname": "Orting School District",
+          "schoolcode": "2942",
+          "schoolname": "Orting High School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27344",
+          "districtname": "Orting School District",
+          "schoolcode": "4262",
+          "schoolname": "Orting Middle School",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27344",
+          "districtname": "Orting School District",
+          "schoolcode": "4547",
+          "schoolname": "Ptarmigan Ridge Elementary School",
+          "currentschooltype": "P"
+        }
+      ]
+    },
+    {
+      "district": "Steilacoom Historical",
+      "school_year": "2024-25",
+      "student_fte": 2775.08,
+      "district_code": "27001",
+      "source_label": "Steilacoom Hist.",
+      "district_fte": 291.44599999999986,
+      "district_compensation": 39894413.0,
+      "central_fte": 3.0,
+      "central_salary": 647023.0,
+      "central_compensation": 798641.0,
+      "school_admin_fte": 11.0,
+      "school_admin_compensation": 2366215.0,
+      "director_supervisor_fte_excluded": 2.0,
+      "director_supervisor_compensation_excluded": 335787.0,
+      "unmapped_title_fte": 4.0,
+      "unmapped_title_compensation": 357679.0,
+      "employee_rows": 355,
+      "central_employee_rows": 3,
+      "zero_fte_rows": 27,
+      "salary_below_base_rows": 30,
+      "central_fte_per_1000_students": 1.0810499156781066,
+      "central_compensation_per_1000_students": 287790.2619023596,
+      "central_compensation_per_staff_fte": 266213.6666666667,
+      "central_share_district_compensation": 0.020018868306196157,
+      "reporting_school_count": 6,
+      "school_admin_fte_per_reporting_school": 1.8333333333333333,
+      "central_admin_fte_per_reporting_school": 0.5,
+      "reporting_schools": [
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "2040",
+          "schoolname": "Anderson Island Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "2237",
+          "schoolname": "Pioneer Middle",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "3446",
+          "schoolname": "Cherrydale Primary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "3827",
+          "schoolname": "Saltars Point Elementary",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "4131",
+          "schoolname": "Steilacoom High",
+          "currentschooltype": "P"
+        },
+        {
+          "districtcode": "27001",
+          "districtname": "Steilacoom Hist. School District",
+          "schoolcode": "4562",
+          "schoolname": "Chloe Clark Elementary",
+          "currentschooltype": "P"
+        }
+      ]
+    }
+  ],
+  "comparison_input_sha256": "849f2eb5bf1fac2e119d39990cd1e5a6b353538b6f4932b9335459f358cb6034",
+  "definition": "Distinct OSPI school codes with positive reported enrollment in 2024-25. Includes alternative/online/program schools; not a count of physical campuses.",
+  "school_admin_definition": "School administrators in S-275: elementary/secondary principals, vice principals, and Other School Admin.; excludes central-office roles."
+}
