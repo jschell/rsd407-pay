@@ -18,6 +18,7 @@ DISTRICTS = {
  'Lakewood': ['Lakewood'], 'Granite Falls': ['Granite Falls'], 'Tukwila': ['Tukwila'],
  'Orting': ['Orting'], 'Steilacoom Historical': ['Steilacoom Hist.', 'Steilacoom Historical', 'Steilacoom'],
 }
+COMPARISON_ADDITIONS = {'Deputy/Assist. Supt.': 'district/central administration', 'Elem. Vice Principal': 'principals/APs'}
 YEARS = ['2013-14', '2023-24', '2024-25']
 
 
@@ -99,7 +100,7 @@ def main(argv=None):
     ep=Path('artifacts/normalization/raw/p223-final-enrollment.xlsx')
     expected=next(x['sha256'] for x in normalization['files'] if x['path']==str(ep))
     if sha(ep)!=expected: raise RuntimeError('enrollment hash mismatch')
-    enroll=enrollment(ep.read_bytes());mapping=load_mapping()['mappings'];all_rows=[];evidence=[];titles={}
+    enroll=enrollment(ep.read_bytes());mapping={**load_mapping()['mappings'],**COMPARISON_ADDITIONS};all_rows=[];evidence=[];titles={}
     for year in YEARS:
         source=next(x for x in collection['sources'] if x['school_year']==year)
         path=Path(source['local_path'])
@@ -113,8 +114,8 @@ def main(argv=None):
     out=Path(a.output);out.mkdir(parents=True,exist_ok=True)
     report={'schema_version':1,'status':'source_verified_comparison','years':YEARS,'rows':all_rows,
             'duty_title_evidence':titles,'s275_sources':evidence,'normalization_manifest':normalization,
-            'mapping_sha256':sha('config/job-family-mapping.json'),'comparison_code_sha256':sha(__file__),
-            'limitations':['Strict central administration includes Superintendent and Other District Admin.; Director/Supervisor is excluded and reported separately.',
+            'mapping_sha256':sha('config/job-family-mapping.json'),'comparison_mapping_additions':COMPARISON_ADDITIONS,'comparison_code_sha256':sha(__file__),
+            'limitations':['Strict central administration includes Superintendent, Deputy/Assist. Supt., and Other District Admin.; Director/Supervisor is excluded and reported separately.',
               'Employee-year compensation, not operating expenditure; no causal or efficiency conclusion.',
               'Unfamiliar peer Duty Titles are retained in unmapped/review and reported as FTE/compensation; no functional classification is inferred.',
               'Peer totals have not been independently reconciled with published Personnel Summary or Access controls.',
