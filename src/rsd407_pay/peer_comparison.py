@@ -55,7 +55,7 @@ def aggregate(rows, enroll, mapping, year):
             'district_fte':0.,'district_compensation':0.,'central_fte':0.,'central_salary':0.,
             'central_compensation':0.,'school_admin_fte':0.,'school_admin_compensation':0.,
             'director_supervisor_fte_excluded':0.,'director_supervisor_compensation_excluded':0.,
-            'employee_rows':0,'central_employee_rows':0,'zero_fte_rows':0,'salary_below_base_rows':0}
+            'unmapped_title_fte':0.,'unmapped_title_compensation':0.,'employee_rows':0,'central_employee_rows':0,'zero_fte_rows':0,'salary_below_base_rows':0}
          for d in DISTRICTS}
     aliases={norm_header(name):d for d,names in DISTRICTS.items() for name in names}
     seen=set(); titles={d:{} for d in DISTRICTS}
@@ -66,7 +66,6 @@ def aggregate(rows, enroll, mapping, year):
         if key in seen: raise RuntimeError(f'duplicate source row {key}')
         seen.add(key)
         title=str(row['duty_title'] or '').strip()
-        if title not in mapping: raise RuntimeError(f'{district}: unmapped title {title!r}')
         values={k:float(row[k] or 0) for k in ['certificated_fte','classified_fte','base_salary','total_salary','insurance_benefits','mandatory_benefits']}
         if any(not math.isfinite(v) or v<0 for v in values.values()): raise RuntimeError(f'{district}: invalid numeric source row')
         fte=values['certificated_fte']+values['classified_fte']
@@ -75,7 +74,9 @@ def aggregate(rows, enroll, mapping, year):
         r['zero_fte_rows']+=int(fte==0);r['salary_below_base_rows']+=int(values['total_salary']<values['base_salary'])
         t=titles[district].setdefault(title,{'rows':0,'fte':0.,'salary':0.,'compensation':0.})
         t['rows']+=1;t['fte']+=fte;t['salary']+=values['total_salary'];t['compensation']+=comp
-        family=mapping[title]
+        family=mapping.get(title,'unmapped/review')
+        if family=='unmapped/review':
+            r['unmapped_title_fte']+=fte;r['unmapped_title_compensation']+=comp
         if family=='district/central administration':
             r['central_employee_rows']+=1;r['central_fte']+=fte;r['central_salary']+=values['total_salary'];r['central_compensation']+=comp
         if family=='principals/APs': r['school_admin_fte']+=fte;r['school_admin_compensation']+=comp
@@ -115,6 +116,7 @@ def main(argv=None):
             'mapping_sha256':sha('config/job-family-mapping.json'),'comparison_code_sha256':sha(__file__),
             'limitations':['Strict central administration includes Superintendent and Other District Admin.; Director/Supervisor is excluded and reported separately.',
               'Employee-year compensation, not operating expenditure; no causal or efficiency conclusion.',
+              'Unfamiliar peer Duty Titles are retained in unmapped/review and reported as FTE/compensation; no functional classification is inferred.',
               'Peer totals have not been independently reconciled with published Personnel Summary or Access controls.',
               '2019-20 is omitted here; comparison uses historical baseline and two most recent accepted years.']}
     (out/'comparison.json').write_text(json.dumps(report,indent=2)+'\n')
