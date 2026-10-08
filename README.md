@@ -47,6 +47,12 @@ The [generated evaluation](docs/comparisons/evaluation.md) tests enrollment-size
 
 The evidence supports reviewing duties, shared school administration, and recent staffing changes. **It does not establish waste, overpayment, or excessive staffing.** [Evaluation calculations and input hashes](docs/comparisons/evaluation.json) make the findings reproducible.
 
+## Overhead spending review
+
+The [overhead survey](docs/comparisons/overhead-review.md) compares actual 2023–24 and 2024–25 general-fund spending with personnel measures. Riverview reported **$3.03 million (5.1% of general-fund spending)** across board, superintendent, business office, HR, and public relations activities in 2024–25. That activity-based measure is **36.7% above the selected size-peer median per student**, despite the strict personnel-title measure being below it. These measures have different coverage and must not be added together.
+
+[Findings and non-merger investigation priorities](docs/comparisons/overhead-findings.md) identify business office, public relations/board support, functional staffing allocation, software, and utilities for further review. Public examples from nearby districts show administrative reorganization is possible. **The survey does not establish achievable savings or waste.** Retained OSPI workbooks, source hashes, calculation evidence, and reproduction instructions accompany the review.
+
 ## Primary questions
 
 - How has RSD407 staffing changed from 2013-14 forward?

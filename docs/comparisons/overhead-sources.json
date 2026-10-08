@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "table-2-expenditures-24-25.xlsx",
+    "school_year": "2024-25",
+    "url": "https://ospi.k12.wa.us/sites/default/files/2025-12/table-2-expenditures-24-25.xlsx",
+    "sha256": "9259a6153e4b38678df49ff41f09db2bc1af88873e76fc723148a29dc6e456b1",
+    "retrieved_at": "2026-10-08T04:00:20.192398+00:00",
+    "source_kind": "OSPI F-196 Financial Reporting Summary Table 2; actual general fund expenditure"
+  },
+  {
+    "filename": "table2expenditures23-24.xlsx",
+    "school_year": "2023-24",
+    "url": "https://ospi.k12.wa.us/sites/default/files/2025-02/table2expenditures23-24.xlsx",
+    "sha256": "c56a8f3c59c2d5ef9aaf3c88721daf35bf054f754e4c6c7d2aa8e6844504463b",
+    "retrieved_at": "2026-10-08T04:00:20.192764+00:00",
+    "source_kind": "OSPI F-196 Financial Reporting Summary Table 2; actual general fund expenditure"
+  }
+]
