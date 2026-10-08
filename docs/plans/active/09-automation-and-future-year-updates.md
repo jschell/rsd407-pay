@@ -2,54 +2,32 @@
 
 ## Goal
 
-Make the project easy to update when OSPI publishes a new final school year.
+Make adding a newly finalized year or reviewing historical source revisions reproducible and auditable.
 
-## Work
+## Implemented
 
-- Check for newly published/finalized S-275 sources.
-- Preserve historical raw captures and flag URL or hash revisions.
-- Require validation before appending a new year to published results.
-- Record source revisions and their analytical impact.
-- Provide one documented workflow to rebuild all derived outputs.
+- Final-source candidate monitoring preserves official link/page evidence and excludes preliminary/draft labels.
+- Historical revision monitoring compares every accepted year with an explicitly pinned immutable manifest, preserves changed bytes separately, and continues through individual failures.
+- Shared accepted-period coverage drives discovery, enrollment, normalization, validation, and reporting endpoints.
+- The retained analysis rejects incomplete source/enrollment/CPI/Access/published-control updates; it rebuilds all outputs and the report from explicit immutable tags.
+- Period-aware CPI capture and hash-verified replay handle new window endpoints. Final enrollment discovery requires stated coverage and actual sheet/district validation.
+- Revision impact tooling verifies successful report provenance and all input hashes/gates, compares district/category/normalization/administration measures, and bundles before/after evidence.
+- A manual review workflow downloads two successful retained analyses and can publish a reviewed record and evidence bundle under a new revision tag only when the supplied reviewed record hash matches. Existing tags are never replaced. Source acceptance/report promotion remain separate reviewed changes.
 
-## Status
+## Verification
 
-Active. The first step adds a final-workbook candidate monitor to the existing weekly/manual source-check workflow. It records source-page URL, capture time, page hash, original HTML, official link evidence, accepted coverage, and candidates outside that coverage. Preliminary/draft links are excluded. Discovery never changes accepted years, downloads/promotes a candidate workbook, or changes published results.
+All 87 local tests pass, including revised bytes, fail-complete monitoring, invalid/duplicate periods, missing future-year dependencies, future CPI/enrollment endpoints, duplicate comparison rows, tampered inputs, failed gates, and exclusive evidence creation.
 
-## Historical-source revision monitoring
+The generated [historical compatibility record](../../revisions/2026-10-07-normalization-refactor.json) compares actual retained-analysis runs 37567682169 and 37569049798. Their validation gates and file hashes pass, with no changes in compared analytical measures. Both reference the same accepted immutable source captures.
 
-The next implementation compares current registered-year workbook downloads with the collection manifest from the explicitly accepted immutable snapshot tag. It distinguishes unchanged bytes, URL relocation, content revision, combined revision, and failed observations. Every year is attempted after a per-year error. Changed workbook bytes are retained under year/SHA-256 paths without overwriting accepted sources or existing evidence; workbook identity is checked before capture.
+## Remaining before completion
 
-Revision candidates or incomplete checks fail the monitoring command and require review. Reports retain old/new URLs and hashes, observed HTTP/identity metadata, capture time, accepted manifest hashes, and the accepted snapshot tag. Analytical effects remain unassessed until a deliberate rebuild. Monitoring does not replace the accepted release or report.
+1. After merge, execute the new manual revision-review workflow against these known successful runs, review its record hash, and verify publication under a new revision tag. This proves the workflow and durable evidence path, beyond local comparison tests.
+2. Verify the documentation and publication safeguards from that run; record the run/release evidence and move this plan to complete only after success.
+3. A future real upstream revision/new year still requires new immutable captures, reviewed controls and full before/after analysis. No actual revision is invented to satisfy testing. Future-year tests are synthetic; current retained CI covers the actual available period.
 
-## Remaining implementation
+## Limits and acceptance
 
-1. Complete durable revision retention and quantify analytical effects through a reviewed before/after rebuild. The initial byte/URL comparison and changed-byte capture are implemented; temporary workflow artifacts are not permanent revision publication.
-2. Replace scattered fixed-year lists and fixed report endpoints with a shared accepted-period contract. Update enrollment, CPI, Access controls, published controls, and all coverage gates together; reject partial updates.
-3. Validate new-year workbook identity, schema, categories, normalization sources, same-system controls, and available independent published controls before promotion.
-4. Define a reviewed snapshot/control update with reproducible before/after reporting and a durable revision record.
-5. Test historical revisions, preliminary-to-final transitions, missing controls, missing normalization years, duplicate years, and reporting endpoints on actual available sources.
+Independent published controls before 2019-20 remain unavailable. Unresolved published benefit/total-salary semantics and retained source anomalies remain explicit limitations. The 2025 dollar base stays fixed for comparability. Monitoring, evidence publication, and source acceptance are distinct actions.
 
-## Rebuild current accepted analysis
-
-Run **Analyze retained sources** (`analyze-snapshot.yml`) with explicit immutable S-275 and normalization snapshot tags. It verifies sources, rebuilds normalization, derives and validates all analytical outputs, and generates the report in one workflow. Exact commands and boundaries are in [the update guide](../../future-year-updates.md).
-
-## Acceptance
-
-Adding a newly finalized year is an auditable data update. Existing historical captures remain intact; new sources cannot bypass validation or quietly change report coverage.
-
-The initial final-link monitor is an informational discovery step. It does not complete historical revision detection or future-year ingestion.
-
-## Accepted-period coverage gate
-
-The accepted period is now read from `config/sources.json` by enrollment extraction, Access and personnel-summary discovery, validation, normalization, and longitudinal findings. The retained-analysis workflow checks exact snapshot/enrollment/Access coverage, both CPI series, final scope, and accepted published controls for every year from 2019-20 onward before normalizing S-275. Duplicate years fail. Missing published controls for older years remain the documented limitation.
-
-CPI windows and enrollment source selection now follow accepted coverage. The 2025-dollar base remains explicit for comparability; the gate does not implement automatic future-year promotion. Durable revision publication and analytical impact comparisons also remain outstanding.
-
-## Period-aware normalization capture and replay
-
-CPI requests derive ending calendar years from the shared accepted period plus the explicit 2025 dollar base. Requests are split into nonoverlapping windows of at most ten years; filenames follow those windows. Normalization manifests include the raw paths declared by the derived CPI capture, and replay reads only those hash-verified inputs. Duplicate BLS observations or missing periodic observations fail; the documented October 2025 exception remains limited to that year.
-
-Enrollment discovery accepts exactly one official HTTPS final `.xlsx` summary whose stated year range covers the entire accepted period. Changed endpoints are supported; preliminary labels, insufficient ranges, invalid ranges, foreign hosts, and ambiguous matches fail. Extraction still checks required sheets and Riverview identity.
-
-The dollar base stays at 2025 deliberately: adding a school year does not silently rebase historical results or change output field names. Accepted inputs and published results are unchanged. Future-year tests are synthetic dependency/coverage checks; full retained-source CI validates the actual accepted historical capture. Durable revision publication and analytical before/after comparison remain outstanding under Plan 09.
+Follow [the update guide](../../future-year-updates.md) for rebuild, capture, comparison, publication, and report promotion. Acceptance requires existing captures to remain intact and new sources to pass all gates without quietly changing report coverage.

@@ -1,0 +1,84 @@
+{
+  "after": {
+    "analysis_ref": "c401e79d0b625152fd0b7348ad59742ad0769346",
+    "analysis_run": "37569049798",
+    "gate_status": "pass",
+    "generator_sha256": "023d1771f178e8584486d82a4bacc929c1932074973a7d5a394743989ab336a6",
+    "input_sha256": {
+      "normalized/admin-overhead.json": "359431c0eb69362d86dbbee1cfcd75ae4ea135f521f2ef66b59a5b24cfe3d33c",
+      "normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+      "normalized/longitudinal-findings.json": "909c8055476b16b64809a4c56c42fd4fb6bf1115cb73cb4c890e4664e41cef11",
+      "normalized/normalized-metrics.json": "f859b864c8c8e498d4f612183250481d2589c92a1479847bb6e94a5e6b7c520d",
+      "normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+      "reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8",
+      "reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+      "reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46"
+    },
+    "limitations": "See report.md; employer compensation is not operating expenditure.",
+    "period": {
+      "end": "2024-25",
+      "start": "2013-14"
+    },
+    "schema_version": 1,
+    "source_snapshots": {
+      "normalization": "normalization-source-2026-10-04",
+      "s275": "s275-source-2026-10-02"
+    }
+  },
+  "before": {
+    "analysis_ref": "fd8ac1c8cc0cb51801a25d02d226a337051c1985",
+    "analysis_run": "37567682169",
+    "gate_status": "pass",
+    "generator_sha256": "023d1771f178e8584486d82a4bacc929c1932074973a7d5a394743989ab336a6",
+    "input_sha256": {
+      "normalized/admin-overhead.json": "359431c0eb69362d86dbbee1cfcd75ae4ea135f521f2ef66b59a5b24cfe3d33c",
+      "normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+      "normalized/longitudinal-findings.json": "909c8055476b16b64809a4c56c42fd4fb6bf1115cb73cb4c890e4664e41cef11",
+      "normalized/normalized-metrics.json": "f859b864c8c8e498d4f612183250481d2589c92a1479847bb6e94a5e6b7c520d",
+      "normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+      "reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8",
+      "reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+      "reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46"
+    },
+    "limitations": "See report.md; employer compensation is not operating expenditure.",
+    "period": {
+      "end": "2024-25",
+      "start": "2013-14"
+    },
+    "schema_version": 1,
+    "source_snapshots": {
+      "normalization": "normalization-source-2026-10-04",
+      "s275": "s275-source-2026-10-02"
+    }
+  },
+  "changed_measure_count": 0,
+  "changes": [],
+  "comparison_code_sha256": "3ac23799fc3b97ee62e6f364695f689e60420cb71cc6d42f326b27ec990cfa8e",
+  "evidence_sha256": {
+    "after/normalized/admin-overhead.json": "359431c0eb69362d86dbbee1cfcd75ae4ea135f521f2ef66b59a5b24cfe3d33c",
+    "after/normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+    "after/normalized/longitudinal-findings.json": "909c8055476b16b64809a4c56c42fd4fb6bf1115cb73cb4c890e4664e41cef11",
+    "after/normalized/normalized-metrics.json": "f859b864c8c8e498d4f612183250481d2589c92a1479847bb6e94a5e6b7c520d",
+    "after/normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+    "after/reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8",
+    "after/reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+    "after/reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46",
+    "after/reporting/report-provenance.json": "4131728886336ded5972ffb210835a00f060919e1e0ce427d26b4180e634c24a",
+    "before/normalized/admin-overhead.json": "359431c0eb69362d86dbbee1cfcd75ae4ea135f521f2ef66b59a5b24cfe3d33c",
+    "before/normalized/annual-metrics.json": "4890149d53438a937791bc2a8ed45c82b9476692f6d6e58cd9dd58f8907892ac",
+    "before/normalized/longitudinal-findings.json": "909c8055476b16b64809a4c56c42fd4fb6bf1115cb73cb4c890e4664e41cef11",
+    "before/normalized/normalized-metrics.json": "f859b864c8c8e498d4f612183250481d2589c92a1479847bb6e94a5e6b7c520d",
+    "before/normalized/validation-report.json": "fac8bc11ce3f896c68e184bf029f47f2234013b286275b2f279d51969c4c29f8",
+    "before/reconciliation/access-extract-reconciliation.json": "fd722413a2b43db8de34f5ab81cc8d18a45b737bfbc3d8ee6f95b0e51a408bc8",
+    "before/reconciliation/personnel-compensation-comparison.json": "ec6da7ddd0b1e4dc19230f66918760da8b73f01faa8c49894140b6ed8d25436f",
+    "before/reconciliation/table45b-reconciliation.json": "fb4c63d4ff7bb0970ed15734e656ee0fe70b0f59fd44085c8a5e2ede786ece46",
+    "before/reporting/report-provenance.json": "3f961cf9a8179eab190398091e4cca1596edff43be0894ab80a776504b9ccfb8"
+  },
+  "limitations": [
+    "Differences include data, normalization, classification, and code changes; this comparison does not attribute causes.",
+    "Personnel compensation is not operating expenditure. Source limitations remain in the retained validation evidence.",
+    "No source or published report is promoted by comparison or revision-record publication."
+  ],
+  "schema_version": 1,
+  "status": "validated_comparison"
+}
