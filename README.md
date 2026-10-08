@@ -10,7 +10,7 @@ The analysis distinguishes changes in staffing, enrollment, and compensation. It
 
 ## Nearby district comparison
 
-The 2024–25 comparison shows Riverview’s strict central-administration compensation per student FTE is **23% above Snoqualmie Valley and 37% above Northshore**. Its school-administrator FTE per reporting school is lower than both. These measures describe staffing and compensation; they do not establish efficiency or whether staffing is necessary.
+The 2024–25 comparison shows Riverview’s strict central-administration compensation per student FTE is **23% above Snoqualmie Valley and 37% above Northshore**. Its school-administrator FTE per reporting school is lower than both when all reporting-school codes are counted. These measures describe staffing and compensation; they do not establish efficiency or whether staffing is necessary.
 
 | District | Student FTE | Reporting schools | Central compensation / 1,000 student FTE | Central FTE / 1,000 student FTE | School-admin FTE / reporting school |
 | --- | --- | --- | --- | --- | --- |
@@ -35,6 +35,17 @@ Compensation includes reported salary, employer insurance, and mandatory benefit
 - [Source evidence, school lists, and reproduction instructions](docs/comparisons/README.md)
 
 This overview is derived from the committed [staffing comparison JSON](docs/comparisons/comparison.json) and [school-administration JSON](docs/comparisons/school-administration.json). Nearby districts and size peers are shown individually.
+
+## What can be concluded?
+
+The [generated evaluation](docs/comparisons/evaluation.md) tests enrollment-size matching, Director/Supervisor inclusion, and school-count sensitivity:
+
+- Riverview’s strict central-admin compensation per student is **3.5% below the median** of the six selected peers within 30% of its enrollment.
+- Including every Director/Supervisor as a sensitivity scenario puts it **15.2% above that median**. Those positions span operational duties, so this scenario is not an established central-office total.
+- Counting only P-coded public schools while retaining all school-admin FTE changes the comparison: Riverview is approximately equal to Snoqualmie Valley and above Northshore. This tests the denominator; it does not allocate staff to those schools.
+- Riverview’s latest central-admin cost increase reflects more reported FTE and fewer students; average compensation per admin FTE fell.
+
+The evidence supports reviewing duties, shared school administration, and recent staffing changes. **It does not establish waste, overpayment, or excessive staffing.** [Evaluation calculations and input hashes](docs/comparisons/evaluation.json) make the findings reproducible.
 
 ## Primary questions
 

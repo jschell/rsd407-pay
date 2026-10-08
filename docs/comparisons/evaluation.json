@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "year": "2024-25",
+  "status": "descriptive_evaluation",
+  "size_matching": {
+    "rule": "2024-25 student FTE within +/-30% of Riverview; selected ten-district cohort only",
+    "districts": [
+      "Sultan",
+      "Lakewood",
+      "Granite Falls",
+      "Tukwila",
+      "Orting",
+      "Steilacoom Historical"
+    ],
+    "results": {
+      "strict": {
+        "peer_median": 419449.84575803514,
+        "riverview": 404596.31471771473,
+        "riverview_gap_percent": -3.5411935873946754
+      },
+      "all_directors_scenario": {
+        "peer_median": 891286.7456575977,
+        "riverview": 1026530.6267250371,
+        "riverview_gap_percent": 15.174003397487468
+      }
+    }
+  },
+  "nearby_comparisons": [
+    {
+      "district": "Snoqualmie Valley",
+      "strict_gap_percent": 23.020885213760998,
+      "all_directors_scenario_gap_percent": 134.08495376143935,
+      "decomposition": {
+        "staffing_intensity_component": 68556.80134795324,
+        "compensation_per_staff_fte_component": 7155.264150867835,
+        "total_gap": 75712.06549882115,
+        "interpretation": "Arithmetic decomposition, not causal attribution."
+      }
+    },
+    {
+      "district": "Northshore",
+      "strict_gap_percent": 37.21102533950371,
+      "all_directors_scenario_gap_percent": 80.61882178263733,
+      "decomposition": {
+        "staffing_intensity_component": 125723.35879403984,
+        "compensation_per_staff_fte_component": -15998.62142706273,
+        "total_gap": 109724.7373669772,
+        "interpretation": "Arithmetic decomposition, not causal attribution."
+      }
+    },
+    {
+      "district": "Monroe",
+      "strict_gap_percent": 58.03311957091768,
+      "all_directors_scenario_gap_percent": 55.14629706161909,
+      "decomposition": {
+        "staffing_intensity_component": 140742.73089809695,
+        "compensation_per_staff_fte_component": 7833.633181263533,
+        "total_gap": 148576.36407936053,
+        "interpretation": "Arithmetic decomposition, not causal attribution."
+      }
+    }
+  ],
+  "classification_sensitivity": [
+    {
+      "district": "Riverview",
+      "student_fte": 2818.78,
+      "strict_cost_per_1000": 404596.31471771473,
+      "with_all_directors_cost_per_1000": 1026530.6267250371,
+      "director_fte_excluded": 7.739,
+      "director_compensation_excluded": 1753096.0
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "student_fte": 6801.25,
+      "strict_cost_per_1000": 328884.2492188936,
+      "with_all_directors_cost_per_1000": 438529.0939165595,
+      "director_fte_excluded": 4.827,
+      "director_compensation_excluded": 745722.0
+    },
+    {
+      "district": "Northshore",
+      "student_fte": 21571.74,
+      "strict_cost_per_1000": 294871.5773507375,
+      "with_all_directors_cost_per_1000": 568340.8941513294,
+      "director_fte_excluded": 25.0,
+      "director_compensation_excluded": 5899209.0
+    },
+    {
+      "district": "Monroe",
+      "student_fte": 5437.42,
+      "strict_cost_per_1000": 256019.9506383542,
+      "with_all_directors_cost_per_1000": 661653.320876445,
+      "director_fte_excluded": 11.0,
+      "director_compensation_excluded": 2205599.0
+    },
+    {
+      "district": "Sultan",
+      "student_fte": 2038.6,
+      "strict_cost_per_1000": 522040.125576376,
+      "with_all_directors_cost_per_1000": 932795.0554301972,
+      "director_fte_excluded": 5.0,
+      "director_compensation_excluded": 837365.0
+    },
+    {
+      "district": "Lakewood",
+      "student_fte": 2564.66,
+      "strict_cost_per_1000": 890490.357396302,
+      "with_all_directors_cost_per_1000": 1198193.1328129265,
+      "director_fte_excluded": 4.0,
+      "director_compensation_excluded": 789153.0
+    },
+    {
+      "district": "Granite Falls",
+      "student_fte": 2163.95,
+      "strict_cost_per_1000": 378350.70126389246,
+      "with_all_directors_cost_per_1000": 722224.6355045172,
+      "director_fte_excluded": 4.0,
+      "director_compensation_excluded": 744126.0
+    },
+    {
+      "district": "Tukwila",
+      "student_fte": 2643.09,
+      "strict_cost_per_1000": 437931.7389873216,
+      "with_all_directors_cost_per_1000": 1029025.8750174985,
+      "director_fte_excluded": 8.5,
+      "director_compensation_excluded": 1562315.0
+    },
+    {
+      "district": "Orting",
+      "student_fte": 2741.87,
+      "strict_cost_per_1000": 400967.95252874866,
+      "with_all_directors_cost_per_1000": 849778.4358849982,
+      "director_fte_excluded": 7.0,
+      "director_compensation_excluded": 1230580.0
+    },
+    {
+      "district": "Steilacoom Historical",
+      "student_fte": 2775.08,
+      "strict_cost_per_1000": 287790.2619023596,
+      "with_all_directors_cost_per_1000": 408791.09791429434,
+      "director_fte_excluded": 2.0,
+      "director_compensation_excluded": 335787.0
+    }
+  ],
+  "school_denominator_sensitivity": [
+    {
+      "district": "Riverview",
+      "school_admin_fte": 11.533,
+      "all_reporting_schools": 7,
+      "school_type_counts": {
+        "A": 2,
+        "P": 5
+      },
+      "p_coded_schools": 5,
+      "fte_per_all_reporting_schools": 1.6475714285714285,
+      "same_total_fte_per_p_coded_school": 2.3066
+    },
+    {
+      "district": "Snoqualmie Valley",
+      "school_admin_fte": 25.601,
+      "all_reporting_schools": 13,
+      "school_type_counts": {
+        "P": 11,
+        "S": 1,
+        "A": 1
+      },
+      "p_coded_schools": 11,
+      "fte_per_all_reporting_schools": 1.9693076923076922,
+      "same_total_fte_per_p_coded_school": 2.327363636363636
+    },
+    {
+      "district": "Northshore",
+      "school_admin_fte": 61.98599999999999,
+      "all_reporting_schools": 36,
+      "school_type_counts": {
+        "S": 1,
+        "P": 32,
+        "A": 2,
+        "R": 1
+      },
+      "p_coded_schools": 32,
+      "fte_per_all_reporting_schools": 1.721833333333333,
+      "same_total_fte_per_p_coded_school": 1.9370624999999997
+    },
+    {
+      "district": "Monroe",
+      "school_admin_fte": 18.45,
+      "all_reporting_schools": 12,
+      "school_type_counts": {
+        "S": 2,
+        "A": 2,
+        "P": 8
+      },
+      "p_coded_schools": 8,
+      "fte_per_all_reporting_schools": 1.5374999999999999,
+      "same_total_fte_per_p_coded_school": 2.30625
+    },
+    {
+      "district": "Sultan",
+      "school_admin_fte": 8.0,
+      "all_reporting_schools": 8,
+      "school_type_counts": {
+        "S": 1,
+        "P": 4,
+        "A": 2,
+        "R": 1
+      },
+      "p_coded_schools": 4,
+      "fte_per_all_reporting_schools": 1.0,
+      "same_total_fte_per_p_coded_school": 2.0
+    },
+    {
+      "district": "Lakewood",
+      "school_admin_fte": 7.0,
+      "all_reporting_schools": 5,
+      "school_type_counts": {
+        "P": 5
+      },
+      "p_coded_schools": 5,
+      "fte_per_all_reporting_schools": 1.4,
+      "same_total_fte_per_p_coded_school": 1.4
+    },
+    {
+      "district": "Granite Falls",
+      "school_admin_fte": 7.0,
+      "all_reporting_schools": 6,
+      "school_type_counts": {
+        "P": 4,
+        "A": 1,
+        "R": 1
+      },
+      "p_coded_schools": 4,
+      "fte_per_all_reporting_schools": 1.1666666666666667,
+      "same_total_fte_per_p_coded_school": 1.75
+    },
+    {
+      "district": "Tukwila",
+      "school_admin_fte": 8.0,
+      "all_reporting_schools": 5,
+      "school_type_counts": {
+        "P": 5
+      },
+      "p_coded_schools": 5,
+      "fte_per_all_reporting_schools": 1.6,
+      "same_total_fte_per_p_coded_school": 1.6
+    },
+    {
+      "district": "Orting",
+      "school_admin_fte": 9.0,
+      "all_reporting_schools": 4,
+      "school_type_counts": {
+        "P": 4
+      },
+      "p_coded_schools": 4,
+      "fte_per_all_reporting_schools": 2.25,
+      "same_total_fte_per_p_coded_school": 2.25
+    },
+    {
+      "district": "Steilacoom Historical",
+      "school_admin_fte": 11.0,
+      "all_reporting_schools": 6,
+      "school_type_counts": {
+        "P": 6
+      },
+      "p_coded_schools": 6,
+      "fte_per_all_reporting_schools": 1.8333333333333333,
+      "same_total_fte_per_p_coded_school": 1.8333333333333333
+    }
+  ],
+  "riverview_latest_year": {
+    "central_fte_before": 2.919,
+    "central_fte_after": 4.0,
+    "central_fte_change_percent": 37.03323055841041,
+    "compensation_per_staff_fte_change_percent": -3.054414556925167,
+    "student_fte_change_percent": -4.404388448951213,
+    "nominal_cost_per_1000_change_percent": 38.968374657520584
+  },
+  "limits": [
+    "Adding every Director/Supervisor is a consistent sensitivity scenario, not an established central-office total or statistical confidence bound.",
+    "The P-only denominator retains the full school-admin FTE numerator; it is not staffing allocated to P schools and is not a physical-campus count.",
+    "The six size peers are drawn from the selected nearby cohort, not all Washington districts; medians are descriptive, not statistical significance tests.",
+    "Source year labels, program mix, services, outsourcing and independent peer reconciliation remain review requirements.",
+    "Same-year CPI adjustment applies the same factor to these districts and does not change their relative ratios. Latest-year growth here is nominal."
+  ],
+  "input_sha256": {
+    "comparison.json": "849f2eb5bf1fac2e119d39990cd1e5a6b353538b6f4932b9335459f358cb6034",
+    "school-administration.json": "15e40b4db6672559ccd78b43e3c3ca8c52977a7febc57ba695a7b340e5acb696"
+  },
+  "evaluation_code_sha256": "f7d76b5765c84e4f4accb757a572b74fb803c57a7e4c852790c8a25c9f297d3f"
+}
